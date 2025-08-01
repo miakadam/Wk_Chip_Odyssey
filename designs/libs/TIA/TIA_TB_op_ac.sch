@@ -122,8 +122,8 @@ N 2330 -770 2390 -770 {lab=cd}
 N 2390 -770 2460 -770 {lab=cd}
 C {symbols/pfet_03v3.sym} 1320 -1080 0 0 {name=MP_TAIL
 L=2u
-W=25u
-nf=5
+W=15u
+nf=3
 m=8
 ad="'int((nf+1)/2) * W/nf * 0.18u'"
 pd="'2*int((nf+1)/2) * (W/nf + 0.18u)'"
@@ -137,7 +137,7 @@ spiceprefix=X
 C {symbols/pfet_03v3.sym} 1120 -740 0 0 {name=MP_DIFF_L
 L=2u
 W=10u
-nf=10
+nf=2
 m=10
 ad="'int((nf+1)/2) * W/nf * 0.18u'"
 pd="'2*int((nf+1)/2) * (W/nf + 0.18u)'"
@@ -151,7 +151,7 @@ spiceprefix=X
 C {symbols/pfet_03v3.sym} 1570 -740 0 1 {name=MP_DIFF_R
 L=2u
 W=10u
-nf=10
+nf=2
 m=10
 ad="'int((nf+1)/2) * W/nf * 0.18u'"
 pd="'2*int((nf+1)/2) * (W/nf + 0.18u)'"
@@ -164,9 +164,9 @@ spiceprefix=X
 }
 C {symbols/pfet_03v3.sym} 2040 -1080 0 0 {name=MP_CS_LOAD
 L=2u
-W=25u
-nf=5
-m=30
+W=15u
+nf=3
+m=25
 ad="'int((nf+1)/2) * W/nf * 0.18u'"
 pd="'2*int((nf+1)/2) * (W/nf + 0.18u)'"
 as="'int((nf+2)/2) * W/nf * 0.18u'"
@@ -178,8 +178,8 @@ spiceprefix=X
 }
 C {symbols/pfet_03v3.sym} 690 -1080 0 1 {name=MP_MIRROR
 L=2u
-W=25u
-nf=5
+W=15u
+nf=3
 m=1
 ad="'int((nf+1)/2) * W/nf * 0.18u'"
 pd="'2*int((nf+1)/2) * (W/nf + 0.18u)'"
@@ -220,9 +220,9 @@ spiceprefix=X
 }
 C {symbols/nfet_03v3.sym} 2040 -570 0 0 {name=MN_CS
 L=2u
-W=10u
+W=20u
 nf=10
-m=13
+m=11
 ad="'int((nf+1)/2) * W/nf * 0.18u'"
 pd="'2*int((nf+1)/2) * (W/nf + 0.18u)'"
 as="'int((nf+2)/2) * W/nf * 0.18u'"
@@ -497,7 +497,7 @@ setplot op1
 print @m.xmp_mirror.m0[id]
 
 
-write TIA_TB_op.raw
+write TIA_TB_op_ac.raw
 .endc
 "}
 C {lab_pin.sym} 1310 -1600 3 1 {name=p1 sig_type=std_logic lab=vss}

@@ -124,13 +124,17 @@ N 2780 -290 3010 -290 {lab=in_n}
 N 3070 -290 3740 -290 {lab=out}
 N 2720 -290 2780 -290 {lab=in_n}
 N 2020 -1720 2020 -1680 {lab=in_p}
-N 1780 -1620 1780 -1580 {lab=vss}
 N 1780 -1720 1780 -1680 {lab=in_n}
 N 1780 -1740 1780 -1720 {lab=in_n}
+N 1780 -1620 1780 -1600 {lab=vss}
+N 1780 -1540 1780 -1490 {lab=vss}
+N 1780 -1600 1780 -1540 {lab=vss}
+N 3040 -350 3040 -310 {lab=vdd}
+N 2780 -820 2780 -780 {lab=vdd}
 C {symbols/pfet_03v3.sym} 2200 -1200 0 0 {name=MP_TAIL
 L=2u
-W=25u
-nf=5
+W=15u
+nf=3
 m=8
 ad="'int((nf+1)/2) * W/nf * 0.18u'"
 pd="'2*int((nf+1)/2) * (W/nf + 0.18u)'"
@@ -144,7 +148,7 @@ spiceprefix=X
 C {symbols/pfet_03v3.sym} 2000 -860 0 0 {name=MP_DIFF_L
 L=2u
 W=10u
-nf=10
+nf=2
 m=10
 ad="'int((nf+1)/2) * W/nf * 0.18u'"
 pd="'2*int((nf+1)/2) * (W/nf + 0.18u)'"
@@ -158,7 +162,7 @@ spiceprefix=X
 C {symbols/pfet_03v3.sym} 2450 -860 0 1 {name=MP_DIFF_R
 L=2u
 W=10u
-nf=10
+nf=2
 m=10
 ad="'int((nf+1)/2) * W/nf * 0.18u'"
 pd="'2*int((nf+1)/2) * (W/nf + 0.18u)'"
@@ -171,9 +175,9 @@ spiceprefix=X
 }
 C {symbols/pfet_03v3.sym} 2920 -1200 0 0 {name=MP_CS_LOAD
 L=2u
-W=25u
-nf=5
-m=30
+W=15u
+nf=3
+m=25
 ad="'int((nf+1)/2) * W/nf * 0.18u'"
 pd="'2*int((nf+1)/2) * (W/nf + 0.18u)'"
 as="'int((nf+2)/2) * W/nf * 0.18u'"
@@ -185,8 +189,8 @@ spiceprefix=X
 }
 C {symbols/pfet_03v3.sym} 1570 -1200 0 1 {name=MP_MIRROR
 L=2u
-W=25u
-nf=5
+W=15u
+nf=3
 m=1
 ad="'int((nf+1)/2) * W/nf * 0.18u'"
 pd="'2*int((nf+1)/2) * (W/nf + 0.18u)'"
@@ -228,8 +232,8 @@ spiceprefix=X
 C {symbols/nfet_03v3.sym} 2920 -690 0 0 {name=MN_CS
 L=2u
 W=20u
-nf=20
-m=13
+nf=10
+m=11
 ad="'int((nf+1)/2) * W/nf * 0.18u'"
 pd="'2*int((nf+1)/2) * (W/nf + 0.18u)'"
 as="'int((nf+2)/2) * W/nf * 0.18u'"
@@ -268,16 +272,6 @@ model=nfet_03v3
 spiceprefix=X
 }
 C {vsource.sym} 2100 -1650 0 0 {name=V3 value=3.3 savecurrent=false}
-C {capa.sym} 2870 -760 3 0 {name=C5
-m=1
-value=3000f
-footprint=1206
-device="ceramic capacitor"}
-C {res.sym} 2780 -760 3 0 {name=R105
-value=500
-footprint=1206
-device=resistor
-m=1}
 C {vsource.sym} 2190 -1650 0 0 {name=V4 value=0 savecurrent=false}
 C {gnd.sym} 2190 -1580 0 0 {name=l4 lab=GND}
 C {lab_pin.sym} 2100 -1720 3 1 {name=p12 sig_type=std_logic lab=vdd}
@@ -478,10 +472,10 @@ let tstop = 60e-6
 let tstep = 1e-9
 
 op
-
+**dc I_IN 10e-9 300e-6 10e-9
 tran $&tstep $&tstop
 
-write TIA_TB_tran.raw
+
 
 ** Plots
 
@@ -516,7 +510,7 @@ print @m.xmn_cd_load.m0[vds]
 
 
 
-
+write TIA_TB_tran.raw
 
 
 .endc
@@ -530,6 +524,9 @@ format="tcleval( @value )"
 value="
 .include $::180MCU_MODELS/design.ngspice
 .lib $::180MCU_MODELS/sm141064.ngspice typical
+.lib $::180MCU_MODELS/sm141064.ngspice res_typical
+.lib $::180MCU_MODELS/sm141064.ngspice mimcap_typical
+.lib $::180MCU_MODELS/sm141064.ngspice cap_mim
 "}
 C {launcher.sym} 1130 -1170 0 0 {name=h2
 descr="Annotate OP"
@@ -562,18 +559,33 @@ C {lab_pin.sym} 2580 -690 2 1 {name=p55 sig_type=std_logic lab=cs}
 C {lab_pin.sym} 3030 -890 2 1 {name=p56 sig_type=std_logic lab=cd}
 C {capa.sym} 3660 -610 0 0 {name=C6
 m=1
-value=10p
+value=4p
 footprint=1206
 device="ceramic capacitor"}
 C {lab_pin.sym} 1790 -860 2 1 {name=p66 sig_type=std_logic lab=in_n}
-C {res.sym} 3040 -290 3 0 {name=Rfb
-value=1k
-footprint=1206
-device=resistor
-m=1}
 C {lab_pin.sym} 3740 -750 0 1 {name=p1 sig_type=std_logic lab=out}
 C {lab_pin.sym} 2020 -1720 3 1 {name=p2 sig_type=std_logic lab=in_p}
-C {lab_wire.sym} 1780 -1580 1 0 {name=p3 sig_type=std_logic lab=vss
+C {lab_wire.sym} 1780 -1490 1 0 {name=p3 sig_type=std_logic lab=vss
 }
 C {lab_pin.sym} 1780 -1740 3 1 {name=p4 sig_type=std_logic lab=in_n}
 C {isource.sym} 1780 -1650 2 0 {name=I_IN value="SIN(75e-6 74.99e-6  100e3 1e-9)"}
+C {lab_pin.sym} 3040 -350 3 1 {name=p5 sig_type=std_logic lab=vdd}
+C {symbols/ppolyf_u_1k.sym} 3040 -290 1 0 {name=R1
+W=10e-6
+L=10e-6
+model=ppolyf_u_1k
+spiceprefix=X
+m=1}
+C {lab_pin.sym} 2780 -820 3 1 {name=p6 sig_type=std_logic lab=vdd}
+C {symbols/ppolyf_u_1k.sym} 2780 -760 1 0 {name=R2
+W=20e-6
+L=10e-6
+model=ppolyf_u_1k
+spiceprefix=X
+m=1}
+C {symbols/cap_mim_2f0fF.sym} 2870 -760 3 0 {name=C1
+W=10e-6
+L=10e-6
+model=cap_mim_2f0fF
+spiceprefix=X
+m=15}

@@ -42,9 +42,7 @@ N 2660 -3070 2970 -3070 {lab=vdd}
 N 3100 -2960 3100 -2690 {lab=vdd}
 N 1600 -2630 1700 -2630 {lab=in_n}
 N 2190 -2630 2280 -2630 {lab=in_p}
-N 2530 -2530 2560 -2530 {lab=#net3}
 N 2620 -2530 2660 -2530 {lab=cd}
-N 2440 -2530 2470 -2530 {lab=cs}
 N 1340 -2970 1340 -2900 {lab=i_ref}
 N 3100 -2520 3180 -2520 {lab=out}
 N 1910 -3390 1910 -3350 {lab=GND}
@@ -125,44 +123,42 @@ N 2180 -1510 2590 -1510 {lab=i_ref_stb}
 N 2180 -1560 2180 -1510 {lab=i_ref_stb}
 N 1980 -1560 2180 -1560 {lab=i_ref_stb}
 N 1980 -1560 1980 -1510 {lab=i_ref_stb}
-N 1850 -1280 1850 -1200 {lab=#net4}
-N 1850 -1280 2050 -1280 {lab=#net4}
-N 2050 -1370 2050 -1280 {lab=#net4}
-N 2050 -1280 2260 -1280 {lab=#net4}
-N 2260 -1270 2260 -1200 {lab=#net4}
-N 2260 -1280 2260 -1270 {lab=#net4}
-N 1850 -1140 1850 -890 {lab=#net5}
-N 2260 -1140 2260 -890 {lab=#net6}
-N 1890 -860 2220 -860 {lab=#net5}
-N 1920 -910 1920 -860 {lab=#net5}
-N 1850 -910 1920 -910 {lab=#net5}
+N 1850 -1280 1850 -1200 {lab=#net3}
+N 1850 -1280 2050 -1280 {lab=#net3}
+N 2050 -1370 2050 -1280 {lab=#net3}
+N 2050 -1280 2260 -1280 {lab=#net3}
+N 2260 -1270 2260 -1200 {lab=#net3}
+N 2260 -1280 2260 -1270 {lab=#net3}
+N 1850 -1140 1850 -890 {lab=#net4}
+N 2260 -1140 2260 -890 {lab=#net5}
+N 1890 -860 2220 -860 {lab=#net4}
+N 1920 -910 1920 -860 {lab=#net4}
+N 1850 -910 1920 -910 {lab=#net4}
 N 1850 -830 1850 -740 {lab=vss}
 N 2260 -830 2260 -740 {lab=vss}
 N 1850 -740 2260 -740 {lab=vss}
-N 2770 -1370 2770 -1060 {lab=#net7}
+N 2770 -1370 2770 -1060 {lab=#net6}
 N 2260 -740 2630 -740 {lab=vss}
-N 2190 -910 2190 -860 {lab=#net5}
-N 2190 -910 2330 -910 {lab=#net5}
-N 2330 -910 2330 -860 {lab=#net5}
-N 2330 -860 2900 -860 {lab=#net5}
+N 2190 -910 2190 -860 {lab=#net4}
+N 2190 -910 2330 -910 {lab=#net4}
+N 2330 -910 2330 -860 {lab=#net4}
+N 2330 -860 2900 -860 {lab=#net4}
 N 3210 -830 3210 -750 {lab=vss}
 N 2770 -740 3080 -740 {lab=vss}
 N 3210 -750 3210 -740 {lab=vss}
 N 3210 -1170 3210 -890 {lab=out_stb}
 N 2770 -1610 3080 -1610 {lab=vdd}
 N 3210 -1500 3210 -1230 {lab=vdd}
-N 1710 -1170 1810 -1170 {lab=#net8}
+N 1710 -1170 1810 -1170 {lab=#net7}
 N 2300 -1170 2390 -1170 {lab=in_p}
-N 2640 -1070 2670 -1070 {lab=#net9}
-N 2730 -1070 2770 -1070 {lab=#net7}
-N 2550 -1070 2580 -1070 {lab=#net6}
+N 2730 -1070 2770 -1070 {lab=#net6}
 N 1450 -1510 1450 -1440 {lab=i_ref_stb}
 N 3210 -1060 3290 -1060 {lab=out_stb}
 N 2040 -1640 2040 -1610 {lab=vdd}
 N 2100 -740 2100 -720 {lab=vss}
 N 2770 -970 2770 -740 {lab=vss}
-N 2770 -1060 2770 -1030 {lab=#net7}
-N 2550 -1070 2550 -1000 {lab=#net6}
+N 2770 -1060 2770 -1030 {lab=#net6}
+N 2550 -1070 2550 -1000 {lab=#net5}
 N 1830 -860 1850 -860 {lab=vss}
 N 1830 -860 1830 -810 {lab=vss}
 N 1830 -810 1850 -810 {lab=vss}
@@ -192,31 +188,31 @@ N 2630 -1610 2770 -1610 {lab=vdd}
 N 2590 -1510 2730 -1510 {lab=i_ref_stb}
 N 3080 -1610 3200 -1610 {lab=vdd}
 N 3200 -1610 3210 -1610 {lab=vdd}
-N 3040 -1200 3170 -1200 {lab=#net7}
-N 2900 -860 3170 -860 {lab=#net5}
+N 3040 -1200 3170 -1200 {lab=#net6}
+N 2900 -860 3170 -860 {lab=#net4}
 N 3080 -740 3210 -740 {lab=vss}
 N 2630 -740 2770 -740 {lab=vss}
-N 2590 -1000 2730 -1000 {lab=#net6}
+N 2590 -1000 2730 -1000 {lab=#net5}
 N 1380 -1480 1380 -1430 {lab=i_ref_stb}
-N 2050 -1480 2050 -1450 {lab=#net4}
-N 2770 -1480 2770 -1430 {lab=#net7}
+N 2050 -1480 2050 -1450 {lab=#net3}
+N 2770 -1480 2770 -1430 {lab=#net6}
 N 2790 -1510 2800 -1510 {lab=vdd}
 N 3210 -1610 3210 -1500 {lab=vdd}
 N 1380 -1430 1380 -1370 {lab=i_ref_stb}
 N 1380 -1440 1450 -1440 {lab=i_ref_stb}
-N 2050 -1450 2050 -1370 {lab=#net4}
-N 2770 -1430 2770 -1370 {lab=#net7}
-N 2550 -1000 2590 -1000 {lab=#net6}
-N 2260 -1000 2550 -1000 {lab=#net6}
-N 2770 -1200 3040 -1200 {lab=#net7}
+N 2050 -1450 2050 -1370 {lab=#net3}
+N 2770 -1430 2770 -1370 {lab=#net6}
+N 2550 -1000 2590 -1000 {lab=#net5}
+N 2260 -1000 2550 -1000 {lab=#net5}
+N 2770 -1200 3040 -1200 {lab=#net6}
 N 3490 -1060 3490 -950 {lab=out_stb}
 N 3290 -1060 3490 -1060 {lab=out_stb}
 N 3490 -890 3490 -740 {lab=vss}
 N 3210 -740 3490 -740 {lab=vss}
 N 1700 -1810 1700 -1770 {lab=GND}
 N 1700 -1910 1700 -1870 {lab=i_ref_stb}
-N 1690 -1170 1690 -580 {lab=#net8}
-N 1690 -1170 1710 -1170 {lab=#net8}
+N 1690 -1170 1690 -580 {lab=#net7}
+N 1690 -1170 1710 -1170 {lab=#net7}
 N 3580 -1060 3580 -580 {lab=out_stb}
 N 3490 -1060 3580 -1060 {lab=out_stb}
 N 3380 -2520 3460 -2520 {lab=out}
@@ -224,26 +220,34 @@ N 3460 -2520 3460 -2140 {lab=out}
 N 1510 -2630 1510 -2140 {lab=in_n}
 N 1510 -2630 1600 -2630 {lab=in_n}
 N 2340 -580 2360 -580 {
-lab=#net10}
+lab=#net8}
 N 2340 -580 2340 -500 {
-lab=#net10}
+lab=#net8}
 N 2320 -580 2340 -580 {
-lab=#net10}
-N 2210 -580 2260 -580 {lab=#net8}
-N 2420 -580 2440 -580 {lab=#net11}
+lab=#net8}
+N 2210 -580 2260 -580 {lab=#net7}
+N 2420 -580 2440 -580 {lab=#net9}
 N 2340 -440 2340 -380 {lab=vss}
 N 1510 -2060 2440 -2060 {lab=in_n}
 N 1510 -2140 1510 -2060 {lab=in_n}
 N 3460 -2140 3460 -2060 {lab=out}
-N 1690 -580 2210 -580 {lab=#net8}
-N 2440 -580 2680 -580 {lab=#net11}
+N 1690 -580 2210 -580 {lab=#net7}
+N 2440 -580 2680 -580 {lab=#net9}
 N 2740 -580 3580 -580 {lab=out_stb}
-N 2500 -2060 2730 -2060 {lab=#net12}
+N 2500 -2060 2730 -2060 {lab=#net10}
 N 2790 -2060 3460 -2060 {lab=out}
+N 2530 -2530 2560 -2530 {lab=#net11}
+N 2440 -2530 2470 -2530 {lab=cs}
+N 2500 -2590 2500 -2550 {lab=vdd}
+N 2640 -1070 2670 -1070 {lab=#net12}
+N 2550 -1070 2580 -1070 {lab=#net5}
+N 2610 -1130 2610 -1090 {lab=vdd}
+N 2710 -640 2710 -600 {lab=vdd}
+N 2760 -2120 2760 -2080 {lab=vdd}
 C {symbols/pfet_03v3.sym} 1920 -2970 0 0 {name=MP_TAIL
 L=2u
-W=25u
-nf=5
+W=15u
+nf=3
 m=8
 ad="'int((nf+1)/2) * W/nf * 0.18u'"
 pd="'2*int((nf+1)/2) * (W/nf + 0.18u)'"
@@ -257,7 +261,7 @@ spiceprefix=X
 C {symbols/pfet_03v3.sym} 1720 -2630 0 0 {name=MP_DIFF_L
 L=2u
 W=10u
-nf=10
+nf=2
 m=10
 ad="'int((nf+1)/2) * W/nf * 0.18u'"
 pd="'2*int((nf+1)/2) * (W/nf + 0.18u)'"
@@ -271,7 +275,7 @@ spiceprefix=X
 C {symbols/pfet_03v3.sym} 2170 -2630 0 1 {name=MP_DIFF_R
 L=2u
 W=10u
-nf=10
+nf=2
 m=10
 ad="'int((nf+1)/2) * W/nf * 0.18u'"
 pd="'2*int((nf+1)/2) * (W/nf + 0.18u)'"
@@ -284,9 +288,9 @@ spiceprefix=X
 }
 C {symbols/pfet_03v3.sym} 2640 -2970 0 0 {name=MP_CS_LOAD
 L=2u
-W=25u
-nf=5
-m=30
+W=15u
+nf=3
+m=25
 ad="'int((nf+1)/2) * W/nf * 0.18u'"
 pd="'2*int((nf+1)/2) * (W/nf + 0.18u)'"
 as="'int((nf+2)/2) * W/nf * 0.18u'"
@@ -298,8 +302,8 @@ spiceprefix=X
 }
 C {symbols/pfet_03v3.sym} 1290 -2970 0 1 {name=MP_MIRROR
 L=2u
-W=25u
-nf=5
+W=15u
+nf=3
 m=1
 ad="'int((nf+1)/2) * W/nf * 0.18u'"
 pd="'2*int((nf+1)/2) * (W/nf + 0.18u)'"
@@ -341,8 +345,8 @@ spiceprefix=X
 C {symbols/nfet_03v3.sym} 2640 -2460 0 0 {name=MN_CS
 L=2u
 W=20u
-nf=20
-m=13
+nf=10
+m=11
 ad="'int((nf+1)/2) * W/nf * 0.18u'"
 pd="'2*int((nf+1)/2) * (W/nf + 0.18u)'"
 as="'int((nf+2)/2) * W/nf * 0.18u'"
@@ -381,16 +385,6 @@ model=nfet_03v3
 spiceprefix=X
 }
 C {vsource.sym} 1820 -3420 0 0 {name=V1 value=3.3 savecurrent=false}
-C {capa.sym} 2590 -2530 3 0 {name=C1
-m=1
-value=3000f
-footprint=1206
-device="ceramic capacitor"}
-C {res.sym} 2500 -2530 3 0 {name=R2
-value=1000
-footprint=1206
-device=resistor
-m=1}
 C {vsource.sym} 1910 -3420 0 0 {name=V2 value=0 savecurrent=false}
 C {gnd.sym} 1910 -3350 0 0 {name=l1 lab=GND}
 C {lab_pin.sym} 1820 -3490 3 1 {name=p2 sig_type=std_logic lab=vdd}
@@ -589,7 +583,7 @@ save all
 op
 ac dec 1001 1 1G
 **remzerovec
-write TIA_TB_stb.raw
+
 **set appendwrite
 
 * Middlebrook's Method
@@ -618,6 +612,27 @@ print @m.xmn_cd.m0[vds]
 print @m.xmn_cd_load.m0[vdsat]
 print @m.xmn_cd_load.m0[vds]
 
+
+
+print @m.xmn_cd_load.m0[vdsat]
+print @m.xmn_cd_load.m0[vds]
+
+print @m.xmp_diff_l1.m0[vdsat]
+print @m.xmp_diff_l1.m0[vds]
+
+print @m.xmp_diff_r1.m0[vdsat]
+print @m.xmp_diff_r1.m0[vds]
+
+print @m.xmn_load_l1.m0[vdsat]
+print @m.xmn_load_l1.m0[vds]
+
+print @m.xmn_load_r1.m0[vdsat]
+print @m.xmn_load_r1.m0[vds]
+
+
+print @m.xmp_tail1.m0[vdsat]
+print @m.xmp_tail1.m0[vds]
+
 ** Plots
 
 **setplot new
@@ -628,7 +643,7 @@ print @m.xmn_cd_load.m0[vds]
 **let Tphase = 180*cph(T)/pi
 **plot Tmag Tphase xlog
 
-
+write TIA_TB_stb.raw
 .endc
 "}
 C {lab_pin.sym} 1910 -3490 3 1 {name=p1 sig_type=std_logic lab=vss}
@@ -642,8 +657,11 @@ format="tcleval( @value )"
 value="
 .include $::180MCU_MODELS/design.ngspice
 .lib $::180MCU_MODELS/sm141064.ngspice typical
+.lib $::180MCU_MODELS/sm141064.ngspice res_typical
+.lib $::180MCU_MODELS/sm141064.ngspice mimcap_typical
+.lib $::180MCU_MODELS/sm141064.ngspice cap_mim
 "}
-C {launcher.sym} 1330 -2590 0 0 {name=h1
+C {launcher.sym} 1330 -2600 0 0 {name=h1
 descr="Annotate OP"
 tclcommand= "set show_hidden_texts 1; xschem annotate_op"}
 C {devices/ngspice_get_value.sym} 1810 -2890 0 0 {name=r33 node=v(@m.xmp_tail.m0[vdsat])
@@ -675,13 +693,13 @@ C {lab_pin.sym} 2300 -2460 2 1 {name=p23 sig_type=std_logic lab=cs}
 C {lab_pin.sym} 2750 -2660 2 1 {name=p24 sig_type=std_logic lab=cd}
 C {capa.sym} 3380 -2380 0 0 {name=C2
 m=1
-value=10p
+value=4p
 footprint=1206
 device="ceramic capacitor"}
 C {symbols/pfet_03v3.sym} 2030 -1510 0 0 {name=MP_TAIL1
 L=2u
-W=25u
-nf=5
+W=15u
+nf=3
 m=8
 ad="'int((nf+1)/2) * W/nf * 0.18u'"
 pd="'2*int((nf+1)/2) * (W/nf + 0.18u)'"
@@ -695,7 +713,7 @@ spiceprefix=X
 C {symbols/pfet_03v3.sym} 1830 -1170 0 0 {name=MP_DIFF_L1
 L=2u
 W=10u
-nf=10
+nf=2
 m=10
 ad="'int((nf+1)/2) * W/nf * 0.18u'"
 pd="'2*int((nf+1)/2) * (W/nf + 0.18u)'"
@@ -709,7 +727,7 @@ spiceprefix=X
 C {symbols/pfet_03v3.sym} 2280 -1170 0 1 {name=MP_DIFF_R1
 L=2u
 W=10u
-nf=10
+nf=2
 m=10
 ad="'int((nf+1)/2) * W/nf * 0.18u'"
 pd="'2*int((nf+1)/2) * (W/nf + 0.18u)'"
@@ -722,9 +740,9 @@ spiceprefix=X
 }
 C {symbols/pfet_03v3.sym} 2750 -1510 0 0 {name=MP_CS_LOAD1
 L=2u
-W=25u
-nf=5
-m=30
+W=15u
+nf=3
+m=25
 ad="'int((nf+1)/2) * W/nf * 0.18u'"
 pd="'2*int((nf+1)/2) * (W/nf + 0.18u)'"
 as="'int((nf+2)/2) * W/nf * 0.18u'"
@@ -736,8 +754,8 @@ spiceprefix=X
 }
 C {symbols/pfet_03v3.sym} 1400 -1510 0 1 {name=MP_MIRROR1
 L=2u
-W=25u
-nf=5
+W=15u
+nf=3
 m=1
 ad="'int((nf+1)/2) * W/nf * 0.18u'"
 pd="'2*int((nf+1)/2) * (W/nf + 0.18u)'"
@@ -779,8 +797,8 @@ spiceprefix=X
 C {symbols/nfet_03v3.sym} 2750 -1000 0 0 {name=MN_CS1
 L=2u
 W=20u
-nf=20
-m=13
+nf=10
+m=11
 ad="'int((nf+1)/2) * W/nf * 0.18u'"
 pd="'2*int((nf+1)/2) * (W/nf + 0.18u)'"
 as="'int((nf+2)/2) * W/nf * 0.18u'"
@@ -818,16 +836,6 @@ sa=0 sb=0 sd=0
 model=nfet_03v3
 spiceprefix=X
 }
-C {capa.sym} 2700 -1070 3 0 {name=C3
-m=1
-value=3000f
-footprint=1206
-device="ceramic capacitor"}
-C {res.sym} 2610 -1070 3 0 {name=R52
-value=1000
-footprint=1206
-device=resistor
-m=1}
 C {lab_pin.sym} 2040 -1640 3 1 {name=p26 sig_type=std_logic lab=vdd}
 C {lab_pin.sym} 2100 -720 1 1 {name=p27 sig_type=std_logic lab=vss}
 C {lab_pin.sym} 3230 -1200 0 1 {name=p31 sig_type=std_logic lab=vss}
@@ -948,7 +956,7 @@ C {lab_pin.sym} 1380 -1370 1 1 {name=p35 sig_type=std_logic lab=i_ref_stb
 C {opin.sym} 3290 -1060 0 0 {name=p36 lab=out_stb}
 C {capa.sym} 3490 -920 0 0 {name=C4
 m=1
-value=10p
+value=4p
 footprint=1206
 device="ceramic capacitor"}
 C {isource.sym} 1700 -1840 0 0 {name=I2 value=20u}
@@ -960,13 +968,43 @@ C {devices/ammeter.sym} 2290 -580 1 0 {name=Vif1 savecurrent=true spice_ignore=0
 C {devices/isource.sym} 2340 -470 2 0 {name=Itest1 value="dc 0 ac 1"}
 C {lab_pin.sym} 2340 -380 1 1 {name=p3 sig_type=std_logic lab=vss}
 C {lab_pin.sym} 1510 -2630 2 1 {name=p9 sig_type=std_logic lab=in_n}
-C {res.sym} 2710 -580 3 0 {name=R103
-value=1k
-footprint=1206
-device=resistor
+C {lab_pin.sym} 2500 -2590 3 1 {name=p12 sig_type=std_logic lab=vdd}
+C {symbols/ppolyf_u_1k.sym} 2500 -2530 1 0 {name=R105
+W=20e-6
+L=10e-6
+model=ppolyf_u_1k
+spiceprefix=X
 m=1}
-C {res.sym} 2760 -2060 3 0 {name=R104
-value=1k
-footprint=1206
-device=resistor
+C {symbols/cap_mim_2f0fF.sym} 2590 -2530 3 0 {name=C5
+W=10e-6
+L=10e-6
+model=cap_mim_2f0fF
+spiceprefix=X
+m=15}
+C {lab_pin.sym} 2610 -1130 3 1 {name=p17 sig_type=std_logic lab=vdd}
+C {symbols/ppolyf_u_1k.sym} 2610 -1070 1 0 {name=R106
+W=20e-6
+L=10e-6
+model=ppolyf_u_1k
+spiceprefix=X
+m=1}
+C {symbols/cap_mim_2f0fF.sym} 2700 -1070 3 0 {name=C6
+W=10e-6
+L=10e-6
+model=cap_mim_2f0fF
+spiceprefix=X
+m=15}
+C {lab_pin.sym} 2710 -640 3 1 {name=p18 sig_type=std_logic lab=vdd}
+C {symbols/ppolyf_u_1k.sym} 2710 -580 1 0 {name=R107
+W=10e-6
+L=10e-6
+model=ppolyf_u_1k
+spiceprefix=X
+m=1}
+C {lab_pin.sym} 2760 -2120 3 1 {name=p32 sig_type=std_logic lab=vdd}
+C {symbols/ppolyf_u_1k.sym} 2760 -2060 1 0 {name=R52
+W=10e-6
+L=10e-6
+model=ppolyf_u_1k
+spiceprefix=X
 m=1}
