@@ -11,8 +11,8 @@ ypos2=2
 divy=10
 subdivy=1
 unity=1
-x1=0
-x2=2.5e-07
+x1=-4e-07
+x2=-1.5e-07
 subdivx=1
 xlabmag=1.0
 ylabmag=1.0
@@ -37,8 +37,8 @@ ypos1=0
 ypos2=2
 subdivy=1
 unity=1
-x1=0
-x2=2.5e-07
+x1=-4e-07
+x2=-1.5e-07
 divx=10
 subdivx=1
 xlabmag=1.0
@@ -60,8 +60,8 @@ ypos2=2
 divy=10
 subdivy=1
 unity=1
-x1=0
-x2=2.5e-07
+x1=-4e-07
+x2=-1.5e-07
 divx=10
 subdivx=1
 xlabmag=1.0
@@ -75,8 +75,8 @@ color=4
 node="\\"Vp and Vq; x1.vp x1.vq -\\""
 hilight_wave=0}
 B 2 940 -1290 1740 -890 {flags=graph
-y1=-0.01
-y2=0.005
+y1=-0.0085
+y2=0.0065
 ypos1=0
 ypos2=2
 divy=10
@@ -93,9 +93,9 @@ logy=0
 autoload=1
 color=4
 node="\\"Phase 1 Av; x1.vp x1.vq -\\""
-x2=2.5e-07
+x2=-1.5e-07
 hilight_wave=0
-x1=0
+x1=-4e-07
 hcursor1_y=-0.0056286756}
 B 2 940 -880 1740 -480 {flags=graph
 y1=-0.024
@@ -104,8 +104,8 @@ ypos2=2
 divy=10
 subdivy=1
 unity=1
-x1=0
-x2=0.1e-07
+x1=-4e-07
+x2=-1.5e-07
 subdivx=1
 xlabmag=1.0
 ylabmag=1.0
@@ -182,7 +182,7 @@ C {code_shown.sym} 130 -760 0 0 {name=NGSPICE only_toplevel=true value=
 tran 100p 250n
 write tb_fixed.raw
 .endc"}
-C {strongArmLatch.sym} 490 -290 0 0 {name=x1}
+C {comparator/strongArmLatch.sym} 490 -290 0 0 {name=x1}
 C {vsource.sym} 160 -390 0 0 {name=V1 value=1.235 savecurrent=false}
 C {lab_pin.sym} 330 -250 0 0 {name=p1 sig_type=std_logic lab=IN_N}
 C {lab_pin.sym} 330 -310 0 0 {name=p2 sig_type=std_logic lab=IN_P}
@@ -223,9 +223,9 @@ C {gnd.sym} 780 -90 0 0 {name=l12 lab=GND}
 C {lab_pin.sym} 650 -320 2 1 {name=p16 sig_type=std_logic lab=OUT1
 }
 C {lab_pin.sym} 650 -240 2 1 {name=p17 sig_type=std_logic lab=OUT2}
-C {inv.sym} 700 -460 0 0 {name=xinv1}
-C {inv.sym} 700 -270 0 0 {name=xinv2}
-C {launcher.sym} 590 -665 0 0 {name=h5 
+C {comparator/inv.sym} 700 -460 0 0 {name=xinv1}
+C {comparator/inv.sym} 700 -270 0 0 {name=xinv2}
+C {launcher.sym} 600 -665 0 0 {name=h5 
 descr="load ngspice waves" 
 tclcommand="
 xschem raw_read $netlist_dir/tb_fixed.raw tran; xschem redraw
@@ -247,7 +247,7 @@ Eout vdiff 0 VALUE = "v(out1)-v(out2)"
 .save comp_speed
 .save comp_nspeed
 "}
-C {rslatch.sym} 1100 -270 0 0 {name=x2}
+C {comparator/rslatch.sym} 1100 -270 0 0 {name=x2}
 C {gnd.sym} 1060 -160 0 0 {name=l10 lab=GND}
 C {lab_pin.sym} 1060 -400 0 0 {name=p6 sig_type=std_logic lab=VDD_3V3}
 C {lab_pin.sym} 1220 -290 3 1 {name=p12 sig_type=std_logic lab=VOUT1}
@@ -255,5 +255,5 @@ C {lab_pin.sym} 1220 -270 1 1 {name=p18 sig_type=std_logic lab=VOUT2}
 C {lab_pin.sym} 1590 -290 0 1 {name=p19 sig_type=std_logic lab=Comp_Out}
 C {lab_pin.sym} 1360 -390 0 0 {name=p22 sig_type=std_logic lab=VDD_3V3}
 C {gnd.sym} 1380 -200 3 0 {name=l11 lab=GND}
-C {inv_chain.sym} 1210 -180 0 0 {name=x3}
+C {comparator/inv_chain.sym} 1210 -180 0 0 {name=x3}
 C {noconn.sym} 1240 -270 2 0 {name=l15}
