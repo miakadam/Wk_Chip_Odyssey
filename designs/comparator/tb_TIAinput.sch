@@ -88,7 +88,7 @@ C {code_shown.sym} 130 -760 0 0 {name=NGSPICE only_toplevel=true value=
 .probe v(INV1) v(INV2)
 .control
 tran 100p 20u
-write tb_fixed.raw
+write tb_TIAinput.raw
 .endc"}
 C {strongArmLatch.sym} 490 -290 0 0 {name=x1}
 C {vsource.sym} 160 -390 0 0 {name=V1 value=1.05 savecurrent=false}
@@ -135,7 +135,7 @@ C {inv.sym} 700 -270 0 0 {name=xinv2}
 C {launcher.sym} 590 -665 0 0 {name=h5 
 descr="load ngspice waves" 
 tclcommand="
-xschem raw_read $netlist_dir/tb_fixed.raw tran; xschem redraw
+xschem raw_read $netlist_dir/tb_TIAinput.raw tran; xschem redraw
 "
 }
 C {rslatch.sym} 1100 -270 0 0 {name=x2}

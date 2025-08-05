@@ -15,9 +15,9 @@ N 80 140 240 140 {lab=vss}
 N 330 -0 360 -0 {lab=vo}
 N 310 0 330 -0 {lab=vo}
 N 150 -0 160 -0 {lab=#net1}
-C {comparator/inv.sym} 0 -80 0 0 {name=xinv1}
-C {comparator/inv2x.sym} 120 140 0 0 {name=x1}
 C {devices/ipin.sym} -30 0 0 0 {name=p3 lab=vi}
 C {devices/opin.sym} 360 0 0 0 {name=p4 lab=vo}
 C {devices/iopin.sym} 40 -140 2 0 {name=p1 lab=vdd}
 C {devices/iopin.sym} 40 140 2 0 {name=p2 lab=vss}
+C {inv.sym} 0 -80 0 0 {name=xinv1}
+C {inv2x.sym} 120 140 0 0 {name=x1}
