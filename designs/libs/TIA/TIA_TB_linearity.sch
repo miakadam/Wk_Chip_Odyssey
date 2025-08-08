@@ -5,9 +5,7 @@ V {}
 S {}
 E {}
 N 2190 -1340 2190 -1270 {lab=vdd}
-N 1560 -1240 2150 -1240 {lab=i_ref}
-N 1520 -1340 1520 -1270 {lab=vdd}
-N 1520 -1340 2190 -1340 {lab=vdd}
+N 1880 -1340 1880 -1270 {lab=vdd}
 N 2910 -1340 2910 -1270 {lab=vdd}
 N 2190 -1340 2770 -1340 {lab=vdd}
 N 2320 -1240 2730 -1240 {lab=i_ref}
@@ -42,12 +40,12 @@ N 2910 -1340 3220 -1340 {lab=vdd}
 N 3350 -1230 3350 -960 {lab=vdd}
 N 1850 -900 1950 -900 {lab=in_n}
 N 2440 -900 2530 -900 {lab=in_p}
-N 1590 -1240 1590 -1170 {lab=i_ref}
+N 1950 -1240 1950 -1170 {lab=i_ref}
 N 3350 -790 3430 -790 {lab=out}
-N 2160 -1660 2160 -1620 {lab=GND}
-N 2070 -1660 2070 -1620 {lab=vss}
-N 2160 -1760 2160 -1720 {lab=vss}
-N 2070 -1760 2070 -1720 {lab=vdd}
+N 960 -690 960 -650 {lab=GND}
+N 870 -690 870 -650 {lab=vss}
+N 960 -790 960 -750 {lab=vss}
+N 870 -790 870 -750 {lab=vdd}
 N 2180 -1370 2180 -1340 {lab=vdd}
 N 2240 -470 2240 -450 {lab=vss}
 N 2910 -700 2910 -470 {lab=vss}
@@ -72,9 +70,9 @@ N 2910 -1290 2930 -1290 {lab=vdd}
 N 2190 -1240 2210 -1240 {lab=vdd}
 N 2210 -1280 2210 -1240 {lab=vdd}
 N 2190 -1280 2210 -1280 {lab=vdd}
-N 1500 -1240 1520 -1240 {lab=vdd}
-N 1500 -1280 1500 -1240 {lab=vdd}
-N 1500 -1280 1520 -1280 {lab=vdd}
+N 1860 -1240 1880 -1240 {lab=vdd}
+N 1860 -1280 1860 -1240 {lab=vdd}
+N 1860 -1280 1880 -1280 {lab=vdd}
 N 1990 -900 2020 -900 {lab=vdd}
 N 2360 -900 2400 -900 {lab=vdd}
 N 2020 -900 2360 -900 {lab=vdd}
@@ -87,14 +85,14 @@ N 3040 -590 3310 -590 {lab=#net2}
 N 3220 -470 3350 -470 {lab=vss}
 N 2770 -470 2910 -470 {lab=vss}
 N 2730 -730 2870 -730 {lab=cs}
-N 1990 -1660 1990 -1620 {lab=vss}
-N 1520 -1210 1520 -1160 {lab=i_ref}
+N 790 -690 790 -650 {lab=vss}
+N 1880 -1210 1880 -1160 {lab=i_ref}
 N 2190 -1210 2190 -1180 {lab=#net1}
 N 2910 -1210 2910 -1160 {lab=cd}
 N 2930 -1240 2940 -1240 {lab=vdd}
 N 3350 -1340 3350 -1230 {lab=vdd}
-N 1520 -1160 1520 -1100 {lab=i_ref}
-N 1520 -1170 1590 -1170 {lab=i_ref}
+N 1880 -1160 1880 -1100 {lab=i_ref}
+N 1880 -1170 1950 -1170 {lab=i_ref}
 N 2190 -1180 2190 -1100 {lab=#net1}
 N 2910 -1160 2910 -1100 {lab=cd}
 N 2690 -730 2730 -730 {lab=cs}
@@ -103,8 +101,8 @@ N 2910 -930 3180 -930 {lab=cd}
 N 1540 -1770 1600 -1770 {lab=in_p}
 N 1540 -1710 1600 -1710 {lab=vdd}
 N 1540 -1680 1600 -1680 {lab=vss}
-N 2240 -1660 2240 -1620 {lab=GND}
-N 2240 -1760 2240 -1720 {lab=i_ref}
+N 1040 -690 1040 -650 {lab=GND}
+N 1040 -790 1040 -750 {lab=i_ref}
 N 1540 -1650 1600 -1650 {lab=i_ref}
 N 3630 -790 3630 -680 {lab=out}
 N 3430 -790 3630 -790 {lab=out}
@@ -119,12 +117,12 @@ N 1760 -410 1760 -330 {lab=in_n}
 N 3710 -410 3710 -330 {lab=out}
 N 3040 -330 3710 -330 {lab=out}
 N 2690 -330 2750 -330 {lab=in_n}
-N 1990 -1760 1990 -1720 {lab=in_p}
-N 1750 -1660 1750 -1620 {lab=vss}
-N 1750 -1760 1750 -1720 {lab=in_n}
-N 1750 -1780 1750 -1760 {lab=in_n}
-N 1750 -1560 1750 -1510 {lab=vss}
-N 1750 -1620 1750 -1560 {lab=vss}
+N 790 -790 790 -750 {lab=in_p}
+N 720 -690 720 -650 {lab=vss}
+N 720 -790 720 -750 {lab=in_n}
+N 720 -810 720 -790 {lab=in_n}
+N 720 -590 720 -540 {lab=vss}
+N 720 -650 720 -590 {lab=vss}
 N 2980 -330 3040 -330 {lab=out}
 N 2800 -390 2800 -350 {lab=vdd}
 N 2750 -330 2770 -330 {lab=in_n}
@@ -133,6 +131,8 @@ N 2780 -800 2810 -800 {lab=#net3}
 N 2870 -800 2910 -800 {lab=cd}
 N 2690 -800 2720 -800 {lab=cs}
 N 2750 -860 2750 -820 {lab=vdd}
+N 1920 -1240 2150 -1240 {lab=i_ref}
+N 1880 -1340 2190 -1340 {lab=vdd}
 C {symbols/pfet_03v3.sym} 2170 -1240 0 0 {name=MP_TAIL
 L=2u
 W=15u
@@ -189,7 +189,7 @@ sa=0 sb=0 sd=0
 model=pfet_03v3
 spiceprefix=X
 }
-C {symbols/pfet_03v3.sym} 1540 -1240 0 1 {name=MP_MIRROR
+C {symbols/pfet_03v3.sym} 1900 -1240 0 1 {name=MP_MIRROR
 L=2u
 W=15u
 nf=3
@@ -273,11 +273,11 @@ sa=0 sb=0 sd=0
 model=nfet_03v3
 spiceprefix=X
 }
-C {vsource.sym} 2070 -1690 0 0 {name=V3 value=3.3 savecurrent=false}
-C {vsource.sym} 2160 -1690 0 0 {name=V4 value=0 savecurrent=false}
-C {gnd.sym} 2160 -1620 0 0 {name=l4 lab=GND}
-C {lab_pin.sym} 2070 -1760 3 1 {name=p12 sig_type=std_logic lab=vdd}
-C {lab_pin.sym} 2070 -1620 1 1 {name=p17 sig_type=std_logic lab=vss}
+C {vsource.sym} 870 -720 0 0 {name=V3 value=3.3 savecurrent=false}
+C {vsource.sym} 960 -720 0 0 {name=V4 value=0 savecurrent=false}
+C {gnd.sym} 960 -650 0 0 {name=l4 lab=GND}
+C {lab_pin.sym} 870 -790 3 1 {name=p12 sig_type=std_logic lab=vdd}
+C {lab_pin.sym} 870 -650 1 1 {name=p17 sig_type=std_logic lab=vss}
 C {lab_pin.sym} 2180 -1370 3 1 {name=p18 sig_type=std_logic lab=vdd}
 C {lab_pin.sym} 2240 -450 1 1 {name=p32 sig_type=std_logic lab=vss}
 C {lab_pin.sym} 3370 -930 0 1 {name=p38 sig_type=std_logic lab=vss}
@@ -375,16 +375,16 @@ node="[format %.4g [expr [ngspice::get_node \{@m.xmp_tail.m0[gm]\}] / [ngspice::
 descr="gm/ID="}
 C {devices/ngspice_get_value.sym} 2120 -1200 0 0 {name=r147 node=i(@m.xmp_tail.m0[id])
 descr="id="}
-C {devices/ngspice_get_expr.sym} 1360 -1300 0 0 {name=r148 
+C {devices/ngspice_get_expr.sym} 1720 -1300 0 0 {name=r148 
 node="[format %.4g [expr [ngspice::get_node \{@m.xmp_mirror.m0[gm]\}] / [ngspice::get_node \{i(@m.xmp_mirror.m0[id])\}]]]"
 descr="gm/ID="}
-C {devices/ngspice_get_value.sym} 1360 -1270 0 0 {name=r149 node=v(@m.xmp_mirror.m0[vdsat])
+C {devices/ngspice_get_value.sym} 1720 -1270 0 0 {name=r149 node=v(@m.xmp_mirror.m0[vdsat])
 descr="vdsat="}
-C {devices/ngspice_get_value.sym} 1360 -1240 0 0 {name=r150 node=v(@m.xmp_mirror.m0[vds])
+C {devices/ngspice_get_value.sym} 1720 -1240 0 0 {name=r150 node=v(@m.xmp_mirror.m0[vds])
 descr="vds="}
-C {devices/ngspice_get_value.sym} 1420 -1300 0 0 {name=r151 node=i(@m.xmp_mirror.m0[id])
+C {devices/ngspice_get_value.sym} 1780 -1300 0 0 {name=r151 node=i(@m.xmp_mirror.m0[id])
 descr="id="}
-C {devices/ngspice_get_value.sym} 1420 -1270 0 0 {name=r152 node=@m.xmp_mirror.m0[gm]
+C {devices/ngspice_get_value.sym} 1780 -1270 0 0 {name=r152 node=@m.xmp_mirror.m0[gm]
 descr="gm="}
 C {devices/code_shown.sym} -400 -1410 0 0 {name=COMMANDS2 only_toplevel=false
 value="
@@ -518,11 +518,11 @@ write TIA_TB_linearity.raw
 
 .endc
 "}
-C {lab_pin.sym} 2160 -1760 3 1 {name=p40 sig_type=std_logic lab=vss}
-C {lab_wire.sym} 1990 -1620 1 0 {name=p41 sig_type=std_logic lab=vss
+C {lab_pin.sym} 960 -790 3 1 {name=p40 sig_type=std_logic lab=vss}
+C {lab_wire.sym} 790 -650 1 0 {name=p41 sig_type=std_logic lab=vss
 }
-C {vsource.sym} 1990 -1690 0 0 {name=V6 value="1.2" savecurrent=false}
-C {launcher.sym} 1100 -1210 0 0 {name=h2
+C {vsource.sym} 790 -720 0 0 {name=V6 value="1.2" savecurrent=false}
+C {launcher.sym} 690 -1040 0 0 {name=h2
 descr="Annotate OP"
 tclcommand= "set show_hidden_texts 1; xschem annotate_op"}
 C {devices/ngspice_get_value.sym} 2060 -1160 0 0 {name=r153 node=v(@m.xmp_tail.m0[vdsat])
@@ -541,13 +541,13 @@ C {lab_pin.sym} 1600 -1710 0 1 {name=p47 sig_type=std_logic lab=vdd
 C {ipin.sym} 1540 -1680 0 0 {name=p48 lab=vss}
 C {lab_pin.sym} 1600 -1680 0 1 {name=p49 sig_type=std_logic lab=vss
 }
-C {isource.sym} 2240 -1690 0 0 {name=I3 value=20u}
-C {gnd.sym} 2240 -1620 0 0 {name=l5 lab=GND}
-C {lab_pin.sym} 2240 -1760 3 1 {name=p50 sig_type=std_logic lab=i_ref}
+C {isource.sym} 1040 -720 0 0 {name=I3 value=20u}
+C {gnd.sym} 1040 -650 0 0 {name=l5 lab=GND}
+C {lab_pin.sym} 1040 -790 3 1 {name=p50 sig_type=std_logic lab=i_ref}
 C {ipin.sym} 1540 -1650 0 0 {name=p51 lab=i_ref}
 C {lab_pin.sym} 1600 -1650 0 1 {name=p52 sig_type=std_logic lab=i_ref
 }
-C {lab_pin.sym} 1520 -1100 1 1 {name=p53 sig_type=std_logic lab=i_ref
+C {lab_pin.sym} 1880 -1100 1 1 {name=p53 sig_type=std_logic lab=i_ref
 }
 C {lab_pin.sym} 2550 -730 2 1 {name=p55 sig_type=std_logic lab=cs}
 C {lab_pin.sym} 3000 -930 2 1 {name=p56 sig_type=std_logic lab=cd}
@@ -558,11 +558,11 @@ footprint=1206
 device="ceramic capacitor"}
 C {lab_pin.sym} 1760 -900 2 1 {name=p66 sig_type=std_logic lab=in_n}
 C {lab_pin.sym} 3710 -790 0 1 {name=p1 sig_type=std_logic lab=out}
-C {lab_pin.sym} 1990 -1760 3 1 {name=p2 sig_type=std_logic lab=in_p}
-C {lab_wire.sym} 1750 -1510 1 0 {name=p3 sig_type=std_logic lab=vss
+C {lab_pin.sym} 790 -790 3 1 {name=p2 sig_type=std_logic lab=in_p}
+C {lab_wire.sym} 720 -540 1 0 {name=p3 sig_type=std_logic lab=vss
 }
-C {lab_pin.sym} 1750 -1780 3 1 {name=p4 sig_type=std_logic lab=in_n}
-C {isource.sym} 1750 -1690 2 0 {name=I_IN value="PWL(0 1e-9 1e-6 300e-6)"}
+C {lab_pin.sym} 720 -810 3 1 {name=p4 sig_type=std_logic lab=in_n}
+C {isource.sym} 720 -720 2 0 {name=I_IN value="PWL(0 1e-9 1e-6 300e-6)"}
 C {devices/code_shown.sym} 240 -160 0 0 {name=MODELS only_toplevel=true
 format="tcleval( @value )"
 value="

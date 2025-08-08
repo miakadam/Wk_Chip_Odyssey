@@ -54,4 +54,4 @@ value="
 .include $::180MCU_MODELS/design.ngspice
 .lib $::180MCU_MODELS/sm141064.ngspice typical
 "}
-C {libs/core_analog/ota_5t/ota_5t.sym} 0 0 0 0 {name=x1}
+C {ota_5t.sym} 0 0 0 0 {name=x1}

@@ -5,9 +5,7 @@ V {}
 S {}
 E {}
 N 1340 -1180 1340 -1110 {lab=vdd}
-N 710 -1080 1300 -1080 {lab=i_ref}
-N 670 -1180 670 -1110 {lab=vdd}
-N 670 -1180 1340 -1180 {lab=vdd}
+N 1000 -1180 1000 -1110 {lab=vdd}
 N 2060 -1180 2060 -1110 {lab=vdd}
 N 1340 -1180 1920 -1180 {lab=vdd}
 N 1470 -1080 1880 -1080 {lab=i_ref}
@@ -45,7 +43,7 @@ N 1590 -740 1680 -740 {lab=in_p}
 N 1930 -640 1960 -640 {lab=#net3}
 N 2020 -640 2060 -640 {lab=cd}
 N 1840 -640 1870 -640 {lab=cs}
-N 740 -1080 740 -1010 {lab=i_ref}
+N 1070 -1080 1070 -1010 {lab=i_ref}
 N 2500 -630 2580 -630 {lab=out}
 N 1310 -1500 1310 -1460 {lab=GND}
 N 1220 -1500 1220 -1460 {lab=vss}
@@ -75,9 +73,9 @@ N 2060 -1130 2080 -1130 {lab=vdd}
 N 1340 -1080 1360 -1080 {lab=vdd}
 N 1360 -1120 1360 -1080 {lab=vdd}
 N 1340 -1120 1360 -1120 {lab=vdd}
-N 650 -1080 670 -1080 {lab=vdd}
-N 650 -1120 650 -1080 {lab=vdd}
-N 650 -1120 670 -1120 {lab=vdd}
+N 980 -1080 1000 -1080 {lab=vdd}
+N 980 -1120 980 -1080 {lab=vdd}
+N 980 -1120 1000 -1120 {lab=vdd}
 N 1140 -740 1170 -740 {lab=vdd}
 N 1510 -740 1550 -740 {lab=vdd}
 N 1170 -740 1510 -740 {lab=vdd}
@@ -92,13 +90,13 @@ N 1880 -570 2020 -570 {lab=cs}
 N 1080 -1500 1080 -1460 {lab=vss}
 N 1080 -1680 1080 -1640 {lab=in_p}
 N 1080 -1640 1080 -1560 {lab=in_p}
-N 670 -1050 670 -1000 {lab=i_ref}
+N 1000 -1050 1000 -1000 {lab=i_ref}
 N 1340 -1050 1340 -1020 {lab=#net1}
 N 2060 -1050 2060 -1000 {lab=cd}
 N 2080 -1080 2090 -1080 {lab=vdd}
 N 2500 -1180 2500 -1070 {lab=vdd}
-N 670 -1000 670 -940 {lab=i_ref}
-N 670 -1010 740 -1010 {lab=i_ref}
+N 1000 -1000 1000 -940 {lab=i_ref}
+N 1000 -1010 1070 -1010 {lab=i_ref}
 N 1340 -1020 1340 -940 {lab=#net1}
 N 2060 -1000 2060 -940 {lab=cd}
 N 1840 -570 1880 -570 {lab=cs}
@@ -120,6 +118,8 @@ N 960 -1680 960 -1640 {lab=in_n}
 N 960 -1640 960 -1560 {lab=in_n}
 N 2330 -770 2390 -770 {lab=cd}
 N 2390 -770 2460 -770 {lab=cd}
+N 1000 -1180 1340 -1180 {lab=vdd}
+N 1040 -1080 1300 -1080 {lab=i_ref}
 C {symbols/pfet_03v3.sym} 1320 -1080 0 0 {name=MP_TAIL
 L=2u
 W=15u
@@ -176,7 +176,7 @@ sa=0 sb=0 sd=0
 model=pfet_03v3
 spiceprefix=X
 }
-C {symbols/pfet_03v3.sym} 690 -1080 0 1 {name=MP_MIRROR
+C {symbols/pfet_03v3.sym} 1020 -1080 0 1 {name=MP_MIRROR
 L=2u
 W=15u
 nf=3
@@ -275,8 +275,8 @@ C {vsource.sym} 1310 -1530 0 0 {name=V2 value=0 savecurrent=false}
 C {gnd.sym} 1310 -1460 0 0 {name=l1 lab=GND}
 C {lab_pin.sym} 1220 -1600 3 1 {name=p2 sig_type=std_logic lab=vdd}
 C {lab_pin.sym} 1220 -1460 1 1 {name=p4 sig_type=std_logic lab=vss}
-C {lab_pin.sym} 1330 -1210 3 1 {name=p5 sig_type=std_logic lab=vdd}
-C {lab_pin.sym} 1390 -290 1 1 {name=p6 sig_type=std_logic lab=vss}
+C {lab_pin.sym} 1330 -1210 0 1 {name=p5 sig_type=std_logic lab=vdd}
+C {lab_pin.sym} 1390 -290 2 1 {name=p6 sig_type=std_logic lab=vss}
 C {lab_pin.sym} 2520 -770 0 1 {name=p7 sig_type=std_logic lab=vss}
 C {lab_pin.sym} 1000 -740 2 1 {name=p9 sig_type=std_logic lab=in_n
 }
@@ -374,16 +374,16 @@ node="[format %.4g [expr [ngspice::get_node \{@m.xmp_tail.m0[gm]\}] / [ngspice::
 descr="gm/ID="}
 C {devices/ngspice_get_value.sym} 1270 -1040 0 0 {name=r35 node=i(@m.xmp_tail.m0[id])
 descr="id="}
-C {devices/ngspice_get_expr.sym} 510 -1140 0 0 {name=r47 
+C {devices/ngspice_get_expr.sym} 840 -1140 0 0 {name=r47 
 node="[format %.4g [expr [ngspice::get_node \{@m.xmp_mirror.m0[gm]\}] / [ngspice::get_node \{i(@m.xmp_mirror.m0[id])\}]]]"
 descr="gm/ID="}
-C {devices/ngspice_get_value.sym} 510 -1110 0 0 {name=r48 node=v(@m.xmp_mirror.m0[vdsat])
+C {devices/ngspice_get_value.sym} 840 -1110 0 0 {name=r48 node=v(@m.xmp_mirror.m0[vdsat])
 descr="vdsat="}
-C {devices/ngspice_get_value.sym} 510 -1080 0 0 {name=r49 node=v(@m.xmp_mirror.m0[vds])
+C {devices/ngspice_get_value.sym} 840 -1080 0 0 {name=r49 node=v(@m.xmp_mirror.m0[vds])
 descr="vds="}
-C {devices/ngspice_get_value.sym} 570 -1140 0 0 {name=r50 node=i(@m.xmp_mirror.m0[id])
+C {devices/ngspice_get_value.sym} 900 -1140 0 0 {name=r50 node=i(@m.xmp_mirror.m0[id])
 descr="id="}
-C {devices/ngspice_get_value.sym} 570 -1110 0 0 {name=r51 node=@m.xmp_mirror.m0[gm]
+C {devices/ngspice_get_value.sym} 900 -1110 0 0 {name=r51 node=@m.xmp_mirror.m0[gm]
 descr="gm="}
 C {devices/code_shown.sym} -410 -1390 0 0 {name=COMMANDS1 only_toplevel=false
 value="
@@ -512,7 +512,7 @@ value="
 .include $::180MCU_MODELS/design.ngspice
 .lib $::180MCU_MODELS/sm141064.ngspice typical
 "}
-C {launcher.sym} 730 -700 0 0 {name=h1
+C {launcher.sym} 540 -700 0 0 {name=h1
 descr="Annotate OP"
 tclcommand= "set show_hidden_texts 1; xschem annotate_op"}
 C {devices/ngspice_get_value.sym} 1210 -1000 0 0 {name=r33 node=v(@m.xmp_tail.m0[vdsat])
@@ -540,11 +540,11 @@ C {lab_pin.sym} 1390 -1600 3 1 {name=p25 sig_type=std_logic lab=i_ref}
 C {ipin.sym} 690 -1490 0 0 {name=p28 lab=i_ref}
 C {lab_pin.sym} 750 -1490 0 1 {name=p29 sig_type=std_logic lab=i_ref
 }
-C {lab_pin.sym} 670 -940 1 1 {name=p30 sig_type=std_logic lab=i_ref
+C {lab_pin.sym} 1000 -940 1 1 {name=p30 sig_type=std_logic lab=i_ref
 }
-C {opin.sym} 2580 -630 0 0 {name=p11 lab=out}
+C {opin.sym} 2780 -630 0 0 {name=p11 lab=out}
 C {lab_pin.sym} 1700 -570 2 1 {name=p23 sig_type=std_logic lab=cs}
-C {lab_pin.sym} 2150 -770 2 1 {name=p24 sig_type=std_logic lab=cd}
+C {lab_pin.sym} 2220 -770 3 1 {name=p24 sig_type=std_logic lab=cd}
 C {capa.sym} 2780 -490 0 0 {name=C2
 m=1
 value=1p

@@ -89,22 +89,20 @@ N 1200 -500 1200 -490 {lab=Clk}
 N 1110 -500 1120 -500 {lab=VDD}
 N 1110 -530 1110 -500 {lab=VDD}
 N 1110 -530 1120 -530 {lab=VDD}
-N 510 -300 520 -300 {lab=Vp}
-N 510 -300 510 -270 {lab=Vp}
-N 510 -270 520 -270 {lab=Vp}
-N 740 -300 750 -300 {lab=Vq}
-N 750 -300 750 -270 {lab=Vq}
-N 740 -270 750 -270 {lab=Vq}
-N 520 -160 530 -160 {lab=#net1}
-N 530 -160 530 -130 {lab=#net1}
-N 730 -160 740 -160 {lab=#net1}
-N 730 -160 730 -130 {lab=#net1}
+N 510 -300 520 -300 {lab=VSS}
+N 740 -300 750 -300 {lab=VSS}
+N 520 -160 530 -160 {lab=VSS}
+N 730 -160 740 -160 {lab=VSS}
 N 630 -50 640 -50 {lab=VSS}
 N 640 -50 640 -20 {lab=VSS}
 N 630 -20 640 -20 {lab=VSS}
 N 90 -500 100 -500 {lab=Clk}
 N 80 -500 90 -500 {lab=Clk}
 N 80 -500 80 -490 {lab=Clk}
+N 640 -160 730 -160 {lab=VSS}
+N 530 -160 640 -160 {lab=VSS}
+N 750 -300 810 -300 {lab=VSS}
+N 440 -300 510 -300 {lab=VSS}
 C {symbols/pfet_03v3.sym} 120 -500 0 0 {name=M1
 L=0.28u
 W=0.40u
@@ -282,3 +280,6 @@ C {code_shown.sym} 920 -140 0 0 {name=NGSPICE only_toplevel=true value=
 .probe v(Vp) v(Vq)"
 
 spice_ignore=true}
+C {lab_pin.sym} 440 -300 0 0 {name=p19 sig_type=std_logic lab=VSS}
+C {lab_pin.sym} 810 -300 0 1 {name=p20 sig_type=std_logic lab=VSS}
+C {lab_pin.sym} 640 -160 3 1 {name=p22 sig_type=std_logic lab=VSS}

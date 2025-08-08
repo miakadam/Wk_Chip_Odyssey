@@ -1,0 +1,38 @@
+v {xschem version=3.4.7 file_version=1.2}
+G {}
+K {type=subcircuit
+format="@name @pinlist @symname"
+template="name=x1"
+}
+V {}
+S {}
+E {}
+L 4 70 -130 70 -30 {}
+L 4 70 -130 190 -80 {}
+L 4 70 -30 190 -80 {}
+L 7 90 -140 90 -120 {}
+L 7 170 -70 190 -70 {}
+L 7 170 -90 190 -90 {}
+L 7 50 -70 70 -70 {}
+L 7 50 -110 70 -110 {}
+L 7 50 -90 70 -90 {}
+L 7 90 -40 90 -20 {}
+L 7 50 -50 70 -50 {}
+B 5 87.5 -142.5 92.5 -137.5 {name=VDD dir=inout}
+B 5 187.5 -72.5 192.5 -67.5 {name=Vout2 dir=inout}
+B 5 187.5 -92.5 192.5 -87.5 {name=Vout1 dir=inout}
+B 5 47.5 -72.5 52.5 -67.5 {name=Vin2 dir=inout}
+B 5 47.5 -112.5 52.5 -107.5 {name=Vin1 dir=inout}
+B 5 47.5 -92.5 52.5 -87.5 {name=CLK dir=inout}
+B 5 87.5 -22.5 92.5 -17.5 {name=VSS dir=inout}
+B 5 47.5 -52.5 52.5 -47.5 {name=Vbias dir=inout}
+T {@symname} 75 -86 0 0 0.3 0.3 {}
+T {@name} 115 -122 0 0 0.2 0.2 {}
+T {VDD} 96 -145 3 1 0.2 0.2 {}
+T {Vout2} 185 -64 0 1 0.2 0.2 {}
+T {Vout1} 185 -104 0 1 0.2 0.2 {}
+T {Vin2} 45 -76 2 1 0.2 0.2 {}
+T {Vin1} 45 -116 2 1 0.2 0.2 {}
+T {CLK} 45 -96 2 1 0.2 0.2 {}
+T {VSS} 104 -15 1 1 0.2 0.2 {}
+T {Vbias} 35 -56 2 1 0.2 0.2 {}
