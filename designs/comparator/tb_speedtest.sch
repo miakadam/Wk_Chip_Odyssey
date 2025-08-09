@@ -12,8 +12,8 @@ ypos2=2
 divy=5
 subdivy=1
 unity=1
-x1=0
-x2=250e-09
+x1=-2.9170412e-09
+x2=1.9924843e-07
 divx=5
 subdivx=1
 xlabmag=1.0
@@ -27,7 +27,8 @@ dataset=-1
 unitx=1
 logx=0
 logy=0
-autoload=1}
+autoload=1
+hilight_wave=-1}
 T {Change Output Capacitance for Finding Speed of Comparator
 Input Capacitance from SAR Logic: ~5p
 Capacitance from PADframe and package: ~5p
@@ -83,6 +84,9 @@ N 450 -570 510 -570 {lab=#net1}
 N 160 -420 210 -420 {lab=#net2}
 N 160 -280 210 -280 {lab=#net3}
 N 160 -170 210 -170 {lab=#net4}
+N 1540 -260 1540 -220 {lab=GND}
+N 1540 -380 1540 -340 {lab=VDD_3V3}
+N 1460 -300 1490 -300 {lab=VOUT1}
 C {devices/code_shown.sym} 130 -870 0 0 {name=MODELS only_toplevel=true
 format="tcleval( @value )"
 value="
@@ -156,7 +160,6 @@ C {lab_pin.sym} 1380 -280 1 1 {name=p18 sig_type=std_logic lab=VOUT2}
 C {lab_pin.sym} 1750 -300 0 1 {name=p19 sig_type=std_logic lab=Comp_Out}
 C {lab_pin.sym} 1520 -400 0 0 {name=p22 sig_type=std_logic lab=VDD_3V3}
 C {gnd.sym} 1540 -210 3 0 {name=l11 lab=GND}
-C {inv_chain.sym} 1370 -190 0 0 {name=x3}
 C {vsource.sym} 160 -140 0 0 {name=V6 value="PULSE(0 3.3 0.5n 100p 100p 100.1n 200n 10)" savecurrent=false}
 C {lab_pin.sym} 270 -170 0 1 {name=p20 sig_type=std_logic lab=CLK}
 C {gnd.sym} 160 -110 0 0 {name=l14 lab=GND}
@@ -193,3 +196,4 @@ value=50
 footprint=1206
 device=resistor
 m=1}
+C {/foss/designs/libs/digital_cells/gf180mcu_osu_sc_gp9t3v3__buf_2.sym} 1470 -210 0 0 {name=x3}
