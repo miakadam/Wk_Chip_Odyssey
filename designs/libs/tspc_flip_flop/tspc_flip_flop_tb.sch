@@ -4,6 +4,31 @@ K {}
 V {}
 S {}
 E {}
+B 2 1130 -640 1930 -240 {flags=graph
+ypos1=0
+ypos2=2
+divy=5
+subdivy=1
+unity=1
+x1=0
+x2=1e-07
+divx=5
+subdivx=1
+xlabmag=1.0
+ylabmag=1.0
+dataset=-1
+unitx=1
+logx=0
+logy=0
+color="4 5 6 4"
+node="clk
+clk1
+reset
+q"
+digital=1
+y1=0
+y2=2.5
+autoload=1}
 N 80 -720 80 -690 {lab=VDD}
 N 80 -630 80 -600 {lab=GND}
 N 170 -390 170 -360 {lab=clk}
@@ -21,7 +46,6 @@ N 420 -610 420 -590 {lab=clk}
 N 60 -390 60 -360 {lab=clk1}
 N 60 -300 60 -270 {lab=GND}
 C {title.sym} 170 -50 0 0 {name=l1 author="Kevin Oviedo"}
-C {libs/tspc_flip_flop/tspc_flip_flop.sym} 470 -540 0 0 {name=x1}
 C {devices/code_shown.sym} 600 -190 0 0 {name=MODELS only_toplevel=true
 format="tcleval( @value )"
 value="
@@ -69,7 +93,7 @@ plot vin2
 plot vout
 
 setplot op1
-write inverter_tb.raw
+write tspc_flip_flop_tb.raw
 .endc
 "}
 C {vsource.sym} 80 -660 0 0 {name=V1 value=3.3 savecurrent=false}
@@ -91,3 +115,13 @@ C {devices/vsource.sym} 60 -330 0 0 {name=CLK1 value=3.3 savecurrent=false}
 C {devices/gnd.sym} 60 -270 0 0 {name=l3 lab=GND}
 C {lab_pin.sym} 60 -390 0 0 {name=p2 sig_type=std_logic lab=clk1}
 C {lab_pin.sym} 410 -630 0 0 {name=p3 sig_type=std_logic lab=clk1}
+C {tspc_flip_flop.sym} 470 -540 0 0 {name=x1}
+C {devices/launcher.sym} 350 -940 0 0 {name=h3
+descr="save, netlist & simulate"
+tclcommand="xschem save; xschem netlist; xschem simulate"}
+C {launcher.sym} 350 -895 0 0 {name=h5 
+descr="load ngspice waves" 
+tclcommand="
+xschem raw_read $netlist_dir/tspc_flip_flop_tb.raw tran; xschem redraw
+"
+}

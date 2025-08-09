@@ -4,7 +4,7 @@ K {}
 V {}
 S {}
 E {}
-B 2 1240 -560 2040 -160 {flags=graph
+B 2 1220 -510 2020 -110 {flags=graph
 ypos1=0
 ypos2=2
 divy=5
@@ -44,7 +44,7 @@ value=50
 footprint=1206
 device=resistor
 m=1}
-C {lab_pin.sym} 490 -150 0 0 {name=p1 sig_type=std_logic lab=CLK}
+C {lab_pin.sym} 400 -170 0 0 {name=p1 sig_type=std_logic lab=CLK}
 C {vsource.sym} 40 -210 0 0 {name=V1 value="PWL(0n 0 15n 0 16n 3.3 39n 3.3 40n 0 60n 0)" savecurrent=false}
 C {lab_pin.sym} 150 -240 0 1 {name=p2 sig_type=std_logic lab=D}
 C {gnd.sym} 40 -180 0 0 {name=l1 lab=GND}
@@ -53,7 +53,7 @@ value=50
 footprint=1206
 device=resistor
 m=1}
-C {lab_pin.sym} 490 -190 0 0 {name=p3 sig_type=std_logic lab=D}
+C {lab_pin.sym} 400 -210 0 0 {name=p3 sig_type=std_logic lab=D}
 C {vsource.sym} 40 -350 0 0 {name=V3 value=3.3 savecurrent=false}
 C {lab_pin.sym} 150 -380 0 1 {name=p10 sig_type=std_logic lab=VDD_3V3}
 C {gnd.sym} 40 -320 0 0 {name=l4 lab=GND}
@@ -78,30 +78,39 @@ value=50
 footprint=1206
 device=resistor
 m=1}
-C {devices/code_shown.sym} 560 -600 0 0 {name=MODELS only_toplevel=true
+C {devices/code_shown.sym} 550 -530 0 0 {name=MODELS only_toplevel=true
 format="tcleval( @value )"
 value="
 .include $::180MCU_MODELS/design.ngspice
 .lib $::180MCU_MODELS/sm141064.ngspice typical
 "}
-C {code_shown.sym} 560 -490 0 0 {name=NGSPICE only_toplevel=true value=
+C {code_shown.sym} 550 -420 0 0 {name=NGSPICE only_toplevel=true value=
 ".save all
 .control
 tran 100p 100n
 write tb_ffrs.raw
 quit
 .endc"}
-C {devices/launcher.sym} 930 -450 0 0 {name=h3
+C {devices/launcher.sym} 920 -420 0 0 {name=h3
 descr="save, netlist & simulate"
 tclcommand="xschem save; xschem netlist; xschem simulate"}
-C {launcher.sym} 930 -405 0 0 {name=h5 
+C {launcher.sym} 920 -375 0 0 {name=h5 
 descr="load ngspice waves" 
 tclcommand="
 xschem raw_read $netlist_dir/tb_ffrs.raw tran; xschem redraw
 "
 }
-C {lab_pin.sym} 550 -230 3 1 {name=p8 sig_type=std_logic lab=VDD_3V3}
-C {gnd.sym} 550 -110 0 0 {name=l5 lab=GND}
-C {lab_pin.sym} 610 -190 0 1 {name=p9 sig_type=std_logic lab=Q}
-C {lab_pin.sym} 610 -150 0 1 {name=p11 sig_type=std_logic lab=Qnot}
-C {gf180mcu_osu_sc_gp9t3v3__dff_1.sym} 450 -70 0 0 {name=x1}
+C {lab_pin.sym} 460 -250 3 1 {name=p8 sig_type=std_logic lab=VDD_3V3}
+C {gnd.sym} 460 -130 0 0 {name=l5 lab=GND}
+C {lab_pin.sym} 520 -210 0 1 {name=p9 sig_type=std_logic lab=Q}
+C {lab_pin.sym} 520 -170 0 1 {name=p11 sig_type=std_logic lab=Qnot}
+C {gf180mcu_osu_sc_gp9t3v3__dff_1.sym} 360 -90 0 0 {name=x1
+spice_ignore=true}
+C {/foss/designs/libs/tspc_flip_flop/tspc_flip_flop.sym} 900 -110 0 0 {name=x2}
+C {lab_pin.sym} 940 -250 3 1 {name=p6 sig_type=std_logic lab=VDD_3V3}
+C {gnd.sym} 940 -90 0 0 {name=l6 lab=GND}
+C {lab_pin.sym} 880 -200 0 0 {name=p7 sig_type=std_logic lab=D}
+C {lab_pin.sym} 1000 -200 0 1 {name=p12 sig_type=std_logic lab=Q}
+C {lab_pin.sym} 880 -180 0 0 {name=p13 sig_type=std_logic lab=CLK}
+C {lab_pin.sym} 880 -140 0 0 {name=p14 sig_type=std_logic lab=RESET}
+C {lab_pin.sym} 880 -160 0 0 {name=p15 sig_type=std_logic lab=SET}
