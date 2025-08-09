@@ -4,14 +4,13 @@ K {}
 V {}
 S {}
 E {}
-B 2 1220 -510 2020 -110 {flags=graph
-ypos1=0
-ypos2=2
-divy=5
+B 2 1180 -670 1980 -270 {flags=graph
+ypos1=0.69751249
+ypos2=2.6975126
 subdivy=1
 unity=1
-x1=0
-x2=1e-07
+x1=-1.006345e-08
+x2=1.1733842e-07
 divx=5
 subdivx=1
 xlabmag=1.0
@@ -20,22 +19,28 @@ dataset=-1
 unitx=1
 logx=0
 logy=0
-color="4 5 6 8 10 12"
+color="4 5 6 8 10 12 21 20 5"
 node="CLK
 D
 SET
 RESET
 Q
+x2.b1
+x2.b2
+x2.b3
 Qnot"
 digital=1
 y1=0
 y2=2.5
-autoload=1}
+autoload=1
+divy=5}
 N 40 -90 90 -90 {lab=#net1}
 N 40 -240 90 -240 {lab=#net2}
 N 40 -380 90 -380 {lab=#net3}
 N 40 -540 90 -540 {lab=#net4}
 N 300 -540 350 -540 {lab=#net5}
+N 560 -110 570 -110 {lab=Qnot}
+N 540 -100 560 -110 {lab=Qnot}
 C {vsource.sym} 40 -60 0 0 {name=V6 value="PULSE(0 3.3 0 1n 1n 5n 10n)" savecurrent=false}
 C {lab_pin.sym} 150 -90 0 1 {name=p20 sig_type=std_logic lab=CLK}
 C {gnd.sym} 40 -30 0 0 {name=l14 lab=GND}
@@ -62,7 +67,7 @@ value=50
 footprint=1206
 device=resistor
 m=1}
-C {vsource.sym} 40 -510 0 0 {name=V2 value="PULSE(0 1.8 50n 1n 1n 5n 100n)" savecurrent=false}
+C {vsource.sym} 40 -510 0 0 {name=V2 value="PULSE(0 3.3 50n 1n 1n 5n 100n)" savecurrent=false}
 C {lab_pin.sym} 150 -540 0 1 {name=p4 sig_type=std_logic lab=SET}
 C {gnd.sym} 40 -480 0 0 {name=l2 lab=GND}
 C {res.sym} 120 -540 1 0 {name=R2
@@ -70,7 +75,7 @@ value=50
 footprint=1206
 device=resistor
 m=1}
-C {vsource.sym} 300 -510 0 0 {name=V4 value="PULSE(0 1.8 30n 1n 1n 5n 100n)" savecurrent=false}
+C {vsource.sym} 300 -510 0 0 {name=V4 value="PULSE(3.3 0 30n 1n 1n 5n 100n)" savecurrent=false}
 C {lab_pin.sym} 410 -540 0 1 {name=p5 sig_type=std_logic lab=RESET}
 C {gnd.sym} 300 -480 0 0 {name=l3 lab=GND}
 C {res.sym} 380 -540 1 0 {name=R5
@@ -103,10 +108,11 @@ xschem raw_read $netlist_dir/tb_ffrs.raw tran; xschem redraw
 C {lab_pin.sym} 460 -250 3 1 {name=p8 sig_type=std_logic lab=VDD_3V3}
 C {gnd.sym} 460 -130 0 0 {name=l5 lab=GND}
 C {lab_pin.sym} 520 -210 0 1 {name=p9 sig_type=std_logic lab=Q}
-C {lab_pin.sym} 520 -170 0 1 {name=p11 sig_type=std_logic lab=Qnot}
-C {gf180mcu_osu_sc_gp9t3v3__dff_1.sym} 360 -90 0 0 {name=x1
+C {lab_pin.sym} 570 -110 0 1 {name=p11 sig_type=std_logic lab=Qnot}
+C {libs/digital_cells/gf180mcu_osu_sc_gp9t3v3__dff_1.sym} 360 -90 0 0 {name=x1
 spice_ignore=true}
-C {/foss/designs/libs/tspc_flip_flop/tspc_flip_flop.sym} 900 -110 0 0 {name=x2}
+C {libs/tspc_flip_flop/tspc_flip_flop.sym} 900 -110 0 0 {name=x2
+spice_ignore=false}
 C {lab_pin.sym} 940 -250 3 1 {name=p6 sig_type=std_logic lab=VDD_3V3}
 C {gnd.sym} 940 -90 0 0 {name=l6 lab=GND}
 C {lab_pin.sym} 880 -200 0 0 {name=p7 sig_type=std_logic lab=D}
@@ -114,3 +120,4 @@ C {lab_pin.sym} 1000 -200 0 1 {name=p12 sig_type=std_logic lab=Q}
 C {lab_pin.sym} 880 -180 0 0 {name=p13 sig_type=std_logic lab=CLK}
 C {lab_pin.sym} 880 -140 0 0 {name=p14 sig_type=std_logic lab=RESET}
 C {lab_pin.sym} 880 -160 0 0 {name=p15 sig_type=std_logic lab=SET}
+C {noconn.sym} 540 -100 0 0 {name=l7}
