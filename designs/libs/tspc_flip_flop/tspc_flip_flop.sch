@@ -67,7 +67,6 @@ N 1390 -410 1390 -370 {lab=b3}
 N 1390 -470 1400 -470 {lab=vdd}
 N 1400 -500 1400 -470 {lab=vdd}
 N 1390 -500 1400 -500 {lab=vdd}
-N 1280 -470 1350 -470 {lab=reset}
 N 1280 -340 1350 -340 {lab=set}
 N 1390 -310 1390 -290 {lab=vss}
 N 1390 -540 1390 -500 {lab=vdd}
@@ -90,6 +89,22 @@ N 1630 -540 1630 -500 {lab=vdd}
 N 1630 -310 1630 -280 {lab=vss}
 N 1040 -310 1040 -290 {lab=#net4}
 N 620 -420 720 -420 {lab=b1}
+N 1170 -670 1200 -670 {lab=reset}
+N 1170 -670 1170 -570 {lab=reset}
+N 1170 -570 1200 -570 {lab=reset}
+N 1130 -620 1170 -620 {lab=reset}
+N 1240 -640 1240 -600 {lab=#net5}
+N 1240 -740 1240 -700 {lab=vdd}
+N 1240 -540 1240 -510 {lab=vss}
+N 1240 -620 1320 -620 {lab=#net5}
+N 1320 -620 1320 -470 {lab=#net5}
+N 1320 -470 1350 -470 {lab=#net5}
+N 1240 -670 1250 -670 {lab=vdd}
+N 1250 -700 1250 -670 {lab=vdd}
+N 1240 -700 1250 -700 {lab=vdd}
+N 1240 -570 1250 -570 {lab=vss}
+N 1250 -570 1250 -540 {lab=vss}
+N 1240 -540 1250 -540 {lab=vss}
 C {title.sym} 190 -60 0 0 {name=l1 author="Kevin Oviedo"}
 C {symbols/nfet_03v3.sym} 450 -340 0 0 {name=M1
 L=0.28u
@@ -311,8 +326,38 @@ C {lab_pin.sym} 660 -340 0 0 {name=p22 sig_type=std_logic lab=clk}
 C {lab_pin.sym} 970 -340 0 0 {name=p23 sig_type=std_logic lab=clk}
 C {lab_pin.sym} 970 -470 0 0 {name=p19 sig_type=std_logic lab=set}
 C {lab_pin.sym} 1280 -340 0 0 {name=p24 sig_type=std_logic lab=set}
-C {lab_pin.sym} 1280 -470 0 0 {name=p25 sig_type=std_logic lab=reset}
 C {lab_pin.sym} 400 -450 0 0 {name=p26 sig_type=std_logic lab=clk}
 C {lab_pin.sym} 620 -420 0 0 {name=p27 sig_type=std_logic lab=b1}
 C {lab_pin.sym} 890 -560 0 0 {name=p29 sig_type=std_logic lab=b2}
 C {lab_pin.sym} 1220 -410 0 0 {name=p30 sig_type=std_logic lab=b3}
+C {symbols/pfet_03v3.sym} 1220 -670 0 0 {name=M15
+L=0.28u
+W=2u
+nf=1
+m=1
+ad="'int((nf+1)/2) * W/nf * 0.18u'"
+pd="'2*int((nf+1)/2) * (W/nf + 0.18u)'"
+as="'int((nf+2)/2) * W/nf * 0.18u'"
+ps="'2*int((nf+2)/2) * (W/nf + 0.18u)'"
+nrd="'0.18u / W'" nrs="'0.18u / W'"
+sa=0 sb=0 sd=0
+model=pfet_03v3
+spiceprefix=X
+}
+C {symbols/nfet_03v3.sym} 1220 -570 0 0 {name=M16
+L=0.28u
+W=1u
+nf=1
+m=1
+ad="'int((nf+1)/2) * W/nf * 0.18u'"
+pd="'2*int((nf+1)/2) * (W/nf + 0.18u)'"
+as="'int((nf+2)/2) * W/nf * 0.18u'"
+ps="'2*int((nf+2)/2) * (W/nf + 0.18u)'"
+nrd="'0.18u / W'" nrs="'0.18u / W'"
+sa=0 sb=0 sd=0
+model=nfet_03v3
+spiceprefix=X
+}
+C {lab_pin.sym} 1130 -620 0 0 {name=p28 sig_type=std_logic lab=reset}
+C {lab_pin.sym} 1240 -740 0 0 {name=p25 sig_type=std_logic lab=vdd}
+C {lab_pin.sym} 1240 -510 0 0 {name=p31 sig_type=std_logic lab=vss}

@@ -4,14 +4,13 @@ K {}
 V {}
 S {}
 E {}
-B 2 1130 -640 1930 -240 {flags=graph
-ypos1=0
-ypos2=2
-divy=5
+B 2 1220 -810 2020 -410 {flags=graph
+ypos1=0.51094535
+ypos2=2.5109448
 subdivy=1
 unity=1
-x1=0
-x2=1e-07
+x1=-3.2142236e-09
+x2=1.2418765e-07
 divx=5
 subdivx=1
 xlabmag=1.0
@@ -20,108 +19,95 @@ dataset=-1
 unitx=1
 logx=0
 logy=0
-color="4 5 6 4"
-node="clk
-clk1
-reset
-q"
+color="4 5 6 8 10 12 21 20 5"
+node="CLK
+D
+SET
+RESET
+Q
+x2.b1
+x2.b2
+x2.b3
+Qnot"
 digital=1
 y1=0
 y2=2.5
-autoload=1}
-N 80 -720 80 -690 {lab=VDD}
-N 80 -630 80 -600 {lab=GND}
-N 170 -390 170 -360 {lab=clk}
-N 170 -300 170 -270 {lab=GND}
-N 380 -390 380 -360 {lab=reset}
-N 380 -300 380 -270 {lab=GND}
-N 510 -710 510 -680 {lab=VDD}
-N 510 -520 510 -490 {lab=GND}
-N 410 -630 450 -630 {lab=clk1}
-N 410 -610 450 -610 {lab=clk}
-N 410 -590 450 -590 {lab=clk}
-N 410 -570 450 -570 {lab=reset}
-N 570 -630 620 -630 {lab=q}
-N 420 -610 420 -590 {lab=clk}
-N 60 -390 60 -360 {lab=clk1}
-N 60 -300 60 -270 {lab=GND}
+autoload=1
+divy=5}
+N 80 -230 130 -230 {lab=#net1}
+N 80 -380 130 -380 {lab=#net2}
+N 80 -520 130 -520 {lab=#net3}
+N 80 -680 130 -680 {lab=#net4}
+N 340 -680 390 -680 {lab=#net5}
 C {title.sym} 170 -50 0 0 {name=l1 author="Kevin Oviedo"}
-C {devices/code_shown.sym} 600 -190 0 0 {name=MODELS only_toplevel=true
+C {vsource.sym} 80 -200 0 0 {name=V6 value="PULSE(0 3.3 0 1n 1n 5n 10n)" savecurrent=false}
+C {lab_pin.sym} 190 -230 0 1 {name=p20 sig_type=std_logic lab=CLK}
+C {gnd.sym} 80 -170 0 0 {name=l14 lab=GND}
+C {res.sym} 160 -230 1 0 {name=R4
+value=50
+footprint=1206
+device=resistor
+m=1}
+C {vsource.sym} 80 -350 0 0 {name=V1 value="PWL(0n 0 15n 0 16n 3.3 39n 3.3 40n 0 60n 0)" savecurrent=false}
+C {lab_pin.sym} 190 -380 0 1 {name=p2 sig_type=std_logic lab=D}
+C {gnd.sym} 80 -320 0 0 {name=l2 lab=GND}
+C {res.sym} 160 -380 1 0 {name=R1
+value=50
+footprint=1206
+device=resistor
+m=1}
+C {vsource.sym} 80 -490 0 0 {name=V3 value=3.3 savecurrent=false}
+C {lab_pin.sym} 190 -520 0 1 {name=p10 sig_type=std_logic lab=VDD_3V3}
+C {gnd.sym} 80 -460 0 0 {name=l4 lab=GND}
+C {res.sym} 160 -520 1 0 {name=R3
+value=50
+footprint=1206
+device=resistor
+m=1}
+C {vsource.sym} 80 -650 0 0 {name=V2 value="PULSE(0 3.3 50n 1n 1n 5n 100n)" savecurrent=false}
+C {lab_pin.sym} 190 -680 0 1 {name=p4 sig_type=std_logic lab=SET}
+C {gnd.sym} 80 -620 0 0 {name=l3 lab=GND}
+C {res.sym} 160 -680 1 0 {name=R2
+value=50
+footprint=1206
+device=resistor
+m=1}
+C {vsource.sym} 340 -650 0 0 {name=V4 value="PULSE(0 3.3 30n 1n 1n 5n 100n)" savecurrent=false}
+C {lab_pin.sym} 450 -680 0 1 {name=p5 sig_type=std_logic lab=RESET}
+C {gnd.sym} 340 -620 0 0 {name=l5 lab=GND}
+C {res.sym} 420 -680 1 0 {name=R5
+value=50
+footprint=1206
+device=resistor
+m=1}
+C {devices/code_shown.sym} 590 -670 0 0 {name=MODELS only_toplevel=true
 format="tcleval( @value )"
 value="
 .include $::180MCU_MODELS/design.ngspice
 .lib $::180MCU_MODELS/sm141064.ngspice typical
 "}
-C {devices/code_shown.sym} 750 -1090 0 0 {name=NGSPICE only_toplevel=true
-value="
-
+C {code_shown.sym} 590 -560 0 0 {name=NGSPICE only_toplevel=true value=
+".save all
 .control
-save all
-
-** Define input signal
-let fsig = 1k
-let tper = 1/fsig
-let tfr = 0.01*tper
-let ton = 0.5*tper-2*tfr
-
-** Define transient params
-let tstop = 2*tper
-let tstep = 0.001*tper
-
-** Set Sources
-alter @CLK[DC] = 0.0
-alter @CLK[PULSE] = [ 0 3.3 0 $&tfr $&tfr $&ton $&tper 0 ]
-
-alter @D[DC] = 0.0
-alter @D[PULSE] = [ 0 3.3 0 $&tfr $&tfr $&ton $&tper 0 ]
-
-** Simulations
-op
-tran $&tstep $&tstop
-
-** Plots
-**setplot dc1
-**let vout = v(out)
-**plot vout
-
-setplot tran1
-let vout = v(q)
-let vin1 = v(d)
-let vin2 = v(clk)
-plot vin1
-plot vin2
-plot vout
-
-setplot op1
-write tspc_flip_flop_tb.raw
-.endc
-"}
-C {vsource.sym} 80 -660 0 0 {name=V1 value=3.3 savecurrent=false}
-C {devices/gnd.sym} 80 -600 0 0 {name=l2 lab=GND}
-C {devices/vdd.sym} 80 -720 0 0 {name=l5 lab=VDD}
-C {devices/vsource.sym} 170 -330 0 0 {name=CLK value=3.3 savecurrent=false}
-C {devices/gnd.sym} 170 -270 0 0 {name=l4 lab=GND}
-C {devices/vsource.sym} 380 -330 0 0 {name=RESET value=3.3 savecurrent=false}
-C {devices/gnd.sym} 380 -270 0 0 {name=l7 lab=GND}
-C {devices/vdd.sym} 510 -710 0 0 {name=l8 lab=VDD}
-C {devices/gnd.sym} 510 -490 0 0 {name=l9 lab=GND}
-C {lab_wire.sym} 610 -630 0 0 {name=p1 sig_type=std_logic lab=q}
-C {noconn.sym} 620 -630 2 0 {name=l10}
-C {lab_pin.sym} 170 -390 0 0 {name=p4 sig_type=std_logic lab=clk}
-C {lab_pin.sym} 380 -390 0 0 {name=p6 sig_type=std_logic lab=reset}
-C {lab_pin.sym} 410 -610 0 0 {name=p8 sig_type=std_logic lab=clk}
-C {lab_pin.sym} 410 -570 0 0 {name=p10 sig_type=std_logic lab=reset}
-C {devices/vsource.sym} 60 -330 0 0 {name=CLK1 value=3.3 savecurrent=false}
-C {devices/gnd.sym} 60 -270 0 0 {name=l3 lab=GND}
-C {lab_pin.sym} 60 -390 0 0 {name=p2 sig_type=std_logic lab=clk1}
-C {lab_pin.sym} 410 -630 0 0 {name=p3 sig_type=std_logic lab=clk1}
-C {tspc_flip_flop.sym} 470 -540 0 0 {name=x1}
-C {devices/launcher.sym} 350 -940 0 0 {name=h3
+tran 100p 100n
+write tb_ffrs.raw
+quit
+.endc"}
+C {devices/launcher.sym} 960 -560 0 0 {name=h3
 descr="save, netlist & simulate"
 tclcommand="xschem save; xschem netlist; xschem simulate"}
-C {launcher.sym} 350 -895 0 0 {name=h5 
+C {launcher.sym} 960 -515 0 0 {name=h5 
 descr="load ngspice waves" 
 tclcommand="
-xschem raw_read $netlist_dir/tspc_flip_flop_tb.raw tran; xschem redraw
+xschem raw_read $netlist_dir/tb_ffrs.raw tran; xschem redraw
 "
 }
+C {libs/tspc_flip_flop/tspc_flip_flop.sym} 940 -250 0 0 {name=x2
+spice_ignore=false}
+C {lab_pin.sym} 980 -390 3 1 {name=p6 sig_type=std_logic lab=VDD_3V3}
+C {gnd.sym} 980 -230 0 0 {name=l6 lab=GND}
+C {lab_pin.sym} 920 -340 0 0 {name=p7 sig_type=std_logic lab=D}
+C {lab_pin.sym} 1040 -340 0 1 {name=p12 sig_type=std_logic lab=Q}
+C {lab_pin.sym} 920 -320 0 0 {name=p13 sig_type=std_logic lab=CLK}
+C {lab_pin.sym} 920 -280 0 0 {name=p14 sig_type=std_logic lab=RESET}
+C {lab_pin.sym} 920 -300 0 0 {name=p15 sig_type=std_logic lab=SET}

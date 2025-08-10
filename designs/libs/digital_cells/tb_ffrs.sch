@@ -9,7 +9,7 @@ ypos1=0.51094535
 ypos2=2.5109448
 subdivy=1
 unity=1
-x1=-9.5843177e-09
+x1=-9.5843179e-09
 x2=1.1781756e-07
 divx=5
 subdivx=1
@@ -71,7 +71,7 @@ value=50
 footprint=1206
 device=resistor
 m=1}
-C {vsource.sym} 300 -510 0 0 {name=V4 value="PULSE(3.3 0 30n 1n 1n 5n 100n)" savecurrent=false}
+C {vsource.sym} 300 -510 0 0 {name=V4 value="PULSE(0 3.3 30n 1n 1n 5n 100n)" savecurrent=false}
 C {lab_pin.sym} 410 -540 0 1 {name=p5 sig_type=std_logic lab=RESET}
 C {gnd.sym} 300 -480 0 0 {name=l3 lab=GND}
 C {res.sym} 380 -540 1 0 {name=R5
