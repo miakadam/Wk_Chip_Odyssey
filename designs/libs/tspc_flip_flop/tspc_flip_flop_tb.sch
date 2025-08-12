@@ -5,12 +5,12 @@ V {}
 S {}
 E {}
 B 2 1220 -810 2020 -410 {flags=graph
-ypos1=0.51094535
-ypos2=2.5109448
+ypos1=0.11094543
+ypos2=2.1109448
 subdivy=1
 unity=1
-x1=-3.2142236e-09
-x2=1.2418765e-07
+x1=-9.5843167e-09
+x2=1.1781756e-07
 divx=5
 subdivx=1
 xlabmag=1.0
@@ -19,16 +19,13 @@ dataset=-1
 unitx=1
 logx=0
 logy=0
-color="4 5 6 8 10 12 21 20 5"
+color="4 5 6 8 10 4"
 node="CLK
 D
 SET
 RESET
 Q
-x2.b1
-x2.b2
-x2.b3
-Qnot"
+QB"
 digital=1
 y1=0
 y2=2.5
@@ -104,10 +101,11 @@ xschem raw_read $netlist_dir/tb_ffrs.raw tran; xschem redraw
 }
 C {libs/tspc_flip_flop/tspc_flip_flop.sym} 940 -250 0 0 {name=x2
 spice_ignore=false}
-C {lab_pin.sym} 980 -390 3 1 {name=p6 sig_type=std_logic lab=VDD_3V3}
+C {lab_pin.sym} 980 -370 3 1 {name=p6 sig_type=std_logic lab=VDD_3V3}
 C {gnd.sym} 980 -230 0 0 {name=l6 lab=GND}
-C {lab_pin.sym} 920 -340 0 0 {name=p7 sig_type=std_logic lab=D}
-C {lab_pin.sym} 1040 -340 0 1 {name=p12 sig_type=std_logic lab=Q}
-C {lab_pin.sym} 920 -320 0 0 {name=p13 sig_type=std_logic lab=CLK}
-C {lab_pin.sym} 920 -280 0 0 {name=p14 sig_type=std_logic lab=RESET}
-C {lab_pin.sym} 920 -300 0 0 {name=p15 sig_type=std_logic lab=SET}
+C {lab_pin.sym} 920 -330 0 0 {name=p7 sig_type=std_logic lab=D}
+C {lab_pin.sym} 1030 -310 0 1 {name=p12 sig_type=std_logic lab=Q}
+C {lab_pin.sym} 920 -310 0 0 {name=p13 sig_type=std_logic lab=CLK}
+C {lab_pin.sym} 920 -270 0 0 {name=p14 sig_type=std_logic lab=RESET}
+C {lab_pin.sym} 920 -290 0 0 {name=p15 sig_type=std_logic lab=SET}
+C {lab_pin.sym} 1030 -290 0 1 {name=p1 sig_type=std_logic lab=QB}

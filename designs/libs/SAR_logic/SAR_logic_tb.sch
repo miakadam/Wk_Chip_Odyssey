@@ -4,13 +4,13 @@ K {}
 V {}
 S {}
 E {}
-B 2 950 -1100 1750 -700 {flags=graph
-ypos1=-0.013432753
-ypos2=1.9865662
+B 2 1150 -1440 1950 -1040 {flags=graph
+ypos1=-0.20601983
+ypos2=1.793979
 subdivy=1
 unity=1
-x1=-1.0994277e-08
-x2=1.1650961e-07
+x1=-9.1863922e-09
+x2=1.0515688e-07
 divx=5
 subdivx=1
 xlabmag=1.0
@@ -29,22 +29,79 @@ y1=0
 y2=2.5
 autoload=1
 divy=5}
-B 2 1000 -470 1800 -70 {flags=graph
+B 2 2210 -570 3010 -170 {flags=graph
 y1=0
 y2=2
-ypos1=0
-ypos2=2
+ypos1=-0.73285748
+ypos2=1.0721426
 divy=5
 subdivy=1
 unity=1
-x1=-1.0994277e-08
-x2=1.1650961e-07
+x1=-9.1863922e-09
+x2=1.0515688e-07
 divx=5
 subdivx=1
 xlabmag=1.0
 ylabmag=1.0
-node="D_OUT;d7,d6,d5,d4,d3,d2,d1,d0"
-color=8
+node="D_OUT;d5,d4,d3,d2,d1,d0
+DB_OUT;db5,db4,db3,db2,db1,db0"
+color="8 4"
+dataset=-1
+unitx=1
+logx=0
+logy=0
+digital=1}
+B 2 1160 -1010 1960 -610 {flags=graph
+y1=0
+y2=2
+ypos1=0.088380701
+ypos2=1.9883807
+divy=5
+subdivy=1
+unity=1
+x1=-9.1863922e-09
+x2=1.0515688e-07
+divx=5
+subdivx=1
+xlabmag=1.0
+ylabmag=1.0
+dataset=-1
+unitx=1
+logx=0
+logy=0
+digital=1
+color="4 4 4 4 4 4 4 4"
+node="x1.ff_init_q
+x1.ff_5_q
+x1.ff_4_q
+x1.ff_3_q
+x1.ff_2_q
+x1.ff_1_q
+x1.ff_0_q
+eoc"
+rainbow=0}
+B 2 1150 -550 1950 -150 {flags=graph
+y1=0
+y2=2
+ypos1=0.1
+ypos2=2.1
+divy=5
+subdivy=1
+unity=1
+x1=-9.1863922e-09
+x2=1.0515688e-07
+divx=5
+subdivx=1
+xlabmag=1.0
+ylabmag=1.0
+node="d5
+d4
+d3
+d2
+d1
+d0
+dend"
+color="4 4 4 4 4 4 4"
 dataset=-1
 unitx=1
 logx=0
@@ -78,7 +135,7 @@ value=50
 footprint=1206
 device=resistor
 m=1}
-C {vsource.sym} 160 -650 0 0 {name=V4 value="PULSE(0 3.3 5n 1n 1n 15n 100n)" savecurrent=false}
+C {vsource.sym} 160 -650 0 0 {name=V4 value="PULSE(0 3.3 10n 1n 1n 5n 60n)" savecurrent=false}
 C {lab_pin.sym} 270 -680 0 1 {name=p5 sig_type=std_logic lab=RESET}
 C {gnd.sym} 160 -620 0 0 {name=l5 lab=GND}
 C {res.sym} 240 -680 1 0 {name=R5
@@ -95,7 +152,7 @@ value="
 C {code_shown.sym} 510 -590 0 0 {name=NGSPICE only_toplevel=true value=
 ".save all
 .control
-tran 100p 200n
+tran 100p 250n
 write tb_ffrs.raw
 quit
 .endc"}
@@ -111,8 +168,9 @@ xschem raw_read $netlist_dir/tb_ffrs.raw tran; xschem redraw
 C {libs/SAR_logic/SAR_logic.sym} 560 -180 0 0 {name=x1}
 C {lab_pin.sym} 690 -280 3 1 {name=p1 sig_type=std_logic lab=VDD_3V3}
 C {gnd.sym} 690 -160 0 0 {name=l1 lab=GND}
-C {lab_pin.sym} 840 -230 0 1 {name=p3 sig_type=std_logic lab=D[7..0]}
-C {lab_pin.sym} 840 -210 0 1 {name=p8 sig_type=std_logic lab=EOC}
-C {lab_pin.sym} 540 -220 0 0 {name=p9 sig_type=std_logic lab=CLK}
-C {lab_pin.sym} 540 -200 0 0 {name=p11 sig_type=std_logic lab=RESET}
-C {lab_pin.sym} 540 -240 2 1 {name=p4 sig_type=std_logic lab=COMP_IN}
+C {lab_pin.sym} 840 -240 0 1 {name=p3 sig_type=std_logic lab=D[5..0]}
+C {lab_pin.sym} 840 -200 0 1 {name=p8 sig_type=std_logic lab=EOC}
+C {lab_pin.sym} 540 -240 0 0 {name=p9 sig_type=std_logic lab=CLK}
+C {lab_pin.sym} 540 -220 0 0 {name=p11 sig_type=std_logic lab=RESET}
+C {lab_pin.sym} 540 -200 2 1 {name=p4 sig_type=std_logic lab=COMP_IN}
+C {lab_pin.sym} 840 -220 0 1 {name=p6 sig_type=std_logic lab=DB[5..0]}
