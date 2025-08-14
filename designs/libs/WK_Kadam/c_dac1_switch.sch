@@ -6,50 +6,46 @@ S {}
 E {}
 T {CDAC Switch} 515 185 0 0 0.8 0.8 {}
 N -222.5 -90 -160 -90 {lab=avss}
-N 220 -30 300 -30 {lab=avdd}
 N 40 -100 40 -60 {lab=sw_vout}
 N 40 -100 300 -100 {lab=sw_vout}
 N 300 -100 300 -60 {lab=sw_vout}
 N 40 0 40 40 {lab=sw_Vref}
-N 40 40 300 40 {lab=sw_Vref}
+N 170 40 300 40 {lab=sw_Vref}
 N 300 0 300 40 {lab=sw_Vref}
 N 560 -100 560 -60 {lab=sw_vout}
 N 560 -100 820 -100 {lab=sw_vout}
 N 820 -100 820 -60 {lab=sw_vout}
 N 560 0 560 40 {lab=avss}
-N 560 40 820 40 {lab=avss}
+N 690 40 820 40 {lab=avss}
 N 820 0 820 40 {lab=avss}
 N -120 -30 0 -30 {lab=sw_bit}
 N -120 -220 -120 -30 {lab=sw_bit}
 N -120 -220 930 -220 {lab=sw_bit}
 N 930 -220 930 -30 {lab=sw_bit}
 N 860 -30 930 -30 {lab=sw_bit}
-N 340 -30 520 -30 {lab=#net1}
+N 435 -30 520 -30 {lab=#net1}
 N -180 -220 -120 -220 {lab=sw_bit}
-N -120 270 -10 270 {lab=sw_bit}
-N 225 270 435 270 {lab=#net1}
+N -120 270 -0 270 {lab=sw_bit}
 N 690 40 690 140 {lab=avss}
 N -227.5 0 -160 0 {lab=avdd}
-N 200 -30 220 -30 {lab=avdd}
-N 740 -30 820 -30 {lab=avdd}
-N 300 -100 560 -100 {lab=sw_vout}
+N 200 -30 300 -30 {lab=avdd}
+N 430 -100 560 -100 {lab=sw_vout}
 N 430 -320 430 -100 {lab=sw_vout}
 N 430 -320 490 -320 {lab=sw_vout}
 N 170 40 170 110 {lab=sw_Vref}
 N -190 110 170 110 {lab=sw_Vref}
-N 560 -30 670 -30 {lab=avss}
-N 435 150 435 270 {lab=#net1}
-N -120 150 -120 270 {lab=sw_bit}
-N 110 130 110 180 {lab=avdd}
-N 110 380 110 440 {lab=#net2}
-N 40 -30 140 -30 {lab=avss}
-N 140 -30 150 -30 {lab=avss}
-N 670 -30 680 -30 {lab=avss}
-N 150 -30 160 -30 {lab=avss}
-N 730 -30 740 -30 {lab=avdd}
-N 435 -30 435 150 {lab=#net1}
-N -120 -30 -120 150 {lab=sw_bit}
-N -10 270 10 270 {lab=sw_bit}
+N 560 -30 680 -30 {lab=avss}
+N 100 130 100 180 {lab=#net2}
+N 100 380 100 440 {lab=avss}
+N 40 -30 160 -30 {lab=avss}
+N 730 -30 820 -30 {lab=avdd}
+N 435 -30 435 270 {lab=#net1}
+N -120 -30 -120 270 {lab=sw_bit}
+N 220 270 435 270 {lab=#net1}
+N 560 40 690 40 {lab=avss}
+N 300 -100 430 -100 {lab=sw_vout}
+N 40 40 170 40 {lab=sw_Vref}
+N 340 -30 435 -30 {lab=#net1}
 C {symbols/nfet_03v3.sym} 20 -30 0 0 {name=M1
 L=0.28u
 W=2u
@@ -102,8 +98,8 @@ C {iopin.sym} -190 110 2 0 {name=p13 lab=sw_Vref}
 C {lab_wire.sym} 140 -30 0 0 {name=p7 sig_type=std_logic lab=avss}
 C {lab_wire.sym} -180 -90 0 0 {name=p8 sig_type=std_logic lab=avss}
 C {lab_wire.sym} -180 0 0 0 {name=p10 sig_type=std_logic lab=avdd}
-C {lab_wire.sym} 110 160 0 0 {name=p14 sig_type=std_logic lab=avdd}
-C {lab_wire.sym} 105 425 0 0 {name=p15 sig_type=std_logic lab=avss}
+C {lab_wire.sym} 100 160 0 0 {name=p14 sig_type=std_logic lab=avdd}
+C {lab_wire.sym} 100 430 0 0 {name=p15 sig_type=std_logic lab=avss}
 C {lab_wire.sym} 660 -30 0 0 {name=p4 sig_type=std_logic lab=avss}
 C {symbols/pfet_03v3.sym} 320 -30 0 1 {name=M2
 L=0.28u
@@ -120,8 +116,4 @@ model=pfet_03v3
 spiceprefix=X
 }
 C {lab_wire.sym} 750 -30 0 0 {name=p6 sig_type=std_logic lab=avdd}
-<<<<<<< HEAD
-C {Wk_Chip_Odyssey/designs/libs/WK_Kadam/inv_test.sym} 310 390 0 0 {name=x1}
-=======
-C {libs/WK_Kadam/inv_test.sym} 305 390 0 0 {name=x1}
->>>>>>> 90c428d1b0e41c296047a26fb8d93b7305d701cf
+C {Wk_Chip_Odyssey/designs/libs/WK_Kadam/inv_test.sym} 300 390 0 0 {name=x1}

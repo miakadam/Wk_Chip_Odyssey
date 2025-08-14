@@ -218,7 +218,7 @@ save all
 op
 show all
 .probe v(Vdac)
-alter @Vbit4[DC] = 0
+alter @Vbit3[DC] = 0
 dc Vref 0.8 1.2 0.1
 setplot dc1
 let Vout = v(Vdac)
@@ -228,7 +228,8 @@ setplot tran1
 let Vout = v(Vdac)
 plot Vout
 
-alter @Vbit6[DC] = 0
+alter @Vbit3[DC] = 3.3
+alter @Vbit5[DC] = 0
 dc Vref 0.8 1.2 0.1
 setplot dc2
 let Vout = v(Vdac)
