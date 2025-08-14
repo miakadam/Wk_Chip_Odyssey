@@ -155,9 +155,9 @@ C {iopin.sym} -210 370 1 0 {name=p19 lab=bit4}
 C {iopin.sym} 60 360 1 0 {name=p20 lab=bit3}
 C {iopin.sym} 300 370 1 0 {name=p21 lab=bit2}
 C {iopin.sym} 580 370 1 0 {name=p22 lab=bit1}
-C {c_dac1_switch.sym} -680 230 0 0 {name=x1}
-C {c_dac1_switch.sym} -390 230 0 0 {name=x2}
-C {c_dac1_switch.sym} -70 230 0 0 {name=x3}
-C {c_dac1_switch.sym} 180 230 0 0 {name=x4}
-C {c_dac1_switch.sym} 420 220 0 0 {name=x5}
-C {c_dac1_switch.sym} 690 220 0 0 {name=x6}
+C {libs/WK_Kadam/c_dac1_switch.sym} -680 230 0 0 {name=x1}
+C {libs/WK_Kadam/c_dac1_switch.sym} -390 230 0 0 {name=x2}
+C {libs/WK_Kadam/c_dac1_switch.sym} -70 230 0 0 {name=x3}
+C {libs/WK_Kadam/c_dac1_switch.sym} 180 230 0 0 {name=x4}
+C {libs/WK_Kadam/c_dac1_switch.sym} 420 220 0 0 {name=x5}
+C {libs/WK_Kadam/c_dac1_switch.sym} 690 220 0 0 {name=x6}

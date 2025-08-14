@@ -1,0 +1,67 @@
+magic
+tech gf180mcuD
+magscale 1 5
+timestamp 1755072331
+<< checkpaint >>
+rect -1030 1190 2120 1220
+rect -1030 1100 2744 1190
+rect -1030 1070 4168 1100
+rect -1030 1040 5096 1070
+rect -1030 1010 7544 1040
+rect -1030 920 9992 1010
+rect -1030 -1030 10240 920
+rect -782 -1060 10240 -1030
+rect -534 -1090 10240 -1060
+rect 90 -1120 10240 -1090
+rect 714 -1150 10240 -1120
+rect 962 -1180 10240 -1150
+rect 1210 -1210 10240 -1180
+rect 2138 -1240 10240 -1210
+rect 3066 -1270 10240 -1240
+rect 5514 -1300 10240 -1270
+rect 7962 -1330 10240 -1300
+use pfet_03v3_H5R3BY  XM1
+timestamp 0
+transform 1 0 109 0 1 95
+box -139 -125 139 125
+use pfet_03v3_H5R3BY  XM2
+timestamp 0
+transform 1 0 357 0 1 65
+box -139 -125 139 125
+use pfet_03v3_V5CHCW  XM3
+timestamp 0
+transform 1 0 793 0 1 65
+box -327 -155 327 155
+use pfet_03v3_V5CHCW  XM4
+timestamp 0
+transform 1 0 1417 0 1 35
+box -327 -155 327 155
+use pfet_03v3_H5R3BY  XM5
+timestamp 0
+transform 1 0 1853 0 1 -25
+box -139 -125 139 125
+use pfet_03v3_H5R3BY  XM6
+timestamp 0
+transform 1 0 2101 0 1 -55
+box -139 -125 139 125
+use nfet_03v3_KVLVYL  XM7
+timestamp 0
+transform 1 0 2689 0 1 -55
+box -479 -155 479 155
+use nfet_03v3_KVLVYL  XM8
+timestamp 0
+transform 1 0 3617 0 1 -85
+box -479 -155 479 155
+use nfet_03v3_R9NJ95  XM9
+timestamp 0
+transform 1 0 5305 0 1 -115
+box -1239 -155 1239 155
+use nfet_03v3_R9NJ95  XM10
+timestamp 0
+transform 1 0 7753 0 1 -145
+box -1239 -155 1239 155
+use nfet_03v3_Z8672T  XM11
+timestamp 0
+transform 1 0 9101 0 1 -205
+box -139 -125 139 125
+<< end >>

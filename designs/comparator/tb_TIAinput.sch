@@ -11,8 +11,8 @@ ypos2=2
 divy=10
 subdivy=1
 unity=1
-x1=2.3132461e-06
-x2=6.3397781e-06
+x1=0
+x2=2e-05
 subdivx=1
 xlabmag=1.0
 ylabmag=1.0
@@ -105,7 +105,7 @@ C {lab_pin.sym} 940 -380 3 1 {name=p14 sig_type=std_logic lab=INV1}
 C {lab_pin.sym} 940 -190 1 1 {name=p15 sig_type=std_logic lab=INV2}
 C {capa.sym} 1520 -260 0 0 {name=C1
 m=1
-value=1f
+value=2p
 footprint=1206
 device="ceramic capacitor"}
 C {gnd.sym} 160 -360 0 0 {name=l2 lab=GND}

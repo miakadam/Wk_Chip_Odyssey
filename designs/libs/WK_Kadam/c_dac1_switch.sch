@@ -120,4 +120,4 @@ model=pfet_03v3
 spiceprefix=X
 }
 C {lab_wire.sym} 750 -30 0 0 {name=p6 sig_type=std_logic lab=avdd}
-C {inv_test.sym} 305 390 0 0 {name=x1}
+C {libs/WK_Kadam/inv_test.sym} 305 390 0 0 {name=x1}
