@@ -26,8 +26,7 @@ N 930 -220 930 -30 {lab=sw_bit}
 N 860 -30 930 -30 {lab=sw_bit}
 N 340 -30 520 -30 {lab=#net1}
 N -180 -220 -120 -220 {lab=sw_bit}
-N -120 270 -5 270 {lab=sw_bit}
-N -5 270 5 270 {lab=sw_bit}
+N -120 270 -10 270 {lab=sw_bit}
 N 225 270 435 270 {lab=#net1}
 N 690 40 690 140 {lab=avss}
 N -227.5 0 -160 0 {lab=avdd}
@@ -41,8 +40,8 @@ N -190 110 170 110 {lab=sw_Vref}
 N 560 -30 670 -30 {lab=avss}
 N 435 150 435 270 {lab=#net1}
 N -120 150 -120 270 {lab=sw_bit}
-N 105 130 105 180 {lab=avdd}
-N 105 380 105 435 {lab=avss}
+N 110 130 110 180 {lab=avdd}
+N 110 380 110 440 {lab=#net2}
 N 40 -30 140 -30 {lab=avss}
 N 140 -30 150 -30 {lab=avss}
 N 670 -30 680 -30 {lab=avss}
@@ -50,6 +49,7 @@ N 150 -30 160 -30 {lab=avss}
 N 730 -30 740 -30 {lab=avdd}
 N 435 -30 435 150 {lab=#net1}
 N -120 -30 -120 150 {lab=sw_bit}
+N -10 270 10 270 {lab=sw_bit}
 C {symbols/nfet_03v3.sym} 20 -30 0 0 {name=M1
 L=0.28u
 W=2u
@@ -102,7 +102,7 @@ C {iopin.sym} -190 110 2 0 {name=p13 lab=sw_Vref}
 C {lab_wire.sym} 140 -30 0 0 {name=p7 sig_type=std_logic lab=avss}
 C {lab_wire.sym} -180 -90 0 0 {name=p8 sig_type=std_logic lab=avss}
 C {lab_wire.sym} -180 0 0 0 {name=p10 sig_type=std_logic lab=avdd}
-C {lab_wire.sym} 105 160 0 0 {name=p14 sig_type=std_logic lab=avdd}
+C {lab_wire.sym} 110 160 0 0 {name=p14 sig_type=std_logic lab=avdd}
 C {lab_wire.sym} 105 425 0 0 {name=p15 sig_type=std_logic lab=avss}
 C {lab_wire.sym} 660 -30 0 0 {name=p4 sig_type=std_logic lab=avss}
 C {symbols/pfet_03v3.sym} 320 -30 0 1 {name=M2
@@ -120,4 +120,4 @@ model=pfet_03v3
 spiceprefix=X
 }
 C {lab_wire.sym} 750 -30 0 0 {name=p6 sig_type=std_logic lab=avdd}
-C {inv_test.sym} 305 390 0 0 {name=x1}
+C {Wk_Chip_Odyssey/designs/libs/WK_Kadam/inv_test.sym} 310 390 0 0 {name=x1}

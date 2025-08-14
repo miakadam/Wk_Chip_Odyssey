@@ -172,12 +172,12 @@ C {iopin.sym} 0 70 1 0 {name=p5 lab=VC8}
 C {iopin.sym} -330 70 1 0 {name=p6 lab=VC16}
 C {iopin.sym} -610 70 1 0 {name=p7 lab=VC32}
 C {iopin.sym} 1160 -130 0 0 {name=p8 lab=Vdac}
-C {WK_CO_MK/designs/libs/wk_kadam/c_dac1_switch.sym} -680 230 0 0 {name=x1}
-C {WK_CO_MK/designs/libs/wk_kadam/c_dac1_switch.sym} -390 230 0 0 {name=x2}
-C {WK_CO_MK/designs/libs/wk_kadam/c_dac1_switch.sym} -70 230 0 0 {name=x3}
-C {WK_CO_MK/designs/libs/wk_kadam/c_dac1_switch.sym} 180 230 0 0 {name=x4}
-C {WK_CO_MK/designs/libs/wk_kadam/c_dac1_switch.sym} 690 220 0 0 {name=x5}
-C {WK_CO_MK/designs/libs/wk_kadam/c_dac1_switch.sym} 420 220 0 0 {name=x6}
+C {Wk_Chip_Odyssey/designs/libs/WK_Kadam/c_dac1_switch.sym} -680 230 0 0 {name=x1}
+C {Wk_Chip_Odyssey/designs/libs/WK_Kadam/c_dac1_switch.sym} -390 230 0 0 {name=x2}
+C {Wk_Chip_Odyssey/designs/libs/WK_Kadam/c_dac1_switch.sym} -70 230 0 0 {name=x3}
+C {Wk_Chip_Odyssey/designs/libs/WK_Kadam/c_dac1_switch.sym} 180 230 0 0 {name=x4}
+C {Wk_Chip_Odyssey/designs/libs/WK_Kadam/c_dac1_switch.sym} 690 220 0 0 {name=x5}
+C {Wk_Chip_Odyssey/designs/libs/WK_Kadam/c_dac1_switch.sym} 420 220 0 0 {name=x6}
 C {iopin.sym} -770 -100 2 0 {name=p9 lab=avdd}
 C {iopin.sym} -770 -60 2 0 {name=p10 lab=avss}
 C {lab_wire.sym} -680 -100 0 0 {name=p13 sig_type=std_logic lab=avdd}
