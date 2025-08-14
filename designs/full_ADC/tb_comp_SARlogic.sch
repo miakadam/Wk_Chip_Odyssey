@@ -10,8 +10,8 @@ ypos2=2
 divy=10
 subdivy=1
 unity=1
-x1=-7.9101182e-08
-x2=3.2763426e-06
+x1=3.1580616e-08
+x2=2.7159355e-06
 subdivx=1
 xlabmag=1.0
 ylabmag=1.0
@@ -33,8 +33,8 @@ ypos1=-0.20601983
 ypos2=1.793979
 subdivy=1
 unity=1
-x1=-7.9101182e-08
-x2=3.2763426e-06
+x1=3.1580616e-08
+x2=2.7159355e-06
 divx=5
 subdivx=1
 xlabmag=1.0
@@ -54,15 +54,13 @@ y2=2.5
 autoload=1
 divy=5}
 B 2 1240 -430 2040 -30 {flags=graph
-y1=0
-y2=2
 ypos1=-0.73285748
 ypos2=1.0721426
 divy=5
 subdivy=1
 unity=1
-x1=-7.9101182e-08
-x2=3.2763426e-06
+x1=3.1580616e-08
+x2=2.7159355e-06
 divx=5
 subdivx=1
 xlabmag=1.0
@@ -74,36 +72,38 @@ dataset=-1
 unitx=1
 logx=0
 logy=0
-digital=1}
+digital=1
+y1=1
+y2=3}
 B 2 430 -1250 1230 -850 {flags=graph
-y1=0
-y2=2
-ypos1=0.088380701
-ypos2=1.9883807
+ypos1=0.1
+ypos2=2.1
+subdivy=1
 unity=1
-x1=-7.9101182e-08
-x2=3.2763426e-06
+x1=3.1580616e-08
+x2=2.7159355e-06
 divx=5
 subdivx=1
 xlabmag=1.0
 ylabmag=1.0
+node="d5
+d4
+d3
+d2
+d1
+d0
+dend"
+color="4 5 6 7 8 9 10"
 dataset=-1
 unitx=1
 logx=0
 logy=0
 digital=1
-color="4 5 6 7 8 10 4 9"
-node="x2.ff_init_q
-x2.ff_5_q
-x2.ff_4_q
-x2.ff_3_q
-x2.ff_2_q
-x2.ff_1_q
-x2.ff_0_q
-eoc"
-rainbow=0
 divy=5
-subdivy=1}
+rainbow=0
+y1=5
+y2=8
+autoload=1}
 N 40 -330 90 -330 {lab=#net1}
 N 40 -220 90 -220 {lab=#net2}
 N 600 -280 660 -280 {lab=Comp_Out}
@@ -164,7 +164,7 @@ C {gnd.sym} 480 -340 2 1 {name=l6 lab=GND}
 C {lab_pin.sym} 340 -280 0 0 {name=p1 sig_type=std_logic lab=CLK}
 C {gnd.sym} 480 -340 2 1 {name=l1 lab=GND}
 C {vsource.sym} 40 -420 0 0 {name=V2 value=
-"PWL(0n 3.3 200n 3.3 201n 0 800n 0 801n 3.3"
+"PWL(0n 1.5 200n 1.5 201n 0.5 400n 0.5 401n 1.5"
 savecurrent=false}
 C {lab_pin.sym} 40 -450 0 1 {name=p2 sig_type=std_logic lab=IN_P}
 C {gnd.sym} 40 -390 0 0 {name=l3 lab=GND}
@@ -173,23 +173,23 @@ C {lab_pin.sym} 40 -560 0 1 {name=p8 sig_type=std_logic lab=IN_N}
 C {gnd.sym} 40 -500 0 0 {name=l2 lab=GND}
 C {lab_pin.sym} 340 -300 2 1 {name=p3 sig_type=std_logic lab=IN_N}
 C {lab_pin.sym} 340 -260 0 0 {name=p4 sig_type=std_logic lab=IN_P}
-C {devices/code_shown.sym} 120 -710 0 0 {name=MODELS only_toplevel=true
+C {devices/code_shown.sym} 320 -760 0 0 {name=MODELS only_toplevel=true
 format="tcleval( @value )"
 value="
 .include $::180MCU_MODELS/design.ngspice
 .lib $::180MCU_MODELS/sm141064.ngspice typical
 "}
-C {code_shown.sym} 120 -600 0 0 {name=NGSPICE only_toplevel=true value=
+C {code_shown.sym} 320 -650 0 0 {name=NGSPICE only_toplevel=true value=
 ".save all
 .control
 probe(x1.out1 x1.out2 x1.inv1 x1.inv2 x1.latch)
 tran 100p 20u
 write tb_comp_SARlogic.raw
 .endc"}
-C {devices/launcher.sym} 760 -720 0 0 {name=h3
+C {devices/launcher.sym} 910 -750 0 0 {name=h3
 descr="save, netlist & simulate"
 tclcommand="xschem save; xschem netlist; xschem simulate"}
-C {launcher.sym} 760 -675 0 0 {name=h5 
+C {launcher.sym} 910 -705 0 0 {name=h5 
 descr="load ngspice waves" 
 tclcommand="
 xschem raw_read $netlist_dir/tb_comp_SARlogic.raw tran; xschem redraw
