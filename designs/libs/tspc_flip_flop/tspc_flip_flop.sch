@@ -105,6 +105,20 @@ N 1240 -700 1250 -700 {lab=vdd}
 N 1240 -570 1250 -570 {lab=vss}
 N 1250 -570 1250 -540 {lab=vss}
 N 1240 -540 1250 -540 {lab=vss}
+N 1820 -470 1880 -470 {lab=q}
+N 1820 -340 1880 -340 {lab=q}
+N 1920 -440 1920 -370 {lab=qb}
+N 1920 -410 2070 -410 {lab=qb}
+N 1920 -470 1930 -470 {lab=vdd}
+N 1930 -500 1930 -470 {lab=vdd}
+N 1920 -500 1930 -500 {lab=vdd}
+N 1920 -340 1930 -340 {lab=vss}
+N 1930 -340 1930 -310 {lab=vss}
+N 1920 -310 1930 -310 {lab=vss}
+N 1920 -540 1920 -500 {lab=vdd}
+N 1920 -310 1920 -280 {lab=vss}
+N 1820 -470 1820 -340 {lab=q}
+N 1780 -410 1820 -410 {lab=q}
 C {title.sym} 190 -60 0 0 {name=l1 author="Kevin Oviedo"}
 C {symbols/nfet_03v3.sym} 450 -340 0 0 {name=M1
 L=0.28u
@@ -361,3 +375,35 @@ spiceprefix=X
 C {lab_pin.sym} 1130 -620 0 0 {name=p28 sig_type=std_logic lab=reset}
 C {lab_pin.sym} 1240 -740 0 0 {name=p25 sig_type=std_logic lab=vdd}
 C {lab_pin.sym} 1240 -510 0 0 {name=p31 sig_type=std_logic lab=vss}
+C {opin.sym} 350 -600 0 0 {name=p32 lab=qb}
+C {symbols/pfet_03v3.sym} 1900 -470 0 0 {name=M17
+L=0.28u
+W=2u
+nf=1
+m=1
+ad="'int((nf+1)/2) * W/nf * 0.18u'"
+pd="'2*int((nf+1)/2) * (W/nf + 0.18u)'"
+as="'int((nf+2)/2) * W/nf * 0.18u'"
+ps="'2*int((nf+2)/2) * (W/nf + 0.18u)'"
+nrd="'0.18u / W'" nrs="'0.18u / W'"
+sa=0 sb=0 sd=0
+model=pfet_03v3
+spiceprefix=X
+}
+C {symbols/nfet_03v3.sym} 1900 -340 0 0 {name=M18
+L=0.28u
+W=1u
+nf=1
+m=1
+ad="'int((nf+1)/2) * W/nf * 0.18u'"
+pd="'2*int((nf+1)/2) * (W/nf + 0.18u)'"
+as="'int((nf+2)/2) * W/nf * 0.18u'"
+ps="'2*int((nf+2)/2) * (W/nf + 0.18u)'"
+nrd="'0.18u / W'" nrs="'0.18u / W'"
+sa=0 sb=0 sd=0
+model=nfet_03v3
+spiceprefix=X
+}
+C {lab_pin.sym} 1920 -540 0 0 {name=p33 sig_type=std_logic lab=vdd}
+C {lab_pin.sym} 1920 -280 0 0 {name=p34 sig_type=std_logic lab=vss}
+C {lab_pin.sym} 2070 -410 0 0 {name=p35 sig_type=std_logic lab=qb}

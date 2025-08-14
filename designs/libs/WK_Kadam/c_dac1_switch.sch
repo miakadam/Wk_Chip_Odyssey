@@ -120,4 +120,8 @@ model=pfet_03v3
 spiceprefix=X
 }
 C {lab_wire.sym} 750 -30 0 0 {name=p6 sig_type=std_logic lab=avdd}
+<<<<<<< HEAD
 C {Wk_Chip_Odyssey/designs/libs/WK_Kadam/inv_test.sym} 310 390 0 0 {name=x1}
+=======
+C {libs/WK_Kadam/inv_test.sym} 305 390 0 0 {name=x1}
+>>>>>>> 90c428d1b0e41c296047a26fb8d93b7305d701cf
