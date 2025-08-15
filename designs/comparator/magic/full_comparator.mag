@@ -1,0 +1,29 @@
+magic
+tech gf180mcuD
+magscale 1 5
+timestamp 1755238359
+<< checkpaint >>
+rect -1000 2220 6174 4470
+rect -1000 1820 8248 2220
+rect -1000 -1000 9278 1820
+use SA_withoffsetcal  x1
+timestamp 1755238359
+transform 1 0 30 0 1 3370
+box -30 -3370 5144 100
+use rslatch  x2
+timestamp 1755238359
+transform 1 0 6256 0 1 1120
+box -30 -1120 992 100
+use gf180mcu_osu_sc_gp9t3v3__buf_2  x3
+timestamp 1755238359
+transform 1 0 7278 0 1 720
+box -30 -720 1000 100
+use inv  xinv1
+timestamp 1755238359
+transform 1 0 5204 0 1 660
+box -30 -660 496 100
+use inv  xinv2
+timestamp 1755238359
+transform 1 0 5730 0 1 660
+box -30 -660 496 100
+<< end >>

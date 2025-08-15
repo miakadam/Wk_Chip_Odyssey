@@ -59,13 +59,6 @@ N 1100 -640 1320 -640 {lab=VDD}
 N 880 -640 1100 -640 {lab=VDD}
 N 660 -640 880 -640 {lab=VDD}
 N 500 -640 660 -640 {lab=VDD}
-N 230 -530 250 -530 {lab=Clk}
-N 230 -490 250 -490 {lab=Vin1}
-N 190 -450 210 -450 {lab=Vin2}
-N 230 -410 250 -410 {lab=VDD}
-N 230 -370 250 -370 {lab=VSS}
-N 190 -330 210 -330 {lab=Vout1}
-N 190 -290 210 -290 {lab=Vout2}
 N 620 -580 620 -570 {lab=Clk}
 N 420 -580 420 -570 {lab=Clk}
 N 500 -580 510 -580 {lab=VDD}
@@ -104,57 +97,65 @@ N 890 -240 1000 -240 {lab=VSS}
 N 1110 -380 1170 -380 {lab=VSS}
 N 800 -380 870 -380 {lab=VSS}
 N 1270 -230 1270 -210 {lab=Vq}
-N 1270 -230 1330 -230 {lab=Vq}
+N 1270 -270 1330 -270 {lab=Vq}
 N 1330 -230 1330 -210 {lab=Vq}
-N 1300 -250 1300 -230 {lab=Vq}
 N 1370 -230 1370 -210 {lab=Vq}
-N 1370 -230 1430 -230 {lab=Vq}
+N 1370 -270 1430 -270 {lab=Vq}
 N 1430 -230 1430 -210 {lab=Vq}
-N 1400 -250 1400 -230 {lab=Vq}
 N 1470 -230 1470 -210 {lab=Vq}
-N 1470 -230 1530 -230 {lab=Vq}
+N 1470 -270 1530 -270 {lab=Vq}
 N 1530 -230 1530 -210 {lab=Vq}
-N 1500 -250 1500 -230 {lab=Vq}
 N 1570 -230 1570 -210 {lab=Vq}
-N 1570 -230 1630 -230 {lab=Vq}
+N 1570 -270 1630 -270 {lab=Vq}
 N 1630 -230 1630 -210 {lab=Vq}
-N 1600 -250 1600 -230 {lab=Vq}
-N 1300 -310 1300 -250 {lab=Vq}
-N 1400 -310 1400 -250 {lab=Vq}
-N 1500 -310 1500 -250 {lab=Vq}
 N 1480 -310 1500 -310 {lab=Vq}
-N 1600 -310 1600 -250 {lab=Vq}
 N 1500 -310 1600 -310 {lab=Vq}
 N 1300 -170 1300 -120 {lab=off5}
 N 1400 -170 1400 -120 {lab=off6}
 N 1500 -170 1500 -120 {lab=off7}
 N 1600 -170 1600 -120 {lab=off8}
 N 350 -230 350 -210 {lab=Vp}
-N 350 -230 410 -230 {lab=Vp}
+N 350 -270 410 -270 {lab=Vp}
 N 410 -230 410 -210 {lab=Vp}
-N 380 -250 380 -230 {lab=Vp}
 N 450 -230 450 -210 {lab=Vp}
-N 450 -230 510 -230 {lab=Vp}
+N 450 -270 510 -270 {lab=Vp}
 N 510 -230 510 -210 {lab=Vp}
-N 480 -250 480 -230 {lab=Vp}
 N 550 -230 550 -210 {lab=Vp}
-N 550 -230 610 -230 {lab=Vp}
+N 550 -270 610 -270 {lab=Vp}
 N 610 -230 610 -210 {lab=Vp}
-N 580 -250 580 -230 {lab=Vp}
 N 650 -230 650 -210 {lab=Vp}
-N 650 -230 710 -230 {lab=Vp}
+N 650 -270 710 -270 {lab=Vp}
 N 710 -230 710 -210 {lab=Vp}
-N 680 -250 680 -230 {lab=Vp}
-N 380 -310 380 -250 {lab=Vp}
-N 480 -310 480 -250 {lab=Vp}
-N 580 -310 580 -250 {lab=Vp}
-N 680 -310 680 -250 {lab=Vp}
 N 380 -170 380 -120 {lab=off1}
 N 480 -170 480 -120 {lab=off2}
 N 580 -170 580 -120 {lab=off3}
-N 680 -170 680 -120 {lab=off8}
+N 680 -170 680 -120 {lab=off4}
 N 480 -310 500 -310 {lab=Vp}
 N 380 -310 480 -310 {lab=Vp}
+N 380 -310 380 -270 {lab=Vp}
+N 350 -270 350 -230 {lab=Vp}
+N 410 -270 410 -230 {lab=Vp}
+N 510 -270 510 -230 {lab=Vp}
+N 450 -270 450 -230 {lab=Vp}
+N 480 -310 480 -270 {lab=Vp}
+N 580 -310 580 -270 {lab=Vp}
+N 550 -270 550 -230 {lab=Vp}
+N 610 -270 610 -230 {lab=Vp}
+N 650 -270 650 -230 {lab=Vp}
+N 710 -270 710 -230 {lab=Vp}
+N 680 -310 680 -270 {lab=Vp}
+N 1270 -270 1270 -230 {lab=Vq}
+N 1330 -270 1330 -230 {lab=Vq}
+N 1300 -310 1300 -270 {lab=Vq}
+N 1370 -270 1370 -230 {lab=Vq}
+N 1430 -270 1430 -230 {lab=Vq}
+N 1400 -310 1400 -270 {lab=Vq}
+N 1470 -270 1470 -230 {lab=Vq}
+N 1530 -270 1530 -230 {lab=Vq}
+N 1500 -310 1500 -270 {lab=Vq}
+N 1570 -270 1570 -230 {lab=Vq}
+N 1630 -270 1630 -230 {lab=Vq}
+N 1600 -310 1600 -270 {lab=Vq}
 C {symbols/pfet_03v3.sym} 480 -580 0 0 {name=M1
 L=0.28u
 W=0.40u
@@ -450,3 +451,11 @@ C {iopin.sym} 380 -120 2 0 {name=p26 lab=off1}
 C {iopin.sym} 480 -120 2 0 {name=p27 lab=off2}
 C {iopin.sym} 580 -120 2 0 {name=p28 lab=off3}
 C {iopin.sym} 680 -120 2 0 {name=p29 lab=off4}
+C {lab_pin.sym} 380 -210 1 0 {name=p30 sig_type=std_logic lab=VDD}
+C {lab_pin.sym} 480 -210 1 0 {name=p31 sig_type=std_logic lab=VDD}
+C {lab_pin.sym} 580 -210 1 0 {name=p32 sig_type=std_logic lab=VDD}
+C {lab_pin.sym} 680 -210 1 0 {name=p33 sig_type=std_logic lab=VDD}
+C {lab_pin.sym} 1300 -210 1 0 {name=p34 sig_type=std_logic lab=VDD}
+C {lab_pin.sym} 1400 -210 1 0 {name=p35 sig_type=std_logic lab=VDD}
+C {lab_pin.sym} 1500 -210 1 0 {name=p36 sig_type=std_logic lab=VDD}
+C {lab_pin.sym} 1600 -210 1 0 {name=p37 sig_type=std_logic lab=VDD}
