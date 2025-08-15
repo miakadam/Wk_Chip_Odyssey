@@ -1,31 +1,96 @@
 magic
 tech gf180mcuD
-magscale 1 5
-timestamp 1755238359
-<< checkpaint >>
-rect -782 620 1496 650
-rect -1030 -1630 1496 620
-rect -782 -1660 1496 -1630
+magscale 1 10
+timestamp 1755269754
+<< error_s >>
+rect 138 990 298 995
+rect 184 903 195 949
+rect 224 903 252 916
+rect 268 858 270 870
+rect 280 716 282 870
+rect 350 858 352 870
+rect 280 696 306 716
+rect 124 672 161 696
+rect 270 682 306 696
+rect 124 670 150 672
+rect 268 670 306 682
+rect 350 670 352 682
+rect 280 660 306 670
+rect 168 638 170 650
+rect 168 589 170 592
+rect 180 589 182 650
+rect 248 589 250 650
+rect 260 638 262 650
+rect 260 589 262 592
+rect 168 580 262 589
+rect 124 357 306 366
+rect 168 308 170 320
+rect 180 276 182 320
+rect 248 296 250 320
+rect 260 308 262 320
+rect 224 276 250 296
+rect 170 263 195 276
+rect 170 262 207 263
+rect 168 250 207 262
+rect 224 262 260 276
+rect 224 250 262 262
+rect 224 240 250 250
+rect 268 218 270 230
+rect 280 163 282 230
+rect 350 218 352 230
+rect 138 152 161 163
+rect 270 162 298 163
+rect 268 150 298 162
+rect 350 150 352 162
+rect 184 71 195 117
 << metal1 >>
-rect 0 0 100 100
-rect 0 -200 100 -100
-rect 0 -400 100 -300
-rect 0 -600 100 -500
+rect -60 990 500 1180
+rect -20 670 150 870
+rect 270 670 280 870
+rect 340 670 350 870
+rect 170 580 180 650
+rect 250 580 260 650
+rect 170 250 180 320
+rect 250 250 260 320
+rect -20 150 150 230
+rect 270 150 280 230
+rect 340 150 350 230
+rect -60 -170 500 20
+<< via1 >>
+rect 280 670 340 870
+rect 180 580 250 650
+rect 180 250 250 320
+rect 280 150 340 230
+<< metal2 >>
+rect 280 870 370 880
+rect 340 670 370 870
+rect 280 660 370 670
+rect 180 650 250 660
+rect 180 490 250 580
+rect -310 410 250 490
+rect 180 320 250 410
+rect 180 240 250 250
+rect 310 490 370 660
+rect 310 420 680 490
+rect 310 240 370 420
+rect 280 230 370 240
+rect 340 150 370 230
+rect 280 140 370 150
 use nfet_03v3_Z8672T  XM1
-timestamp 0
-transform 1 0 109 0 1 -505
-box -139 -125 139 125
+timestamp 1755269663
+transform 1 0 218 0 1 190
+box -278 -250 278 250
 use pfet_03v3_VJF862  XM2
-timestamp 0
-transform 1 0 357 0 1 -505
-box -139 -155 139 155
+timestamp 1755269663
+transform 1 0 218 0 1 770
+box -278 -310 278 310
 << labels >>
-flabel metal1 0 0 100 100 0 FreeSans 640 0 0 0 vdd
-port 0 nsew
-flabel metal1 0 -200 100 -100 0 FreeSans 640 0 0 0 vi
-port 1 nsew
-flabel metal1 0 -400 100 -300 0 FreeSans 640 0 0 0 vo
-port 2 nsew
-flabel metal1 0 -600 100 -500 0 FreeSans 640 0 0 0 vss
-port 3 nsew
+rlabel metal1 220 1180 220 1180 5 vdd
+port 0 s
+rlabel metal1 210 -170 210 -170 5 vss
+port 1 s
+rlabel metal2 -310 450 -310 450 7 vi
+port 2 w
+rlabel metal2 680 450 680 450 3 vo
+port 3 e
 << end >>

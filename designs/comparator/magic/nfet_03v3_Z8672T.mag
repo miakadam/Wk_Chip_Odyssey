@@ -1,14 +1,13 @@
 magic
 tech gf180mcuD
 magscale 1 10
-timestamp 1755250179
+timestamp 1755269663
 << error_p >>
 rect -34 73 -23 119
 rect 23 73 34 84
 rect -103 -38 -57 38
 rect 57 -38 103 38
-rect -34 -114 -23 -73
-rect -34 -119 34 -114
+rect -34 -119 -23 -73
 << pwell >>
 rect -278 -250 278 250
 << nmos >>
@@ -63,11 +62,11 @@ rect -103 27 -57 38
 rect -103 -38 -57 -27
 rect 57 27 103 38
 rect 57 -38 103 -27
-rect -241 -160 -195 -110
+rect -241 -167 -195 -110
 rect -34 -119 -23 -73
 rect 23 -119 34 -73
-rect 195 -160 241 -110
-rect -298 -300 332 -160
+rect 195 -167 241 -110
+rect -241 -213 241 -167
 << properties >>
 string FIXED_BBOX -218 -190 218 190
 string gencell nfet_03v3
