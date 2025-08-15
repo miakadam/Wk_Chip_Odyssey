@@ -1,0 +1,54 @@
+magic
+tech gf180mcuD
+magscale 1 10
+timestamp 1755272603
+<< checkpaint >>
+rect -1924 1380 2632 1500
+rect -1984 1360 2632 1380
+rect -2420 1240 2632 1360
+rect -2480 -3320 2632 1240
+rect -2480 -3380 2572 -3320
+rect -1984 -3440 2572 -3380
+<< error_s >>
+rect 159 -583 246 -554
+rect 76 -732 136 -640
+rect 320 -677 331 -631
+rect 377 -677 388 -666
+rect -176 -817 -165 -771
+rect -119 -817 -108 -806
+rect -46 -1000 -39 -954
+rect -222 -1048 -199 -1037
+rect -85 -1048 -62 -1037
+rect 0 -1048 7 -1000
+rect -176 -1129 -165 -1083
+rect 76 -1120 147 -732
+rect 274 -1108 297 -1097
+rect 411 -1108 434 -1097
+rect 76 -1200 136 -1120
+rect 320 -1189 331 -1143
+rect 159 -1200 200 -1191
+rect 76 -1223 145 -1200
+rect 76 -1260 136 -1223
+<< metal1 >>
+rect 0 0 200 200
+rect 0 -400 200 -200
+rect 0 -800 200 -600
+rect 0 -1200 200 -1000
+use nfet_03v3_NRMGVU  XM3
+timestamp 1755271904
+transform 1 0 -202 0 1 -1070
+box -278 -310 278 310
+use pfet_03v3_NE88KN  XM4
+timestamp 1755271904
+transform 1 0 294 0 1 -1030
+box -278 -410 278 410
+<< labels >>
+flabel metal1 0 0 200 200 0 FreeSans 1280 0 0 0 avdd
+port 0 nsew
+flabel metal1 0 -400 200 -200 0 FreeSans 1280 0 0 0 in
+port 1 nsew
+flabel metal1 0 -800 200 -600 0 FreeSans 1280 0 0 0 out
+port 2 nsew
+flabel metal1 0 -1200 200 -1000 0 FreeSans 1280 0 0 0 avss
+port 3 nsew
+<< end >>

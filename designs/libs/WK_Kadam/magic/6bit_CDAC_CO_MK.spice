@@ -1,0 +1,63 @@
+** sch_path: /foss/designs/libs/WK_Kadam/6bit_CDAC_CO_MK.sch
+**.subckt 6bit_CDAC_CO_MK Vdac avdd avss Vref cdbit6 cdbit5 cdbit3 cdbit1 cdbit2 cdbit4
+*.iopin Vref
+*.iopin Vdac
+*.iopin avdd
+*.iopin avss
+*.iopin cdbit6
+*.iopin cdbit5
+*.iopin cdbit4
+*.iopin cdbit3
+*.iopin cdbit2
+*.iopin cdbit1
+XC3 Vdac net2 cap_mim_2f0_m3m4_noshield c_width=10e-6 c_length=10e-6 m=4
+XC4 Vdac net3 cap_mim_2f0_m3m4_noshield c_width=10e-6 c_length=10e-6 m=8
+XC5 Vdac net4 cap_mim_2f0_m3m4_noshield c_width=10e-6 c_length=10e-6 m=16
+XC6 Vdac net5 cap_mim_2f0_m3m4_noshield c_width=10e-6 c_length=10e-6 m=32
+XC7 Vdac net6 cap_mim_2f0_m3m4_noshield c_width=10e-6 c_length=10e-6 m=64
+XC1 Vdac avss cap_mim_2f0_m3m4_noshield c_width=10e-6 c_length=10e-6 m=2
+XC2 Vdac net1 cap_mim_2f0_m3m4_noshield c_width=10e-6 c_length=10e-6 m=2
+x1 avdd avss net6 cdbit6 Vref c_dac1_switch
+x2 avdd avss net5 cdbit5 Vref c_dac1_switch
+x3 avdd avss net4 cdbit4 Vref c_dac1_switch
+x4 avdd avss net3 cdbit3 Vref c_dac1_switch
+x5 avdd avss net2 cdbit2 Vref c_dac1_switch
+x6 avdd avss net1 cdbit1 Vref c_dac1_switch
+**.ends
+
+* expanding   symbol:  libs/WK_Kadam/c_dac1_switch.sym # of pins=5
+** sym_path: /foss/designs/libs/WK_Kadam/c_dac1_switch.sym
+** sch_path: /foss/designs/libs/WK_Kadam/c_dac1_switch.sch
+.subckt c_dac1_switch avdd avss sw_vout sw_bit sw_Vref
+*.iopin avdd
+*.iopin avss
+*.iopin sw_bit
+*.iopin sw_vout
+*.iopin sw_Vref
+XM1 sw_vout sw_bit sw_Vref avss nfet_03v3 L=0.28u W=2u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u' pd='2*int((nf+1)/2) * (W/nf + 0.18u)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W' sa=0 sb=0 sd=0 m=1
+XM3 sw_vout net1 avss avss nfet_03v3 L=0.28u W=2u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u' pd='2*int((nf+1)/2) * (W/nf + 0.18u)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W' sa=0 sb=0 sd=0 m=1
+XM4 avss sw_bit sw_vout avdd pfet_03v3 L=0.28u W=2u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u' pd='2*int((nf+1)/2) * (W/nf + 0.18u)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W' sa=0 sb=0 sd=0 m=1
+XM2 sw_Vref net1 sw_vout avdd pfet_03v3 L=0.28u W=2u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u' pd='2*int((nf+1)/2) * (W/nf + 0.18u)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W' sa=0 sb=0 sd=0 m=1
+x1 avdd sw_bit net1 avss inv_test
+.ends
+
+
+* expanding   symbol:  libs/WK_Kadam/inv_test.sym # of pins=4
+** sym_path: /foss/designs/libs/WK_Kadam/inv_test.sym
+** sch_path: /foss/designs/libs/WK_Kadam/inv_test.sch
+.subckt inv_test avdd in out avss
+*.iopin avdd
+*.iopin avss
+*.iopin in
+*.iopin out
+XM3 out in avss avss nfet_03v3 L=0.28u W=1.0u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u' pd='2*int((nf+1)/2) * (W/nf + 0.18u)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W' sa=0 sb=0 sd=0 m=1
+XM4 out in avdd avdd pfet_03v3 L=0.28u W=2.0u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u' pd='2*int((nf+1)/2) * (W/nf + 0.18u)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W' sa=0 sb=0 sd=0 m=1
+.ends
+
+.end

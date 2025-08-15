@@ -35,7 +35,7 @@ N 430 -320 490 -320 {lab=sw_vout}
 N 170 40 170 110 {lab=sw_Vref}
 N -190 110 170 110 {lab=sw_Vref}
 N 560 -30 680 -30 {lab=avss}
-N 100 130 100 180 {lab=#net2}
+N 100 130 100 180 {lab=avdd}
 N 100 380 100 440 {lab=avss}
 N 40 -30 160 -30 {lab=avss}
 N 730 -30 820 -30 {lab=avdd}
@@ -116,4 +116,4 @@ model=pfet_03v3
 spiceprefix=X
 }
 C {lab_wire.sym} 750 -30 0 0 {name=p6 sig_type=std_logic lab=avdd}
-C {Wk_Chip_Odyssey/designs/libs/WK_Kadam/inv_test.sym} 300 390 0 0 {name=x1}
+C {libs/WK_Kadam/inv_test.sym} 300 390 0 0 {name=x1}

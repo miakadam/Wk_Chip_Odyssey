@@ -128,12 +128,6 @@ spiceprefix=X
 m=64}
 C {iopin.sym} 1940 -320 0 0 {name=p1 lab=Vref}
 C {iopin.sym} 2160 -790 0 0 {name=p8 lab=Vdac}
-C {Wk_Chip_Odyssey/designs/libs/WK_Kadam/c_dac1_switch.sym} 320 -430 0 0 {name=x1}
-C {Wk_Chip_Odyssey/designs/libs/WK_Kadam/c_dac1_switch.sym} 610 -430 0 0 {name=x2}
-C {Wk_Chip_Odyssey/designs/libs/WK_Kadam/c_dac1_switch.sym} 930 -430 0 0 {name=x3}
-C {Wk_Chip_Odyssey/designs/libs/WK_Kadam/c_dac1_switch.sym} 1180 -430 0 0 {name=x4}
-C {Wk_Chip_Odyssey/designs/libs/WK_Kadam/c_dac1_switch.sym} 1690 -440 0 0 {name=x5}
-C {Wk_Chip_Odyssey/designs/libs/WK_Kadam/c_dac1_switch.sym} 1420 -440 0 0 {name=x6}
 C {iopin.sym} 230 -760 2 0 {name=p9 lab=avdd}
 C {iopin.sym} 230 -720 2 0 {name=p10 lab=avss}
 C {lab_wire.sym} 320 -760 0 0 {name=p13 sig_type=std_logic lab=avdd}
@@ -158,3 +152,9 @@ C {iopin.sym} 730 -290 2 0 {name=p17 lab=cdbit4}
 C {iopin.sym} 1000 -300 2 0 {name=p18 lab=cdbit3}
 C {iopin.sym} 1240 -290 2 0 {name=p19 lab=cdbit2}
 C {iopin.sym} 1520 -290 2 0 {name=p20 lab=cdbit1}
+C {libs/WK_Kadam/c_dac1_switch.sym} 320 -430 0 0 {name=x1}
+C {libs/WK_Kadam/c_dac1_switch.sym} 610 -430 0 0 {name=x2}
+C {libs/WK_Kadam/c_dac1_switch.sym} 930 -430 0 0 {name=x3}
+C {libs/WK_Kadam/c_dac1_switch.sym} 1180 -430 0 0 {name=x4}
+C {libs/WK_Kadam/c_dac1_switch.sym} 1420 -440 0 0 {name=x5}
+C {libs/WK_Kadam/c_dac1_switch.sym} 1690 -440 0 0 {name=x6}

@@ -1,0 +1,31 @@
+magic
+tech gf180mcuD
+magscale 1 5
+timestamp 1755272604
+<< checkpaint >>
+rect -1000 -1000 7132 2810
+use c_dac1_switch  x1
+timestamp 1755272603
+transform 1 0 435 0 1 1040
+box -435 -1040 587 770
+use c_dac1_switch  x2
+timestamp 1755272603
+transform 1 0 1457 0 1 1040
+box -435 -1040 587 770
+use c_dac1_switch  x3
+timestamp 1755272603
+transform 1 0 2479 0 1 1040
+box -435 -1040 587 770
+use c_dac1_switch  x4
+timestamp 1755272603
+transform 1 0 3501 0 1 1040
+box -435 -1040 587 770
+use c_dac1_switch  x5
+timestamp 1755272603
+transform 1 0 4523 0 1 1040
+box -435 -1040 587 770
+use c_dac1_switch  x6
+timestamp 1755272603
+transform 1 0 5545 0 1 1040
+box -435 -1040 587 770
+<< end >>
