@@ -1,0 +1,110 @@
+magic
+tech gf180mcuD
+magscale 1 5
+timestamp 1755276579
+<< metal1 >>
+rect -1905 2020 -1805 2120
+rect -1285 2020 -1185 2120
+rect -295 2075 -195 2175
+rect 545 2085 645 2185
+rect -2070 1675 -1970 1775
+rect -1475 1655 -1375 1755
+rect -900 1705 -800 1805
+rect -270 1790 -170 1890
+rect 480 1825 580 1925
+use pfet_03v3_6Z3D7A  M1
+timestamp 1755276579
+transform 1 0 7406 0 1 8708
+box -251 -263 251 263
+use pfet_03v3_6Z3D7A  M2
+timestamp 1755276579
+transform 1 0 10841 0 1 10658
+box -251 -263 251 263
+use nfet_03v3_5MQYYT  M3
+timestamp 1755276579
+transform 1 0 7136 0 1 7760
+box -251 -155 251 155
+use nfet_03v3_5MQYYT  M4
+timestamp 1755276579
+transform 1 0 10421 0 1 7530
+box -251 -155 251 155
+use pfet_03v3_6Z3D7A  M5
+timestamp 1755276579
+transform 1 0 11951 0 1 9318
+box -251 -263 251 263
+use nfet_03v3_M5KWLQ  M6
+timestamp 1755276579
+transform 1 0 12276 0 1 11155
+box -351 -305 351 305
+use nfet_03v3_M5KWLQ  M7
+timestamp 1755276579
+transform 1 0 7506 0 1 10430
+box -351 -305 351 305
+use nfet_03v3_JSLSQ7  MN_CD
+timestamp 1755276579
+transform 0 1 7845 -1 0 20004
+box -1359 -14555 1359 14555
+use nfet_03v3_M2CYLQ  MN_CD_LOAD
+timestamp 1755276579
+transform 1 0 5355 0 1 8141
+box -225 -5311 225 5311
+use nfet_03v3_BU4HR4  MN_CS
+timestamp 1755276579
+transform 0 1 4900 -1 0 15914
+box -1359 -11685 1359 11685
+use nfet_03v3_M2DZKQ  MN_LOAD_L
+timestamp 1755276579
+transform 1 0 -720 0 1 4685
+box -225 -705 225 705
+use nfet_03v3_M2DZKQ  MN_LOAD_R
+timestamp 1755276579
+transform 1 0 -945 0 1 8810
+box -225 -705 225 705
+use pfet_03v3_DA6X4Y  MP_CS_LOAD
+timestamp 1755276579
+transform 0 1 9732 -1 0 -393
+box -477 -20247 477 20247
+use pfet_03v3_DA94CY  MP_DIFF_L
+timestamp 1755276579
+transform 1 0 -4604 0 1 6242
+box -351 -5627 351 5627
+use pfet_03v3_DA94CY  MP_DIFF_R
+timestamp 1755276579
+transform 1 0 -2769 0 1 6127
+box -351 -5627 351 5627
+use pfet_03v3_4ZM98G  MP_MIRROR
+timestamp 1755276579
+transform 1 0 -618 0 1 13045
+box -477 -855 477 855
+use pfet_03v3_4Z5NAG  MP_TAIL
+timestamp 1755276579
+transform 1 0 -6578 0 1 7281
+box -477 -6511 477 6511
+use ppolyf_u_1k_MSK24U  XR1
+timestamp 1755276579
+transform 1 0 9798 0 1 9159
+box -618 -369 618 369
+use ppolyf_u_1k_XXBPKD  XR2
+timestamp 1755276579
+transform 1 0 9683 0 1 12029
+box -1118 -679 1118 679
+<< labels >>
+flabel metal1 -295 2075 -195 2175 0 FreeSans 640 0 0 0 A_VDD
+port 0 nsew
+flabel metal1 545 2085 645 2185 0 FreeSans 640 0 0 0 IN_N
+port 1 nsew
+flabel metal1 -1285 2020 -1185 2120 0 FreeSans 640 0 0 0 IN_P
+port 2 nsew
+flabel metal1 -900 1705 -800 1805 0 FreeSans 640 0 0 0 A_VSS
+port 3 nsew
+flabel metal1 -270 1790 -170 1890 0 FreeSans 640 0 0 0 I_REF
+port 4 nsew
+flabel metal1 -1475 1655 -1375 1755 0 FreeSans 640 0 0 0 OUT
+port 5 nsew
+flabel metal1 480 1825 580 1925 0 FreeSans 640 0 0 0 I_REF
+port 6 nsew
+flabel metal1 -1905 2020 -1805 2120 0 FreeSans 640 0 0 0 A_VSS
+port 7 nsew
+flabel metal1 -2070 1675 -1970 1775 0 FreeSans 640 0 0 0 A_VDD
+port 8 nsew
+<< end >>
