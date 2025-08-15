@@ -1,0 +1,23 @@
+** sch_path: /home/emmanuel-innocent/Wk_Chip_Odyssey/designs/libs/TIA/TIA_and_IREF.sch
+.subckt TIA_and_IREF A_VDD IN_N IN_P A_VSS I_REF OUT I_REF A_VSS A_VDD
+*.PININFO A_VDD:B IN_N:B IN_P:B A_VSS:B I_REF:B OUT:B I_REF:B A_VSS:B A_VDD:B
+MP_TAIL net1 I_REF A_VDD A_VDD pfet_03v3 L=2u W=15u nf=3 m=8
+MP_DIFF_L net2 IN_N net1 A_VDD pfet_03v3 L=2u W=10u nf=2 m=10
+MP_DIFF_R cs IN_P net1 A_VDD pfet_03v3 L=2u W=10u nf=2 m=10
+MP_CS_LOAD cd I_REF A_VDD A_VDD pfet_03v3 L=2u W=15u nf=3 m=25
+MP_MIRROR I_REF I_REF A_VDD A_VDD pfet_03v3 L=2u W=15u nf=3 m=1
+MN_LOAD_R cs net2 A_VSS A_VSS nfet_03v3 L=2u W=12u nf=1 m=1
+MN_LOAD_L net2 net2 A_VSS A_VSS nfet_03v3 L=2u W=12u nf=1 m=1
+MN_CS cd cs A_VSS A_VSS nfet_03v3 L=2u W=20u nf=10 m=11
+MN_CD A_VDD cd OUT A_VSS nfet_03v3 L=2u W=10u nf=10 m=26
+MN_CD_LOAD OUT net2 A_VSS A_VSS nfet_03v3 L=2u W=12u nf=1 m=8
+XR2 cs net3 A_VDD ppolyf_u_1k r_width=20e-6 r_length=10e-6 m=1
+M1 net5 net5 A_VDD A_VDD pfet_03v3 L=1u W=1u nf=2 m=2
+M2 net4 net5 A_VDD A_VDD pfet_03v3 L=1u W=1u nf=2 m=2
+M3 net5 net4 net6 A_VSS nfet_03v3 L=1u W=1u nf=2 m=1
+M4 net4 net4 A_VSS A_VSS nfet_03v3 L=1u W=1u nf=2 m=1
+XR1 net6 A_VSS A_VDD ppolyf_u_1k r_width=10e-6 r_length=3.8e-6 m=1
+M6 I_REF net7 A_VSS A_VSS nfet_03v3 L=2u W=4u nf=2 m=1
+M7 net7 net7 A_VSS A_VSS nfet_03v3 L=2u W=4u nf=2 m=1
+M5 net7 net5 A_VDD A_VDD pfet_03v3 L=1u W=1u nf=2 m=2
+.ends
