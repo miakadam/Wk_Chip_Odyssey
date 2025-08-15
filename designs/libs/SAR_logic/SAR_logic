@@ -1,0 +1,67 @@
+magic
+tech gf180mcuD
+magscale 1 5
+timestamp 1755198750
+<< checkpaint >>
+rect -1000 -1000 68410 3040
+use tspc_flip_flop  x1
+timestamp 1755198750
+transform 1 0 30 0 1 1940
+box -30 -1940 4464 100
+use tspc_flip_flop  x2
+timestamp 1755198750
+transform 1 0 4524 0 1 1940
+box -30 -1940 4464 100
+use tspc_flip_flop  x3
+timestamp 1755198750
+transform 1 0 9018 0 1 1940
+box -30 -1940 4464 100
+use tspc_flip_flop  x4
+timestamp 1755198750
+transform 1 0 13512 0 1 1940
+box -30 -1940 4464 100
+use tspc_flip_flop  x5
+timestamp 1755198750
+transform 1 0 18006 0 1 1940
+box -30 -1940 4464 100
+use tspc_flip_flop  x6
+timestamp 1755198750
+transform 1 0 22500 0 1 1940
+box -30 -1940 4464 100
+use tspc_flip_flop  x7
+timestamp 1755198750
+transform 1 0 26994 0 1 1940
+box -30 -1940 4464 100
+use tspc_flip_flop  x8
+timestamp 1755198750
+transform 1 0 31488 0 1 1940
+box -30 -1940 4464 100
+use tspc_flip_flop  x9
+timestamp 1755198750
+transform 1 0 35982 0 1 1940
+box -30 -1940 4464 100
+use tspc_flip_flop  x10
+timestamp 1755198750
+transform 1 0 40476 0 1 1940
+box -30 -1940 4464 100
+use tspc_flip_flop  x11
+timestamp 1755198750
+transform 1 0 44970 0 1 1940
+box -30 -1940 4464 100
+use tspc_flip_flop  x12
+timestamp 1755198750
+transform 1 0 49464 0 1 1940
+box -30 -1940 4464 100
+use tspc_flip_flop  x13
+timestamp 1755198750
+transform 1 0 53958 0 1 1940
+box -30 -1940 4464 100
+use tspc_flip_flop  x14
+timestamp 1755198750
+transform 1 0 58452 0 1 1940
+box -30 -1940 4464 100
+use tspc_flip_flop  x15
+timestamp 1755198750
+transform 1 0 62946 0 1 1940
+box -30 -1940 4464 100
+<< end >>

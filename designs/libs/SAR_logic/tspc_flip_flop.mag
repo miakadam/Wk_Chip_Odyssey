@@ -1,0 +1,133 @@
+magic
+tech gf180mcuD
+magscale 1 5
+timestamp 1755198750
+<< checkpaint >>
+rect -782 -80 1496 -50
+rect -782 -110 1744 -80
+rect -782 -120 1992 -110
+rect -1030 -240 1992 -120
+rect -1030 -260 2240 -240
+rect -1030 -290 3232 -260
+rect -1030 -320 3480 -290
+rect -1030 -380 3728 -320
+rect -1030 -440 4224 -380
+rect -1030 -500 4720 -440
+rect -1030 -630 5216 -500
+rect -1030 -2430 5464 -630
+rect -782 -2460 5464 -2430
+rect -534 -2490 5464 -2460
+rect -286 -2520 5464 -2490
+rect -38 -2550 5464 -2520
+rect 210 -2580 5464 -2550
+rect 458 -2610 5464 -2580
+rect 706 -2640 5464 -2610
+rect 954 -2670 5464 -2640
+rect 1202 -2700 5464 -2670
+rect 1450 -2730 5464 -2700
+rect 1698 -2760 5464 -2730
+rect 1946 -2790 5464 -2760
+rect 2194 -2820 5464 -2790
+rect 2442 -2850 5464 -2820
+rect 2690 -2880 5464 -2850
+rect 2938 -2910 5464 -2880
+rect 3186 -2940 5464 -2910
+<< metal1 >>
+rect 0 0 100 100
+rect 0 -200 100 -100
+rect 0 -400 100 -300
+rect 0 -600 100 -500
+rect 0 -800 100 -700
+rect 0 -1000 100 -900
+rect 0 -1200 100 -1100
+rect 0 -1400 100 -1300
+use nfet_03v3_NRMGVU  XM1
+timestamp 0
+transform 1 0 109 0 1 -1275
+box -139 -155 139 155
+use pfet_03v3_NE88KN  XM2
+timestamp 0
+transform 1 0 357 0 1 -1255
+box -139 -205 139 205
+use pfet_03v3_NE88KN  XM3
+timestamp 0
+transform 1 0 605 0 1 -1285
+box -139 -205 139 205
+use pfet_03v3_NE88KN  XM4
+timestamp 0
+transform 1 0 853 0 1 -1315
+box -139 -205 139 205
+use nfet_03v3_NRMGVU  XM5
+timestamp 0
+transform 1 0 1101 0 1 -1395
+box -139 -155 139 155
+use nfet_03v3_NRMGVU  XM6
+timestamp 0
+transform 1 0 1349 0 1 -1425
+box -139 -155 139 155
+use nfet_03v3_NRMGVU  XM7
+timestamp 0
+transform 1 0 1597 0 1 -1455
+box -139 -155 139 155
+use nfet_03v3_NRMGVU  XM8
+timestamp 0
+transform 1 0 1845 0 1 -1485
+box -139 -155 139 155
+use pfet_03v3_NE88KN  XM9
+timestamp 0
+transform 1 0 2093 0 1 -1465
+box -139 -205 139 205
+use pfet_03v3_NE88KN  XM10
+timestamp 0
+transform 1 0 2341 0 1 -1495
+box -139 -205 139 205
+use pfet_03v3_NE88KN  XM11
+timestamp 0
+transform 1 0 2589 0 1 -1525
+box -139 -205 139 205
+use nfet_03v3_NRMGVU  XM12
+timestamp 0
+transform 1 0 2837 0 1 -1605
+box -139 -155 139 155
+use pfet_03v3_NE88KN  XM13
+timestamp 0
+transform 1 0 3085 0 1 -1585
+box -139 -205 139 205
+use nfet_03v3_NRMGVU  XM14
+timestamp 0
+transform 1 0 3333 0 1 -1665
+box -139 -155 139 155
+use pfet_03v3_NE88KN  XM15
+timestamp 0
+transform 1 0 3581 0 1 -1645
+box -139 -205 139 205
+use nfet_03v3_NRMGVU  XM16
+timestamp 0
+transform 1 0 3829 0 1 -1725
+box -139 -155 139 155
+use pfet_03v3_NE88KN  XM17
+timestamp 0
+transform 1 0 4077 0 1 -1705
+box -139 -205 139 205
+use nfet_03v3_NRMGVU  XM18
+timestamp 0
+transform 1 0 4325 0 1 -1785
+box -139 -155 139 155
+<< labels >>
+flabel metal1 0 0 100 100 0 FreeSans 640 0 0 0 vdd
+port 0 nsew
+flabel metal1 0 -200 100 -100 0 FreeSans 640 0 0 0 vss
+port 1 nsew
+flabel metal1 0 -400 100 -300 0 FreeSans 640 0 0 0 d
+port 2 nsew
+flabel metal1 0 -600 100 -500 0 FreeSans 640 0 0 0 clk
+port 3 nsew
+flabel metal1 0 -800 100 -700 0 FreeSans 640 0 0 0 set
+port 4 nsew
+flabel metal1 0 -1000 100 -900 0 FreeSans 640 0 0 0 reset
+port 5 nsew
+flabel metal1 0 -1200 100 -1100 0 FreeSans 640 0 0 0 q
+port 6 nsew
+flabel metal1 0 -1400 100 -1300 0 FreeSans 640 0 0 0 qb
+port 7 nsew
+<< end >>
