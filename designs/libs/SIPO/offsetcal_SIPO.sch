@@ -9,23 +9,16 @@ N 40 -720 100 -720 {lab=avss}
 N 100 -720 140 -720 {lab=avss}
 N 90 -760 140 -760 {lab=avdd}
 N 240 -450 1440 -450 {lab=avdd}
-N 240 -310 1440 -310 {lab=avss}
+N 240 -330 1440 -330 {lab=avss}
 N 1440 -450 1640 -450 {lab=avdd}
-N 1440 -310 1640 -310 {lab=avss}
-N 290 -390 320 -390 {lab=off1}
-N 320 -410 320 -390 {lab=off1}
-N 490 -390 520 -390 {lab=off2}
-N 520 -410 520 -390 {lab=off2}
-N 690 -390 720 -390 {lab=off3}
-N 720 -410 720 -390 {lab=off3}
-N 890 -390 920 -390 {lab=off4}
-N 920 -410 920 -390 {lab=off4}
-N 1090 -390 1120 -390 {lab=off5}
-N 1120 -410 1120 -390 {lab=off5}
-N 1290 -390 1320 -390 {lab=off6}
-N 1320 -410 1320 -390 {lab=off6}
-N 1490 -390 1520 -390 {lab=off7}
-N 1520 -410 1520 -390 {lab=off7}
+N 1440 -330 1640 -330 {lab=avss}
+N 290 -410 320 -410 {lab=off1}
+N 480 -410 510 -410 {lab=off2}
+N 680 -410 710 -410 {lab=off3}
+N 880 -410 910 -410 {lab=off4}
+N 1080 -410 1110 -410 {lab=off5}
+N 1280 -410 1310 -410 {lab=off6}
+N 1480 -410 1510 -410 {lab=off7}
 N 320 -520 320 -410 {lab=off1}
 N 720 -520 720 -410 {lab=off3}
 N 520 -520 520 -410 {lab=off2}
@@ -33,58 +26,11 @@ N 920 -520 920 -410 {lab=off4}
 N 1120 -520 1120 -410 {lab=off5}
 N 1320 -520 1320 -410 {lab=off6}
 N 1520 -520 1520 -410 {lab=off7}
-N 1690 -390 1720 -390 {lab=off8}
-N 1720 -520 1720 -390 {lab=off8}
+N 1680 -410 1710 -410 {lab=off8}
 N 60 -410 180 -410 {lab=D1}
-N 100 -390 180 -390 {lab=clk}
-N 100 -390 100 -280 {lab=clk}
-N 1540 -390 1540 -280 {lab=clk}
-N 1540 -390 1580 -390 {lab=clk}
-N 1360 -390 1380 -390 {lab=clk}
-N 1340 -390 1340 -280 {lab=clk}
-N 1160 -390 1180 -390 {lab=clk}
-N 1140 -390 1140 -280 {lab=clk}
-N 960 -390 980 -390 {lab=clk}
-N 940 -390 940 -280 {lab=clk}
-N 760 -390 780 -390 {lab=clk}
-N 740 -390 740 -280 {lab=clk}
-N 560 -390 580 -390 {lab=clk}
-N 540 -390 540 -280 {lab=clk}
-N 360 -390 380 -390 {lab=clk}
-N 340 -390 340 -280 {lab=clk}
+N 110 -370 190 -370 {lab=clk}
 N 60 -280 100 -280 {lab=clk}
-N 160 -370 160 -350 {lab=clk}
-N 160 -350 160 -280 {lab=clk}
-N 360 -370 360 -310 {lab=avss}
-N 560 -370 560 -310 {lab=avss}
-N 760 -370 760 -310 {lab=avss}
-N 960 -370 960 -310 {lab=avss}
-N 1160 -370 1160 -310 {lab=avss}
-N 1360 -370 1360 -310 {lab=avss}
-N 1560 -370 1560 -310 {lab=avss}
-N 160 -370 180 -370 {lab=clk}
-N 160 -350 180 -350 {lab=clk}
-N 340 -390 360 -390 {lab=clk}
-N 360 -370 380 -370 {lab=avss}
-N 360 -350 380 -350 {lab=avss}
-N 540 -390 560 -390 {lab=clk}
-N 560 -370 580 -370 {lab=avss}
-N 560 -350 580 -350 {lab=avss}
-N 740 -390 760 -390 {lab=clk}
-N 760 -370 780 -370 {lab=avss}
-N 760 -350 780 -350 {lab=avss}
-N 940 -390 960 -390 {lab=clk}
-N 960 -370 980 -370 {lab=avss}
-N 960 -350 980 -350 {lab=avss}
-N 1140 -390 1160 -390 {lab=clk}
-N 1160 -370 1180 -370 {lab=avss}
-N 1160 -350 1180 -350 {lab=avss}
-N 1340 -390 1360 -390 {lab=clk}
-N 1360 -370 1380 -370 {lab=avss}
-N 1360 -350 1380 -350 {lab=avss}
 N 100 -280 1540 -280 {lab=clk}
-N 1560 -370 1580 -370 {lab=avss}
-N 1560 -350 1580 -350 {lab=avss}
 N 300 -1160 450 -1160 {lab=#net1}
 N 450 -1160 450 -1010 {lab=#net1}
 N 60 -1160 150 -1160 {lab=load}
@@ -156,20 +102,37 @@ N 2920 -700 2920 -660 {lab=D8}
 N 2820 -1060 2820 -1010 {lab=load}
 N 660 -1060 2820 -1060 {lab=load}
 N 450 -1160 2980 -1160 {lab=#net1}
-C {libs/tspc_flip_flop/tspc_flip_flop.sym} 200 -330 0 0 {name=x1}
-C {libs/tspc_flip_flop/tspc_flip_flop.sym} 400 -330 0 0 {name=x2}
-C {libs/tspc_flip_flop/tspc_flip_flop.sym} 600 -330 0 0 {name=x3}
-C {libs/tspc_flip_flop/tspc_flip_flop.sym} 800 -330 0 0 {name=x4}
-C {libs/tspc_flip_flop/tspc_flip_flop.sym} 1000 -330 0 0 {name=x5}
-C {libs/tspc_flip_flop/tspc_flip_flop.sym} 1200 -330 0 0 {name=x6}
-C {libs/tspc_flip_flop/tspc_flip_flop.sym} 1400 -330 0 0 {name=x7}
-C {libs/tspc_flip_flop/tspc_flip_flop.sym} 1600 -330 0 0 {name=x8}
+N 180 -410 190 -410 {lab=D1}
+N 110 -370 110 -280 {lab=clk}
+N 360 -370 380 -370 {lab=clk}
+N 360 -370 360 -280 {lab=clk}
+N 560 -370 580 -370 {lab=clk}
+N 560 -370 560 -280 {lab=clk}
+N 760 -370 780 -370 {lab=clk}
+N 760 -370 760 -280 {lab=clk}
+N 960 -370 980 -370 {lab=clk}
+N 960 -370 960 -280 {lab=clk}
+N 1160 -370 1180 -370 {lab=clk}
+N 1160 -370 1160 -280 {lab=clk}
+N 1360 -370 1380 -370 {lab=clk}
+N 1360 -370 1360 -280 {lab=clk}
+N 1560 -370 1580 -370 {lab=clk}
+N 1560 -370 1560 -280 {lab=clk}
+N 1540 -280 1560 -280 {lab=clk}
+N 1510 -410 1520 -410 {lab=off7}
+N 1710 -410 1720 -410 {lab=off8}
+N 1720 -520 1720 -410 {lab=off8}
+N 1310 -410 1320 -410 {lab=off6}
+N 1110 -410 1120 -410 {lab=off5}
+N 910 -410 920 -410 {lab=off4}
+N 710 -410 720 -410 {lab=off3}
+N 510 -410 520 -410 {lab=off2}
 C {iopin.sym} 40 -760 2 0 {name=p9 lab=avdd}
 C {iopin.sym} 40 -720 2 0 {name=p10 lab=avss}
 C {lab_wire.sym} 120 -760 0 0 {name=p13 sig_type=std_logic lab=avdd}
 C {lab_wire.sym} 120 -720 0 0 {name=p14 sig_type=std_logic lab=avss}
 C {lab_wire.sym} 240 -450 0 0 {name=p1 sig_type=std_logic lab=avdd}
-C {lab_wire.sym} 240 -310 2 1 {name=p2 sig_type=std_logic lab=avss}
+C {lab_wire.sym} 240 -330 2 1 {name=p2 sig_type=std_logic lab=avss}
 C {iopin.sym} 320 -520 2 0 {name=p3 lab=off1}
 C {iopin.sym} 520 -520 2 0 {name=p4 lab=off2}
 C {iopin.sym} 720 -520 2 0 {name=p5 lab=off3}
@@ -280,3 +243,18 @@ C {lab_wire.sym} 2980 -790 3 1 {name=p88 sig_type=std_logic lab=avdd}
 C {lab_wire.sym} 2920 -660 0 0 {name=p89 sig_type=std_logic lab=D8}
 C {lab_wire.sym} 3020 -1010 1 0 {name=p90 sig_type=std_logic lab=off8}
 C {lab_wire.sym} 2860 -1040 2 0 {name=p91 sig_type=std_logic lab=off7}
+C {libs/SIPO/dff.sym} 90 -280 0 0 {name=x1}
+C {libs/SIPO/dff.sym} 280 -280 0 0 {name=x2}
+C {libs/SIPO/dff.sym} 480 -280 0 0 {name=x3}
+C {libs/SIPO/dff.sym} 680 -280 0 0 {name=x4}
+C {libs/SIPO/dff.sym} 880 -280 0 0 {name=x5}
+C {libs/SIPO/dff.sym} 1080 -280 0 0 {name=x6}
+C {libs/SIPO/dff.sym} 1280 -280 0 0 {name=x7}
+C {libs/SIPO/dff.sym} 1480 -280 0 0 {name=x8}
+C {lab_wire.sym} 900 -960 3 1 {name=p92 sig_type=std_logic lab=avdd}
+C {lab_wire.sym} 1260 -960 3 1 {name=p93 sig_type=std_logic lab=avdd}
+C {lab_wire.sym} 1620 -960 3 1 {name=p94 sig_type=std_logic lab=avdd}
+C {lab_wire.sym} 1980 -960 3 1 {name=p95 sig_type=std_logic lab=avdd}
+C {lab_wire.sym} 2340 -960 3 1 {name=p96 sig_type=std_logic lab=avdd}
+C {lab_wire.sym} 2700 -960 3 1 {name=p97 sig_type=std_logic lab=avdd}
+C {lab_wire.sym} 3060 -960 3 1 {name=p98 sig_type=std_logic lab=avdd}

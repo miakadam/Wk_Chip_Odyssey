@@ -20,13 +20,17 @@ N 290 10 290 60 {lab=vss}
 N 270 60 290 60 {lab=vss}
 N 270 -90 290 -90 {lab=vss}
 N 290 -90 290 10 {lab=vss}
-N 200 10 230 10 {lab=#net2}
-N 200 -90 230 -90 {lab=#net3}
-N 160 -160 160 -140 {lab=Out}
-N 160 -140 380 -140 {lab=Out}
-N 380 -160 380 -140 {lab=Out}
-N 270 -140 270 -120 {lab=Out}
-N 380 -140 440 -140 {lab=Out}
+N 200 10 230 10 {lab=B}
+N 200 -90 230 -90 {lab=A}
+N 160 -160 160 -140 {lab=#net2}
+N 160 -140 380 -140 {lab=#net2}
+N 380 -160 380 -140 {lab=#net2}
+N 270 -140 270 -120 {lab=#net2}
+N 380 -140 440 -140 {lab=#net2}
+N 720 -140 740 -140 {lab=Out}
+N 440 -140 570 -140 {lab=#net2}
+N 650 -240 650 -220 {lab=vdd}
+N 650 -60 650 -40 {lab=B}
 C {symbols/pfet_03v3.sym} 140 -190 0 0 {name=M1
 L=0.28u
 W=0.22u
@@ -87,6 +91,9 @@ model=nfet_03v3
 spiceprefix=X
 }
 C {iopin.sym} 270 80 2 0 {name=p3 lab=vss}
-C {iopin.sym} 440 -140 2 1 {name=p4 lab=Out}
+C {iopin.sym} 740 -140 2 1 {name=p4 lab=Out}
 C {lab_pin.sym} 200 -90 0 0 {name=p5 sig_type=std_logic lab=A}
 C {lab_pin.sym} 200 10 0 0 {name=p6 sig_type=std_logic lab=B}
+C {comparator/inv.sym} 570 -220 0 0 {name=xinv1}
+C {lab_pin.sym} 650 -40 0 0 {name=p7 sig_type=std_logic lab=vss}
+C {lab_pin.sym} 650 -240 0 0 {name=p8 sig_type=std_logic lab=vdd}
