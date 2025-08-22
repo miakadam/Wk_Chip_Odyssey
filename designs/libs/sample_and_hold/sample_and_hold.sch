@@ -47,7 +47,7 @@ N 1210 -340 1210 -320 {lab=vss}
 N 850 -50 850 -30 {lab=clkb}
 C {symbols/nfet_03v3.sym} 520 -400 2 0 {name=M1
 L=0.28u
-W=0.22u
+W=1u
 nf=1
 m=1
 ad="'int((nf+1)/2) * W/nf * 0.18u'"
@@ -61,7 +61,7 @@ spiceprefix=X
 }
 C {symbols/pfet_03v3.sym} 830 -400 0 0 {name=M2
 L=0.28u
-W=0.22u
+W=2u
 nf=1
 m=1
 ad="'int((nf+1)/2) * W/nf * 0.18u'"
@@ -75,7 +75,7 @@ spiceprefix=X
 }
 C {symbols/nfet_03v3.sym} 480 -610 0 0 {name=M3
 L=0.28u
-W=0.22u
+W=1u
 nf=1
 m=1
 ad="'int((nf+1)/2) * W/nf * 0.18u'"
@@ -89,7 +89,7 @@ spiceprefix=X
 }
 C {symbols/pfet_03v3.sym} 870 -610 2 0 {name=M4
 L=0.28u
-W=0.22u
+W=2u
 nf=1
 m=1
 ad="'int((nf+1)/2) * W/nf * 0.18u'"
@@ -103,7 +103,7 @@ spiceprefix=X
 }
 C {symbols/nfet_03v3.sym} 1080 -360 1 0 {name=M5
 L=0.28u
-W=0.22u
+W=1u
 nf=1
 m=1
 ad="'int((nf+1)/2) * W/nf * 0.18u'"
@@ -117,7 +117,7 @@ spiceprefix=X
 }
 C {symbols/nfet_03v3.sym} 1210 -360 1 0 {name=M6
 L=0.28u
-W=0.22u
+W=1u
 nf=1
 m=1
 ad="'int((nf+1)/2) * W/nf * 0.18u'"
@@ -131,7 +131,7 @@ spiceprefix=X
 }
 C {symbols/nfet_03v3.sym} 850 -300 1 0 {name=M7
 L=0.28u
-W=0.22u
+W=1u
 nf=1
 m=1
 ad="'int((nf+1)/2) * W/nf * 0.18u'"
@@ -145,7 +145,7 @@ spiceprefix=X
 }
 C {symbols/pfet_03v3.sym} 850 -70 3 0 {name=M8
 L=0.28u
-W=0.22u
+W=2u
 nf=1
 m=1
 ad="'int((nf+1)/2) * W/nf * 0.18u'"
@@ -157,12 +157,6 @@ sa=0 sb=0 sd=0
 model=pfet_03v3
 spiceprefix=X
 }
-C {symbols/cap_mim_1f0fF.sym} 680 -480 1 0 {name=C1
-W=1e-6
-L=1e-6
-model=cap_mim_1f0fF
-spiceprefix=X
-m=1}
 C {iopin.sym} 160 -560 0 0 {name=p1 lab=vdd}
 C {iopin.sym} 160 -520 0 0 {name=p2 lab=vss}
 C {ipin.sym} 160 -480 0 0 {name=p3 lab=clk}
@@ -186,3 +180,9 @@ C {lab_wire.sym} 1210 -320 2 0 {name=p7 sig_type=std_logic lab=vss}
 C {lab_wire.sym} 1080 -320 2 0 {name=p21 sig_type=std_logic lab=vss}
 C {lab_wire.sym} 850 -260 2 0 {name=p22 sig_type=std_logic lab=vss}
 C {lab_wire.sym} 850 -30 2 0 {name=p24 sig_type=std_logic lab=clkb}
+C {symbols/cap_mim_1f0fF.sym} 680 -480 3 0 {name=C5
+W=10e-6
+L=10e-6
+model=cap_mim_2f0_m3m4_noshield
+spiceprefix=X
+m=16}
