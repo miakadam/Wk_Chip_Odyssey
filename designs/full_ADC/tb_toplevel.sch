@@ -99,6 +99,8 @@ N 1290 -120 1300 -120 {lab=Vsamp}
 N 1520 -120 1540 -120 {lab=Vsamp_not}
 N 1400 -260 1400 -210 {lab=avdd}
 N 1400 -10 1400 40 {lab=avss}
+N 590 -540 590 -490 {lab=GND}
+N 590 -650 590 -600 {lab=vreflow}
 C {devices/code_shown.sym} 65 -865 0 0 {name=NGSPICE1 only_toplevel=true value="
 
 .control
@@ -221,3 +223,6 @@ C {lab_wire.sym} 1070 -170 0 0 {name=p29 sig_type=std_logic lab=Vsamp}
 C {libs/WK_Kadam/6bit_CDAC_CO_MK.sym} 850 -600 0 0 {name=x1}
 C {lab_wire.sym} 1400 -250 0 0 {name=p30 sig_type=std_logic lab=avdd}
 C {lab_wire.sym} 1400 30 0 0 {name=p31 sig_type=std_logic lab=avss}
+C {vsource.sym} 590 -570 0 1 {name=V5 value=0 savecurrent=false}
+C {gnd.sym} 590 -490 0 0 {name=l12 lab=GND}
+C {lab_wire.sym} 590 -620 0 0 {name=p32 sig_type=std_logic lab=vreflow}
