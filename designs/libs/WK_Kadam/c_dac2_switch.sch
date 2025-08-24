@@ -15,18 +15,18 @@ N 300 0 300 40 {lab=sw_Vref}
 N 560 -100 560 -60 {lab=sw_vout}
 N 560 -100 820 -100 {lab=sw_vout}
 N 820 -100 820 -60 {lab=sw_vout}
-N 560 0 560 40 {lab=#net1}
-N 690 40 820 40 {lab=#net1}
-N 820 0 820 40 {lab=#net1}
+N 560 0 560 40 {lab=vreflow}
+N 690 40 820 40 {lab=vreflow}
+N 820 0 820 40 {lab=vreflow}
 N -120 -30 0 -30 {lab=sw_bit}
 N -120 -220 -120 -30 {lab=sw_bit}
 N -120 -220 930 -220 {lab=sw_bit}
 N 930 -220 930 -30 {lab=sw_bit}
 N 860 -30 930 -30 {lab=sw_bit}
-N 435 -30 520 -30 {lab=#net2}
+N 435 -30 520 -30 {lab=#net1}
 N -180 -220 -120 -220 {lab=sw_bit}
 N -120 270 -0 270 {lab=sw_bit}
-N 690 40 690 140 {lab=#net1}
+N 690 40 690 140 {lab=vreflow}
 N -227.5 0 -160 0 {lab=avdd}
 N 200 -30 300 -30 {lab=avdd}
 N 430 -100 560 -100 {lab=sw_vout}
@@ -39,13 +39,13 @@ N 100 130 100 180 {lab=avdd}
 N 100 380 100 440 {lab=avss}
 N 40 -30 160 -30 {lab=avss}
 N 730 -30 820 -30 {lab=avdd}
-N 435 -30 435 270 {lab=#net2}
+N 435 -30 435 270 {lab=#net1}
 N -120 -30 -120 270 {lab=sw_bit}
-N 220 270 435 270 {lab=#net2}
-N 560 40 690 40 {lab=#net1}
+N 220 270 435 270 {lab=#net1}
+N 560 40 690 40 {lab=vreflow}
 N 300 -100 430 -100 {lab=sw_vout}
 N 40 40 170 40 {lab=sw_Vref}
-N 340 -30 435 -30 {lab=#net2}
+N 340 -30 435 -30 {lab=#net1}
 C {symbols/nfet_03v3.sym} 20 -30 0 0 {name=M1
 L=0.28u
 W=2u
@@ -172,4 +172,5 @@ T \{in\} -295 -126 2 1 0.2 0.2 \{\}
 T \{out\} -85 -134 0 1 0.2 0.2 \{\}
 T \{avss\} -176 -15 1 1 0.2 0.2 \{\}
 }
-C {lab_wire.sym} 690 110 0 0 {name=p11 sig_type=std_logic lab=avss}
+C {iopin.sym} 690 130 0 0 {name=p11 lab=vreflow}
+C {title.sym} -272.5 580 0 0 {name=l1 author="Mia"}
