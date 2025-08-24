@@ -152,7 +152,7 @@ C {iopin.sym} 730 -290 2 0 {name=p17 lab=cdbit4}
 C {iopin.sym} 1000 -300 2 0 {name=p18 lab=cdbit3}
 C {iopin.sym} 1240 -290 2 0 {name=p19 lab=cdbit2}
 C {iopin.sym} 1520 -290 2 0 {name=p20 lab=cdbit1}
-C {Wk_Chip_Odyssey/designs/libs/WK_Kadam/c_dac1_switch.sym} 320 -430 0 0 {name=x1v \{xschem version=3.4.7 file_version=1.2\}
+C {libs/WK_Kadam/c_dac1_switch.sym} 320 -430 0 0 {name=x1v \{xschem version=3.4.7 file_version=1.2\}
 G \{\}
 K \{type=subcircuit
 format="@name @pinlist @symname"
@@ -170,7 +170,7 @@ L 7 30 -60 30 -40 \{\}
 L 7 -90 0 -70 0 \{\}
 L 7 30 40 30 60 \{\}
 B 4 -70 -40 70 40 \{fill=no\}
-B 5 -22.5 -62.5 -17.5 -57.5 \{name=avdd dir=inout\}
+B 5 -22.5 -62.5 -17.5 -57.5 \{name=sw_Vref dir=inout\}
 B 5 -22.5 57.5 -17.5 62.5 \{name=avss dir=inout\}
 B 5 27.5 -62.5 32.5 -57.5 \{name=sw_vout dir=inout\}
 B 5 -92.5 -2.5 -87.5 2.5 \{name=sw_bit dir=inout\}
@@ -184,8 +184,13 @@ T \{sw_vout\} 36 -85 3 1 0.2 0.2 \{\}
 T \{sw_bit\} -75 6 0 1 0.2 0.2 \{\}
 T \{sw_Vref\} 6 45 3 1 0.2 0.2 \{\}
 }
-C {Wk_Chip_Odyssey/designs/libs/WK_Kadam/c_dac1_switch.sym} 610 -430 0 0 {name=x2}
-C {Wk_Chip_Odyssey/designs/libs/WK_Kadam/c_dac1_switch.sym} 930 -430 0 0 {name=x1}
-C {Wk_Chip_Odyssey/designs/libs/WK_Kadam/c_dac1_switch.sym} 1180 -430 0 0 {name=x3}
-C {Wk_Chip_Odyssey/designs/libs/WK_Kadam/c_dac1_switch.sym} 1420 -440 0 0 {name=x4}
-C {Wk_Chip_Odyssey/designs/libs/WK_Kadam/c_dac1_switch.sym} 1690 -440 0 0 {name=x5}
+C {libs/WK_Kadam/c_dac1_switch.sym} 610 -430 0 0 {name=x2
+\{name=sw_Vref}
+C {libs/WK_Kadam/c_dac1_switch.sym} 930 -430 0 0 {name=x1
+\{name=sw_Vref}
+C {libs/WK_Kadam/c_dac1_switch.sym} 1180 -430 0 0 {name=x3
+\{name=sw_Vref}
+C {libs/WK_Kadam/c_dac1_switch.sym} 1420 -440 0 0 {name=x4
+\{name=sw_Vref}
+C {libs/WK_Kadam/c_dac1_switch.sym} 1690 -440 0 0 {name=x5
+\{name=sw_Vref}

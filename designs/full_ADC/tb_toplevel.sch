@@ -5,14 +5,14 @@ V {}
 S {}
 E {}
 B 2 1570 -650 2370 -250 {flags=graph
-y2=3.5
+y2=2.8
 ypos1=0
 ypos2=2
 divy=5
 subdivy=1
 unity=1
-x1=0
-x2=0.5e-07
+x1=9.6499883e-09
+x2=1.8202247e-08
 divx=5
 subdivx=1
 xlabmag=1.0
@@ -29,18 +29,18 @@ logx=0
 logy=0
 hilight_wave=0
 digital=0
-hcursor1_y=1.1717638
-y1=0}
-B 2 1570 -1060 2370 -660 {flags=graph
+hcursor1_y=1.2362633
+y1=-0.7}
+B 2 1570 -1120 2370 -720 {flags=graph
 y1=0
-y2=3.5
+y2=2.5
 ypos1=0
-ypos2=2
+ypos2=2.5
 divy=5
 subdivy=1
 unity=1
-x1=0
-x2=0.5e-07
+x1=9.6499883e-09
+x2=1.8202247e-08
 divx=5
 subdivx=1
 xlabmag=1.0
@@ -140,7 +140,7 @@ C {vsource.sym} 300 -310 0 0 {name=Vbit5 value="PWL(10n 3.3 10.5n 3.3 10.6n 0)" 
 C {gnd.sym} 580 -40 0 0 {name=l8 lab=GND}
 C {vsource.sym} 40 -310 0 0 {name=Vbit6 value=3.3 savecurrent=false}
 C {gnd.sym} 300 -250 0 0 {name=l9 lab=GND}
-C {vsource.sym} 250 -560 0 0 {name=Vref value=1.05 savecurrent=false}
+C {vsource.sym} 250 -560 0 0 {name=Vref value=1.2 savecurrent=false}
 C {gnd.sym} 250 -500 0 0 {name=l10 lab=GND}
 C {lab_wire.sym} 40 -360 0 0 {name=p1 sig_type=std_logic lab=vbit6}
 C {lab_wire.sym} 300 -360 0 0 {name=p2 sig_type=std_logic lab=vbit5}
@@ -172,9 +172,11 @@ C {capa.sym} 1080 -570 0 0 {name=C1
 m=1
 value=1p
 footprint=1206
-device="ceramic capacitor"}
-C {gnd.sym} 1080 -540 0 0 {name=l1 lab=GND}
-C {vsource.sym} 900 -190 0 1 {name=V3 value=1.5 savecurrent=false}
+device="ceramic capacitor"
+spice_ignore=true}
+C {gnd.sym} 1080 -540 0 0 {name=l1 lab=GND
+spice_ignore=true}
+C {vsource.sym} 900 -190 0 1 {name=V3 value=1.2 savecurrent=false}
 C {gnd.sym} 900 -160 0 0 {name=l2 lab=GND}
 C {lab_wire.sym} 900 -240 0 0 {name=p20 sig_type=std_logic lab=Vdac}
 C {symbols/nfet_03v3.sym} 790 -320 0 0 {name=M1
@@ -207,7 +209,7 @@ sa=0 sb=0 sd=0
 model=pfet_03v3
 spiceprefix=X
 }
-C {Wk_Chip_Odyssey/designs/libs/WK_Kadam/inv_test.sym} 1600 0 0 0 {name=x2}
+C {libs/WK_Kadam/inv_test.sym} 1600 0 0 0 {name=x2}
 C {lab_wire.sym} 770 -320 0 0 {name=p24 sig_type=std_logic lab=Vsamp}
 C {lab_wire.sym} 1260 -120 0 0 {name=p26 sig_type=std_logic lab=Vsamp}
 C {lab_wire.sym} 1560 -120 0 1 {name=p27 sig_type=std_logic lab=Vsamp_not}
@@ -216,6 +218,6 @@ C {lab_wire.sym} 900 -400 2 0 {name=p28 sig_type=std_logic lab=Vout}
 C {vsource.sym} 1070 -120 0 1 {name=V4 value="PWL(0p 3.3 500p 3.3 600p 0 10n 0)" savecurrent=false}
 C {gnd.sym} 1070 -90 0 0 {name=l3 lab=GND}
 C {lab_wire.sym} 1070 -170 0 0 {name=p29 sig_type=std_logic lab=Vsamp}
-C {Wk_Chip_Odyssey/designs/libs/WK_Kadam/6bit_CDAC_CO_MK.sym} 850 -600 0 0 {name=x1}
+C {libs/WK_Kadam/6bit_CDAC_CO_MK.sym} 850 -600 0 0 {name=x1}
 C {lab_wire.sym} 1400 -250 0 0 {name=p30 sig_type=std_logic lab=avdd}
 C {lab_wire.sym} 1400 30 0 0 {name=p31 sig_type=std_logic lab=avss}

@@ -116,7 +116,7 @@ model=pfet_03v3
 spiceprefix=X
 }
 C {lab_wire.sym} 750 -30 0 0 {name=p6 sig_type=std_logic lab=avdd}
-C {Wk_Chip_Odyssey/designs/libs/WK_Kadam/inv_test.sym} 300 390 0 0 {name=x1v \{xschem version=3.4.7 file_version=1.2\}
+C {libs/WK_Kadam/inv_test.sym} 300 390 0 0 {name=x1v \{xschem version=3.4.7 file_version=1.2\}
 G \{\}
 K \{type=subcircuit
 format="@name @pinlist @symname"
