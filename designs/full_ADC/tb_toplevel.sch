@@ -62,19 +62,19 @@ N 410 -530 410 -480 {lab=avss}
 N 410 -640 410 -590 {lab=avdd}
 N 510 -540 510 -490 {lab=GND}
 N 510 -650 510 -600 {lab=avss}
-N 240 -230 240 -200 {lab=GND}
-N 310 -230 310 -200 {lab=GND}
-N 240 -310 240 -290 {lab=vbit6}
-N 380 -230 380 -200 {lab=GND}
-N 380 -310 380 -290 {lab=vbit4}
-N 450 -230 450 -200 {lab=GND}
-N 450 -310 450 -290 {lab=vbit3}
-N 520 -230 520 -200 {lab=GND}
-N 520 -310 520 -290 {lab=vbit2}
-N 590 -230 590 -200 {lab=GND}
-N 590 -310 590 -290 {lab=vbit1}
-N 310 -230 310 -200 {lab=GND}
-N 310 -310 310 -290 {lab=vbit5}
+N 40 -280 40 -250 {lab=GND}
+N 300 -280 300 -250 {lab=GND}
+N 40 -360 40 -340 {lab=vbit6}
+N 580 -270 580 -240 {lab=GND}
+N 580 -350 580 -330 {lab=vbit4}
+N 40 -50 40 -20 {lab=GND}
+N 40 -130 40 -110 {lab=vbit3}
+N 310 -70 310 -40 {lab=GND}
+N 310 -150 310 -130 {lab=vbit2}
+N 580 -70 580 -40 {lab=GND}
+N 580 -150 580 -130 {lab=vbit1}
+N 300 -280 300 -250 {lab=GND}
+N 300 -360 300 -340 {lab=vbit5}
 N 250 -530 250 -500 {lab=GND}
 N 250 -610 250 -590 {lab=vref}
 N 660 -650 700 -650 {lab=avdd}
@@ -91,9 +91,14 @@ N 810 -290 810 -270 {lab=Vdac}
 N 810 -270 1010 -270 {lab=Vdac}
 N 1010 -290 1010 -270 {lab=Vdac}
 N 1260 -120 1290 -120 {lab=Vsamp}
-N 1520 -120 1560 -120 {lab=Vsamp_not}
+N 1540 -120 1580 -120 {lab=Vsamp_not}
 N 900 -400 900 -370 {lab=Vout}
 N 1070 -200 1070 -150 {lab=Vsamp}
+N 1050 -320 1130 -320 {lab=Vsamp_not}
+N 1290 -120 1300 -120 {lab=Vsamp}
+N 1520 -120 1540 -120 {lab=Vsamp_not}
+N 1400 -260 1400 -210 {lab=avdd}
+N 1400 -10 1400 40 {lab=avss}
 C {devices/code_shown.sym} 65 -865 0 0 {name=NGSPICE1 only_toplevel=true value="
 
 .control
@@ -123,26 +128,26 @@ C {gnd.sym} 510 -490 0 0 {name=l11 lab=GND}
 C {lab_wire.sym} 510 -620 0 0 {name=p11 sig_type=std_logic lab=avss}
 C {lab_wire.sym} 410 -630 0 0 {name=p12 sig_type=std_logic lab=avdd}
 C {lab_wire.sym} 410 -500 0 0 {name=p23 sig_type=std_logic lab=avss}
-C {gnd.sym} 240 -200 0 0 {name=l6 lab=GND}
-C {vsource.sym} 590 -260 0 0 {name=Vbit1 value="PWL(25n 3.3 25.5n 3.3 25.6n 0)" savecurrent=false}
-C {vsource.sym} 520 -260 0 0 {name=Vbit2 value=3.3 savecurrent=false}
-C {gnd.sym} 380 -200 0 0 {name=l4 lab=GND}
-C {vsource.sym} 450 -260 0 0 {name=Vbit3 value="PWL(20n 3.3 20.5n 3.3 20.6n 0)" savecurrent=false}
-C {gnd.sym} 450 -200 0 0 {name=l5 lab=GND}
-C {vsource.sym} 380 -260 0 0 {name=Vbit4 value="PWL(15n 3.3 15.5n 3.3 15.6n 0)" savecurrent=false}
-C {gnd.sym} 520 -200 0 0 {name=l7 lab=GND}
-C {vsource.sym} 310 -260 0 0 {name=Vbit5 value="PWL(10n 3.3 10.5n 3.3 10.6n 0)" savecurrent=false}
-C {gnd.sym} 590 -200 0 0 {name=l8 lab=GND}
-C {vsource.sym} 240 -260 0 0 {name=Vbit6 value=3.3 savecurrent=false}
-C {gnd.sym} 310 -200 0 0 {name=l9 lab=GND}
+C {gnd.sym} 40 -250 0 0 {name=l6 lab=GND}
+C {vsource.sym} 580 -100 0 0 {name=Vbit1 value="PWL(25n 3.3 25.5n 3.3 25.6n 0)" savecurrent=false}
+C {vsource.sym} 310 -100 0 0 {name=Vbit2 value=3.3 savecurrent=false}
+C {gnd.sym} 580 -240 0 0 {name=l4 lab=GND}
+C {vsource.sym} 40 -80 0 0 {name=Vbit3 value="PWL(20n 3.3 20.5n 3.3 20.6n 0)" savecurrent=false}
+C {gnd.sym} 40 -20 0 0 {name=l5 lab=GND}
+C {vsource.sym} 580 -300 0 0 {name=Vbit4 value="PWL(15n 3.3 15.5n 3.3 15.6n 0)" savecurrent=false}
+C {gnd.sym} 310 -40 0 0 {name=l7 lab=GND}
+C {vsource.sym} 300 -310 0 0 {name=Vbit5 value="PWL(10n 3.3 10.5n 3.3 10.6n 0)" savecurrent=false}
+C {gnd.sym} 580 -40 0 0 {name=l8 lab=GND}
+C {vsource.sym} 40 -310 0 0 {name=Vbit6 value=3.3 savecurrent=false}
+C {gnd.sym} 300 -250 0 0 {name=l9 lab=GND}
 C {vsource.sym} 250 -560 0 0 {name=Vref value=1.05 savecurrent=false}
 C {gnd.sym} 250 -500 0 0 {name=l10 lab=GND}
-C {lab_wire.sym} 240 -310 0 0 {name=p1 sig_type=std_logic lab=vbit6}
-C {lab_wire.sym} 310 -310 0 0 {name=p2 sig_type=std_logic lab=vbit5}
-C {lab_wire.sym} 380 -310 0 0 {name=p3 sig_type=std_logic lab=vbit4}
-C {lab_wire.sym} 450 -310 0 0 {name=p4 sig_type=std_logic lab=vbit3}
-C {lab_wire.sym} 520 -310 0 0 {name=p5 sig_type=std_logic lab=vbit2}
-C {lab_wire.sym} 590 -310 0 0 {name=p6 sig_type=std_logic lab=vbit1}
+C {lab_wire.sym} 40 -360 0 0 {name=p1 sig_type=std_logic lab=vbit6}
+C {lab_wire.sym} 300 -360 0 0 {name=p2 sig_type=std_logic lab=vbit5}
+C {lab_wire.sym} 580 -350 0 0 {name=p3 sig_type=std_logic lab=vbit4}
+C {lab_wire.sym} 40 -130 0 0 {name=p4 sig_type=std_logic lab=vbit3}
+C {lab_wire.sym} 310 -150 0 0 {name=p5 sig_type=std_logic lab=vbit2}
+C {lab_wire.sym} 580 -150 0 0 {name=p6 sig_type=std_logic lab=vbit1}
 C {lab_wire.sym} 250 -610 0 0 {name=p7 sig_type=std_logic lab=vref}
 C {lab_wire.sym} 780 -480 3 0 {name=p8 sig_type=std_logic lab=vbit6}
 C {lab_wire.sym} 810 -480 3 0 {name=p9 sig_type=std_logic lab=vbit5}
@@ -202,13 +207,15 @@ sa=0 sb=0 sd=0
 model=pfet_03v3
 spiceprefix=X
 }
-C {libs/WK_Kadam/inv_test.sym} 1595 0 0 0 {name=x2}
+C {Wk_Chip_Odyssey/designs/libs/WK_Kadam/inv_test.sym} 1600 0 0 0 {name=x2}
 C {lab_wire.sym} 770 -320 0 0 {name=p24 sig_type=std_logic lab=Vsamp}
 C {lab_wire.sym} 1260 -120 0 0 {name=p26 sig_type=std_logic lab=Vsamp}
 C {lab_wire.sym} 1560 -120 0 1 {name=p27 sig_type=std_logic lab=Vsamp_not}
-C {lab_wire.sym} 1050 -320 0 1 {name=p25 sig_type=std_logic lab=Vsamp_not}
+C {lab_wire.sym} 1090 -320 0 1 {name=p25 sig_type=std_logic lab=Vsamp_not}
 C {lab_wire.sym} 900 -400 2 0 {name=p28 sig_type=std_logic lab=Vout}
 C {vsource.sym} 1070 -120 0 1 {name=V4 value="PWL(0p 3.3 500p 3.3 600p 0 10n 0)" savecurrent=false}
 C {gnd.sym} 1070 -90 0 0 {name=l3 lab=GND}
 C {lab_wire.sym} 1070 -170 0 0 {name=p29 sig_type=std_logic lab=Vsamp}
-C {libs/WK_Kadam/6bit_CDAC_CO_MK.sym} 850 -600 0 0 {name=x1}
+C {Wk_Chip_Odyssey/designs/libs/WK_Kadam/6bit_CDAC_CO_MK.sym} 850 -600 0 0 {name=x1}
+C {lab_wire.sym} 1400 -250 0 0 {name=p30 sig_type=std_logic lab=avdd}
+C {lab_wire.sym} 1400 30 0 0 {name=p31 sig_type=std_logic lab=avss}
