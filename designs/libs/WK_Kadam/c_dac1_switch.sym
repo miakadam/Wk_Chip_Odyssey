@@ -21,7 +21,6 @@ B 5 -22.5 57.5 -17.5 62.5 {name=avss dir=inout}
 B 5 27.5 -62.5 32.5 -57.5 {name=sw_vout dir=inout}
 B 5 -92.5 -2.5 -87.5 2.5 {name=sw_bit dir=inout}
 B 5 27.5 57.5 32.5 62.5 {name=sw_Vref dir=inout}
-P 4 1 140 -30 {}
 T {@symname} -66.5 14 0 0 0.3 0.3 {}
 T {@name} -65 -32 0 0 0.2 0.2 {}
 T {avdd} -14 -65 3 1 0.2 0.2 {}

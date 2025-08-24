@@ -35,12 +35,12 @@ N 70 120 270 120 {lab=bit1}
 N 70 100 70 120 {lab=bit1}
 N -380 -30 -160 -30 {lab=Vref_h}
 N -200 -70 -160 -70 {lab=avdd}
-N -210 50 -160 50 {lab=avss}
+N -210 60 -160 60 {lab=avss}
 N 140 -20 210 -20 {lab=Vdac}
 N -380 -30 -380 10 {lab=Vref_h}
 N -300 100 -300 130 {lab=GND}
-N -300 0 -300 40 {lab=Vref_l}
-N -300 0 -160 -0 {lab=Vref_l}
+N -300 20 -300 40 {lab=Vref_l}
+N -300 20 -160 20 {lab=Vref_l}
 C {vsource.sym} -420 -170 0 1 {name=V1 value=3.3 savecurrent=false}
 C {vsource.sym} -340 -180 0 1 {name=V2 value=0 savecurrent=false}
 C {gnd.sym} -340 -100 0 0 {name=l11 lab=GND}
@@ -63,7 +63,7 @@ C {lab_wire.sym} -50 450 0 1 {name=p5 sig_type=std_logic lab=avss}
 C {lab_wire.sym} -140 420 0 1 {name=p6 sig_type=std_logic lab=avss}
 C {lab_wire.sym} -240 380 0 1 {name=p7 sig_type=std_logic lab=avss}
 C {iopin.sym} 210 -20 0 0 {name=p8 lab=Vdac}
-C {lab_wire.sym} -190 50 0 0 {name=p9 sig_type=std_logic lab=avss}
+C {lab_wire.sym} -190 60 0 0 {name=p9 sig_type=std_logic lab=avss}
 C {devices/code_shown.sym} -735 -445 0 0 {name=NGSPICE1 only_toplevel=true value="
 
 .control
@@ -82,7 +82,6 @@ setplot tran1
 let Vout = v(Vdac)
 plot Vout
 
-alter @Vbit5[DC] = 0
 alter @Vbit3[DC] = 0
 dc Vref_h 0.9 1.2 0.1
 dc Vref_l 0.9 1.2 0.1
@@ -96,7 +95,7 @@ plot Vout
 write "TB_CDAC_v2.raw"
 .endc
 "
-}
+alter @Vbit5[DC] = 0}
 C {devices/code_shown.sym} -170 -410 0 0 {name=MODELS1 only_toplevel=true
 format="tcleval( @value )"
 value="
@@ -118,5 +117,5 @@ C {lab_pin.sym} 160 270 0 0 {name=p18 sig_type=std_logic lab=bit2}
 C {lab_pin.sym} 270 220 0 0 {name=p19 sig_type=std_logic lab=bit1}
 C {vsource.sym} -300 70 0 0 {name=Vref_l value=0.9 savecurrent=false}
 C {gnd.sym} -300 130 0 0 {name=l1 lab=GND}
-C {lab_wire.sym} -220 0 0 0 {name=p20 sig_type=std_logic lab=Vref_l}
-C {libs/WK_Kadam/6bit_CDAC_V2_CO_MK.sym} 0 -20 0 0 {name=x1}
+C {lab_wire.sym} -220 20 0 0 {name=p20 sig_type=std_logic lab=Vref_l}
+C {libs/WK_Kadam/6bit_CDAC_V2_CO_MK.sym} -10 -20 0 0 {name=x1}

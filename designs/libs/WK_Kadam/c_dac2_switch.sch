@@ -173,3 +173,4 @@ T \{out\} -85 -134 0 1 0.2 0.2 \{\}
 T \{avss\} -176 -15 1 1 0.2 0.2 \{\}
 }
 C {iopin.sym} 690 130 0 0 {name=p11 lab=vreflow}
+C {title.sym} -272.5 580 0 0 {name=l1 author="Mia"}
