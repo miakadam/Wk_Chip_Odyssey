@@ -5,14 +5,14 @@ V {}
 S {}
 E {}
 B 2 1570 -650 2370 -250 {flags=graph
-y2=3
+y2=4
 ypos1=0
 ypos2=2
 divy=5
 subdivy=1
 unity=1
-x1=0
-x2=2e-07
+x1=3e-08
+x2=2.3e-07
 divx=5
 subdivx=1
 xlabmag=1.0
@@ -30,7 +30,7 @@ logy=0
 hilight_wave=0
 digital=0
 hcursor1_y=0.89192933
-y1=-1}
+y1=0}
 B 2 1570 -1120 2370 -720 {flags=graph
 y1=0
 y2=2.5
@@ -39,8 +39,8 @@ ypos2=2.5
 divy=5
 subdivy=1
 unity=1
-x1=0
-x2=2e-07
+x1=3e-08
+x2=2.3e-07
 divx=5
 subdivx=1
 xlabmag=1.0
@@ -76,10 +76,10 @@ N 580 -150 580 -130 {lab=vbit1}
 N 300 -280 300 -250 {lab=GND}
 N 300 -360 300 -340 {lab=vbit5}
 N 250 -530 250 -500 {lab=GND}
-N 250 -610 250 -590 {lab=vref}
+N 250 -610 250 -590 {lab=vref_h}
 N 660 -650 700 -650 {lab=avdd}
-N 660 -550 700 -550 {lab=avss}
-N 660 -600 700 -600 {lab=vref}
+N 660 -530 700 -530 {lab=avss}
+N 660 -610 700 -610 {lab=vref_h}
 N 1000 -600 1080 -600 {lab=Vout}
 N 900 -270 900 -220 {lab=Vdac}
 N 810 -320 870 -320 {lab=avss}
@@ -100,7 +100,8 @@ N 1520 -120 1540 -120 {lab=Vsamp_not}
 N 1400 -260 1400 -210 {lab=avdd}
 N 1400 -10 1400 40 {lab=avss}
 N 590 -540 590 -490 {lab=GND}
-N 590 -650 590 -600 {lab=vreflow}
+N 590 -650 590 -600 {lab=vref_l}
+N 660 -580 700 -580 {lab=vref_l}
 C {devices/code_shown.sym} 65 -865 0 0 {name=NGSPICE1 only_toplevel=true value="
 
 .control
@@ -150,15 +151,15 @@ C {lab_wire.sym} 580 -350 0 0 {name=p3 sig_type=std_logic lab=vbit4}
 C {lab_wire.sym} 40 -130 0 0 {name=p4 sig_type=std_logic lab=vbit3}
 C {lab_wire.sym} 310 -150 0 0 {name=p5 sig_type=std_logic lab=vbit2}
 C {lab_wire.sym} 580 -150 0 0 {name=p6 sig_type=std_logic lab=vbit1}
-C {lab_wire.sym} 250 -610 0 0 {name=p7 sig_type=std_logic lab=vref}
+C {lab_wire.sym} 250 -610 0 0 {name=p7 sig_type=std_logic lab=vref_h}
 C {lab_wire.sym} 780 -480 3 0 {name=p8 sig_type=std_logic lab=vbit6}
 C {lab_wire.sym} 810 -480 3 0 {name=p9 sig_type=std_logic lab=vbit5}
 C {lab_wire.sym} 840 -480 3 0 {name=p10 sig_type=std_logic lab=vbit4}
 C {lab_wire.sym} 870 -480 3 0 {name=p13 sig_type=std_logic lab=vbit3}
 C {lab_wire.sym} 900 -480 3 0 {name=p14 sig_type=std_logic lab=vbit2}
 C {lab_wire.sym} 930 -480 3 0 {name=p15 sig_type=std_logic lab=vbit1}
-C {lab_wire.sym} 660 -600 0 0 {name=p16 sig_type=std_logic lab=vref}
-C {lab_wire.sym} 660 -550 0 0 {name=p17 sig_type=std_logic lab=avss}
+C {lab_wire.sym} 660 -610 0 0 {name=p16 sig_type=std_logic lab=vref_h}
+C {lab_wire.sym} 660 -530 0 0 {name=p17 sig_type=std_logic lab=avss}
 C {lab_wire.sym} 660 -650 0 0 {name=p18 sig_type=std_logic lab=avdd}
 C {lab_wire.sym} 1040 -600 1 0 {name=p19 sig_type=std_logic lab=Vout}
 C {devices/launcher.sym} 1080 -830 0 0 {name=h3
@@ -220,9 +221,10 @@ C {lab_wire.sym} 900 -400 2 0 {name=p28 sig_type=std_logic lab=Vout}
 C {vsource.sym} 1070 -120 0 1 {name=V4 value="PWL(0p 3.3 500p 3.3 600p 0 10n 0)" savecurrent=false}
 C {gnd.sym} 1070 -90 0 0 {name=l3 lab=GND}
 C {lab_wire.sym} 1070 -170 0 0 {name=p29 sig_type=std_logic lab=Vsamp}
-C {libs/WK_Kadam/6bit_CDAC_CO_MK.sym} 850 -600 0 0 {name=x1}
+C {libs/WK_Kadam/6bit_CDAC_V2_CO_MK.sym} 860 -600 0 0 {name=x1}
 C {lab_wire.sym} 1400 -250 0 0 {name=p30 sig_type=std_logic lab=avdd}
 C {lab_wire.sym} 1400 30 0 0 {name=p31 sig_type=std_logic lab=avss}
-C {vsource.sym} 590 -570 0 1 {name=V5 value=0 savecurrent=false}
+C {vsource.sym} 590 -570 0 1 {name=V5 value=0.9 savecurrent=false}
 C {gnd.sym} 590 -490 0 0 {name=l12 lab=GND}
-C {lab_wire.sym} 590 -620 0 0 {name=p32 sig_type=std_logic lab=vreflow}
+C {lab_wire.sym} 590 -620 0 0 {name=p32 sig_type=std_logic lab=vref_l}
+C {lab_wire.sym} 660 -580 0 0 {name=p33 sig_type=std_logic lab=vref_l}

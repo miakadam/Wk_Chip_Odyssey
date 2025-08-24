@@ -1,0 +1,30 @@
+v {xschem version=3.4.7 file_version=1.2}
+G {}
+K {}
+V {}
+S {}
+E {}
+L 4 -50 0 30 0 {}
+L 4 40 -30 40 -10 {}
+L 4 40 -10 60 0 {}
+L 4 60 40 60 60 {}
+L 4 20 40 20 60 {}
+L 7 -10 -60 -10 -40 {}
+L 7 -10 40 -10 60 {}
+L 7 40 -60 40 -40 {}
+L 7 -80 0 -60 0 {}
+B 4 -60 -40 80 40 {fill=no}
+B 5 -12.5 -62.5 -7.5 -57.5 {name=avdd dir=inout}
+B 5 -12.5 57.5 -7.5 62.5 {name=avss dir=inout}
+B 5 37.5 -62.5 42.5 -57.5 {name=sw_vout dir=inout}
+B 5 -82.5 -2.5 -77.5 2.5 {name=sw_bit dir=inout}
+B 5 57.5 57.5 62.5 62.5 {name=vreflow dir=inout}
+B 5 17.5 57.5 22.5 62.5 {name=sw_Vref dir=inout}
+T {@symname} -56.5 14 0 0 0.3 0.3 {}
+T {@name} -55 -32 0 0 0.2 0.2 {}
+T {avdd} -4 -65 3 1 0.2 0.2 {}
+T {avss} -16 65 1 1 0.2 0.2 {}
+T {sw_vout} 46 -85 3 1 0.2 0.2 {}
+T {sw_bit} -65 6 0 1 0.2 0.2 {}
+T {vreflow} 55 46 1 0 0.2 0.2 {}
+T {sw_Vref} 16 85 1 1 0.2 0.2 {}
