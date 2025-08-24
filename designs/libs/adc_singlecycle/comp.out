@@ -1,0 +1,134 @@
+
+Circuit 1 cell nfet_03v3 and Circuit 2 cell nfet_03v3 are black boxes.
+Equate elements:  no current cell.
+Device classes nfet_03v3 and nfet_03v3 are equivalent.
+
+Circuit 1 cell pfet_03v3 and Circuit 2 cell pfet_03v3 are black boxes.
+Equate elements:  no current cell.
+Device classes pfet_03v3 and pfet_03v3 are equivalent.
+
+Subcircuit summary:
+Circuit 1: layout_gf180mcu_osu_sc_gp9t3v3_ |Circuit 2: gf180mcu_osu_sc_gp9t3v3__dffsr_ 
+-------------------------------------------|-------------------------------------------
+nfet_03v3 (18)                             |nfet_03v3 (18)                             
+pfet_03v3 (18)                             |pfet_03v3 (18)                             
+Number of devices: 36                      |Number of devices: 36                      
+Number of nets: 26                         |Number of nets: 26                         
+---------------------------------------------------------------------------------------
+Netlists match uniquely with property errors.
+pfet_03v3:29 vs. pfet_03v3:M1:
+ l circuit1: 60   circuit2: 3e-07   (delta=200%, cutoff=1%)
+ w circuit1: 340   circuit2: 1.7e-06   (delta=200%, cutoff=1%)
+pfet_03v3:2 vs. pfet_03v3:M5:
+ l circuit1: 60   circuit2: 3e-07   (delta=200%, cutoff=1%)
+ w circuit1: 340   circuit2: 1.7e-06   (delta=200%, cutoff=1%)
+pfet_03v3:32 vs. pfet_03v3:M7:
+ l circuit1: 60   circuit2: 3e-07   (delta=200%, cutoff=1%)
+ w circuit1: 340   circuit2: 1.7e-06   (delta=200%, cutoff=1%)
+pfet_03v3:30 vs. pfet_03v3:M11:
+ l circuit1: 60   circuit2: 3e-07   (delta=200%, cutoff=1%)
+ w circuit1: 340   circuit2: 1.7e-06   (delta=200%, cutoff=1%)
+pfet_03v3:12 vs. pfet_03v3:M15:
+ l circuit1: 60   circuit2: 3e-07   (delta=200%, cutoff=1%)
+ w circuit1: 340   circuit2: 1.7e-06   (delta=200%, cutoff=1%)
+pfet_03v3:8 vs. pfet_03v3:M3:
+ l circuit1: 60   circuit2: 3e-07   (delta=200%, cutoff=1%)
+ w circuit1: 340   circuit2: 1.7e-06   (delta=200%, cutoff=1%)
+pfet_03v3:20 vs. pfet_03v3:M17:
+ l circuit1: 60   circuit2: 3e-07   (delta=200%, cutoff=1%)
+ w circuit1: 340   circuit2: 1.7e-06   (delta=200%, cutoff=1%)
+pfet_03v3:24 vs. pfet_03v3:M13:
+ l circuit1: 60   circuit2: 3e-07   (delta=200%, cutoff=1%)
+ w circuit1: 340   circuit2: 1.7e-06   (delta=200%, cutoff=1%)
+pfet_03v3:11 vs. pfet_03v3:M9:
+ l circuit1: 60   circuit2: 3e-07   (delta=200%, cutoff=1%)
+ w circuit1: 340   circuit2: 1.7e-06   (delta=200%, cutoff=1%)
+pfet_03v3:3 vs. pfet_03v3:M19:
+ l circuit1: 60   circuit2: 3e-07   (delta=200%, cutoff=1%)
+ w circuit1: 340   circuit2: 1.7e-06   (delta=200%, cutoff=1%)
+pfet_03v3:13 vs. pfet_03v3:M21:
+ l circuit1: 60   circuit2: 3e-07   (delta=200%, cutoff=1%)
+ w circuit1: 340   circuit2: 1.7e-06   (delta=200%, cutoff=1%)
+pfet_03v3:27 vs. pfet_03v3:M29:
+ l circuit1: 60   circuit2: 3e-07   (delta=200%, cutoff=1%)
+ w circuit1: 340   circuit2: 1.7e-06   (delta=200%, cutoff=1%)
+pfet_03v3:16 vs. pfet_03v3:M23:
+ l circuit1: 60   circuit2: 3e-07   (delta=200%, cutoff=1%)
+ w circuit1: 340   circuit2: 1.7e-06   (delta=200%, cutoff=1%)
+pfet_03v3:19 vs. pfet_03v3:M28:
+ l circuit1: 60   circuit2: 3e-07   (delta=200%, cutoff=1%)
+ w circuit1: 340   circuit2: 1.7e-06   (delta=200%, cutoff=1%)
+pfet_03v3:21 vs. pfet_03v3:M33:
+ l circuit1: 60   circuit2: 3e-07   (delta=200%, cutoff=1%)
+ w circuit1: 340   circuit2: 1.7e-06   (delta=200%, cutoff=1%)
+pfet_03v3:9 vs. pfet_03v3:M27:
+ l circuit1: 60   circuit2: 3e-07   (delta=200%, cutoff=1%)
+ w circuit1: 340   circuit2: 1.7e-06   (delta=200%, cutoff=1%)
+pfet_03v3:17 vs. pfet_03v3:M34:
+ l circuit1: 60   circuit2: 3e-07   (delta=200%, cutoff=1%)
+ w circuit1: 340   circuit2: 1.7e-06   (delta=200%, cutoff=1%)
+pfet_03v3:23 vs. pfet_03v3:M37:
+ l circuit1: 60   circuit2: 3e-07   (delta=200%, cutoff=1%)
+ w circuit1: 340   circuit2: 1.7e-06   (delta=200%, cutoff=1%)
+nfet_03v3:22 vs. nfet_03v3:M2:
+ l circuit1: 60   circuit2: 3e-07   (delta=200%, cutoff=1%)
+ w circuit1: 170   circuit2: 8.5e-07   (delta=200%, cutoff=1%)
+nfet_03v3:33 vs. nfet_03v3:M6:
+ l circuit1: 60   circuit2: 3e-07   (delta=200%, cutoff=1%)
+ w circuit1: 120   circuit2: 8.5e-07   (delta=200%, cutoff=1%)
+nfet_03v3:31 vs. nfet_03v3:M8:
+ l circuit1: 60   circuit2: 3e-07   (delta=200%, cutoff=1%)
+ w circuit1: 170   circuit2: 6e-07   (delta=200%, cutoff=1%)
+nfet_03v3:25 vs. nfet_03v3:M12:
+ l circuit1: 60   circuit2: 3e-07   (delta=200%, cutoff=1%)
+ w circuit1: 170   circuit2: 8.5e-07   (delta=200%, cutoff=1%)
+nfet_03v3:7 vs. nfet_03v3:M16:
+ l circuit1: 60   circuit2: 3e-07   (delta=200%, cutoff=1%)
+ w circuit1: 120   circuit2: 6e-07   (delta=200%, cutoff=1%)
+nfet_03v3:1 vs. nfet_03v3:M4:
+ l circuit1: 60   circuit2: 3e-07   (delta=200%, cutoff=1%)
+ w circuit1: 120   circuit2: 8.5e-07   (delta=200%, cutoff=1%)
+nfet_03v3:10 vs. nfet_03v3:M18:
+ l circuit1: 60   circuit2: 3e-07   (delta=200%, cutoff=1%)
+ w circuit1: 120   circuit2: 6e-07   (delta=200%, cutoff=1%)
+nfet_03v3:14 vs. nfet_03v3:M14:
+ l circuit1: 60   circuit2: 3e-07   (delta=200%, cutoff=1%)
+ w circuit1: 170   circuit2: 8.5e-07   (delta=200%, cutoff=1%)
+nfet_03v3:6 vs. nfet_03v3:M10:
+ l circuit1: 60   circuit2: 3e-07   (delta=200%, cutoff=1%)
+ w circuit1: 170   circuit2: 6e-07   (delta=200%, cutoff=1%)
+nfet_03v3:35 vs. nfet_03v3:M20:
+ l circuit1: 60   circuit2: 3e-07   (delta=200%, cutoff=1%)
+ w circuit1: 170   circuit2: 8.5e-07   (delta=200%, cutoff=1%)
+nfet_03v3:5 vs. nfet_03v3:M22:
+ l circuit1: 60   circuit2: 3e-07   (delta=200%, cutoff=1%)
+ w circuit1: 170   circuit2: 8.5e-07   (delta=200%, cutoff=1%)
+nfet_03v3:34 vs. nfet_03v3:M30:
+ l circuit1: 60   circuit2: 3e-07   (delta=200%, cutoff=1%)
+ w circuit1: 170   circuit2: 8.5e-07   (delta=200%, cutoff=1%)
+nfet_03v3:28 vs. nfet_03v3:M24:
+ l circuit1: 60   circuit2: 3e-07   (delta=200%, cutoff=1%)
+ w circuit1: 170   circuit2: 8.5e-07   (delta=200%, cutoff=1%)
+nfet_03v3:0 vs. nfet_03v3:M25:
+ l circuit1: 60   circuit2: 3e-07   (delta=200%, cutoff=1%)
+ w circuit1: 170   circuit2: 8.5e-07   (delta=200%, cutoff=1%)
+nfet_03v3:26 vs. nfet_03v3:M31:
+ l circuit1: 60   circuit2: 3e-07   (delta=200%, cutoff=1%)
+ w circuit1: 170   circuit2: 8.5e-07   (delta=200%, cutoff=1%)
+nfet_03v3:18 vs. nfet_03v3:M26:
+ l circuit1: 60   circuit2: 3e-07   (delta=200%, cutoff=1%)
+ w circuit1: 170   circuit2: 8.5e-07   (delta=200%, cutoff=1%)
+nfet_03v3:4 vs. nfet_03v3:M32:
+ l circuit1: 60   circuit2: 3e-07   (delta=200%, cutoff=1%)
+ w circuit1: 170   circuit2: 8.5e-07   (delta=200%, cutoff=1%)
+nfet_03v3:15 vs. nfet_03v3:M38:
+ l circuit1: 60   circuit2: 3e-07   (delta=200%, cutoff=1%)
+ w circuit1: 170   circuit2: 8.5e-07   (delta=200%, cutoff=1%)
+Cells have no pins;  pin matching not needed.
+Device classes layout_gf180mcu_osu_sc_gp9t3v3__dffsr_1.spice and gf180mcu_osu_sc_gp9t3v3__dffsr_1.spice are equivalent.
+
+Final result: Circuits match uniquely.
+Property errors were found.
+
+The following cells had property errors:
+ layout_gf180mcu_osu_sc_gp9t3v3__dffsr_1.spice

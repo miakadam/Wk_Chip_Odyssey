@@ -207,7 +207,6 @@ sa=0 sb=0 sd=0
 model=pfet_03v3
 spiceprefix=X
 }
-C {Wk_Chip_Odyssey/designs/libs/WK_Kadam/inv_test.sym} 1600 0 0 0 {name=x2}
 C {lab_wire.sym} 770 -320 0 0 {name=p24 sig_type=std_logic lab=Vsamp}
 C {lab_wire.sym} 1260 -120 0 0 {name=p26 sig_type=std_logic lab=Vsamp}
 C {lab_wire.sym} 1560 -120 0 1 {name=p27 sig_type=std_logic lab=Vsamp_not}
@@ -216,6 +215,7 @@ C {lab_wire.sym} 900 -400 2 0 {name=p28 sig_type=std_logic lab=Vout}
 C {vsource.sym} 1070 -120 0 1 {name=V4 value="PWL(0p 3.3 500p 3.3 600p 0 10n 0)" savecurrent=false}
 C {gnd.sym} 1070 -90 0 0 {name=l3 lab=GND}
 C {lab_wire.sym} 1070 -170 0 0 {name=p29 sig_type=std_logic lab=Vsamp}
-C {Wk_Chip_Odyssey/designs/libs/WK_Kadam/6bit_CDAC_CO_MK.sym} 850 -600 0 0 {name=x1}
 C {lab_wire.sym} 1400 -250 0 0 {name=p30 sig_type=std_logic lab=avdd}
 C {lab_wire.sym} 1400 30 0 0 {name=p31 sig_type=std_logic lab=avss}
+C {libs/WK_Kadam/6bit_CDAC_CO_MK.sym} 850 -600 0 0 {name=x3}
+C {libs/WK_Kadam/inv_test.sym} 1600 0 0 0 {name=x1}
