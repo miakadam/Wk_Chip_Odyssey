@@ -27,7 +27,7 @@
 # ========================================================================
 
 # Set the DESIGNS environment variable to the 'designs' subdirectory of the current directory
-export DESIGNS=/Users/meghnakadam/Documents/GitHub
+export DESIGNS=/Users/meghnakadam/Documents/GitHub/Wk_Chip_Odyssey/designs
 
 if [ -n "${DRY_RUN}" ]; then
 	echo "[INFO] This is a dry run, all commands will be printed to the shell (Commands printed but not executed are marked with $)!"

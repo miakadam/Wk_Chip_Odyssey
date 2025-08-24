@@ -38,7 +38,7 @@ N -380 -20 -160 -20 {lab=Vref}
 N -200 -70 -160 -70 {lab=avdd}
 N -210 30 -160 30 {lab=avss}
 N 140 -20 210 -20 {lab=Vdac}
-C {Wk_Chip_Odyssey/designs/libs/WK_Kadam/6bit_CDAC_CO_MK.sym} -10 -20 0 0 {name=x1}
+C {libs/WK_Kadam/6bit_CDAC_CO_MK.sym} -10 -20 0 0 {name=x1}
 C {vsource.sym} -420 -170 0 1 {name=V1 value=3.3 savecurrent=false}
 C {vsource.sym} -340 -180 0 1 {name=V2 value=0 savecurrent=false}
 C {gnd.sym} -340 -100 0 0 {name=l11 lab=GND}
@@ -69,7 +69,7 @@ save all
 op
 show all
 .probe v(Vdac)
-alter @Vbit3[DC] = 0
+alter @Vbit5[DC] = 0
 dc Vref 0.8 1.2 0.1
 setplot dc1
 let Vout = v(Vdac)
@@ -79,8 +79,8 @@ setplot tran1
 let Vout = v(Vdac)
 plot Vout
 
-alter @Vbit3[DC] = 3.3
-alter @Vbit5[DC] = 0
+alter @Vbit5[DC] = 3.3
+alter @Vbit3[DC] = 0
 dc Vref 0.8 1.2 0.1
 setplot dc2
 let Vout = v(Vdac)
