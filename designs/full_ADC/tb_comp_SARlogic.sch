@@ -183,7 +183,7 @@ C {code_shown.sym} 320 -650 0 0 {name=NGSPICE only_toplevel=true value=
 ".save all
 .control
 probe(x1.out1 x1.out2 x1.inv1 x1.inv2 x1.latch)
-tran 100p 20u
+tran 2n 20u
 write tb_comp_SARlogic.raw
 .endc"}
 C {devices/launcher.sym} 910 -750 0 0 {name=h3
