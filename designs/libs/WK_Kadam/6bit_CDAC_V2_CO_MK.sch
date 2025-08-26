@@ -58,7 +58,6 @@ N 790 -430 790 -290 {lab=cdbit4}
 N 1060 -430 1060 -300 {lab=cdbit3}
 N 1310 -440 1310 -290 {lab=cdbit2}
 N 1580 -440 1580 -290 {lab=cdbit1}
-N 110 -320 180 -320 {lab=cdbit6}
 N 180 -430 180 -320 {lab=cdbit6}
 N 670 -790 1000 -790 {lab=Vdac}
 N 1000 -790 1250 -790 {lab=Vdac}
@@ -103,6 +102,7 @@ N 1580 -440 1590 -440 {lab=cdbit1}
 N 550 -340 870 -340 {lab=avss}
 N 600 -320 920 -320 {lab=Vref_h}
 N 640 -260 960 -260 {lab=Vref_l}
+N 50 -320 180 -320 {lab=cdbit6}
 C {symbols/cap_mim_1f0fF.sym} 1530 -690 0 0 {name=C3
 W=10e-6
 L=10e-6
@@ -153,7 +153,7 @@ L=10e-6
 model=cap_mim_2f0_m3m4_noshield
 spiceprefix=X
 m=2}
-C {iopin.sym} 110 -320 2 0 {name=p11 lab=cdbit6}
+C {iopin.sym} 50 -320 2 0 {name=p11 lab=cdbit6}
 C {iopin.sym} 460 -300 2 0 {name=p12 lab=cdbit5}
 C {iopin.sym} 790 -290 2 0 {name=p17 lab=cdbit4}
 C {iopin.sym} 1060 -300 2 0 {name=p18 lab=cdbit3}

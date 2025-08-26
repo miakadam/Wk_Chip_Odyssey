@@ -26,10 +26,11 @@ C {title.sym} -182.5 370 0 0 {name=l1 author="Mia"}
 C {iopin.sym} 400 -227.5 3 0 {name=p1 lab=avdd}
 C {iopin.sym} 400 202.5 1 0 {name=p2 lab=avss}
 C {iopin.sym} 210 -40 2 0 {name=p4 lab=in}
-C {iopin.sym} 580 -20 0 0 {name=p5 lab=out}
+C {iopin.sym} 580 -20 0 0 {name=p5 lab=out
+}
 C {symbols/nfet_03v3.sym} 380 70 0 0 {name=M3
 L=0.28u
-W=2.5u
+W=1u
 nf=1
 m=1
 ad="'int((nf+1)/2) * W/nf * 0.18u'"
@@ -43,7 +44,7 @@ spiceprefix=X
 }
 C {symbols/pfet_03v3.sym} 380 -90 0 0 {name=M4
 L=0.28u
-W=4.0u
+W=2.5u
 nf=1
 m=1
 ad="'int((nf+1)/2) * W/nf * 0.18u'"

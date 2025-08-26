@@ -9,8 +9,8 @@ ypos1=-0.20601983
 ypos2=1.793979
 subdivy=1
 unity=1
-x1=-9.2478422e-08
-x2=5.9075216e-06
+x1=0
+x2=6e-06
 divx=5
 subdivx=1
 xlabmag=1.0
@@ -33,12 +33,12 @@ y2=2
 autoload=1
 divy=5}
 B 2 2360 -1490 3160 -1090 {flags=graph
-ypos1=0.1
-ypos2=2.1
+ypos1=0.4
+ypos2=2.4
 subdivy=1
 unity=1
-x1=-9.2478422e-08
-x2=5.9075216e-06
+x1=0
+x2=6e-06
 divx=5
 subdivx=1
 xlabmag=1.0
@@ -66,8 +66,8 @@ ypos1=-0.20601983
 ypos2=1.793979
 subdivy=1
 unity=1
-x1=-9.2478422e-08
-x2=5.9075216e-06
+x1=0
+x2=6e-06
 divx=5
 subdivx=1
 xlabmag=1.0
@@ -83,14 +83,14 @@ y1=0
 autoload=1
 divy=5
 y2=2
-hcursor1_y=0.045230717}
+hcursor1_y=0.13315624}
 B 2 1550 -650 2350 -250 {flags=graph
-ypos1=-0.10601988
-ypos2=1.8939789
+ypos1=0.093979996
+ypos2=2.0939787
 subdivy=1
 unity=1
-x1=-9.2478422e-08
-x2=5.9075216e-06
+x1=0
+x2=6e-06
 divx=5
 subdivx=1
 xlabmag=1.0
@@ -117,8 +117,8 @@ ypos1=-0.20601983
 ypos2=1.793979
 subdivy=1
 unity=1
-x1=-9.2478422e-08
-x2=5.9075216e-06
+x1=0
+x2=6e-06
 divx=5
 subdivx=1
 xlabmag=1.0
@@ -132,11 +132,11 @@ node="cdac_out
 Comp_Out
 Vin"
 digital=0
-y1=-0.2
+y1=-0.575
 autoload=1
 divy=5
 y2=3.4
-hcursor1_y=0.30515561}
+hcursor1_y=1.0093396}
 B 2 1210 -80 2010 320 {flags=graph
 y1=0.672
 y2=1.192
@@ -145,8 +145,8 @@ ypos2=2
 divy=5
 subdivy=1
 unity=1
-x1=-9.2478422e-08
-x2=5.9075216e-06
+x1=0
+x2=6e-06
 divx=5
 subdivx=1
 xlabmag=1.0
@@ -166,8 +166,8 @@ ypos2=2
 divy=5
 subdivy=1
 unity=1
-x1=-9.2478422e-08
-x2=5.9075216e-06
+x1=0
+x2=6e-06
 divx=5
 subdivx=1
 xlabmag=1.0
@@ -179,17 +179,15 @@ unitx=1
 logx=0
 logy=0
 hcursor1_y=0.77963205}
-N 710 -880 710 -830 {lab=avss}
-N 710 -990 710 -940 {lab=avdd}
 N 810 -890 810 -840 {lab=GND}
 N 810 -1000 810 -950 {lab=avss}
 N 550 -880 550 -850 {lab=GND}
 N 550 -960 550 -940 {lab=vref_h}
-N 960 -1000 1000 -1000 {lab=avdd}
+N 960 -1000 1000 -1000 {lab=VDD_3V3}
 N 960 -870 1000 -870 {lab=avss}
 N 960 -960 1000 -960 {lab=vref_h}
 N 1100 -270 1150 -270 {lab=#net1}
-N 1720 -930 1780 -930 {lab=Comp_Out}
+N 1720 -930 1920 -930 {lab=Comp_out}
 N 1130 -530 1130 -500 {lab=GND}
 N 1130 -610 1130 -590 {lab=Vin}
 N 1120 -420 1170 -420 {lab=#net2}
@@ -211,8 +209,7 @@ N 600 -690 600 -670 {lab=vbit5}
 N 1300 -950 1360 -950 {lab=cdac_out}
 N 1360 -950 1360 -910 {lab=cdac_out}
 N 1360 -910 1460 -910 {lab=cdac_out}
-N 880 -120 930 -120 {lab=#net3}
-N 60 -840 110 -840 {lab=#net4}
+N 60 -840 110 -840 {lab=#net3}
 C {devices/code_shown.sym} 365 -1215 0 0 {name=NGSPICE1 only_toplevel=true value="
 
 .control
@@ -236,19 +233,14 @@ value="
 .lib $::180MCU_MODELS/sm141064.ngspice mimcap_typical
 * .lib $::180MCU_MODELS/sm141064.ngspice res_statistical
 "}
-C {vsource.sym} 710 -910 0 1 {name=V1 value=3.3 savecurrent=false}
 C {vsource.sym} 810 -920 0 1 {name=V2 value=0 savecurrent=false}
 C {gnd.sym} 810 -840 0 0 {name=l11 lab=GND}
 C {lab_wire.sym} 810 -970 0 0 {name=p11 sig_type=std_logic lab=avss}
-C {lab_wire.sym} 960 -1000 0 0 {name=p12 sig_type=std_logic lab=avdd
-}
-C {lab_wire.sym} 710 -850 0 0 {name=p23 sig_type=std_logic lab=avss}
 C {vsource.sym} 550 -910 0 0 {name=V14 value=1.2 savecurrent=false}
 C {gnd.sym} 550 -850 0 0 {name=l10 lab=GND}
 C {lab_wire.sym} 550 -960 0 0 {name=p7 sig_type=std_logic lab=vref_h}
 C {lab_wire.sym} 960 -960 0 0 {name=p16 sig_type=std_logic lab=vref_h}
-C {lab_wire.sym} 960 -870 0 0 {name=p17 sig_type=std_logic lab=avss}
-C {lab_wire.sym} 710 -990 0 0 {name=p18 sig_type=std_logic lab=avdd
+C {lab_wire.sym} 960 -870 0 0 {name=p17 sig_type=std_logic lab=avss
 }
 C {devices/launcher.sym} 1390 -1190 0 0 {name=h3
 descr="save, netlist & simulate"
@@ -285,17 +277,17 @@ C {gnd.sym} 870 -180 0 0 {name=l22 lab=GND}
 C {lab_pin.sym} 870 -240 0 1 {name=p39 sig_type=std_logic lab=off8}
 C {lab_pin.sym} 730 -240 0 1 {name=p40 sig_type=std_logic lab=off6}
 C {vsource.sym} 1100 -240 0 0 {name=V6 value=PULSE"(0 3.3 0 100p 100p 0.2u 1.2u)" savecurrent=false
-}
+spice_ignore=true}
 C {lab_pin.sym} 1210 -270 0 1 {name=p41 sig_type=std_logic lab=RESET
-}
+spice_ignore=true}
 C {gnd.sym} 1100 -210 0 0 {name=l12 lab=GND
-}
+spice_ignore=true}
 C {res.sym} 1180 -270 1 0 {name=R5
 value=50
 footprint=1206
 device=resistor
 m=1
-}
+spice_ignore=true}
 C {comparator/full_comparator.sym} 1200 -830 0 0 {name=x4}
 C {lab_pin.sym} 1520 -870 1 1 {name=p42 sig_type=std_logic lab=off1}
 C {lab_pin.sym} 1540 -870 1 1 {name=p43 sig_type=std_logic lab=off2}
@@ -309,22 +301,21 @@ C {lab_pin.sym} 1580 -990 1 0 {name=p50 sig_type=std_logic lab=VDD_3V3}
 C {gnd.sym} 1600 -990 2 1 {name=l14 lab=GND}
 C {lab_pin.sym} 1460 -930 0 0 {name=p51 sig_type=std_logic lab=CLK}
 C {gnd.sym} 1600 -990 2 1 {name=l15 lab=GND}
-C {lab_pin.sym} 1780 -930 3 1 {name=p54 sig_type=std_logic lab=Comp_Out}
-C {libs/SAR_logic/SAR_logic.sym} 1940 -910 0 0 {name=x5
+C {libs/SAR_logic/SAR_logic.sym} 1970 -1060 0 0 {name=x5
 spice_ignore=true}
-C {lab_pin.sym} 1920 -950 0 0 {name=p55 sig_type=std_logic lab=RESET
+C {lab_pin.sym} 1950 -1100 0 0 {name=p55 sig_type=std_logic lab=RESET
 spice_ignore=true}
-C {lab_pin.sym} 1920 -970 0 0 {name=p56 sig_type=std_logic lab=CLK
+C {lab_pin.sym} 1950 -1120 0 0 {name=p56 sig_type=std_logic lab=CLK
 spice_ignore=true}
-C {gnd.sym} 2070 -890 0 0 {name=l23 lab=GND
+C {gnd.sym} 2100 -1040 0 0 {name=l23 lab=GND
 spice_ignore=true}
-C {lab_pin.sym} 2070 -1010 0 0 {name=p57 sig_type=std_logic lab=VDD_3V3
+C {lab_pin.sym} 2100 -1160 0 0 {name=p57 sig_type=std_logic lab=VDD_3V3
 spice_ignore=true}
-C {lab_pin.sym} 2220 -970 0 1 {name=p58 sig_type=std_logic lab=D[5..0]
+C {lab_pin.sym} 2250 -1120 0 1 {name=p58 sig_type=std_logic lab=D[5..0]
 spice_ignore=true}
-C {lab_pin.sym} 2220 -930 0 1 {name=p59 sig_type=std_logic lab=EOC
+C {lab_pin.sym} 2250 -1080 0 1 {name=p59 sig_type=std_logic lab=EOC
 spice_ignore=true}
-C {lab_pin.sym} 2220 -950 0 1 {name=p60 sig_type=std_logic lab=DB[5..0]
+C {lab_pin.sym} 2250 -1100 0 1 {name=p60 sig_type=std_logic lab=DB[5..0]
 spice_ignore=true}
 C {lab_pin.sym} 1070 -740 1 1 {name=p61 sig_type=std_logic lab=D[5]
 spice_ignore=true}
@@ -391,18 +382,6 @@ spiceprefix=X
 m=10
 spice_ignore = true}
 C {lab_wire.sym} 1460 -950 0 0 {name=p19 sig_type=std_logic lab=Vin}
-C {vsource.sym} 880 -90 0 0 {name=V15 value=PULSE"(0 1.8 0 100p 100p 0.2u 1.2u)" savecurrent=false
-spice_ignore=true}
-C {lab_pin.sym} 990 -120 0 1 {name=p31 sig_type=std_logic lab=RESET
-spice_ignore=true}
-C {gnd.sym} 880 -60 0 0 {name=l25 lab=GND
-spice_ignore=true}
-C {res.sym} 960 -120 1 0 {name=R1
-value=50
-footprint=1206
-device=resistor
-m=1
-spice_ignore=true}
 C {vsource.sym} 60 -810 0 0 {name=V16 value=3.3 savecurrent=false}
 C {lab_pin.sym} 170 -840 0 1 {name=p52 sig_type=std_logic lab=VDD_3V3}
 C {gnd.sym} 60 -780 0 0 {name=l26 lab=GND}
@@ -411,7 +390,6 @@ value=50
 footprint=1206
 device=resistor
 m=1}
-C {lab_pin.sym} 640 -990 3 1 {name=p53 sig_type=std_logic lab=VDD_3V3
-spice_ignore=true}
-C {lab_pin.sym} 940 -1040 2 1 {name=p62 sig_type=std_logic lab=VDD_3V3
-spice_ignore=true}
+C {lab_pin.sym} 960 -1000 2 1 {name=p62 sig_type=std_logic lab=VDD_3V3
+}
+C {iopin.sym} 1800 -930 1 0 {name=p12 lab=Comp_out}

@@ -7,22 +7,22 @@ E {}
 N 900 -660 950 -660 {lab=ff_init_q}
 N 950 -680 950 -660 {lab=ff_init_q}
 N 950 -680 1110 -680 {lab=ff_init_q}
-N 1220 -660 1310 -660 {lab=ff_5_q}
+N 1270 -660 1310 -660 {lab=ff_5_q}
 N 1310 -680 1310 -660 {lab=ff_5_q}
 N 1310 -680 1410 -680 {lab=ff_5_q}
-N 1520 -660 1630 -660 {lab=ff_4_q}
+N 1620 -660 1630 -660 {lab=ff_4_q}
 N 1630 -680 1630 -660 {lab=ff_4_q}
 N 1630 -680 1720 -680 {lab=ff_4_q}
-N 1830 -660 1920 -660 {lab=ff_3_q}
+N 1910 -660 1920 -660 {lab=ff_3_q}
 N 1920 -680 1920 -660 {lab=ff_3_q}
 N 1920 -680 2020 -680 {lab=ff_3_q}
-N 2130 -660 2260 -660 {lab=ff_2_q}
+N 2230 -660 2260 -660 {lab=ff_2_q}
 N 2260 -680 2260 -660 {lab=ff_2_q}
 N 2260 -680 2330 -680 {lab=ff_2_q}
-N 2440 -660 2550 -660 {lab=ff_1_q}
+N 2500 -660 2550 -660 {lab=ff_1_q}
 N 2550 -680 2550 -660 {lab=ff_1_q}
 N 2550 -680 2630 -680 {lab=ff_1_q}
-N 2740 -660 2850 -660 {lab=ff_0_q}
+N 2840 -660 2850 -660 {lab=ff_0_q}
 N 2850 -680 2850 -660 {lab=ff_0_q}
 N 2850 -680 2990 -680 {lab=ff_0_q}
 N 1270 -660 1270 -330 {lab=ff_5_q}
@@ -35,13 +35,18 @@ N 2230 -660 2230 -330 {lab=ff_2_q}
 N 2230 -330 2330 -330 {lab=ff_2_q}
 N 2500 -660 2500 -330 {lab=ff_1_q}
 N 2500 -330 2630 -330 {lab=ff_1_q}
-N 2840 -660 2840 -340 {lab=ff_0_q}
-N 2840 -340 2840 -330 {lab=ff_0_q}
+N 2840 -660 2840 -330 {lab=ff_0_q}
 N 2840 -330 2990 -330 {lab=ff_0_q}
-N 3100 -660 3150 -660 {lab=EOC}
-N 3150 -660 3290 -660 {lab=EOC}
+N 3100 -660 3210 -660 {lab=EOC}
+N 3210 -660 3290 -660 {lab=EOC}
 N 3210 -660 3210 -330 {lab=EOC}
 N 3210 -330 3330 -330 {lab=EOC}
+N 1220 -660 1270 -660 {lab=ff_5_q}
+N 1520 -660 1620 -660 {lab=ff_4_q}
+N 1830 -660 1910 -660 {lab=ff_3_q}
+N 2130 -660 2230 -660 {lab=ff_2_q}
+N 2440 -660 2500 -660 {lab=ff_1_q}
+N 2740 -660 2840 -660 {lab=ff_0_q}
 C {title.sym} 190 -50 0 0 {name=l1 author="Kevin Oviedo"}
 C {ipin.sym} 280 -920 0 0 {name=p1 lab=comp_in}
 C {iopin.sym} 260 -1110 0 0 {name=p6 lab=vdd}
@@ -163,3 +168,12 @@ C {lab_pin.sym} 1920 -680 1 0 {name=p102 sig_type=std_logic lab=ff_3_q}
 C {lab_pin.sym} 2260 -680 1 0 {name=p103 sig_type=std_logic lab=ff_2_q}
 C {lab_pin.sym} 2550 -680 1 0 {name=p104 sig_type=std_logic lab=ff_1_q}
 C {lab_pin.sym} 2850 -680 1 0 {name=p105 sig_type=std_logic lab=ff_0_q}
+C {noconn.sym} 1220 -640 2 0 {name=l2}
+C {noconn.sym} 1520 -640 2 0 {name=l3}
+C {noconn.sym} 1830 -640 2 0 {name=l4}
+C {noconn.sym} 2130 -640 2 0 {name=l5}
+C {noconn.sym} 2440 -640 2 0 {name=l6}
+C {noconn.sym} 2740 -640 2 0 {name=l7}
+C {noconn.sym} 3100 -640 2 0 {name=l8}
+C {noconn.sym} 3440 -330 2 0 {name=l9}
+C {noconn.sym} 900 -640 2 0 {name=l10}

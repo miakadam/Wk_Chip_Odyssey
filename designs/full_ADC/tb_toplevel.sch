@@ -80,8 +80,8 @@ dataset=-1
 unitx=1
 logx=0
 logy=0
-hcursor1_y=1.1582147
-y2=2.2}
+y2=1.3
+hcursor1_y=1.1680859}
 N 410 -530 410 -480 {lab=avss}
 N 410 -640 410 -590 {lab=avdd}
 N 510 -540 510 -490 {lab=GND}
@@ -104,8 +104,8 @@ N 660 -650 700 -650 {lab=avdd}
 N 660 -520 700 -520 {lab=avss}
 N 660 -610 700 -610 {lab=vref_h}
 N 1000 -600 1080 -600 {lab=Vout}
-N 590 -540 590 -490 {lab=GND}
-N 590 -650 590 -600 {lab=vref_l}
+N 150 -530 150 -480 {lab=GND}
+N 150 -640 150 -590 {lab=vref_l}
 N 660 -560 700 -560 {lab=vref_l}
 C {devices/code_shown.sym} 65 -865 0 0 {name=NGSPICE1 only_toplevel=true value="
 
@@ -148,7 +148,7 @@ C {vsource.sym} 300 -310 0 0 {name=Vbit5 value=PULSE"(0 3.3 0 100p 100p 1u 5u)" 
 C {gnd.sym} 580 -40 0 0 {name=l8 lab=GND}
 C {vsource.sym} 40 -310 0 0 {name=Vbit6 value=PULSE"(0 3.3 0 100p 100p 0.5u 5u)" savecurrent=false}
 C {gnd.sym} 300 -250 0 0 {name=l9 lab=GND}
-C {vsource.sym} 250 -560 0 0 {name=Vref value=2 savecurrent=false}
+C {vsource.sym} 250 -560 0 0 {name=Vref value=1.2 savecurrent=false}
 C {gnd.sym} 250 -500 0 0 {name=l10 lab=GND}
 C {lab_wire.sym} 40 -360 0 0 {name=p1 sig_type=std_logic lab=vbit6}
 C {lab_wire.sym} 300 -360 0 0 {name=p2 sig_type=std_logic lab=vbit5}
@@ -186,7 +186,7 @@ device="ceramic capacitor"
 C {gnd.sym} 1080 -540 0 0 {name=l1 lab=GND
 #spice_ignore=true}
 C {libs/WK_Kadam/6bit_CDAC_V2_CO_MK.sym} 850 -600 0 0 {name=x1}
-C {vsource.sym} 590 -570 0 1 {name=V5 value=1.2 savecurrent=false}
-C {gnd.sym} 590 -490 0 0 {name=l12 lab=GND}
-C {lab_wire.sym} 590 -620 0 0 {name=p32 sig_type=std_logic lab=vref_l}
+C {vsource.sym} 150 -560 0 1 {name=V5 value=0.9 savecurrent=false}
+C {gnd.sym} 150 -480 0 0 {name=l12 lab=GND}
+C {lab_wire.sym} 150 -610 0 0 {name=p32 sig_type=std_logic lab=vref_l}
 C {lab_wire.sym} 670 -560 0 0 {name=p33 sig_type=std_logic lab=vref_l}
