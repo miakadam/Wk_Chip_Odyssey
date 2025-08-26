@@ -9,8 +9,8 @@ ypos1=-0.20601983
 ypos2=1.793979
 subdivy=1
 unity=1
-x1=-9.2478422e-08
-x2=5.9075216e-06
+x1=0
+x2=6e-06
 divx=5
 subdivx=1
 xlabmag=1.0
@@ -19,38 +19,33 @@ dataset=-1
 unitx=1
 logx=0
 logy=0
-color="4 5 6 8 10 9 12"
+color="4 5 6 8 10 9"
 node="CLK
-COMP_OUT
 RESET
 EOC
 cdac_out
 Vin
 comp_out"
 digital=1
-y1=0
-y2=2
 autoload=1
-divy=5}
-B 2 2360 -1490 3160 -1090 {flags=graph
+divy=5
+y1=2
+y2=4.5}
+B 2 2360 -1510 3160 -1110 {flags=graph
 ypos1=0.1
 ypos2=2.1
 subdivy=1
 unity=1
-x1=-9.2478422e-08
-x2=5.9075216e-06
+x1=0
+x2=6e-06
 divx=5
 subdivx=1
 xlabmag=1.0
 ylabmag=1.0
-node="d5
-d4
-d3
-d2
-d1
-d0
-dend"
-color="4 5 6 7 8 9 10"
+node="db2
+db1
+db0"
+color="4 5 6"
 dataset=-1
 unitx=1
 logx=0
@@ -58,39 +53,16 @@ logy=0
 digital=1
 divy=5
 rainbow=0
-y1=5
 autoload=1
-y2=8}
-B 2 2360 -650 3160 -250 {flags=graph
-ypos1=-0.20601983
-ypos2=1.793979
-subdivy=1
-unity=1
-x1=-9.2478422e-08
-x2=5.9075216e-06
-divx=5
-subdivx=1
-xlabmag=1.0
-ylabmag=1.0
-dataset=-1
-unitx=1
-logx=0
-logy=0
-color=4
-node=cdac_out
-digital=0
-y1=0
-autoload=1
-divy=5
-y2=2
-hcursor1_y=0.045230717}
+y2=8
+y1=2.5}
 B 2 1550 -650 2350 -250 {flags=graph
 ypos1=-0.10601988
 ypos2=1.8939789
 subdivy=1
 unity=1
-x1=-9.2478422e-08
-x2=5.9075216e-06
+x1=0
+x2=6e-06
 divx=5
 subdivx=1
 xlabmag=1.0
@@ -112,13 +84,13 @@ vbit1"
 y1=2
 y2=4.5
 }
-B 2 2360 -230 3160 170 {flags=graph
+B 2 2360 -650 3160 -250 {flags=graph
 ypos1=-0.20601983
 ypos2=1.793979
 subdivy=1
 unity=1
-x1=-9.2478422e-08
-x2=5.9075216e-06
+x1=0
+x2=6e-06
 divx=5
 subdivx=1
 xlabmag=1.0
@@ -136,49 +108,33 @@ y1=-0.2
 autoload=1
 divy=5
 y2=3.4
-hcursor1_y=0.30515561}
-B 2 1210 -80 2010 320 {flags=graph
-y1=0.672
-y2=1.192
-ypos1=0
-ypos2=2
-divy=5
+hcursor1_y=0.30515561
+hilight_wave=-1}
+B 2 1550 -1510 2350 -1110 {flags=graph
+ypos1=0.1
+ypos2=2.1
 subdivy=1
 unity=1
-x1=-9.2478422e-08
-x2=5.9075216e-06
+x1=0
+x2=6e-06
 divx=5
 subdivx=1
 xlabmag=1.0
 ylabmag=1.0
-node=cdac_out
-color=4
+node="db5
+db4
+db3"
+color="4 5 6"
 dataset=-1
 unitx=1
 logx=0
 logy=0
-hcursor1_y=1.1965061}
-B 2 2330 210 3130 610 {flags=graph
-y1=-0.35138889
-y2=4
-ypos1=0
-ypos2=2
+digital=1
 divy=5
-subdivy=1
-unity=1
-x1=-9.2478422e-08
-x2=5.9075216e-06
-divx=5
-subdivx=1
-xlabmag=1.0
-ylabmag=1.0
-node=comp_out
-color=4
-dataset=-1
-unitx=1
-logx=0
-logy=0
-hcursor1_y=0.77963205}
+rainbow=0
+y1=2.5
+autoload=1
+y2=8}
 N 710 -880 710 -830 {lab=avss}
 N 710 -990 710 -940 {lab=avdd}
 N 810 -890 810 -840 {lab=GND}
@@ -210,9 +166,9 @@ N 880 -480 880 -460 {lab=vbit1}
 N 600 -690 600 -670 {lab=vbit5}
 N 1300 -950 1360 -950 {lab=cdac_out}
 N 1360 -950 1360 -910 {lab=cdac_out}
-N 1360 -910 1460 -910 {lab=cdac_out}
 N 880 -120 930 -120 {lab=#net3}
 N 60 -840 110 -840 {lab=#net4}
+N 1780 -930 1920 -930 {lab=Comp_Out}
 C {devices/code_shown.sym} 365 -1215 0 0 {name=NGSPICE1 only_toplevel=true value="
 
 .control
@@ -250,10 +206,10 @@ C {lab_wire.sym} 960 -960 0 0 {name=p16 sig_type=std_logic lab=vref_h}
 C {lab_wire.sym} 960 -870 0 0 {name=p17 sig_type=std_logic lab=avss}
 C {lab_wire.sym} 710 -990 0 0 {name=p18 sig_type=std_logic lab=avdd
 }
-C {devices/launcher.sym} 1390 -1190 0 0 {name=h3
+C {devices/launcher.sym} 1040 -1360 0 0 {name=h3
 descr="save, netlist & simulate"
 tclcommand="xschem save; xschem netlist; xschem simulate"}
-C {launcher.sym} 1380 -1135 0 0 {name=h5 
+C {launcher.sym} 1030 -1305 0 0 {name=h5 
 descr="load ngspice waves" 
 tclcommand="
 xschem raw_read $netlist_dir/tb_newtoplevel.raw tran; xschem redraw
@@ -284,7 +240,7 @@ C {vsource.sym} 870 -210 0 0 {name=V13 value=3.3 savecurrent=false}
 C {gnd.sym} 870 -180 0 0 {name=l22 lab=GND}
 C {lab_pin.sym} 870 -240 0 1 {name=p39 sig_type=std_logic lab=off8}
 C {lab_pin.sym} 730 -240 0 1 {name=p40 sig_type=std_logic lab=off6}
-C {vsource.sym} 1100 -240 0 0 {name=V6 value=PULSE"(0 3.3 0 100p 100p 0.2u 1.2u)" savecurrent=false
+C {vsource.sym} 1100 -240 0 0 {name=V6 value=PULSE"(0 3.3 0 100p 100p 0.2u 1.4u)" savecurrent=false
 }
 C {lab_pin.sym} 1210 -270 0 1 {name=p41 sig_type=std_logic lab=RESET
 }
@@ -311,38 +267,36 @@ C {lab_pin.sym} 1460 -930 0 0 {name=p51 sig_type=std_logic lab=CLK}
 C {gnd.sym} 1600 -990 2 1 {name=l15 lab=GND}
 C {lab_pin.sym} 1780 -930 3 1 {name=p54 sig_type=std_logic lab=Comp_Out}
 C {libs/SAR_logic/SAR_logic.sym} 1940 -910 0 0 {name=x5
-spice_ignore=true}
+}
 C {lab_pin.sym} 1920 -950 0 0 {name=p55 sig_type=std_logic lab=RESET
-spice_ignore=true}
+}
 C {lab_pin.sym} 1920 -970 0 0 {name=p56 sig_type=std_logic lab=CLK
-spice_ignore=true}
-C {gnd.sym} 2070 -890 0 0 {name=l23 lab=GND
-spice_ignore=true}
+}
 C {lab_pin.sym} 2070 -1010 0 0 {name=p57 sig_type=std_logic lab=VDD_3V3
-spice_ignore=true}
+}
 C {lab_pin.sym} 2220 -970 0 1 {name=p58 sig_type=std_logic lab=D[5..0]
-spice_ignore=true}
+}
 C {lab_pin.sym} 2220 -930 0 1 {name=p59 sig_type=std_logic lab=EOC
-spice_ignore=true}
+}
 C {lab_pin.sym} 2220 -950 0 1 {name=p60 sig_type=std_logic lab=DB[5..0]
+}
+C {lab_pin.sym} 1160 -730 1 1 {name=p61 sig_type=std_logic lab=DB[5]
 spice_ignore=true}
-C {lab_pin.sym} 1070 -740 1 1 {name=p61 sig_type=std_logic lab=D[5]
+C {lab_pin.sym} 1190 -730 1 1 {name=p8 sig_type=std_logic lab=DB[4]
 spice_ignore=true}
-C {lab_pin.sym} 1100 -740 1 1 {name=p8 sig_type=std_logic lab=D[4]
+C {lab_pin.sym} 1220 -730 1 1 {name=p9 sig_type=std_logic lab=DB[3]
 spice_ignore=true}
-C {lab_pin.sym} 1130 -740 1 1 {name=p9 sig_type=std_logic lab=D[3]
+C {lab_pin.sym} 1250 -730 1 1 {name=p10 sig_type=std_logic lab=DB[2]
 spice_ignore=true}
-C {lab_pin.sym} 1160 -740 1 1 {name=p10 sig_type=std_logic lab=D[2]
+C {lab_pin.sym} 1280 -730 1 1 {name=p13 sig_type=std_logic lab=DB[1]
 spice_ignore=true}
-C {lab_pin.sym} 1190 -740 1 1 {name=p13 sig_type=std_logic lab=D[1]
-spice_ignore=true}
-C {lab_pin.sym} 1220 -740 1 1 {name=p14 sig_type=std_logic lab=D[0]
+C {lab_pin.sym} 1310 -730 1 1 {name=p14 sig_type=std_logic lab=DB[0]
 spice_ignore=true}
 C {lab_pin.sym} 1340 -950 3 1 {name=p15 sig_type=std_logic lab=cdac_out}
 C {gnd.sym} 1130 -500 0 0 {name=l1 lab=GND}
-C {vsource.sym} 1130 -560 0 0 {name=Vbit7 value=0.95 savecurrent=false}
+C {vsource.sym} 1130 -560 0 0 {name=Vbit7 value="PWL(1.1u 1.2 1.101u 1.1 2.3u 1.1 2.301u 1 3.5u 1 3.501u 0.9)" savecurrent=false}
 C {lab_wire.sym} 1130 -610 0 0 {name=p20 sig_type=std_logic lab=Vin}
-C {vsource.sym} 1120 -390 0 0 {name=V3 value="PULSE(0 3.3 0.5n 100p 100p 100.1n 200n)" savecurrent=false}
+C {vsource.sym} 1120 -390 0 0 {name=V3 value="PULSE(0 3.3 2n 100p 100p 100.1n 200n)" savecurrent=false}
 C {lab_pin.sym} 1230 -420 0 1 {name=p21 sig_type=std_logic lab=CLK}
 C {gnd.sym} 1120 -360 0 0 {name=l2 lab=GND}
 C {res.sym} 1200 -420 1 0 {name=R4
@@ -355,12 +309,18 @@ C {lab_wire.sym} 960 -910 0 0 {name=p22 sig_type=std_logic lab=vref_l}
 C {vsource.sym} 460 -900 0 1 {name=V4 value=0.9 savecurrent=false}
 C {gnd.sym} 460 -820 0 0 {name=l3 lab=GND}
 C {lab_wire.sym} 460 -950 0 0 {name=p24 sig_type=std_logic lab=vref_l}
-C {lab_wire.sym} 1080 -830 3 0 {name=p25 sig_type=std_logic lab=vbit6}
-C {lab_wire.sym} 1110 -830 3 0 {name=p26 sig_type=std_logic lab=vbit5}
-C {lab_wire.sym} 1140 -830 3 0 {name=p27 sig_type=std_logic lab=vbit4}
-C {lab_wire.sym} 1170 -830 3 0 {name=p28 sig_type=std_logic lab=vbit3}
-C {lab_wire.sym} 1200 -830 3 0 {name=p29 sig_type=std_logic lab=vbit2}
-C {lab_wire.sym} 1230 -830 3 0 {name=p30 sig_type=std_logic lab=vbit1}
+C {lab_wire.sym} 1080 -830 3 0 {name=p25 sig_type=std_logic lab=vbit6
+}
+C {lab_wire.sym} 1110 -830 3 0 {name=p26 sig_type=std_logic lab=vbit5
+}
+C {lab_wire.sym} 1140 -830 3 0 {name=p27 sig_type=std_logic lab=vbit4
+}
+C {lab_wire.sym} 1170 -830 3 0 {name=p28 sig_type=std_logic lab=vbit3
+}
+C {lab_wire.sym} 1200 -830 3 0 {name=p29 sig_type=std_logic lab=vbit2
+}
+C {lab_wire.sym} 1230 -830 3 0 {name=p30 sig_type=std_logic lab=vbit1
+}
 C {gnd.sym} 340 -580 0 0 {name=l6 lab=GND}
 C {vsource.sym} 880 -430 0 0 {name=Vbit1 value=PULSE"(0 3.3 0 100p 100p 3u 5u)" savecurrent=false}
 C {vsource.sym} 610 -430 0 0 {name=Vbit2 value=PULSE"(0 3.3 0 100p 100p 2.5u 5u)" savecurrent=false}
@@ -415,3 +375,6 @@ C {lab_pin.sym} 640 -990 3 1 {name=p53 sig_type=std_logic lab=VDD_3V3
 spice_ignore=true}
 C {lab_pin.sym} 940 -1040 2 1 {name=p62 sig_type=std_logic lab=VDD_3V3
 spice_ignore=true}
+C {lab_wire.sym} 2070 -890 0 0 {name=p63 sig_type=std_logic lab=avss}
+C {lab_wire.sym} 1460 -910 3 0 {name=p64 sig_type=std_logic lab=vbit1
+}
