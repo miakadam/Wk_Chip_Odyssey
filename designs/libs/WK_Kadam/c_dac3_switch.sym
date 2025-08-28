@@ -1,0 +1,36 @@
+v {xschem version=3.4.7 file_version=1.2}
+G {}
+K {type=subcircuit
+format="@name @pinlist @symname"
+template="name=x1"
+}
+V {}
+S {}
+E {}
+L 4 230 -220 310 -220 {}
+L 4 320 -250 320 -230 {}
+L 4 320 -230 340 -220 {}
+L 7 320 -280 320 -260 {}
+L 7 200 -240 220 -240 {}
+L 7 240 -180 240 -160 {}
+L 7 260 -280 260 -260 {}
+L 7 290 -180 290 -160 {}
+L 7 330 -180 330 -160 {}
+L 7 200 -200 220 -200 {}
+B 4 220 -260 360 -180 {fill=no}
+B 5 317.5 -282.5 322.5 -277.5 {name=sw_vout dir=inout}
+B 5 197.5 -242.5 202.5 -237.5 {name=sw_bit dir=inout}
+B 5 237.5 -162.5 242.5 -157.5 {name=avss dir=inout}
+B 5 257.5 -282.5 262.5 -277.5 {name=avdd dir=inout}
+B 5 287.5 -162.5 292.5 -157.5 {name=sw_Vref dir=inout}
+B 5 327.5 -162.5 332.5 -157.5 {name=vreflow dir=inout}
+B 5 197.5 -202.5 202.5 -197.5 {name=sw_bitb dir=inout}
+T {@symname} 223.5 -206 0 0 0.3 0.3 {}
+T {@name} 225 -252 0 0 0.2 0.2 {}
+T {sw_vout} 326 -305 3 1 0.2 0.2 {}
+T {sw_bit} 185 -234 0 0 0.2 0.2 {}
+T {avss} 254 -155 1 1 0.2 0.2 {}
+T {avdd} 266 -285 3 1 0.2 0.2 {}
+T {sw_Vref} 304 -135 1 1 0.2 0.2 {}
+T {vreflow} 354 -145 1 1 0.2 0.2 {}
+T {sw_bitb} 175 -194 0 0 0.2 0.2 {}

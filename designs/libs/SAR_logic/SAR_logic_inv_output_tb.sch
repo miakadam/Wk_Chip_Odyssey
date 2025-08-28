@@ -9,8 +9,8 @@ ypos1=-0.50601968
 ypos2=1.4939791
 subdivy=1
 unity=1
-x1=-3.7151423e-09
-x2=2.6575749e-07
+x1=0
+x2=2.5e-07
 divx=5
 subdivx=1
 xlabmag=1.0
@@ -30,27 +30,29 @@ y2=2.5
 autoload=1
 divy=5}
 B 2 2210 -570 3010 -170 {flags=graph
-y1=0
-y2=2
 ypos1=-0.73285748
 ypos2=1.0721426
 divy=5
 subdivy=1
 unity=1
-x1=-3.7151423e-09
-x2=2.6575749e-07
+x1=0
+x2=2.5e-07
 divx=5
 subdivx=1
 xlabmag=1.0
 ylabmag=1.0
 node="D_OUT;d5,d4,d3,d2,d1,d0
-DB_OUT;db5,db4,db3,db2,db1,db0"
-color="8 4"
+DB_OUT;db5,db4,db3,db2,db1,db0
+cdac_out
+x15.x1.net1"
+color="8 4 10 6"
 dataset=-1
 unitx=1
 logx=0
 logy=0
-digital=1}
+digital=1
+y2=2
+}
 B 2 1160 -1010 1960 -610 {flags=graph
 y1=0
 y2=2
@@ -59,8 +61,8 @@ ypos2=2.0833807
 divy=5
 subdivy=1
 unity=1
-x1=-3.7151423e-09
-x2=2.6575749e-07
+x1=0
+x2=2.5e-07
 divx=5
 subdivx=1
 xlabmag=1.0
@@ -88,8 +90,8 @@ ypos2=2.1
 divy=5
 subdivy=1
 unity=1
-x1=-3.7151423e-09
-x2=2.6575749e-07
+x1=0
+x2=2.5e-07
 divx=5
 subdivx=1
 xlabmag=1.0
@@ -115,8 +117,8 @@ ypos2=1.6486726
 divy=5
 subdivy=1
 unity=1
-x1=-3.7151423e-09
-x2=2.6575749e-07
+x1=0
+x2=2.5e-07
 divx=5
 subdivx=1
 xlabmag=1.0
@@ -141,8 +143,8 @@ ypos2=1.7117905
 divy=5
 subdivy=1
 unity=1
-x1=-3.7151423e-09
-x2=2.6575749e-07
+x1=0
+x2=2.5e-07
 divx=5
 subdivx=1
 xlabmag=1.0
@@ -189,6 +191,16 @@ N 2280 -2580 2320 -2580 {lab=D0}
 N 2540 -2580 2570 -2580 {lab=D0B}
 N 2850 -750 2890 -750 {lab=DB5}
 N 3110 -750 3140 -750 {lab=DB5B}
+N 280 0 280 30 {lab=GND}
+N 280 -80 280 -60 {lab=vref_h}
+N 190 10 190 60 {lab=GND}
+N 190 -100 190 -50 {lab=vref_l}
+N 1130 -340 1170 -340 {lab=VDD_3V3}
+N 1130 -210 1170 -210 {lab=GND}
+N 1130 -300 1170 -300 {lab=vref_h}
+N 1130 -250 1170 -250 {lab=vref_l}
+N 1470 -290 1530 -290 {lab=cdac_out}
+N 1530 -290 1530 -250 {lab=cdac_out}
 C {vsource.sym} 160 -220 0 0 {name=V6 value="PULSE(0 3.3 0 1n 1n 5n 10n)" savecurrent=false}
 C {lab_pin.sym} 270 -250 0 1 {name=p20 sig_type=std_logic lab=CLK}
 C {gnd.sym} 160 -190 0 0 {name=l14 lab=GND}
@@ -317,3 +329,37 @@ C {lab_pin.sym} 3170 -1880 0 1 {name=p47 sig_type=std_logic lab=DB2B}
 C {lab_pin.sym} 3140 -1510 0 1 {name=p48 sig_type=std_logic lab=DB3B}
 C {lab_pin.sym} 3130 -1120 0 1 {name=p49 sig_type=std_logic lab=DB4B}
 C {lab_pin.sym} 3140 -750 0 1 {name=p50 sig_type=std_logic lab=DB5B}
+C {vsource.sym} 280 -30 0 0 {name=V14 value=1.2 savecurrent=false}
+C {gnd.sym} 280 30 0 0 {name=l19 lab=GND}
+C {lab_wire.sym} 280 -80 0 0 {name=p51 sig_type=std_logic lab=vref_h}
+C {vsource.sym} 190 -20 0 1 {name=V2 value=0.9 savecurrent=false}
+C {gnd.sym} 190 60 0 0 {name=l20 lab=GND}
+C {lab_wire.sym} 190 -70 0 0 {name=p52 sig_type=std_logic lab=vref_l}
+C {lab_wire.sym} 1130 -300 0 0 {name=p54 sig_type=std_logic lab=vref_h}
+C {lab_pin.sym} 1510 -290 3 1 {name=p56 sig_type=std_logic lab=cdac_out}
+C {libs/WK_Kadam/6bit_CDAC_V2_CO_MK.sym} 1320 -290 0 0 {name=x15}
+C {lab_wire.sym} 1130 -250 0 0 {name=p57 sig_type=std_logic lab=vref_l}
+C {lab_pin.sym} 1130 -340 2 1 {name=p62 sig_type=std_logic lab=VDD_3V3
+spice_ignore=short}
+C {lab_pin.sym} 1250 -170 1 1 {name=p61 sig_type=std_logic lab=D[5]
+spice_ignore=short}
+C {lab_pin.sym} 1280 -170 1 1 {name=p58 sig_type=std_logic lab=D[4]
+spice_ignore=short}
+C {lab_pin.sym} 1310 -170 1 1 {name=p59 sig_type=std_logic lab=D[3]
+spice_ignore=short}
+C {lab_pin.sym} 1340 -170 1 1 {name=p60 sig_type=std_logic lab=D[2]
+spice_ignore=short}
+C {lab_pin.sym} 1370 -170 1 1 {name=p63 sig_type=std_logic lab=D[1]
+spice_ignore=short}
+C {lab_pin.sym} 1400 -170 1 1 {name=p64 sig_type=std_logic lab=D[0]
+spice_ignore=short}
+C {gnd.sym} 1130 -210 0 0 {name=l21 lab=GND}
+C {devices/code_shown.sym} 480 -1010 0 0 {name=MODELS1 only_toplevel=true
+format="tcleval( @value )"
+value="
+.lib $::180MCU_MODELS/sm141064.ngspice cap_mim
+.lib $::180MCU_MODELS/sm141064.ngspice res_typical
+.lib $::180MCU_MODELS/sm141064.ngspice moscap_typical
+.lib $::180MCU_MODELS/sm141064.ngspice mimcap_typical
+* .lib $::180MCU_MODELS/sm141064.ngspice res_statistical
+"}

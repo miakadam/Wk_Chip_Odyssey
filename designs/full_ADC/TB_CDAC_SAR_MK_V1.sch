@@ -48,19 +48,18 @@ d4
 d3
 d2
 d1
-d0
-dend"
-color="4 5 6 7 8 9 10"
+d0"
+color="4 5 6 7 8 9"
 dataset=-1
 unitx=1
 logx=0
 logy=0
 digital=1
-divy=5
 rainbow=0
-y1=5
 autoload=1
-y2=8}
+y1=0
+divy=10
+y2=2}
 B 2 2360 -650 3160 -250 {flags=graph
 ypos1=-0.20601983
 ypos2=1.793979
@@ -84,7 +83,7 @@ autoload=1
 divy=5
 y2=0.027
 hcursor1_y=0.13315624}
-B 2 2360 -230 3160 170 {flags=graph
+B 2 3190 -1490 3990 -1090 {flags=graph
 ypos1=-0.20601983
 ypos2=1.793979
 subdivy=1
@@ -99,13 +98,16 @@ dataset=-1
 unitx=1
 logx=0
 logy=0
-color=4
-node=cdac_out
+color="4 5 6 8"
+node="cdac_out
+x1.net6
+db[5]
+d5"
 digital=0
 autoload=1
 divy=5
-y2=0.1
-y1=-0.1
+y2=1.94
+y1=-1.46
 hcursor1_y=0.025830126}
 B 2 1210 -80 2010 320 {flags=graph
 y1=0.0141078
@@ -207,8 +209,8 @@ N 1360 -950 1360 -910 {lab=cdac_out}
 N 1360 -910 1460 -910 {lab=cdac_out}
 N 310 -730 360 -730 {lab=#net3}
 N 550 -980 550 -920 {lab=vref_h}
-N 1490 -930 1490 -720 {lab=#net4}
-N 1490 -930 1920 -930 {lab=#net4}
+N 1490 -930 1490 -720 {lab=Comp_out}
+N 1490 -930 1920 -930 {lab=Comp_out}
 N 110 -190 110 -160 {lab=GND}
 N 370 -190 370 -160 {lab=GND}
 N 110 -270 110 -250 {lab=vbit6}
@@ -233,7 +235,7 @@ write "tb_CDAC_SAR_MK_V1.raw"
 .endc
 "
 }
-C {devices/code_shown.sym} 680 -1230 0 0 {name=MODELS1 only_toplevel=true
+C {devices/code_shown.sym} 360 -1460 0 0 {name=MODELS1 only_toplevel=true
 format="tcleval( @value )"
 value="
 .include $::180MCU_MODELS/design.ngspice
@@ -270,33 +272,33 @@ device=resistor
 m=1
 }
 C {libs/SAR_logic/SAR_logic.sym} 1940 -910 0 0 {name=x5
-spice_ignore=true}
+}
 C {lab_pin.sym} 1920 -950 0 0 {name=p55 sig_type=std_logic lab=RESET
-spice_ignore=true}
+}
 C {lab_pin.sym} 1920 -970 0 0 {name=p56 sig_type=std_logic lab=CLK
-spice_ignore=true}
+}
 C {gnd.sym} 2070 -890 0 0 {name=l23 lab=GND
-spice_ignore=true}
+}
 C {lab_pin.sym} 2070 -1010 0 0 {name=p57 sig_type=std_logic lab=VDD_3V3
-spice_ignore=true}
+}
 C {lab_pin.sym} 2220 -970 0 1 {name=p58 sig_type=std_logic lab=D[5..0]
-spice_ignore=true}
+}
 C {lab_pin.sym} 2220 -930 0 1 {name=p59 sig_type=std_logic lab=EOC
-spice_ignore=true}
+}
 C {lab_pin.sym} 2220 -950 0 1 {name=p60 sig_type=std_logic lab=DB[5..0]
-spice_ignore=true}
-C {lab_pin.sym} 1070 -700 1 1 {name=p61 sig_type=std_logic lab=D[5]
-spice_ignore=true}
-C {lab_pin.sym} 1100 -700 1 1 {name=p8 sig_type=std_logic lab=D[4]
-spice_ignore=true}
-C {lab_pin.sym} 1130 -700 1 1 {name=p9 sig_type=std_logic lab=D[3]
-spice_ignore=true}
-C {lab_pin.sym} 1160 -700 1 1 {name=p10 sig_type=std_logic lab=D[2]
-spice_ignore=true}
-C {lab_pin.sym} 1190 -700 1 1 {name=p13 sig_type=std_logic lab=D[1]
-spice_ignore=true}
-C {lab_pin.sym} 1220 -700 1 1 {name=p14 sig_type=std_logic lab=D[0]
-spice_ignore=true}
+}
+C {lab_pin.sym} 1080 -830 1 1 {name=p61 sig_type=std_logic lab=D5
+}
+C {lab_pin.sym} 1110 -830 1 1 {name=p8 sig_type=std_logic lab=D4
+}
+C {lab_pin.sym} 1140 -830 1 1 {name=p9 sig_type=std_logic lab=D3
+}
+C {lab_pin.sym} 1170 -830 1 1 {name=p10 sig_type=std_logic lab=D2
+}
+C {lab_pin.sym} 1200 -830 1 1 {name=p13 sig_type=std_logic lab=D1
+}
+C {lab_pin.sym} 1230 -830 1 1 {name=p14 sig_type=std_logic lab=D0
+}
 C {lab_pin.sym} 1340 -950 3 1 {name=p15 sig_type=std_logic lab=cdac_out}
 C {vsource.sym} 300 -540 0 0 {name=V3 value="PULSE(0 3.3 0.5n 100p 100p 100.1n 200n)" savecurrent=false}
 C {lab_pin.sym} 410 -570 0 1 {name=p21 sig_type=std_logic lab=CLK}
@@ -306,7 +308,6 @@ value=50
 footprint=1206
 device=resistor
 m=1}
-C {libs/WK_Kadam/6bit_CDAC_V2_CO_MK.sym} 1150 -950 0 0 {name=x2}
 C {lab_wire.sym} 960 -910 0 0 {name=p22 sig_type=std_logic lab=vref_l}
 C {vsource.sym} 460 -900 0 1 {name=V4 value=0.9 savecurrent=false}
 C {gnd.sym} 460 -820 0 0 {name=l3 lab=GND}
@@ -322,7 +323,7 @@ m=1}
 C {lab_pin.sym} 960 -1000 2 1 {name=p62 sig_type=std_logic lab=VDD_3V3
 }
 C {iopin.sym} 1800 -930 1 0 {name=p12 lab=Comp_out
-spice_ignore=true}
+}
 C {gnd.sym} 960 -870 0 0 {name=l4 lab=GND}
 C {noconn.sym} 2160 -800 0 0 {name=l5
 spice_ignore=true}
@@ -331,9 +332,9 @@ spice_ignore=true}
 C {vsource.sym} 1490 -690 0 0 {name=V2 value=
 "PWL(0n 3.3 2u 3.3 2.01u 0 3u 0 3.01u 3.3 4u 3.3 4.01u 0 6u 0 6.01u 3.3"
 savecurrent=false
-spice_ignore=true}
+}
 C {gnd.sym} 1490 -660 0 0 {name=l6 lab=GND
-spice_ignore=true}
+}
 C {gnd.sym} 110 -160 0 0 {name=l1 lab=GND}
 C {vsource.sym} 650 -10 0 0 {name=Vbit1 value=PULSE"(0 3.3 0 100p 100p 3u 5u)" savecurrent=false}
 C {vsource.sym} 380 -10 0 0 {name=Vbit2 value=PULSE"(0 3.3 0 100p 100p 2.5u 5u)" savecurrent=false}
@@ -352,9 +353,28 @@ C {lab_wire.sym} 650 -260 0 0 {name=p19 sig_type=std_logic lab=vbit4}
 C {lab_wire.sym} 110 -40 0 0 {name=p20 sig_type=std_logic lab=vbit3}
 C {lab_wire.sym} 380 -60 0 0 {name=p23 sig_type=std_logic lab=vbit2}
 C {lab_wire.sym} 650 -60 0 0 {name=p25 sig_type=std_logic lab=vbit1}
-C {lab_wire.sym} 1080 -830 3 0 {name=p26 sig_type=std_logic lab=vbit6}
-C {lab_wire.sym} 1110 -830 3 0 {name=p27 sig_type=std_logic lab=vbit5}
-C {lab_wire.sym} 1140 -830 3 0 {name=p28 sig_type=std_logic lab=vbit4}
-C {lab_wire.sym} 1170 -830 3 0 {name=p29 sig_type=std_logic lab=vbit3}
-C {lab_wire.sym} 1200 -830 3 0 {name=p30 sig_type=std_logic lab=vbit2}
-C {lab_wire.sym} 1230 -830 3 0 {name=p31 sig_type=std_logic lab=vbit1}
+C {lab_wire.sym} 790 -750 3 0 {name=p26 sig_type=std_logic lab=vbit6
+spice_ignore=true}
+C {lab_wire.sym} 820 -750 3 0 {name=p27 sig_type=std_logic lab=vbit5
+spice_ignore=true}
+C {lab_wire.sym} 850 -750 3 0 {name=p28 sig_type=std_logic lab=vbit4
+spice_ignore=true}
+C {lab_wire.sym} 880 -750 3 0 {name=p29 sig_type=std_logic lab=vbit3
+spice_ignore=true}
+C {lab_wire.sym} 910 -750 3 0 {name=p30 sig_type=std_logic lab=vbit2
+spice_ignore=true}
+C {lab_wire.sym} 940 -750 3 0 {name=p31 sig_type=std_logic lab=vbit1
+spice_ignore=true}
+C {libs/WK_Kadam/CDAC_V3.sym} 640 -710 0 0 {name=x1}
+C {lab_pin.sym} 1080 -1070 1 0 {name=p2 sig_type=std_logic lab=DB5
+}
+C {lab_pin.sym} 1110 -1070 1 0 {name=p3 sig_type=std_logic lab=DB4
+}
+C {lab_pin.sym} 1140 -1070 1 0 {name=p4 sig_type=std_logic lab=DB3
+}
+C {lab_pin.sym} 1170 -1070 1 0 {name=p5 sig_type=std_logic lab=DB2
+}
+C {lab_pin.sym} 1200 -1070 1 0 {name=p6 sig_type=std_logic lab=DB1
+}
+C {lab_pin.sym} 1230 -1070 1 0 {name=p11 sig_type=std_logic lab=DB0
+}
