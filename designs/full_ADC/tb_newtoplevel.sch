@@ -9,8 +9,8 @@ ypos1=-0.10601989
 ypos2=1.8939789
 subdivy=1
 unity=1
-x1=2.2879712e-06
-x2=3.7719588e-06
+x1=0
+x2=1e-05
 divx=5
 subdivx=1
 xlabmag=1.0
@@ -38,8 +38,8 @@ ypos2=2.1
 >>>>>>> b1b16ed94ea886538f31102acaadbb4f226c1fe0
 subdivy=1
 unity=1
-x1=2.2879712e-06
-x2=3.7719588e-06
+x1=0
+x2=1e-05
 divx=5
 subdivx=1
 xlabmag=1.0
@@ -63,8 +63,8 @@ ypos1=0.093979996
 ypos2=2.0939787
 subdivy=1
 unity=1
-x1=2.2879712e-06
-x2=3.7719588e-06
+x1=0
+x2=1e-05
 divx=5
 subdivx=1
 xlabmag=1.0
@@ -91,8 +91,8 @@ ypos1=-0.20601983
 ypos2=1.793979
 subdivy=1
 unity=1
-x1=2.2879712e-06
-x2=3.7719588e-06
+x1=0
+x2=1e-05
 divx=5
 subdivx=1
 xlabmag=1.0
@@ -101,25 +101,23 @@ dataset=-1
 unitx=1
 logx=0
 logy=0
-color="4 5 6"
-node="cdac_out
-Comp_Out
-Vin"
+color=4
+node=Comp_Out
 digital=0
-y1=-0.575
+y1=-0.088
 autoload=1
 divy=5
-y2=3.4
+y2=3.6
 <<<<<<< HEAD
-hcursor1_y=0.99544998}
+hcursor1_y=0.90206624}
 B 2 2530 -1050 3330 -650 {flags=graph
-ypos1=0.1
-ypos2=2.1
+ypos1=0.2
+ypos2=2.2
 >>>>>>> b1b16ed94ea886538f31102acaadbb4f226c1fe0
 subdivy=1
 unity=1
-x1=2.2879712e-06
-x2=3.7719588e-06
+x1=0
+x2=1e-05
 divx=5
 subdivx=1
 xlabmag=1.0
@@ -149,7 +147,29 @@ dataset=-1
 unitx=1
 logx=0
 logy=0
-hcursor1_y=0.77963205}
+hcursor1_y=0.92513929}
+B 2 3310 -150 4110 250 {flags=graph
+y1=0.772
+y2=1.212
+ypos1=0
+ypos2=2
+divy=5
+subdivy=1
+unity=1
+x1=0
+x2=1e-05
+divx=5
+subdivx=1
+xlabmag=1.0
+ylabmag=1.0
+node="cdac_out
+Vin"
+color="4 5"
+dataset=-1
+unitx=1
+logx=0
+logy=0
+hcursor1_y=1.1902}
 N 550 -880 550 -850 {lab=GND}
 N 550 -960 550 -940 {lab=vref_h}
 N 960 -1000 1000 -1000 {lab=VDD_3V3}
@@ -189,7 +209,7 @@ C {devices/code_shown.sym} 365 -1215 0 0 {name=NGSPICE1 only_toplevel=true value
 save all
 op
 show all
-tran 2n 20u
+tran 2n 8u
 write "tb_newtoplevel.raw"
 .endc
 "

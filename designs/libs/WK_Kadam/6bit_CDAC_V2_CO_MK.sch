@@ -30,8 +30,8 @@ N 950 -590 950 -490 {lab=#net4}
 N 1200 -590 1200 -490 {lab=#net3}
 N 1440 -590 1440 -500 {lab=#net2}
 N 1710 -590 1710 -500 {lab=#net1}
-N 230 -760 330 -760 {lab=avdd}
-N 230 -720 330 -720 {lab=avss}
+N 80 -780 180 -780 {lab=avdd}
+N 80 -740 180 -740 {lab=avss}
 N 330 -370 330 -320 {lab=Vref_h}
 N 300 -520 300 -490 {lab=avdd}
 N 180 -430 240 -430 {lab=cdbit6}
@@ -103,56 +103,63 @@ N 550 -340 870 -340 {lab=avss}
 N 600 -320 920 -320 {lab=Vref_h}
 N 640 -260 960 -260 {lab=Vref_l}
 N 50 -320 180 -320 {lab=cdbit6}
-C {symbols/cap_mim_1f0fF.sym} 1530 -690 0 0 {name=C3
-W=10e-6
-L=10e-6
+C {symbols/cap_mim_1f0fF.sym} 1530 -970 0 0 {name=C3
+W=20e-6
+L=20e-6
 model=cap_mim_2f0_m3m4_noshield
 spiceprefix=X
-m=4}
-C {symbols/cap_mim_1f0fF.sym} 1250 -690 0 0 {name=C4
-W=10e-6
-L=10e-6
+m=2
+spice_ignore=true}
+C {symbols/cap_mim_1f0fF.sym} 1250 -970 0 0 {name=C4
+W=20e-6
+L=20e-6
 model=cap_mim_2f0_m3m4_noshield
 spiceprefix=X
-m=8}
-C {symbols/cap_mim_1f0fF.sym} 1000 -690 0 0 {name=C5
-W=10e-6
-L=10e-6
+m=4
+spice_ignore=true}
+C {symbols/cap_mim_1f0fF.sym} 1000 -970 0 0 {name=C5
+W=20e-6
+L=20e-6
 model=cap_mim_2f0_m3m4_noshield
 spiceprefix=X
-m=16}
-C {symbols/cap_mim_1f0fF.sym} 670 -690 0 0 {name=C6
-W=10e-6
-L=10e-6
+m=8
+spice_ignore=true}
+C {symbols/cap_mim_1f0fF.sym} 670 -970 0 0 {name=C6
+W=20e-6
+L=20e-6
 model=cap_mim_2f0_m3m4_noshield
 spiceprefix=X
-m=32}
-C {symbols/cap_mim_1f0fF.sym} 390 -690 0 0 {name=C7
-W=10e-6
-L=10e-6
+m=16
+spice_ignore=true}
+C {symbols/cap_mim_1f0fF.sym} 390 -970 0 0 {name=C7
+W=20e-6
+L=20e-6
 model=cap_mim_2f0_m3m4_noshield
 spiceprefix=X
-m=64}
+m=32
+spice_ignore=true}
 C {iopin.sym} 1940 -320 0 0 {name=p1 lab=Vref_h}
 C {iopin.sym} 2160 -790 0 0 {name=p8 lab=Vdac}
-C {iopin.sym} 230 -760 2 0 {name=p9 lab=avdd}
-C {iopin.sym} 230 -720 2 0 {name=p10 lab=avss}
-C {lab_wire.sym} 320 -760 0 0 {name=p13 sig_type=std_logic lab=avdd}
-C {lab_wire.sym} 310 -720 0 0 {name=p14 sig_type=std_logic lab=avss}
+C {iopin.sym} 80 -780 2 0 {name=p9 lab=avdd}
+C {iopin.sym} 80 -740 2 0 {name=p10 lab=avss}
+C {lab_wire.sym} 170 -780 0 0 {name=p13 sig_type=std_logic lab=avdd}
+C {lab_wire.sym} 160 -740 0 0 {name=p14 sig_type=std_logic lab=avss}
 C {lab_wire.sym} 300 -520 0 0 {name=p15 sig_type=std_logic lab=avdd}
 C {lab_wire.sym} 270 -340 0 0 {name=p16 sig_type=std_logic lab=avss}
-C {symbols/cap_mim_analog.sym} 2030 -690 0 0 {name=C1
+C {symbols/cap_mim_analog.sym} 2030 -970 0 0 {name=C1
 W=10e-6
 L=10e-6
 model=cap_mim_2f0_m3m4_noshield
 spiceprefix=X
-m=2}
-C {symbols/cap_mim_analog.sym} 1810 -690 0 0 {name=C2
-W=10e-6
-L=10e-6
+m=1
+spice_ignore=true}
+C {symbols/cap_mim_analog.sym} 1810 -970 0 0 {name=C2
+W=20e-6
+L=20e-6
 model=cap_mim_2f0_m3m4_noshield
 spiceprefix=X
-m=2}
+m=1
+spice_ignore=true}
 C {iopin.sym} 50 -320 2 0 {name=p11 lab=cdbit6}
 C {iopin.sym} 460 -300 2 0 {name=p12 lab=cdbit5}
 C {iopin.sym} 790 -290 2 0 {name=p17 lab=cdbit4}
@@ -167,3 +174,45 @@ C {libs/WK_Kadam/c_dac2_switch.sym} 920 -430 0 0 {name=x3}
 C {libs/WK_Kadam/c_dac2_switch.sym} 1170 -430 0 0 {name=x4}
 C {libs/WK_Kadam/c_dac2_switch.sym} 1410 -440 0 0 {name=x5}
 C {libs/WK_Kadam/c_dac2_switch.sym} 1680 -440 0 0 {name=x6}
+C {symbols/cap_mim_1f0fF.sym} 2030 -690 0 0 {name=C8
+W=10e-6
+L=10e-6
+model=cap_mim_1f0fF
+spiceprefix=X
+m=1}
+C {symbols/cap_mim_1f0fF.sym} 1810 -690 0 0 {name=C9
+W=10e-6
+L=10e-6
+model=cap_mim_1f0fF
+spiceprefix=X
+m=1}
+C {symbols/cap_mim_1f0fF.sym} 1530 -690 0 0 {name=C10
+W=10e-6
+L=10e-6
+model=cap_mim_1f0fF
+spiceprefix=X
+m=2}
+C {symbols/cap_mim_1f0fF.sym} 1250 -690 0 0 {name=C11
+W=10e-6
+L=10e-6
+model=cap_mim_1f0fF
+spiceprefix=X
+m=4}
+C {symbols/cap_mim_1f0fF.sym} 1000 -690 0 0 {name=C12
+W=10e-6
+L=10e-6
+model=cap_mim_1f0fF
+spiceprefix=X
+m=8}
+C {symbols/cap_mim_1f0fF.sym} 670 -690 0 0 {name=C13
+W=10e-6
+L=10e-6
+model=cap_mim_1f0fF
+spiceprefix=X
+m=16}
+C {symbols/cap_mim_1f0fF.sym} 390 -690 0 0 {name=C14
+W=10e-6
+L=10e-6
+model=cap_mim_1f0fF
+spiceprefix=X
+m=32}
