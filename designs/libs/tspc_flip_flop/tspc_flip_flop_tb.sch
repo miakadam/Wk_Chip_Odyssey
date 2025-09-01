@@ -45,7 +45,7 @@ value=50
 footprint=1206
 device=resistor
 m=1}
-C {vsource.sym} 80 -350 0 0 {name=V1 value="PWL(0n 0 15n 0 16n 3.3 39n 3.3 40n 0 60n 0)" savecurrent=false}
+C {vsource.sym} 80 -350 0 0 {name=V1 value="PWL(0n 0 15n 0 16n 3.3 39n 3.3 40n 0 70n 0 71n 3.3)" savecurrent=false}
 C {lab_pin.sym} 190 -380 0 1 {name=p2 sig_type=std_logic lab=D}
 C {gnd.sym} 80 -320 0 0 {name=l2 lab=GND}
 C {res.sym} 160 -380 1 0 {name=R1
@@ -99,8 +99,6 @@ tclcommand="
 xschem raw_read $netlist_dir/tb_ffrs.raw tran; xschem redraw
 "
 }
-C {libs/tspc_flip_flop/tspc_flip_flop.sym} 940 -250 0 0 {name=x2
-spice_ignore=false}
 C {lab_pin.sym} 980 -370 3 1 {name=p6 sig_type=std_logic lab=VDD_3V3}
 C {gnd.sym} 980 -230 0 0 {name=l6 lab=GND}
 C {lab_pin.sym} 920 -330 0 0 {name=p7 sig_type=std_logic lab=D}
@@ -109,3 +107,4 @@ C {lab_pin.sym} 920 -310 0 0 {name=p13 sig_type=std_logic lab=CLK}
 C {lab_pin.sym} 920 -270 0 0 {name=p14 sig_type=std_logic lab=RESET}
 C {lab_pin.sym} 920 -290 0 0 {name=p15 sig_type=std_logic lab=SET}
 C {lab_pin.sym} 1030 -290 0 1 {name=p1 sig_type=std_logic lab=QB}
+C {libs/SAR_logic/dffrs.sym} 790 -100 0 0 {name=x1}

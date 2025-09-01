@@ -4,14 +4,14 @@ K {}
 V {}
 S {}
 E {}
-B 2 1240 -1250 2040 -850 {flags=graph
+B 2 1540 -1250 2340 -850 {flags=graph
 ypos1=0
 ypos2=2
 divy=10
 subdivy=1
 unity=1
-x1=3.1580616e-08
-x2=2.7159355e-06
+x1=-6.9096823e-08
+x2=3.5418257e-06
 subdivx=1
 xlabmag=1.0
 ylabmag=1.0
@@ -28,13 +28,13 @@ y2=3.5
 hilight_wave=0
 divx=10
 y1=-0.25}
-B 2 1240 -840 2040 -440 {flags=graph
+B 2 1540 -840 2340 -440 {flags=graph
 ypos1=-0.20601983
 ypos2=1.793979
 subdivy=1
 unity=1
-x1=3.1580616e-08
-x2=2.7159355e-06
+x1=-6.9096823e-08
+x2=3.5418257e-06
 divx=5
 subdivx=1
 xlabmag=1.0
@@ -53,14 +53,14 @@ y1=0
 y2=2.5
 autoload=1
 divy=5}
-B 2 1240 -430 2040 -30 {flags=graph
+B 2 1540 -430 2340 -30 {flags=graph
 ypos1=-0.73285748
 ypos2=1.0721426
 divy=5
 subdivy=1
 unity=1
-x1=3.1580616e-08
-x2=2.7159355e-06
+x1=-6.9096823e-08
+x2=3.5418257e-06
 divx=5
 subdivx=1
 xlabmag=1.0
@@ -75,13 +75,13 @@ logy=0
 digital=1
 y1=1
 y2=3}
-B 2 430 -1250 1230 -850 {flags=graph
+B 2 720 -1250 1520 -850 {flags=graph
 ypos1=0.1
 ypos2=2.1
 subdivy=1
 unity=1
-x1=3.1580616e-08
-x2=2.7159355e-06
+x1=-6.9096823e-08
+x2=3.5418257e-06
 divx=5
 subdivx=1
 xlabmag=1.0
@@ -91,9 +91,8 @@ d4
 d3
 d2
 d1
-d0
-dend"
-color="4 5 6 7 8 9 10"
+d0"
+color="4 5 6 7 8 9"
 dataset=-1
 unitx=1
 logx=0
@@ -101,14 +100,15 @@ logy=0
 digital=1
 divy=5
 rainbow=0
-y1=5
-y2=8
-autoload=1}
+y1=0
+autoload=1
+y2=2.8}
 N 40 -330 90 -330 {lab=#net1}
 N 40 -220 90 -220 {lab=#net2}
 N 600 -280 660 -280 {lab=Comp_Out}
 N 620 -100 670 -100 {lab=#net3}
-N 660 -280 800 -280 {lab=Comp_Out}
+N 870 -280 1010 -280 {lab=#net4}
+N 660 -280 720 -280 {lab=Comp_Out}
 C {comparator/full_comparator.sym} 80 -180 0 0 {name=x1}
 C {vsource.sym} 40 -70 0 0 {name=V4 value=3.3 savecurrent=false}
 C {gnd.sym} 40 -40 0 0 {name=l13 lab=GND}
@@ -146,7 +146,7 @@ C {lab_pin.sym} 540 -220 1 1 {name=p37 sig_type=std_logic lab=off8}
 C {vsource.sym} 40 -300 0 0 {name=V3 value=3.3 savecurrent=false}
 C {lab_pin.sym} 150 -330 0 1 {name=p10 sig_type=std_logic lab=VDD_3V3}
 C {gnd.sym} 40 -270 0 0 {name=l4 lab=GND}
-C {vsource.sym} 40 -190 0 0 {name=V6 value="PULSE(0 3.3 0.5n 100p 100p 100.1n 200n)" savecurrent=false}
+C {vsource.sym} 40 -190 0 0 {name=V6 value="PULSE(0 3.3 1n 100p 100p 100.1n 200n)" savecurrent=false}
 C {lab_pin.sym} 150 -220 0 1 {name=p20 sig_type=std_logic lab=CLK}
 C {gnd.sym} 40 -160 0 0 {name=l14 lab=GND}
 C {res.sym} 120 -330 1 0 {name=R3
@@ -196,8 +196,7 @@ xschem raw_read $netlist_dir/tb_comp_SARlogic.raw tran; xschem redraw
 "
 }
 C {lab_pin.sym} 660 -280 3 1 {name=p19 sig_type=std_logic lab=Comp_Out}
-C {libs/SAR_logic/SAR_logic.sym} 820 -260 0 0 {name=x2}
-C {vsource.sym} 620 -70 0 0 {name=V5 value=PULSE"(0 1.8 0 100p 100p 0.2u 1.2u)" savecurrent=false}
+C {vsource.sym} 620 -70 0 0 {name=V5 value=PULSE"(0 1.8 0 100p 100p 0.1u 1.2u)" savecurrent=false}
 C {lab_pin.sym} 730 -100 0 1 {name=p5 sig_type=std_logic lab=RESET}
 C {gnd.sym} 620 -40 0 0 {name=l5 lab=GND}
 C {res.sym} 700 -100 1 0 {name=R5
@@ -205,10 +204,19 @@ value=50
 footprint=1206
 device=resistor
 m=1}
-C {lab_pin.sym} 800 -300 0 0 {name=p6 sig_type=std_logic lab=RESET}
-C {lab_pin.sym} 800 -320 0 0 {name=p7 sig_type=std_logic lab=CLK}
-C {gnd.sym} 950 -240 0 0 {name=l7 lab=GND}
-C {lab_pin.sym} 950 -360 0 0 {name=p9 sig_type=std_logic lab=VDD_3V3}
-C {lab_pin.sym} 1100 -320 0 1 {name=p12 sig_type=std_logic lab=D[5..0]}
-C {lab_pin.sym} 1100 -280 0 1 {name=p14 sig_type=std_logic lab=EOC}
-C {lab_pin.sym} 1100 -300 0 1 {name=p15 sig_type=std_logic lab=DB[5..0]}
+C {lab_pin.sym} 1010 -300 0 0 {name=p6 sig_type=std_logic lab=RESETB}
+C {lab_pin.sym} 1010 -320 0 0 {name=p7 sig_type=std_logic lab=CLK}
+C {gnd.sym} 1160 -240 0 0 {name=l7 lab=GND}
+C {lab_pin.sym} 1160 -360 0 0 {name=p9 sig_type=std_logic lab=VDD_3V3}
+C {lab_pin.sym} 1310 -320 0 1 {name=p12 sig_type=std_logic lab=D[5..0]}
+C {lab_pin.sym} 1310 -280 0 1 {name=p14 sig_type=std_logic lab=EOC}
+C {lab_pin.sym} 1310 -300 0 1 {name=p15 sig_type=std_logic lab=DB[5..0]}
+C {libs/SAR_logic/SARlogicV3.sym} 800 -120 0 0 {name=x2}
+C {comparator/inv.sym} 1250 -620 0 0 {name=xinv1}
+C {lab_pin.sym} 1330 -620 3 1 {name=p16 sig_type=std_logic lab=VDD_3V3}
+C {gnd.sym} 1330 -460 0 0 {name=l8 lab=GND}
+C {lab_pin.sym} 1250 -540 0 0 {name=p17 sig_type=std_logic lab=RESET}
+C {lab_pin.sym} 1400 -540 0 1 {name=p18 sig_type=std_logic lab=RESETB}
+C {comparator/inv.sym} 720 -360 0 0 {name=xinv2}
+C {lab_pin.sym} 800 -360 3 1 {name=p22 sig_type=std_logic lab=VDD_3V3}
+C {gnd.sym} 800 -200 0 0 {name=l9 lab=GND}

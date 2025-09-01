@@ -12,8 +12,8 @@ ypos2=2
 divy=5
 subdivy=1
 unity=1
-x1=1.265426e-07
-x2=2.9297906e-07
+x1=-9.5019979e-10
+x2=4.8391742e-08
 divx=5
 subdivx=1
 xlabmag=1.0
@@ -36,8 +36,8 @@ ypos2=2
 divy=5
 subdivy=1
 unity=1
-x1=1.265426e-07
-x2=2.9297906e-07
+x1=-9.5019979e-10
+x2=4.8391742e-08
 divx=5
 subdivx=1
 xlabmag=1.0
@@ -54,7 +54,7 @@ N 170 -190 220 -190 {lab=#net1}
 N 170 -380 220 -380 {lab=#net2}
 N 170 -90 220 -90 {lab=#net3}
 N 170 -290 220 -290 {lab=#net4}
-C {vsource.sym} 170 -160 0 0 {name=V6 value="PULSE(0 3.3 0 1n 1n 5n 10n)" savecurrent=false}
+C {vsource.sym} 170 -160 0 0 {name=V6 value="PULSE(0 3.3 0 100p 100p 1n 10n)" savecurrent=false}
 C {lab_pin.sym} 280 -190 0 1 {name=p20 sig_type=std_logic lab=CLK}
 C {gnd.sym} 170 -130 0 0 {name=l14 lab=GND}
 C {res.sym} 250 -190 1 0 {name=R4
@@ -102,7 +102,7 @@ C {gnd.sym} 790 -190 0 0 {name=l6 lab=GND}
 C {lab_pin.sym} 890 -240 0 1 {name=p12 sig_type=std_logic lab=B}
 C {lab_pin.sym} 690 -260 0 0 {name=p13 sig_type=std_logic lab=CLK}
 C {libs/sample_and_hold/sample_and_hold.sym} 710 -210 0 0 {name=x1}
-C {vsource.sym} 170 -60 0 0 {name=V1 value="PULSE(3.3 0 0 1n 1n 5n 10n)" savecurrent=false}
+C {vsource.sym} 170 -60 0 0 {name=V1 value="PULSE(3.3 0 0 100p 100p 1n 10n)" savecurrent=false}
 C {lab_pin.sym} 280 -90 0 1 {name=p1 sig_type=std_logic lab=CLKB}
 C {gnd.sym} 170 -30 0 0 {name=l1 lab=GND}
 C {res.sym} 250 -90 1 0 {name=R1
