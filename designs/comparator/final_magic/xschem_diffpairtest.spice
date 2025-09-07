@@ -1,0 +1,8 @@
+** sch_path: /foss/designs/comparator/final_magic/diffpairtest.sch
+.subckt diffpairtest Vin1 VSS Vd1 Vd2 Vin2
+*.PININFO Vin1:B VSS:B Vd1:B Vd2:B Vin2:B
+M9 Vd1 Vin1 VSS VSS nfet_03v3 L=1u W=1.5u nf=5 m=1
+M10 Vd2 Vin2 VSS VSS nfet_03v3 L=1u W=1.5u nf=5 m=1
+M20 Vd1 Vin1 VSS VSS nfet_03v3 L=1u W=1.5u nf=5 m=1
+M21 Vd2 Vin2 VSS VSS nfet_03v3 L=1u W=1.5u nf=5 m=1
+.ends

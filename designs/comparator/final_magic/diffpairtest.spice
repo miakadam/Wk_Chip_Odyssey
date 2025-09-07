@@ -1,0 +1,25 @@
+* NGSPICE file created from diffpairtest.ext - technology: gf180mcuD
+
+.subckt diffpairtest Vin1 VSS Vd1 Vd2 Vin2
+X0 VSS a_10376_2164# Vd2 VSUBS nfet_03v3 ad=0.39p pd=2.02u as=0.39p ps=2.02u w=1.5u l=1u
+X1 VSS Vin2 Vd2 VSUBS nfet_03v3 ad=0.39p pd=2.02u as=0.39p ps=2.02u w=1.5u l=1u
+X2 VSS a_10376_3124# Vd1 VSUBS nfet_03v3 ad=0.39p pd=2.02u as=0.39p ps=2.02u w=1.5u l=1u
+X3 Vd1 Vin1 VSS VSUBS nfet_03v3 ad=0.39p pd=2.02u as=0.39p ps=2.02u w=1.5u l=1u
+X4 VSS Vin1 Vd1 VSUBS nfet_03v3 ad=0.39p pd=2.02u as=0.66p ps=3.88u w=1.5u l=1u
+X5 Vd1 Vin1 VSS VSUBS nfet_03v3 ad=0.39p pd=2.02u as=0.39p ps=2.02u w=1.5u l=1u
+X6 Vd2 a_11592_2164# VSS VSUBS nfet_03v3 ad=0.39p pd=2.02u as=0.39p ps=2.02u w=1.5u l=1u
+X7 Vd2 Vin2 VSS VSUBS nfet_03v3 ad=0.39p pd=2.02u as=0.39p ps=2.02u w=1.5u l=1u
+X8 VSS Vin2 Vd2 VSUBS nfet_03v3 ad=0.39p pd=2.02u as=0.66p ps=3.88u w=1.5u l=1u
+X9 Vd2 Vin2 VSS VSUBS nfet_03v3 ad=0.39p pd=2.02u as=0.39p ps=2.02u w=1.5u l=1u
+X10 VSS Vin1 Vd1 VSUBS nfet_03v3 ad=0.39p pd=2.02u as=0.39p ps=2.02u w=1.5u l=1u
+X11 Vd2 a_10376_2164# VSS VSUBS nfet_03v3 ad=0.39p pd=2.02u as=0.39p ps=2.02u w=1.5u l=1u
+X12 Vd1 a_11592_3124# VSS VSUBS nfet_03v3 ad=0.39p pd=2.02u as=0.39p ps=2.02u w=1.5u l=1u
+X13 VSS a_11592_2164# Vd2 VSUBS nfet_03v3 ad=0.39p pd=2.02u as=0.39p ps=2.02u w=1.5u l=1u
+X14 VSS Vin2 Vd2 VSUBS nfet_03v3 ad=0.39p pd=2.02u as=0.39p ps=2.02u w=1.5u l=1u
+X15 Vd1 a_10376_3124# VSS VSUBS nfet_03v3 ad=0.39p pd=2.02u as=0.39p ps=2.02u w=1.5u l=1u
+X16 Vd2 Vin2 VSS VSUBS nfet_03v3 ad=0.66p pd=3.88u as=0.39p ps=2.02u w=1.5u l=1u
+X17 VSS a_11592_3124# Vd1 VSUBS nfet_03v3 ad=0.39p pd=2.02u as=0.39p ps=2.02u w=1.5u l=1u
+X18 VSS Vin1 Vd1 VSUBS nfet_03v3 ad=0.39p pd=2.02u as=0.39p ps=2.02u w=1.5u l=1u
+X19 Vd1 Vin1 VSS VSUBS nfet_03v3 ad=0.66p pd=3.88u as=0.39p ps=2.02u w=1.5u l=1u
+.ends
+

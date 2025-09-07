@@ -1,0 +1,5 @@
+** sch_path: /foss/designs/testnetgen/nmos.sch
+.subckt nmos drain source gate
+*.PININFO drain:B source:B gate:B
+XM9 drain gate source source nfet_03v3 L=1u W=3u nf=5 m=1
+.ends

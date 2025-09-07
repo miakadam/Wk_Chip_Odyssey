@@ -1,0 +1,223 @@
+timestamp 1757046296
+version 8.3
+tech gf180mcuD
+style ngspice()
+scale 1000 1 0.5
+resistclasses 1000000 3250000 6300 7000 6300 7000 7300 1000000 60000 185000 60000 185000 6300 7000 6300 7000 6800 7300 350000 310000 1000000 90 90 90 90 60
+use nfet_03v3_RPTYYZ XM20 1 0 10780 0 1 3366
+use nfet_03v3_RPTYYZ XM10 1 0 12300 0 1 2406
+use nfet_03v3_RPTYYZ XM9 1 0 10780 0 1 2406
+use nfet_03v3_RPTYYZ nfet_03v3_RPTYYZ_0 1 0 12300 0 1 3366
+port "Vin1" 1 13668 2721 13668 2721 m1
+port "Vin2" 5 13668 3048 13668 3048 m1
+port "VSS" 2 11592 1947 11592 1947 m2
+port "Vd2" 4 9996 3813 9996 3813 m2
+port "Vd1" 3 13092 3804 13092 3804 m2
+node "m1_11640_2575#" 1 118.693 11640 2575 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 11100 640 32400 970 0 0 0 0 0 0
+node "m1_10425_2575#" 1 123.628 10425 2575 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 11100 640 32400 970 0 0 0 0 0 0
+node "Vin1" 6 1382.05 13668 2721 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 324375 8160 69325 2394 0 0 0 0 0 0
+node "m1_11640_3135#" 1 119.698 11640 3135 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 12000 640 32400 970 0 0 0 0 0 0
+node "Vin2" 6 1291.6 13668 3048 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 328800 8210 69825 2400 0 0 0 0 0 0
+node "m1_10380_3135#" 1 151.532 10380 3135 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 12425 810 32400 970 0 0 0 0 0 0
+node "VSS" 18 2411.11 11592 1947 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 151520 5388 766866 20974 49060 1388 0 0 0 0
+node "Vd2" 16 2008.7 9996 3813 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 101450 3290 296817 9340 419382 11694 0 0 0 0
+node "Vd1" 16 2381.77 13092 3804 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 104410 3364 284587 9050 429502 11920 0 0 0 0
+node "a_10430_3125#" 131 27.4082 10430 3125 p 0 0 0 0 0 0 0 0 0 0 0 0 450 190 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "a_10430_3135#" 9 76.5617 10430 3135 p 0 0 0 0 0 0 0 0 0 0 0 0 6300 320 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+substrate "VSUBS" 0 0 -1073741817 -1073741817 space 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+cap "m1_10380_3135#" "a_10430_3125#" 0.392988
+cap "Vd2" "a_10430_3125#" 0.112271
+cap "m1_10425_2575#" "a_10430_3125#" 0.243135
+cap "a_10430_3125#" "Vd1" 0.0790903
+cap "Vin1" "a_10430_3125#" 0.377168
+cap "m1_10380_3135#" "Vd2" 18.1678
+cap "m1_10380_3135#" "Vd1" 102.437
+cap "VSS" "a_10430_3135#" 0.535891
+cap "m1_10425_2575#" "Vd2" 102.039
+cap "Vin2" "VSS" 647.078
+cap "Vin1" "Vd2" 132.823
+cap "Vd2" "Vd1" 1289.56
+cap "m1_10425_2575#" "Vd1" 17.9652
+cap "Vin1" "m1_10425_2575#" 224.901
+cap "Vin2" "a_10430_3135#" 0.154009
+cap "Vin1" "Vd1" 281.69
+cap "m1_11640_3135#" "VSS" 143.317
+cap "Vd2" "m1_11640_2575#" 112.955
+cap "m1_10425_2575#" "m1_11640_2575#" 3.02142
+cap "Vd1" "m1_11640_2575#" 17.0219
+cap "Vin1" "m1_11640_2575#" 224.901
+cap "m1_11640_3135#" "a_10430_3135#" 0.194979
+cap "m1_11640_3135#" "Vin2" 237.902
+cap "a_10430_3125#" "VSS" 0.322864
+cap "m1_10380_3135#" "VSS" 143.462
+cap "a_10430_3125#" "a_10430_3135#" -199.764
+cap "Vin2" "a_10430_3125#" 2.39355
+cap "m1_10380_3135#" "a_10430_3135#" 9.25655
+cap "Vin2" "m1_10380_3135#" 323.335
+cap "Vd2" "VSS" 2038.35
+cap "m1_10425_2575#" "VSS" 157.3
+cap "Vin1" "VSS" 612.745
+cap "VSS" "Vd1" 1196.1
+cap "m1_11640_3135#" "a_10430_3125#" 0.0146762
+cap "Vd2" "a_10430_3135#" 0.21922
+cap "Vin2" "Vd2" 169.061
+cap "m1_11640_3135#" "m1_10380_3135#" 2.7852
+cap "Vd1" "a_10430_3135#" 1.43167e-17
+cap "VSS" "m1_11640_2575#" 144.576
+cap "Vin2" "Vin1" 1208.36
+cap "Vin2" "Vd1" 200.278
+cap "m1_11640_3135#" "Vd2" 30.3112
+cap "Vin2" "m1_11640_2575#" 3.00277
+cap "m1_11640_3135#" "Vin1" 2.7679
+cap "m1_11640_3135#" "Vd1" 48.5116
+cap "nfet_03v3_RPTYYZ_0/a_404_n150#" "XM20/a_n100_n242#" 53.8715
+cap "XM9/a_508_n242#" "XM20/a_n100_n242#" 1.30593
+cap "nfet_03v3_RPTYYZ_0/a_404_n150#" "nfet_03v3_RPTYYZ_0/a_204_n242#" 81.1732
+cap "XM9/a_508_n242#" "nfet_03v3_RPTYYZ_0/a_204_n242#" 14.7234
+cap "nfet_03v3_RPTYYZ_0/a_n508_n150#" "nfet_03v3_RPTYYZ_0/a_100_n150#" -3.93414
+cap "XM9/a_508_n242#" "nfet_03v3_RPTYYZ_0/a_404_n150#" 114.578
+cap "XM9/a_n100_n242#" "nfet_03v3_RPTYYZ_0/a_100_n150#" 132.206
+cap "XM9/a_n100_n242#" "nfet_03v3_RPTYYZ_0/a_n508_n150#" 41.1267
+cap "XM20/a_n100_n242#" "nfet_03v3_RPTYYZ_0/a_100_n150#" 7.35506
+cap "XM20/a_n100_n242#" "nfet_03v3_RPTYYZ_0/a_n508_n150#" 43.0954
+cap "XM20/a_n100_n242#" "XM9/a_n100_n242#" 9.28305
+cap "nfet_03v3_RPTYYZ_0/a_204_n242#" "nfet_03v3_RPTYYZ_0/a_100_n150#" 29.5784
+cap "nfet_03v3_RPTYYZ_0/a_n404_n242#" "nfet_03v3_RPTYYZ_0/a_100_n150#" 0.0138135
+cap "nfet_03v3_RPTYYZ_0/a_204_n242#" "nfet_03v3_RPTYYZ_0/a_n508_n150#" 23.6764
+cap "nfet_03v3_RPTYYZ_0/a_n404_n242#" "nfet_03v3_RPTYYZ_0/a_n508_n150#" 2.50483
+cap "nfet_03v3_RPTYYZ_0/a_204_n242#" "XM9/a_n100_n242#" 1.6968
+cap "nfet_03v3_RPTYYZ_0/a_404_n150#" "nfet_03v3_RPTYYZ_0/a_100_n150#" -32.4894
+cap "nfet_03v3_RPTYYZ_0/a_404_n150#" "nfet_03v3_RPTYYZ_0/a_n508_n150#" -39.6416
+cap "XM9/a_508_n242#" "nfet_03v3_RPTYYZ_0/a_100_n150#" 52.3723
+cap "XM10/a_n404_n242#" "nfet_03v3_RPTYYZ_0/a_100_n150#" 0.826851
+cap "XM9/a_508_n242#" "nfet_03v3_RPTYYZ_0/a_n508_n150#" 151.258
+cap "nfet_03v3_RPTYYZ_0/a_404_n150#" "XM9/a_n100_n242#" 107.176
+cap "XM10/a_n404_n242#" "nfet_03v3_RPTYYZ_0/a_n508_n150#" 8.07989
+cap "XM9/a_508_n242#" "XM9/a_n100_n242#" 218.419
+cap "XM10/a_n404_n242#" "XM9/a_n100_n242#" -1.12658
+cap "nfet_03v3_RPTYYZ_0/a_204_n242#" "XM20/a_n100_n242#" 112.643
+cap "nfet_03v3_RPTYYZ_0/a_n404_n242#" "XM20/a_n100_n242#" -1.273
+cap "nfet_03v3_RPTYYZ_0/a_204_n242#" "nfet_03v3_RPTYYZ_0/a_n404_n242#" 226.611
+cap "XM10/a_n404_n242#" "nfet_03v3_RPTYYZ_0/a_100_n150#" 153.155
+cap "nfet_03v3_RPTYYZ_0/a_508_n242#" "nfet_03v3_RPTYYZ_0/a_n404_n242#" 0.628436
+cap "XM20/a_n100_n242#" "nfet_03v3_RPTYYZ_0/a_n404_n242#" -1.06222
+cap "nfet_03v3_RPTYYZ_0/a_204_n242#" "nfet_03v3_RPTYYZ_0/a_100_n150#" 60.1375
+cap "nfet_03v3_RPTYYZ_0/a_508_n242#" "nfet_03v3_RPTYYZ_0/a_100_n150#" 102.071
+cap "XM10/a_n404_n242#" "nfet_03v3_RPTYYZ_0/a_404_n150#" 77.7803
+cap "XM20/a_n100_n242#" "nfet_03v3_RPTYYZ_0/a_100_n150#" 0.360253
+cap "nfet_03v3_RPTYYZ_0/a_204_n242#" "nfet_03v3_RPTYYZ_0/a_404_n150#" 107.732
+cap "nfet_03v3_RPTYYZ_0/a_508_n242#" "nfet_03v3_RPTYYZ_0/a_404_n150#" 128.312
+cap "XM10/a_n404_n242#" "nfet_03v3_RPTYYZ_0/a_708_n150#" 36.0253
+cap "nfet_03v3_RPTYYZ_0/a_100_n150#" "nfet_03v3_RPTYYZ_0/a_n404_n242#" 11.0111
+cap "nfet_03v3_RPTYYZ_0/a_204_n242#" "nfet_03v3_RPTYYZ_0/a_708_n150#" 26.5892
+cap "XM10/a_n404_n242#" "XM9/a_n100_n242#" -1.12527
+cap "nfet_03v3_RPTYYZ_0/a_508_n242#" "nfet_03v3_RPTYYZ_0/a_708_n150#" 142.378
+cap "nfet_03v3_RPTYYZ_0/a_404_n150#" "nfet_03v3_RPTYYZ_0/a_n404_n242#" 59.4988
+cap "nfet_03v3_RPTYYZ_0/a_708_n150#" "nfet_03v3_RPTYYZ_0/a_n404_n242#" 12.6136
+cap "nfet_03v3_RPTYYZ_0/a_404_n150#" "nfet_03v3_RPTYYZ_0/a_100_n150#" -42.8112
+cap "nfet_03v3_RPTYYZ_0/a_204_n242#" "XM10/a_n404_n242#" 0.57959
+cap "nfet_03v3_RPTYYZ_0/a_508_n242#" "XM10/a_n404_n242#" 278.629
+cap "nfet_03v3_RPTYYZ_0/a_708_n150#" "nfet_03v3_RPTYYZ_0/a_100_n150#" -4.25147
+cap "nfet_03v3_RPTYYZ_0/a_508_n242#" "nfet_03v3_RPTYYZ_0/a_204_n242#" 20.813
+cap "XM9/a_n100_n242#" "nfet_03v3_RPTYYZ_0/a_100_n150#" 0.826851
+cap "nfet_03v3_RPTYYZ_0/a_708_n150#" "nfet_03v3_RPTYYZ_0/a_404_n150#" -36.7504
+cap "XM10/a_n404_n242#" "nfet_03v3_RPTYYZ_0/a_n404_n242#" 9.52618
+cap "nfet_03v3_RPTYYZ_0/a_204_n242#" "nfet_03v3_RPTYYZ_0/a_708_n150#" 20.279
+cap "nfet_03v3_RPTYYZ_0/a_508_n242#" "nfet_03v3_RPTYYZ_0/a_n404_n242#" -1.05522
+cap "XM10/a_n404_n242#" "nfet_03v3_RPTYYZ_0/a_404_n150#" 2.67765
+cap "nfet_03v3_RPTYYZ_0/a_404_n150#" "nfet_03v3_RPTYYZ_0/a_100_n150#" -7.45059
+cap "nfet_03v3_RPTYYZ_0/a_100_n150#" "nfet_03v3_RPTYYZ_0/a_708_n150#" 2.72447
+cap "nfet_03v3_RPTYYZ_0/a_404_n150#" "nfet_03v3_RPTYYZ_0/a_508_n242#" 93.6684
+cap "XM10/a_n404_n242#" "nfet_03v3_RPTYYZ_0/a_204_n242#" -1.11787
+cap "nfet_03v3_RPTYYZ_0/a_204_n242#" "nfet_03v3_RPTYYZ_0/a_100_n150#" 52.7061
+cap "nfet_03v3_RPTYYZ_0/a_508_n242#" "nfet_03v3_RPTYYZ_0/a_708_n150#" 19.7156
+cap "nfet_03v3_RPTYYZ_0/a_204_n242#" "nfet_03v3_RPTYYZ_0/a_508_n242#" 211.329
+cap "XM10/a_n404_n242#" "nfet_03v3_RPTYYZ_0/a_100_n150#" 0.826851
+cap "nfet_03v3_RPTYYZ_0/a_404_n150#" "nfet_03v3_RPTYYZ_0/a_708_n150#" -28.8617
+cap "nfet_03v3_RPTYYZ_0/a_204_n242#" "nfet_03v3_RPTYYZ_0/a_404_n150#" 89.6902
+cap "nfet_03v3_RPTYYZ_0/a_508_n242#" "nfet_03v3_RPTYYZ_0/a_100_n150#" 17.477
+cap "nfet_03v3_RPTYYZ_0/a_404_n150#" "nfet_03v3_RPTYYZ_0/a_n508_n150#" -7.41888
+cap "nfet_03v3_RPTYYZ_0/a_100_n150#" "XM9/a_508_n242#" 0.188692
+cap "nfet_03v3_RPTYYZ_0/a_404_n150#" "XM20/a_n100_n242#" 20.2777
+cap "nfet_03v3_RPTYYZ_0/a_n404_n242#" "nfet_03v3_RPTYYZ_0/a_n508_n150#" 0.947026
+cap "nfet_03v3_RPTYYZ_0/a_100_n150#" "nfet_03v3_RPTYYZ_0/a_204_n242#" 72.4138
+cap "XM20/a_n100_n242#" "nfet_03v3_RPTYYZ_0/a_n508_n150#" 89.7718
+cap "nfet_03v3_RPTYYZ_0/a_404_n150#" "nfet_03v3_RPTYYZ_0/a_100_n150#" 9.37293
+cap "nfet_03v3_RPTYYZ_0/a_n404_n242#" "nfet_03v3_RPTYYZ_0/a_100_n150#" 2.14521
+cap "nfet_03v3_RPTYYZ_0/a_100_n150#" "nfet_03v3_RPTYYZ_0/a_n508_n150#" -13.4862
+cap "nfet_03v3_RPTYYZ_0/a_404_n150#" "nfet_03v3_RPTYYZ_0/a_204_n242#" 22.0405
+cap "nfet_03v3_RPTYYZ_0/a_100_n150#" "XM20/a_n100_n242#" 37.5661
+cap "nfet_03v3_RPTYYZ_0/a_204_n242#" "nfet_03v3_RPTYYZ_0/a_n508_n150#" 36.3801
+cap "nfet_03v3_RPTYYZ_0/a_508_n242#" "nfet_03v3_RPTYYZ_0/a_100_n150#" 8.09685
+cap "nfet_03v3_RPTYYZ_0/a_404_n150#" "nfet_03v3_RPTYYZ_0/a_100_n150#" 3.73173
+cap "nfet_03v3_RPTYYZ_0/a_n404_n242#" "nfet_03v3_RPTYYZ_0/a_404_n150#" 23.8034
+cap "nfet_03v3_RPTYYZ_0/a_204_n242#" "nfet_03v3_RPTYYZ_0/a_404_n150#" 22.0405
+cap "XM10/a_n404_n242#" "nfet_03v3_RPTYYZ_0/a_100_n150#" 2.52024
+cap "nfet_03v3_RPTYYZ_0/a_204_n242#" "nfet_03v3_RPTYYZ_0/a_100_n150#" 83.1115
+cap "nfet_03v3_RPTYYZ_0/a_n404_n242#" "nfet_03v3_RPTYYZ_0/a_100_n150#" 32.9615
+cap "nfet_03v3_RPTYYZ_0/a_204_n242#" "nfet_03v3_RPTYYZ_0/a_n404_n242#" 29.9857
+cap "XM20/a_n100_n242#" "nfet_03v3_RPTYYZ_0/a_100_n150#" 0.146509
+cap "nfet_03v3_RPTYYZ_0/a_708_n150#" "nfet_03v3_RPTYYZ_0/a_508_n242#" 0.826851
+cap "nfet_03v3_RPTYYZ_0/a_708_n150#" "nfet_03v3_RPTYYZ_0/a_404_n150#" 21.4884
+cap "nfet_03v3_RPTYYZ_0/a_708_n150#" "nfet_03v3_RPTYYZ_0/a_100_n150#" -7.02888
+cap "nfet_03v3_RPTYYZ_0/a_204_n242#" "nfet_03v3_RPTYYZ_0/a_708_n150#" 76.1022
+cap "nfet_03v3_RPTYYZ_0/a_n404_n242#" "nfet_03v3_RPTYYZ_0/a_708_n150#" 87.9443
+cap "XM20/a_n100_n242#" "nfet_03v3_RPTYYZ_0/a_708_n150#" 0.826851
+cap "nfet_03v3_RPTYYZ_0/a_n404_n242#" "nfet_03v3_RPTYYZ_0/a_708_n150#" 0.800147
+cap "nfet_03v3_RPTYYZ_0/a_404_n150#" "nfet_03v3_RPTYYZ_0/a_708_n150#" -1.47957
+cap "nfet_03v3_RPTYYZ_0/a_404_n150#" "nfet_03v3_RPTYYZ_0/a_508_n242#" 10.1388
+cap "nfet_03v3_RPTYYZ_0/a_100_n150#" "nfet_03v3_RPTYYZ_0/a_404_n150#" -4.44384
+cap "nfet_03v3_RPTYYZ_0/a_404_n150#" "nfet_03v3_RPTYYZ_0/a_204_n242#" 10.1388
+cap "nfet_03v3_RPTYYZ_0/a_708_n150#" "nfet_03v3_RPTYYZ_0/a_508_n242#" 41.5808
+cap "nfet_03v3_RPTYYZ_0/a_100_n150#" "nfet_03v3_RPTYYZ_0/a_708_n150#" -2.30886
+cap "nfet_03v3_RPTYYZ_0/a_708_n150#" "nfet_03v3_RPTYYZ_0/a_204_n242#" 10.2901
+merge "nfet_03v3_RPTYYZ_0/a_204_n242#" "nfet_03v3_RPTYYZ_0/a_n100_n242#" -682.595 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -7063 -2267 0 0 0 0 0 0 0 0
+merge "nfet_03v3_RPTYYZ_0/a_n100_n242#" "XM10/a_508_n242#"
+merge "XM10/a_508_n242#" "XM20/a_508_n242#"
+merge "XM20/a_508_n242#" "XM20/a_204_n242#"
+merge "XM20/a_204_n242#" "XM20/a_n708_n242#"
+merge "XM20/a_n708_n242#" "Vin2"
+merge "nfet_03v3_RPTYYZ_0/VSUBS" "XM9/VSUBS" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "XM9/VSUBS" "XM10/VSUBS"
+merge "XM10/VSUBS" "XM20/VSUBS"
+merge "XM20/VSUBS" "VSUBS"
+merge "nfet_03v3_RPTYYZ_0/a_708_n150#" "nfet_03v3_RPTYYZ_0/a_n508_n150#" -1082.19 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -50922 -2830 0 0 0 0 0 0 0 0
+merge "nfet_03v3_RPTYYZ_0/a_n508_n150#" "XM9/a_404_n150#"
+merge "XM9/a_404_n150#" "XM9/a_n796_n150#"
+merge "XM9/a_n796_n150#" "XM10/a_100_n150#"
+merge "XM10/a_100_n150#" "XM20/a_n204_n150#"
+merge "XM20/a_n204_n150#" "Vd1"
+merge "nfet_03v3_RPTYYZ_0/a_n404_n242#" "nfet_03v3_RPTYYZ_0/a_n708_n242#" -231.118 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -9200 -584 0 0 0 0 0 0 0 0
+merge "nfet_03v3_RPTYYZ_0/a_n708_n242#" "m1_11640_3135#"
+merge "nfet_03v3_RPTYYZ_0/a_404_n150#" "nfet_03v3_RPTYYZ_0/a_n204_n150#" -1694.83 0 0 0 0 -43200 -1488 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -114356 -6076 0 0 0 0 0 0 0 0
+merge "nfet_03v3_RPTYYZ_0/a_n204_n150#" "nfet_03v3_RPTYYZ_0/a_n796_n150#"
+merge "nfet_03v3_RPTYYZ_0/a_n796_n150#" "XM9/a_708_n150#"
+merge "XM9/a_708_n150#" "XM9/a_100_n150#"
+merge "XM9/a_100_n150#" "XM9/a_n508_n150#"
+merge "XM9/a_n508_n150#" "XM10/a_404_n150#"
+merge "XM10/a_404_n150#" "XM10/a_n204_n150#"
+merge "XM10/a_n204_n150#" "XM10/a_n796_n150#"
+merge "XM10/a_n796_n150#" "XM20/a_708_n150#"
+merge "XM20/a_708_n150#" "XM20/a_100_n150#"
+merge "XM20/a_100_n150#" "XM20/a_n508_n150#"
+merge "XM20/a_n508_n150#" "VSS"
+merge "XM10/a_708_n150#" "nfet_03v3_RPTYYZ_0/a_100_n150#" -1063.19 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -49220 -2756 0 0 0 0 0 0 0 0
+merge "nfet_03v3_RPTYYZ_0/a_100_n150#" "XM9/a_n204_n150#"
+merge "XM9/a_n204_n150#" "XM10/a_n508_n150#"
+merge "XM10/a_n508_n150#" "XM20/a_404_n150#"
+merge "XM20/a_404_n150#" "XM20/a_n796_n150#"
+merge "XM20/a_n796_n150#" "Vd2"
+merge "XM20/a_n100_n242#" "XM20/a_n404_n242#" -313.202 0 0 0 0 0 0 0 0 0 0 0 0 -6750 -510 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -9455 -754 0 0 0 0 0 0 0 0
+merge "XM20/a_n404_n242#" "a_10430_3125#"
+merge "a_10430_3125#" "m1_10380_3135#"
+merge "m1_10380_3135#" "a_10430_3135#"
+merge "nfet_03v3_RPTYYZ_0/a_508_n242#" "XM9/a_508_n242#" -688.14 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -4600 -2234 0 0 0 0 0 0 0 0
+merge "XM9/a_508_n242#" "XM9/a_204_n242#"
+merge "XM9/a_204_n242#" "XM9/a_n708_n242#"
+merge "XM9/a_n708_n242#" "XM10/a_204_n242#"
+merge "XM10/a_204_n242#" "XM10/a_n100_n242#"
+merge "XM10/a_n100_n242#" "Vin1"
+merge "XM9/a_n100_n242#" "XM9/a_n404_n242#" -196.411 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -8300 -584 0 0 0 0 0 0 0 0
+merge "XM9/a_n404_n242#" "m1_10425_2575#"
+merge "XM10/a_n404_n242#" "XM10/a_n708_n242#" -230.386 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -8300 -584 0 0 0 0 0 0 0 0
+merge "XM10/a_n708_n242#" "m1_11640_2575#"

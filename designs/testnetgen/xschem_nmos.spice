@@ -1,0 +1,16 @@
+* NGSPICE file created from xschem_nmos.ext - technology: gf180mcuD
+
+.subckt nfet_03v3_5GTYYT a_n508_n300# a_n204_n300# a_508_n392# a_204_n392# a_n708_n392#
++ a_n404_n392# a_n934_n486# a_n100_n392# a_708_n300# a_404_n300# a_n796_n300# a_100_n300#
+X0 a_100_n300# a_n100_n392# a_n204_n300# a_n934_n486# nfet_03v3 ad=0.78p pd=3.52u as=0.78p ps=3.52u w=3u l=1u
+X1 a_708_n300# a_508_n392# a_404_n300# a_n934_n486# nfet_03v3 ad=1.32p pd=6.88u as=0.78p ps=3.52u w=3u l=1u
+X2 a_n204_n300# a_n404_n392# a_n508_n300# a_n934_n486# nfet_03v3 ad=0.78p pd=3.52u as=0.78p ps=3.52u w=3u l=1u
+X3 a_n508_n300# a_n708_n392# a_n796_n300# a_n934_n486# nfet_03v3 ad=0.78p pd=3.52u as=1.32p ps=6.88u w=3u l=1u
+X4 a_404_n300# a_204_n392# a_100_n300# a_n934_n486# nfet_03v3 ad=0.78p pd=3.52u as=0.78p ps=3.52u w=3u l=1u
+.ends
+
+.subckt xschem_nmos drain source gate
+Xnfet_03v3_5GTYYT_0 source drain gate gate gate gate source gate source drain drain
++ source nfet_03v3_5GTYYT
+.ends
+

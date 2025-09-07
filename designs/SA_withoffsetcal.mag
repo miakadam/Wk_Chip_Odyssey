@@ -1,0 +1,107 @@
+magic
+tech gf180mcuD
+magscale 1 5
+timestamp 1756888101
+<< checkpaint >>
+rect 5914 1772 8192 1892
+rect 5914 1298 9184 1772
+rect 5666 1240 9184 1298
+rect -1030 1190 2120 1220
+rect -1030 1100 2744 1190
+rect 3066 1100 9184 1240
+rect -1030 -1030 9184 1100
+rect -782 -1060 9184 -1030
+rect -534 -1090 9184 -1060
+rect 90 -1120 9184 -1090
+rect 714 -1150 9184 -1120
+rect 962 -1180 9184 -1150
+rect 1210 -1210 9184 -1180
+rect 2138 -1240 9184 -1210
+rect 3066 -1270 9184 -1240
+rect 3994 -1300 9184 -1270
+rect 4922 -1330 9184 -1300
+rect 5170 -1360 9184 -1330
+rect 5418 -1390 9184 -1360
+rect 5666 -1420 9184 -1390
+rect 5914 -1450 9184 -1420
+rect 6162 -1480 9184 -1450
+rect 6410 -1510 9184 -1480
+rect 6658 -1540 9184 -1510
+rect 6906 -1570 9184 -1540
+use pfet_03v3_H5R3BY  XM1
+timestamp 0
+transform 1 0 109 0 1 95
+box -139 -125 139 125
+use pfet_03v3_H5R3BY  XM2
+timestamp 0
+transform 1 0 357 0 1 65
+box -139 -125 139 125
+use pfet_03v3_V5CHCW  XM3
+timestamp 0
+transform 1 0 793 0 1 65
+box -327 -155 327 155
+use pfet_03v3_V5CHCW  XM4
+timestamp 0
+transform 1 0 1417 0 1 35
+box -327 -155 327 155
+use pfet_03v3_H5R3BY  XM5
+timestamp 0
+transform 1 0 1853 0 1 -25
+box -139 -125 139 125
+use pfet_03v3_H5R3BY  XM6
+timestamp 0
+transform 1 0 2101 0 1 -55
+box -139 -125 139 125
+use nfet_03v3_KVLVYL  XM7
+timestamp 0
+transform 1 0 2689 0 1 -55
+box -479 -155 479 155
+use nfet_03v3_KVLVYL  XM8
+timestamp 0
+transform 1 0 3617 0 1 -85
+box -479 -155 479 155
+use nfet_03v3_ZSMVY4  XM9
+timestamp 0
+transform 1 0 4545 0 1 -15
+box -479 -255 479 255
+use nfet_03v3_ZSMVY4  XM10
+timestamp 0
+transform 1 0 5473 0 1 -45
+box -479 -255 479 255
+use nfet_03v3_Z8672T  XM11
+timestamp 0
+transform 1 0 6061 0 1 -205
+box -139 -125 139 125
+use pfet_03v3_H5R3BY  XM12
+timestamp 0
+transform 1 0 6309 0 1 -235
+box -139 -125 139 125
+use pfet_03v3_HDLTJN  XM13
+timestamp 0
+transform 1 0 6557 0 1 -187
+box -139 -203 139 203
+use pfet_03v3_GU2533  XM14
+timestamp 0
+transform 1 0 6805 0 1 -61
+box -139 -359 139 359
+use pfet_03v3_HVKTJN  XM15
+timestamp 0
+transform 1 0 7053 0 1 221
+box -139 -671 139 671
+use pfet_03v3_H5R3BY  XM16
+timestamp 0
+transform 1 0 7301 0 1 -355
+box -139 -125 139 125
+use pfet_03v3_HDLTJN  XM17
+timestamp 0
+transform 1 0 7549 0 1 -307
+box -139 -203 139 203
+use pfet_03v3_GU2533  XM18
+timestamp 0
+transform 1 0 7797 0 1 -181
+box -139 -359 139 359
+use pfet_03v3_HVKTJN  XM19
+timestamp 0
+transform 1 0 8045 0 1 101
+box -139 -671 139 671
+<< end >>

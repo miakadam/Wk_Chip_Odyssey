@@ -1,0 +1,16 @@
+* NGSPICE file created from nmostest.ext - technology: gf180mcuD
+
+.subckt nfet a_846_0# a_342_n60# a_1254_n60# a_238_0# a_1454_0# a_950_n60# a_542_0#
++ a_38_n60# a_1576_0# a_n84_0# a_1150_0# a_646_n60#
+X0 a_846_0# a_646_n60# a_542_0# a_1576_0# nfet_03v3 ad=0.78p pd=3.52u as=0.78p ps=3.52u w=3u l=1u
+X1 a_1454_0# a_1254_n60# a_1150_0# a_1576_0# nfet_03v3 ad=1.83p pd=7.22u as=0.78p ps=3.52u w=3u l=1u
+X2 a_1150_0# a_950_n60# a_846_0# a_1576_0# nfet_03v3 ad=0.78p pd=3.52u as=0.78p ps=3.52u w=3u l=1u
+X3 a_542_0# a_342_n60# a_238_0# a_1576_0# nfet_03v3 ad=0.78p pd=3.52u as=0.78p ps=3.52u w=3u l=1u
+X4 a_238_0# a_38_n60# a_n84_0# a_1576_0# nfet_03v3 ad=0.78p pd=3.52u as=1.83p ps=7.22u w=3u l=1u
+.ends
+
+.subckt nmostest
+Xnfet_0 VSUBS gate gate VSUBS VSUBS gate m1_n144_146# gate VSUBS m1_n144_146# m1_n144_146#
++ gate nfet
+.ends
+

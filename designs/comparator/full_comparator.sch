@@ -23,12 +23,11 @@ N 700 -190 700 -80 {lab=inv2}
 N 670 -80 700 -80 {lab=inv2}
 N 790 -130 790 -110 {lab=VSS}
 N 790 -290 790 -270 {lab=VDD}
-N 910 -210 1050 -210 {lab=#net1}
-N 910 -190 960 -190 {lab=#net2}
+N 910 -210 1050 -210 {lab=latch}
+N 910 -190 960 -190 {lab=#net1}
 N 1100 -270 1100 -250 {lab=VDD}
 N 1100 -170 1100 -150 {lab=VSS}
 N 1170 -210 1220 -210 {lab=Vout}
-C {comparator/SA_withoffsetcal.sym} 120 70 0 0 {name=x1}
 C {comparator/inv.sym} 520 -400 0 0 {name=xinv1}
 C {comparator/inv.sym} 520 -160 0 0 {name=xinv2}
 C {comparator/rslatch.sym} 830 -190 0 0 {name=x2}
@@ -75,3 +74,4 @@ C {lab_pin.sym} 490 -320 3 1 {name=p38 sig_type=std_logic lab=out1}
 C {lab_pin.sym} 700 -320 3 1 {name=p39 sig_type=std_logic lab=inv1}
 C {lab_pin.sym} 700 -80 3 0 {name=p40 sig_type=std_logic lab=inv2}
 C {lab_pin.sym} 990 -210 1 0 {name=p41 sig_type=std_logic lab=latch}
+C {comparator/final_magic/lvsclean_SAlatch.sym} 60 -50 0 0 {name=x1}
