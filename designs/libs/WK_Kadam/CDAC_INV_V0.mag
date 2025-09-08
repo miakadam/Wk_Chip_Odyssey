@@ -1,30 +1,32 @@
 magic
 tech gf180mcuD
-timestamp 1757281330
-<< checkpaint >>
-rect -154 156 304 190
-rect -206 -326 304 156
-rect -154 -332 304 -326
+magscale 1 10
+timestamp 1757285905
+<< error_s >>
+rect 783 -643 794 -597
+rect 783 -1555 794 -1509
 << metal1 >>
-rect 0 0 20 20
-rect 0 -40 20 -20
-rect 0 -80 20 -60
-rect 0 -120 20 -100
-use nfet_03v3_WAQWUP  XM3
-timestamp 0
-transform 1 0 23 0 1 -85
-box -29 -41 29 41
+rect 0 0 200 200
+rect 0 -400 200 -200
+rect 0 -800 200 -600
+rect 0 -1200 200 -1000
+rect 618 -2208 674 -2048
+rect 615 -2877 671 -2717
+use nfet_03v3_WAUSUP  XM3
+timestamp 1757285905
+transform 1 0 643 0 1 -2483
+box -290 -410 290 410
 use pfet_03v3_LSTY94  XM4
-timestamp 0
-transform 1 0 75 0 1 -71
-box -29 -61 29 61
+timestamp 1757285905
+transform 1 0 821 0 1 -1076
+box -290 -610 290 610
 << labels >>
-flabel metal1 0 0 20 20 0 FreeSans 128 0 0 0 avdd
+flabel metal1 0 0 200 200 0 FreeSans 1280 0 0 0 avdd
 port 0 nsew
-flabel metal1 0 -40 20 -20 0 FreeSans 128 0 0 0 in
+flabel metal1 0 -400 200 -200 0 FreeSans 1280 0 0 0 in
 port 1 nsew
-flabel metal1 0 -80 20 -60 0 FreeSans 128 0 0 0 out
+flabel metal1 0 -800 200 -600 0 FreeSans 1280 0 0 0 out
 port 2 nsew
-flabel metal1 0 -120 20 -100 0 FreeSans 128 0 0 0 avss
+flabel metal1 0 -1200 200 -1000 0 FreeSans 1280 0 0 0 avss
 port 3 nsew
 << end >>
