@@ -1,0 +1,29 @@
+* NGSPICE file created from diffpairtest.ext - technology: gf180mcuD
+
+.subckt nfet_03v3_CUC8B5 a_860_n150# a_n860_n242# a_n52_n150# a_n964_n150# a_356_n242#
++ a_n660_n150# a_52_n242# a_1268_n242# a_964_n242# a_556_n150# a_n556_n242# a_660_n242#
++ a_n1468_n242# a_252_n150# a_n252_n242# a_n1164_n242# a_1468_n150# a_n1556_n150#
++ a_1164_n150# a_n356_n150# a_n1268_n150# VSUBS
+X0 a_n356_n150# a_n556_n242# a_n660_n150# VSUBS nfet_03v3 ad=0.39p pd=2.02u as=0.39p ps=2.02u w=1.5u l=1u
+X1 a_n1268_n150# a_n1468_n242# a_n1556_n150# VSUBS nfet_03v3 ad=0.39p pd=2.02u as=0.66p ps=3.88u w=1.5u l=1u
+X2 a_1164_n150# a_964_n242# a_860_n150# VSUBS nfet_03v3 ad=0.39p pd=2.02u as=0.39p ps=2.02u w=1.5u l=1u
+X3 a_n660_n150# a_n860_n242# a_n964_n150# VSUBS nfet_03v3 ad=0.39p pd=2.02u as=0.39p ps=2.02u w=1.5u l=1u
+X4 a_1468_n150# a_1268_n242# a_1164_n150# VSUBS nfet_03v3 ad=0.66p pd=3.88u as=0.39p ps=2.02u w=1.5u l=1u
+X5 a_556_n150# a_356_n242# a_252_n150# VSUBS nfet_03v3 ad=0.39p pd=2.02u as=0.39p ps=2.02u w=1.5u l=1u
+X6 a_252_n150# a_52_n242# a_n52_n150# VSUBS nfet_03v3 ad=0.39p pd=2.02u as=0.39p ps=2.02u w=1.5u l=1u
+X7 a_n52_n150# a_n252_n242# a_n356_n150# VSUBS nfet_03v3 ad=0.39p pd=2.02u as=0.39p ps=2.02u w=1.5u l=1u
+X8 a_n964_n150# a_n1164_n242# a_n1268_n150# VSUBS nfet_03v3 ad=0.39p pd=2.02u as=0.39p ps=2.02u w=1.5u l=1u
+X9 a_860_n150# a_660_n242# a_556_n150# VSUBS nfet_03v3 ad=0.39p pd=2.02u as=0.39p ps=2.02u w=1.5u l=1u
+.ends
+
+.subckt diffpairtest Vin1 VSS Vd1 Vd2 Vin2
+Xnfet_03v3_CUC8B5_0 Vd1 Vin2 VSS Vd2 Vin2 VSS Vin2 Vin2 Vin1 VSS Vin1 Vin1 Vin1 Vd2
++ Vin1 Vin2 Vd2 Vd1 VSS Vd1 VSS VSS nfet_03v3_CUC8B5
+Xnfet_03v3_CUC8B5_1 Vd2 Vin1 VSS Vd1 Vin1 VSS Vin1 Vin1 Vin2 VSS Vin2 Vin2 Vin2 Vd1
++ Vin2 Vin1 Vd1 Vd2 VSS Vd2 VSS VSS nfet_03v3_CUC8B5
+X0 a_13313_3215# a_13113_3123# Vd2 VSS nfet_03v3 ad=0.66p pd=3.88u as=0.15p ps=3.2u w=1.5u l=1u
+X1 Vd1 a_9768_3123# a_9680_3215# VSS nfet_03v3 ad=0.27p pd=3.36u as=0.66p ps=3.88u w=1.5u l=1u
+X2 a_13312_2256# a_13112_2164# Vd1 VSS nfet_03v3 ad=0.66p pd=3.88u as=0.2175p ps=3.29u w=1.5u l=1u
+X3 Vd2 a_9768_2164# a_9680_2256# VSS nfet_03v3 ad=0.2175p pd=3.29u as=0.66p ps=3.88u w=1.5u l=1u
+.ends
+

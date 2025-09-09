@@ -1,6 +1,0 @@
-* Extracted by KLayout with GF180MCU LVS runset on : 07/09/2025 02:58
-
-.SUBCKT nmostest gf180mcu_gnd
-M$1 \$1 \$3 \$2 gf180mcu_gnd nfet_03v3 L=1U W=15U AS=4.95P AD=4.95P PS=21.3U
-+ PD=21.3U
-.ENDS nmostest

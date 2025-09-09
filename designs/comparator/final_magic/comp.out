@@ -1,20 +1,19 @@
 
-Cell nfet_03v3 (1) disconnected node: drain
-Cell nfet_03v3 (1) disconnected node: gate
-Cell nfet_03v3 (1) disconnected node: source
-Cell nfet_03v3 (1) disconnected node: bulk
+Circuit 1 cell nfet_03v3 and Circuit 2 cell nfet_03v3 are black boxes.
+Warning: Equate pins:  cell nfet_03v3 is a placeholder, treated as a black box.
 Warning: Equate pins:  cell nfet_03v3 is a placeholder, treated as a black box.
 
 Subcircuit pins:
 Circuit 1: nfet_03v3                       |Circuit 2: nfet_03v3                       
 -------------------------------------------|-------------------------------------------
-(no matching pin)                          |drain                                      
-(no matching pin)                          |gate                                       
-(no matching pin)                          |source                                     
-(no matching pin)                          |bulk                                       
+1                                          |1                                          
+2                                          |2                                          
+3                                          |3                                          
+4                                          |4                                          
 ---------------------------------------------------------------------------------------
 Cell pin lists are equivalent.
 Device classes nfet_03v3 and nfet_03v3 are equivalent.
+Flattening unmatched subcell nfet_03v3_RPTYYZ in circuit diffpairtest (0)(4 instances)
 
 Class diffpairtest (0):  Merged 14 parallel devices.
 Class diffpairtest (1):  Merged 2 parallel devices.
@@ -23,175 +22,76 @@ Circuit 1: diffpairtest                    |Circuit 2: diffpairtest
 -------------------------------------------|-------------------------------------------
 nfet_03v3 (20->6)                          |nfet_03v3 (4->2) **Mismatch**              
 Number of devices: 6 **Mismatch**          |Number of devices: 2 **Mismatch**          
-Number of nets: 34 **Mismatch**            |Number of nets: 13 **Mismatch**            
+Number of nets: 9 **Mismatch**             |Number of nets: 5 **Mismatch**             
 ---------------------------------------------------------------------------------------
 NET mismatches: Class fragments follow (with fanout counts):
 Circuit 1: diffpairtest                    |Circuit 2: diffpairtest                    
 
 ---------------------------------------------------------------------------------------
-Net: Vd1                                   |Net: Vd1                                   
-  nfet_03v3/(1|3) = 3                      |  nfet_03v3/(drain|source) = 1             
-                                           |                                           
-Net: Vd2                                   |Net: Vd2                                   
-  nfet_03v3/(1|3) = 3                      |  nfet_03v3/(drain|source) = 1             
-                                           |                                           
 Net: Vin1                                  |Net: Vin1                                  
-  nfet_03v3/2 = 1                          |  nfet_03v3/gate = 1                       
+  nfet_03v3/2 = 1                          |  nfet_03v3/2 = 1                          
                                            |                                           
 Net: Vin2                                  |Net: Vin2                                  
-  nfet_03v3/2 = 1                          |  nfet_03v3/gate = 1                       
+  nfet_03v3/2 = 1                          |  nfet_03v3/2 = 1                          
                                            |                                           
-Net: a_10376_3124#                         |Net: dummy_6                               
-  nfet_03v3/2 = 1                          |  nfet_03v3/proxy1 = 1                     
+Net: Vd1                                   |Net: Vd1                                   
+  nfet_03v3/(1|3) = 3                      |  nfet_03v3/(1|3) = 1                      
                                            |                                           
-Net: a_10376_2164#                         |Net: dummy_10                              
-  nfet_03v3/2 = 1                          |  nfet_03v3/proxy1 = 1                     
-                                           |                                           
-Net: a_11592_2164#                         |Net: dummy_7                               
-  nfet_03v3/2 = 1                          |  nfet_03v3/proxy2 = 1                     
-                                           |                                           
-Net: dummy_11                              |Net: dummy_11                              
-  nfet_03v3/proxydrain = 1                 |  nfet_03v3/proxy2 = 1                     
-                                           |                                           
-Net: a_11592_3124#                         |Net: dummy_8                               
-  nfet_03v3/2 = 1                          |  nfet_03v3/proxy3 = 1                     
-                                           |                                           
-Net: dummy_12                              |Net: dummy_12                              
-  nfet_03v3/proxygate = 1                  |  nfet_03v3/proxy3 = 1                     
-                                           |                                           
-Net: dummy_19                              |Net: dummy_9                               
-  nfet_03v3/proxydrain = 1                 |  nfet_03v3/proxy4 = 1                     
-                                           |                                           
-Net: dummy_13                              |Net: dummy_13                              
-  nfet_03v3/proxysource = 1                |  nfet_03v3/proxy4 = 1                     
+Net: Vd2                                   |Net: Vd2                                   
+  nfet_03v3/(1|3) = 3                      |  nfet_03v3/(1|3) = 1                      
                                            |                                           
 Net: VSS                                   |Net: VSS                                   
-  nfet_03v3/(1|3) = 6                      |  nfet_03v3/(drain|source) = 2             
-                                           |  nfet_03v3/bulk = 2                       
+  nfet_03v3/(1|3) = 6                      |  nfet_03v3/(1|3) = 2                      
+  nfet_03v3/4 = 6                          |  nfet_03v3/4 = 2                          
                                            |                                           
-Net: dummy_59                              |(no matching net)                          
-  nfet_03v3/proxydrain = 1                 |                                           
+Net: m1_11640_3135#                        |(no matching net)                          
+  nfet_03v3/2 = 1                          |                                           
                                            |                                           
-Net: dummy_15                              |(no matching net)                          
-  nfet_03v3/proxydrain = 1                 |                                           
+Net: m1_11640_2575#                        |(no matching net)                          
+  nfet_03v3/2 = 1                          |                                           
                                            |                                           
-Net: dummy_16                              |(no matching net)                          
-  nfet_03v3/proxygate = 1                  |                                           
+Net: m1_10425_2575#                        |(no matching net)                          
+  nfet_03v3/2 = 1                          |                                           
                                            |                                           
-Net: dummy_20                              |(no matching net)                          
-  nfet_03v3/proxygate = 1                  |                                           
-                                           |                                           
-Net: dummy_24                              |(no matching net)                          
-  nfet_03v3/proxygate = 1                  |                                           
-                                           |                                           
-Net: dummy_36                              |(no matching net)                          
-  nfet_03v3/proxygate = 1                  |                                           
-                                           |                                           
-Net: dummy_60                              |(no matching net)                          
-  nfet_03v3/proxygate = 1                  |                                           
-                                           |                                           
-Net: dummy_23                              |(no matching net)                          
-  nfet_03v3/proxydrain = 1                 |                                           
-                                           |                                           
-Net: dummy_17                              |(no matching net)                          
-  nfet_03v3/proxysource = 1                |                                           
-                                           |                                           
-Net: dummy_21                              |(no matching net)                          
-  nfet_03v3/proxysource = 1                |                                           
-                                           |                                           
-Net: dummy_25                              |(no matching net)                          
-  nfet_03v3/proxysource = 1                |                                           
-                                           |                                           
-Net: dummy_37                              |(no matching net)                          
-  nfet_03v3/proxysource = 1                |                                           
-                                           |                                           
-Net: dummy_61                              |(no matching net)                          
-  nfet_03v3/proxysource = 1                |                                           
-                                           |                                           
-Net: dummy_14                              |(no matching net)                          
-  nfet_03v3/proxybulk = 1                  |                                           
-                                           |                                           
-Net: dummy_18                              |(no matching net)                          
-  nfet_03v3/proxybulk = 1                  |                                           
-                                           |                                           
-Net: dummy_22                              |(no matching net)                          
-  nfet_03v3/proxybulk = 1                  |                                           
-                                           |                                           
-Net: dummy_26                              |(no matching net)                          
-  nfet_03v3/proxybulk = 1                  |                                           
-                                           |                                           
-Net: dummy_38                              |(no matching net)                          
-  nfet_03v3/proxybulk = 1                  |                                           
-                                           |                                           
-Net: dummy_62                              |(no matching net)                          
-  nfet_03v3/proxybulk = 1                  |                                           
-                                           |                                           
-Net: VSUBS                                 |(no matching net)                          
-  nfet_03v3/4 = 6                          |                                           
-                                           |                                           
-Net: dummy_35                              |(no matching net)                          
-  nfet_03v3/proxydrain = 1                 |                                           
+Net: a_10430_3135#                         |(no matching net)                          
+  nfet_03v3/2 = 1                          |                                           
 ---------------------------------------------------------------------------------------
 DEVICE mismatches: Class fragments follow (with node fanout counts):
 Circuit 1: diffpairtest                    |Circuit 2: diffpairtest                    
 
 ---------------------------------------------------------------------------------------
-Instance: nfet_03v3:0                      |Instance: nfet_03v3:9                      
-  (1,3) = (6,3)                            |  proxy1 = 1                               
-  2 = 1                                    |  proxy2 = 1                               
-  4 = 6                                    |  proxy3 = 1                               
-  proxydrain = 1                           |  proxy4 = 1                               
-  proxygate = 1                            |  (drain,source) = (4,1)                   
-  proxysource = 1                          |  gate = 1                                 
-  proxybulk = 1                            |  bulk = 4                                 
+Instance: nfet_03v3_RPTYYZ:XM9/nfet_03v3:0 |Instance: nfet_03v3:M9                     
+  (1,3) = (12,3)                           |  (1,3) = (4,1)                            
+  2 = 1                                    |  2 = 1                                    
+  4 = 12                                   |  4 = 4                                    
                                            |                                           
-Instance: nfet_03v3:1                      |Instance: nfet_03v3:10                     
-  (1,3) = (6,3)                            |  proxy1 = 1                               
-  2 = 1                                    |  proxy2 = 1                               
-  4 = 6                                    |  proxy3 = 1                               
-  proxydrain = 1                           |  proxy4 = 1                               
-  proxygate = 1                            |  (drain,source) = (4,1)                   
-  proxysource = 1                          |  gate = 1                                 
-  proxybulk = 1                            |  bulk = 4                                 
+Instance: nfet_03v3_RPTYYZ:XM9/nfet_03v3:1 |Instance: nfet_03v3:M10                    
+  (1,3) = (12,3)                           |  (1,3) = (4,1)                            
+  2 = 1                                    |  2 = 1                                    
+  4 = 12                                   |  4 = 4                                    
                                            |                                           
-Instance: nfet_03v3:2                      |(no matching instance)                     
-  (1,3) = (6,3)                            |                                           
+Instance: nfet_03v3_RPTYYZ:XM20/nfet_03v3: |(no matching instance)                     
+  (1,3) = (12,3)                           |                                           
   2 = 1                                    |                                           
-  4 = 6                                    |                                           
-  proxydrain = 1                           |                                           
-  proxygate = 1                            |                                           
-  proxysource = 1                          |                                           
-  proxybulk = 1                            |                                           
+  4 = 12                                   |                                           
                                            |                                           
                                            |                                           
-Instance: nfet_03v3:3                      |(no matching instance)                     
-  (1,3) = (6,3)                            |                                           
+Instance: nfet_03v3_RPTYYZ:XM20/nfet_03v3: |(no matching instance)                     
+  (1,3) = (12,3)                           |                                           
   2 = 1                                    |                                           
-  4 = 6                                    |                                           
-  proxydrain = 1                           |                                           
-  proxygate = 1                            |                                           
-  proxysource = 1                          |                                           
-  proxybulk = 1                            |                                           
+  4 = 12                                   |                                           
                                            |                                           
                                            |                                           
-Instance: nfet_03v3:6                      |(no matching instance)                     
-  (1,3) = (6,3)                            |                                           
+Instance: nfet_03v3_RPTYYZ_0/nfet_03v3:0   |(no matching instance)                     
+  (1,3) = (12,3)                           |                                           
   2 = 1                                    |                                           
-  4 = 6                                    |                                           
-  proxydrain = 1                           |                                           
-  proxygate = 1                            |                                           
-  proxysource = 1                          |                                           
-  proxybulk = 1                            |                                           
+  4 = 12                                   |                                           
                                            |                                           
                                            |                                           
-Instance: nfet_03v3:12                     |(no matching instance)                     
-  (1,3) = (6,3)                            |                                           
+Instance: nfet_03v3_RPTYYZ:XM10/nfet_03v3: |(no matching instance)                     
+  (1,3) = (12,3)                           |                                           
   2 = 1                                    |                                           
-  4 = 6                                    |                                           
-  proxydrain = 1                           |                                           
-  proxygate = 1                            |                                           
-  proxysource = 1                          |                                           
-  proxybulk = 1                            |                                           
+  4 = 12                                   |                                           
                                            |                                           
 ---------------------------------------------------------------------------------------
 Netlists do not match.
@@ -200,9 +100,9 @@ Port matching may fail to disambiguate symmetries.
 Subcircuit pins:
 Circuit 1: diffpairtest                    |Circuit 2: diffpairtest                    
 -------------------------------------------|-------------------------------------------
-VSS                                        |Vd1 **Mismatch**                           
-Vin2                                       |Vin2                                       
-Vin1                                       |(no pin, node is dummy_10)                 
+VSS                                        |Vin1 **Mismatch**                          
+Vin1                                       |Vin2 **Mismatch**                          
+Vin2                                       |Vd2 **Mismatch**                           
 Cell pin lists are equivalent.
 Device classes diffpairtest and diffpairtest are equivalent.
 

@@ -1,0 +1,55 @@
+
+Circuit 1 cell nfet_03v3 and Circuit 2 cell nfet_03v3 are black boxes.
+Warning: Equate pins:  cell nfet_03v3 is a placeholder, treated as a black box.
+Warning: Equate pins:  cell nfet_03v3 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: nfet_03v3                       |Circuit 2: nfet_03v3                       
+-------------------------------------------|-------------------------------------------
+1                                          |1                                          
+2                                          |2                                          
+3                                          |3                                          
+4                                          |4                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes nfet_03v3 and nfet_03v3 are equivalent.
+Flattening unmatched subcell nfet_03v3_CGC9B5 in circuit diffpairtest_layout (0)(2 instances)
+
+Class diffpairtest_layout (0):  Merged 20 parallel devices.
+Class diffpairtest (1):  Merged 2 parallel devices.
+Subcircuit summary:
+Circuit 1: diffpairtest_layout             |Circuit 2: diffpairtest                    
+-------------------------------------------|-------------------------------------------
+nfet_03v3 (24->4)                          |nfet_03v3 (6->4)                           
+Number of devices: 4                       |Number of devices: 4                       
+Number of nets: 9                          |Number of nets: 9                          
+---------------------------------------------------------------------------------------
+Resolving symmetries by property value.
+Resolving symmetries by pin name.
+Netlists match uniquely with property errors.
+nfet_03v3_CGC9B5_0/nfet_03v3:0 vs. nfet_03v3:M9:
+ w circuit1: 1.5e-05   circuit2: 3e-06   (delta=133%, cutoff=1%)
+nfet_03v3_CGC9B5_0/nfet_03v3:3 vs. nfet_03v3:M10:
+ w circuit1: 1.5e-05   circuit2: 3e-06   (delta=133%, cutoff=1%)
+nfet_03v3_CGC9B5_0/nfet_03v3:6 vs. nfet_03v3:M1:
+ w circuit1: 3e-06   circuit2: 1.5e-06   (delta=66.7%, cutoff=1%)
+nfet_03v3_CGC9B5_0/nfet_03v3:11 vs. nfet_03v3:M2:
+ w circuit1: 3e-06   circuit2: 1.5e-06   (delta=66.7%, cutoff=1%)
+
+Subcircuit pins:
+Circuit 1: diffpairtest_layout             |Circuit 2: diffpairtest                    
+-------------------------------------------|-------------------------------------------
+VSS                                        |VSS                                        
+Vin1                                       |Vin1                                       
+Vin2                                       |Vin2                                       
+Vd2                                        |Vd2                                        
+Vd1                                        |Vd1                                        
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes diffpairtest_layout and diffpairtest are equivalent.
+
+Final result: Circuits match uniquely.
+Property errors were found.
+
+The following cells had property errors:
+ diffpairtest_layout

@@ -32,7 +32,7 @@ source $PDK_ROOT/gf180mcuD/libs.tech/magic/gf180mcuD.tcl
 puts ">>> Loaded ~/.magicrc"
 
 # load bind keys
-source /foss/designs/comparator/newmagic/gf180mcuD-BindKeys
+source /foss/designs/gf180mcuD-BindKeys
 
 # set units to lambda grid 
 snap lambda

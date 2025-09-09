@@ -1,0 +1,197 @@
+timestamp 1757399739
+version 8.3
+tech gf180mcuD
+style ngspice()
+scale 1000 1 0.5
+resistclasses 1000000 3250000 6300 7000 6300 7000 7300 1000000 60000 185000 60000 185000 6300 7000 6300 7000 6800 7300 350000 310000 1000000 90 90 90 90 60
+use nfet_03v3_CGC9B5 nfet_03v3_CGC9B5_0 1 0 11540 0 1 3365
+use nfet_03v3_CGC9B5 nfet_03v3_CGC9B5_1 1 0 11540 0 1 2406
+port "Vin1" 0 13670 3048 13670 3048 m1
+port "Vin2" 4 13670 2721 13670 2721 m1
+port "Vd1" 2 10019 3814 10019 3814 m2
+port "Vd2" 3 13060 3804 13060 3804 m2
+port "VSS" 1 13161 1947 13161 1947 m2
+node "Vin1" 12 2872.37 13670 3048 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 357240 9646 146785 4964 28160 1344 64672 2424 0 0
+node "Vin2" 13 2931.03 13670 2721 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 355040 9766 146285 4958 28160 1344 64672 2424 0 0
+node "Vd1" 16 4005.92 10019 3814 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 84880 3082 278016 9262 415332 11580 0 0 0 0
+node "Vd2" 16 3485.05 13060 3804 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 87840 3156 265728 8956 424312 11804 0 0 0 0
+node "a_10430_3125#" 131 27.7311 10430 3125 p 0 0 0 0 0 0 0 0 0 0 0 0 450 190 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "a_10430_3135#" 9 77.0976 10430 3135 p 0 0 0 0 0 0 0 0 0 0 0 0 6300 320 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+substrate "VSS" 0 0 13161 1947 m2 0 0 0 0 0 0 240000 3200 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 327608 9200 860874 23370 49060 1388 0 0 0 0
+cap "a_10430_3125#" "Vin2" 0.784832
+cap "a_10430_3135#" "Vd1" 0.221291
+cap "Vd2" "Vin2" 591.549
+cap "Vd1" "Vin2" 409.495
+cap "a_10430_3135#" "Vin2" 9.45153
+cap "a_10430_3125#" "Vin1" 3.42063
+cap "Vd2" "Vin1" 321.186
+cap "Vd2" "a_10430_3125#" 0.0790903
+cap "Vd1" "Vin1" 615.547
+cap "a_10430_3135#" "Vin1" 0.154009
+cap "Vd1" "a_10430_3125#" 0.112419
+cap "a_10430_3135#" "a_10430_3125#" -199.764
+cap "Vd2" "Vd1" 1215.32
+cap "Vin1" "Vin2" 2596.08
+cap "a_10430_3135#" "Vd2" 1.43167e-17
+cap "nfet_03v3_CGC9B5_0/a_n1860_n150#" "nfet_03v3_CGC9B5_1/a_n1860_n150#" 2.8691
+cap "nfet_03v3_CGC9B5_1/a_n356_n150#" "nfet_03v3_CGC9B5_1/a_556_n150#" 5.94478
+cap "nfet_03v3_CGC9B5_1/a_n1860_n150#" "nfet_03v3_CGC9B5_1/a_252_n150#" 0.636191
+cap "nfet_03v3_CGC9B5_1/a_n356_n150#" "nfet_03v3_CGC9B5_1/a_n1860_n150#" 3.94912
+cap "nfet_03v3_CGC9B5_1/a_n1860_n150#" "nfet_03v3_CGC9B5_1/a_556_n150#" 52.8248
+cap "nfet_03v3_CGC9B5_1/a_n1772_n242#" "nfet_03v3_CGC9B5_1/a_356_n242#" 3.0316
+cap "nfet_03v3_CGC9B5_1/a_n1772_n242#" "nfet_03v3_CGC9B5_1/a_660_n242#" 0.972271
+cap "nfet_03v3_CGC9B5_1/a_n1772_n242#" "nfet_03v3_CGC9B5_1/a_252_n150#" 1.91307
+cap "nfet_03v3_CGC9B5_1/a_660_n242#" "nfet_03v3_CGC9B5_1/a_356_n242#" 226.485
+cap "nfet_03v3_CGC9B5_0/a_n1860_n150#" "nfet_03v3_CGC9B5_1/a_252_n150#" 0.318961
+cap "nfet_03v3_CGC9B5_1/a_n1772_n242#" "nfet_03v3_CGC9B5_0/a_n1772_n242#" 21.0037
+cap "nfet_03v3_CGC9B5_1/a_660_n242#" "nfet_03v3_CGC9B5_1/a_252_n150#" 30.7114
+cap "nfet_03v3_CGC9B5_1/a_356_n242#" "nfet_03v3_CGC9B5_1/a_252_n150#" 121.732
+cap "nfet_03v3_CGC9B5_1/a_n1772_n242#" "nfet_03v3_CGC9B5_1/a_n356_n150#" 13.6457
+cap "nfet_03v3_CGC9B5_1/a_660_n242#" "nfet_03v3_CGC9B5_0/a_n1772_n242#" 0.221305
+cap "nfet_03v3_CGC9B5_1/a_356_n242#" "nfet_03v3_CGC9B5_0/a_n1772_n242#" 0.972271
+cap "nfet_03v3_CGC9B5_1/a_n1772_n242#" "nfet_03v3_CGC9B5_1/a_556_n150#" 63.9854
+cap "nfet_03v3_CGC9B5_0/a_n1772_n242#" "nfet_03v3_CGC9B5_1/a_252_n150#" 4.1587
+cap "nfet_03v3_CGC9B5_0/a_n1860_n150#" "nfet_03v3_CGC9B5_1/a_556_n150#" 0.609029
+cap "nfet_03v3_CGC9B5_1/a_n356_n150#" "nfet_03v3_CGC9B5_1/a_356_n242#" 33.2553
+cap "nfet_03v3_CGC9B5_1/a_660_n242#" "nfet_03v3_CGC9B5_1/a_n356_n150#" 34.9001
+cap "nfet_03v3_CGC9B5_1/a_660_n242#" "nfet_03v3_CGC9B5_1/a_556_n150#" 82.0594
+cap "nfet_03v3_CGC9B5_1/a_356_n242#" "nfet_03v3_CGC9B5_1/a_556_n150#" 85.902
+cap "nfet_03v3_CGC9B5_1/a_n356_n150#" "nfet_03v3_CGC9B5_1/a_252_n150#" -3.80333
+cap "nfet_03v3_CGC9B5_1/a_252_n150#" "nfet_03v3_CGC9B5_1/a_556_n150#" -24.2068
+cap "nfet_03v3_CGC9B5_0/a_n1772_n242#" "nfet_03v3_CGC9B5_1/a_556_n150#" 5.77258
+cap "nfet_03v3_CGC9B5_1/a_1268_n242#" "nfet_03v3_CGC9B5_1/a_1468_n150#" 182.081
+cap "nfet_03v3_CGC9B5_1/a_n1772_n242#" "nfet_03v3_CGC9B5_1/a_860_n150#" 0.548672
+cap "nfet_03v3_CGC9B5_1/a_964_n242#" "nfet_03v3_CGC9B5_0/a_1572_n242#" 0.17787
+cap "nfet_03v3_CGC9B5_1/a_1468_n150#" "nfet_03v3_CGC9B5_1/a_1164_n150#" -13.4041
+cap "nfet_03v3_CGC9B5_1/a_1572_n242#" "nfet_03v3_CGC9B5_1/a_1268_n242#" 0.142301
+cap "nfet_03v3_CGC9B5_1/a_1268_n242#" "nfet_03v3_CGC9B5_1/a_860_n150#" 81.6971
+cap "nfet_03v3_CGC9B5_1/a_1268_n242#" "nfet_03v3_CGC9B5_1/a_964_n242#" 612.093
+cap "nfet_03v3_CGC9B5_1/a_860_n150#" "nfet_03v3_CGC9B5_1/a_1164_n150#" -32.6349
+cap "nfet_03v3_CGC9B5_1/a_964_n242#" "nfet_03v3_CGC9B5_1/a_1164_n150#" 147.236
+cap "nfet_03v3_CGC9B5_1/a_1268_n242#" "nfet_03v3_CGC9B5_1/a_1164_n150#" 176.826
+cap "nfet_03v3_CGC9B5_1/a_860_n150#" "nfet_03v3_CGC9B5_1/a_n1860_n150#" 0.187295
+cap "nfet_03v3_CGC9B5_1/a_1468_n150#" "nfet_03v3_CGC9B5_1/a_860_n150#" -6.88132
+cap "nfet_03v3_CGC9B5_1/a_1468_n150#" "nfet_03v3_CGC9B5_1/a_964_n242#" 73.7092
+cap "nfet_03v3_CGC9B5_1/a_964_n242#" "nfet_03v3_CGC9B5_0/a_n1772_n242#" 0.917949
+cap "nfet_03v3_CGC9B5_1/a_964_n242#" "nfet_03v3_CGC9B5_1/a_860_n150#" 151.677
+cap "nfet_03v3_CGC9B5_1/a_1268_n242#" "nfet_03v3_CGC9B5_1/a_860_n150#" 40.1544
+cap "nfet_03v3_CGC9B5_0/a_1772_n150#" "nfet_03v3_CGC9B5_1/a_1164_n150#" 0.193129
+cap "nfet_03v3_CGC9B5_1/a_860_n150#" "nfet_03v3_CGC9B5_1/a_964_n242#" 145.069
+cap "nfet_03v3_CGC9B5_1/a_1268_n242#" "nfet_03v3_CGC9B5_0/a_1572_n242#" 201.376
+cap "nfet_03v3_CGC9B5_1/a_1468_n150#" "nfet_03v3_CGC9B5_1/a_860_n150#" 2.41595
+cap "nfet_03v3_CGC9B5_1/a_964_n242#" "nfet_03v3_CGC9B5_0/a_1572_n242#" 39.0164
+cap "nfet_03v3_CGC9B5_1/a_1268_n242#" "nfet_03v3_CGC9B5_0/a_1772_n150#" 18.4528
+cap "nfet_03v3_CGC9B5_1/a_964_n242#" "nfet_03v3_CGC9B5_1/a_1164_n150#" 144.108
+cap "nfet_03v3_CGC9B5_1/a_1268_n242#" "nfet_03v3_CGC9B5_1/a_1164_n150#" 117.745
+cap "nfet_03v3_CGC9B5_0/a_1772_n150#" "nfet_03v3_CGC9B5_1/a_964_n242#" 10.1986
+cap "nfet_03v3_CGC9B5_1/a_1468_n150#" "nfet_03v3_CGC9B5_1/a_1164_n150#" -12.1901
+cap "nfet_03v3_CGC9B5_1/a_1268_n242#" "nfet_03v3_CGC9B5_1/a_964_n242#" 219.444
+cap "nfet_03v3_CGC9B5_1/a_1468_n150#" "nfet_03v3_CGC9B5_1/a_1268_n242#" 74.6423
+cap "nfet_03v3_CGC9B5_1/a_1772_n150#" "nfet_03v3_CGC9B5_1/a_860_n150#" 0.0763382
+cap "nfet_03v3_CGC9B5_1/a_1468_n150#" "nfet_03v3_CGC9B5_1/a_964_n242#" 71.8374
+cap "nfet_03v3_CGC9B5_1/a_1772_n150#" "nfet_03v3_CGC9B5_1/a_1164_n150#" 37.1364
+cap "nfet_03v3_CGC9B5_1/a_1772_n150#" "nfet_03v3_CGC9B5_1/a_1268_n242#" 9.33509
+cap "nfet_03v3_CGC9B5_1/a_1772_n150#" "nfet_03v3_CGC9B5_1/a_964_n242#" 19.2182
+cap "nfet_03v3_CGC9B5_1/a_1572_n242#" "nfet_03v3_CGC9B5_1/a_860_n150#" 0.656308
+cap "nfet_03v3_CGC9B5_1/a_1468_n150#" "nfet_03v3_CGC9B5_1/a_1772_n150#" 3.42283
+cap "nfet_03v3_CGC9B5_1/a_1572_n242#" "nfet_03v3_CGC9B5_0/a_1572_n242#" 4.77333
+cap "nfet_03v3_CGC9B5_1/a_1572_n242#" "nfet_03v3_CGC9B5_1/a_1164_n150#" 34.5731
+cap "nfet_03v3_CGC9B5_1/a_1572_n242#" "nfet_03v3_CGC9B5_1/a_1268_n242#" 40.1472
+cap "nfet_03v3_CGC9B5_1/a_1572_n242#" "nfet_03v3_CGC9B5_1/a_964_n242#" 205.148
+cap "nfet_03v3_CGC9B5_1/a_860_n150#" "nfet_03v3_CGC9B5_0/a_1572_n242#" 1.39023
+cap "nfet_03v3_CGC9B5_0/a_1772_n150#" "nfet_03v3_CGC9B5_1/a_860_n150#" 0.317541
+cap "nfet_03v3_CGC9B5_1/a_860_n150#" "nfet_03v3_CGC9B5_1/a_1164_n150#" -56.0447
+cap "nfet_03v3_CGC9B5_1/a_1468_n150#" "nfet_03v3_CGC9B5_1/a_1572_n242#" 22.835
+cap "nfet_03v3_CGC9B5_0/a_1572_n242#" "nfet_03v3_CGC9B5_1/a_1164_n150#" 1.00347
+cap "nfet_03v3_CGC9B5_1/a_1164_n150#" "nfet_03v3_CGC9B5_1/a_1268_n242#" 0.590594
+cap "nfet_03v3_CGC9B5_1/a_964_n242#" "nfet_03v3_CGC9B5_1/a_1164_n150#" 0.45595
+cap "nfet_03v3_CGC9B5_1/a_1164_n150#" "nfet_03v3_CGC9B5_1/a_860_n150#" 0.00693032
+cap "nfet_03v3_CGC9B5_1/a_1164_n150#" "nfet_03v3_CGC9B5_1/a_1772_n150#" 20.2074
+cap "nfet_03v3_CGC9B5_1/a_1164_n150#" "nfet_03v3_CGC9B5_1/a_356_n242#" 0.0716884
+cap "nfet_03v3_CGC9B5_1/a_1164_n150#" "nfet_03v3_CGC9B5_1/a_1468_n150#" -3.65608
+cap "nfet_03v3_CGC9B5_1/a_1164_n150#" "nfet_03v3_CGC9B5_1/a_1572_n242#" 5.45068
+cap "nfet_03v3_CGC9B5_1/a_252_n150#" "nfet_03v3_CGC9B5_0/a_n1860_n150#" 11.3529
+cap "nfet_03v3_CGC9B5_1/a_252_n150#" "nfet_03v3_CGC9B5_1/a_n356_n150#" -6.77853
+cap "nfet_03v3_CGC9B5_1/a_356_n242#" "nfet_03v3_CGC9B5_1/a_556_n150#" 26.8289
+cap "nfet_03v3_CGC9B5_1/a_556_n150#" "nfet_03v3_CGC9B5_1/a_660_n242#" 27.3984
+cap "nfet_03v3_CGC9B5_1/a_252_n150#" "nfet_03v3_CGC9B5_1/a_356_n242#" 60.63
+cap "nfet_03v3_CGC9B5_0/a_n1772_n242#" "nfet_03v3_CGC9B5_1/a_556_n150#" 1.05771
+cap "nfet_03v3_CGC9B5_1/a_252_n150#" "nfet_03v3_CGC9B5_1/a_660_n242#" 26.8568
+cap "nfet_03v3_CGC9B5_1/a_356_n242#" "nfet_03v3_CGC9B5_1/a_n356_n150#" 11.6537
+cap "nfet_03v3_CGC9B5_1/a_252_n150#" "nfet_03v3_CGC9B5_1/a_556_n150#" -11.3809
+cap "nfet_03v3_CGC9B5_1/a_660_n242#" "nfet_03v3_CGC9B5_1/a_n356_n150#" 104.793
+cap "nfet_03v3_CGC9B5_1/a_252_n150#" "nfet_03v3_CGC9B5_0/a_n1772_n242#" 45.5132
+cap "nfet_03v3_CGC9B5_1/a_556_n150#" "nfet_03v3_CGC9B5_0/a_n1860_n150#" 0.297621
+cap "nfet_03v3_CGC9B5_1/a_556_n150#" "nfet_03v3_CGC9B5_1/a_n356_n150#" -25.4781
+cap "nfet_03v3_CGC9B5_1/a_1164_n150#" "nfet_03v3_CGC9B5_1/a_1468_n150#" 28.9145
+cap "nfet_03v3_CGC9B5_1/a_860_n150#" "nfet_03v3_CGC9B5_1/a_1468_n150#" -8.46217
+cap "nfet_03v3_CGC9B5_1/a_1268_n242#" "nfet_03v3_CGC9B5_1/a_1468_n150#" 53.2031
+cap "nfet_03v3_CGC9B5_1/a_1164_n150#" "nfet_03v3_CGC9B5_1/a_964_n242#" 90.3858
+cap "nfet_03v3_CGC9B5_1/a_964_n242#" "nfet_03v3_CGC9B5_1/a_860_n150#" 106.346
+cap "nfet_03v3_CGC9B5_1/a_1164_n150#" "nfet_03v3_CGC9B5_1/a_860_n150#" 34.319
+cap "nfet_03v3_CGC9B5_1/a_964_n242#" "nfet_03v3_CGC9B5_1/a_1268_n242#" 7.10543e-15
+cap "nfet_03v3_CGC9B5_1/a_1164_n150#" "nfet_03v3_CGC9B5_1/a_1268_n242#" 62.9873
+cap "nfet_03v3_CGC9B5_1/a_1268_n242#" "nfet_03v3_CGC9B5_1/a_860_n150#" 55.2562
+cap "nfet_03v3_CGC9B5_1/a_964_n242#" "nfet_03v3_CGC9B5_1/a_1468_n150#" 46.5203
+cap "nfet_03v3_CGC9B5_1/a_1268_n242#" "nfet_03v3_CGC9B5_1/a_1164_n150#" 53.6578
+cap "nfet_03v3_CGC9B5_0/a_1572_n242#" "nfet_03v3_CGC9B5_1/a_964_n242#" 0.0325429
+cap "nfet_03v3_CGC9B5_1/a_860_n150#" "nfet_03v3_CGC9B5_1/a_1164_n150#" -20.1889
+cap "nfet_03v3_CGC9B5_1/a_860_n150#" "nfet_03v3_CGC9B5_0/a_1772_n150#" 10.8929
+cap "nfet_03v3_CGC9B5_0/a_1772_n150#" "nfet_03v3_CGC9B5_1/a_1164_n150#" 0.297621
+cap "nfet_03v3_CGC9B5_1/a_860_n150#" "nfet_03v3_CGC9B5_1/a_964_n242#" 65.9754
+cap "nfet_03v3_CGC9B5_1/a_1164_n150#" "nfet_03v3_CGC9B5_1/a_964_n242#" 26.8289
+cap "nfet_03v3_CGC9B5_0/a_1572_n242#" "nfet_03v3_CGC9B5_1/a_1468_n150#" 0.502704
+cap "nfet_03v3_CGC9B5_1/a_1468_n150#" "nfet_03v3_CGC9B5_1/a_1268_n242#" 108.755
+cap "nfet_03v3_CGC9B5_1/a_860_n150#" "nfet_03v3_CGC9B5_1/a_1468_n150#" -2.04984
+cap "nfet_03v3_CGC9B5_1/a_1468_n150#" "nfet_03v3_CGC9B5_1/a_1164_n150#" -40.0691
+cap "nfet_03v3_CGC9B5_0/a_1772_n150#" "nfet_03v3_CGC9B5_1/a_1468_n150#" 0.183225
+cap "nfet_03v3_CGC9B5_1/a_860_n150#" "nfet_03v3_CGC9B5_0/a_1572_n242#" 44.6644
+cap "nfet_03v3_CGC9B5_1/a_1468_n150#" "nfet_03v3_CGC9B5_1/a_964_n242#" 15.9767
+cap "nfet_03v3_CGC9B5_0/a_1572_n242#" "nfet_03v3_CGC9B5_1/a_1164_n150#" 1.05771
+cap "nfet_03v3_CGC9B5_1/a_860_n150#" "nfet_03v3_CGC9B5_1/a_1268_n242#" 51.6884
+merge "nfet_03v3_CGC9B5_1/a_964_n242#" "nfet_03v3_CGC9B5_0/a_1268_n242#" -1271.65 0 0 0 0 0 0 0 0 0 0 0 0 -6750 -510 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -23340 -3572 0 0 0 0 0 0 0 0
+merge "nfet_03v3_CGC9B5_0/a_1268_n242#" "nfet_03v3_CGC9B5_1/a_660_n242#"
+merge "nfet_03v3_CGC9B5_1/a_660_n242#" "nfet_03v3_CGC9B5_1/a_n252_n242#"
+merge "nfet_03v3_CGC9B5_1/a_n252_n242#" "nfet_03v3_CGC9B5_1/a_n556_n242#"
+merge "nfet_03v3_CGC9B5_1/a_n556_n242#" "nfet_03v3_CGC9B5_1/a_n1468_n242#"
+merge "nfet_03v3_CGC9B5_1/a_n1468_n242#" "nfet_03v3_CGC9B5_0/a_356_n242#"
+merge "nfet_03v3_CGC9B5_0/a_356_n242#" "nfet_03v3_CGC9B5_0/a_52_n242#"
+merge "nfet_03v3_CGC9B5_0/a_52_n242#" "nfet_03v3_CGC9B5_0/a_n860_n242#"
+merge "nfet_03v3_CGC9B5_0/a_n860_n242#" "nfet_03v3_CGC9B5_0/a_n1164_n242#"
+merge "nfet_03v3_CGC9B5_0/a_n1164_n242#" "a_10430_3125#"
+merge "a_10430_3125#" "Vin2"
+merge "Vin2" "a_10430_3135#"
+merge "nfet_03v3_CGC9B5_1/a_860_n150#" "nfet_03v3_CGC9B5_0/a_1468_n150#" -1119.92 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -50508 -2748 0 0 0 0 0 0 0 0
+merge "nfet_03v3_CGC9B5_0/a_1468_n150#" "nfet_03v3_CGC9B5_1/a_n356_n150#"
+merge "nfet_03v3_CGC9B5_1/a_n356_n150#" "nfet_03v3_CGC9B5_1/a_n1572_n150#"
+merge "nfet_03v3_CGC9B5_1/a_n1572_n150#" "nfet_03v3_CGC9B5_0/a_252_n150#"
+merge "nfet_03v3_CGC9B5_0/a_252_n150#" "nfet_03v3_CGC9B5_0/a_n964_n150#"
+merge "nfet_03v3_CGC9B5_0/a_n964_n150#" "Vd2"
+merge "nfet_03v3_CGC9B5_1/a_1268_n242#" "nfet_03v3_CGC9B5_0/a_964_n242#" -1146.23 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -24634 -3442 0 0 0 0 0 0 0 0
+merge "nfet_03v3_CGC9B5_0/a_964_n242#" "nfet_03v3_CGC9B5_1/a_356_n242#"
+merge "nfet_03v3_CGC9B5_1/a_356_n242#" "nfet_03v3_CGC9B5_1/a_52_n242#"
+merge "nfet_03v3_CGC9B5_1/a_52_n242#" "nfet_03v3_CGC9B5_1/a_n860_n242#"
+merge "nfet_03v3_CGC9B5_1/a_n860_n242#" "nfet_03v3_CGC9B5_1/a_n1164_n242#"
+merge "nfet_03v3_CGC9B5_1/a_n1164_n242#" "nfet_03v3_CGC9B5_0/a_660_n242#"
+merge "nfet_03v3_CGC9B5_0/a_660_n242#" "nfet_03v3_CGC9B5_0/a_n252_n242#"
+merge "nfet_03v3_CGC9B5_0/a_n252_n242#" "nfet_03v3_CGC9B5_0/a_n556_n242#"
+merge "nfet_03v3_CGC9B5_0/a_n556_n242#" "nfet_03v3_CGC9B5_0/a_n1468_n242#"
+merge "nfet_03v3_CGC9B5_0/a_n1468_n242#" "Vin1"
+merge "nfet_03v3_CGC9B5_1/a_1164_n150#" "nfet_03v3_CGC9B5_0/a_1164_n150#" -1568.45 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -87124 -4708 0 0 0 0 0 0 0 0
+merge "nfet_03v3_CGC9B5_0/a_1164_n150#" "nfet_03v3_CGC9B5_1/VSUBS"
+merge "nfet_03v3_CGC9B5_1/VSUBS" "nfet_03v3_CGC9B5_1/a_556_n150#"
+merge "nfet_03v3_CGC9B5_1/a_556_n150#" "nfet_03v3_CGC9B5_1/a_n52_n150#"
+merge "nfet_03v3_CGC9B5_1/a_n52_n150#" "nfet_03v3_CGC9B5_1/a_n660_n150#"
+merge "nfet_03v3_CGC9B5_1/a_n660_n150#" "nfet_03v3_CGC9B5_1/a_n1268_n150#"
+merge "nfet_03v3_CGC9B5_1/a_n1268_n150#" "nfet_03v3_CGC9B5_0/VSUBS"
+merge "nfet_03v3_CGC9B5_0/VSUBS" "nfet_03v3_CGC9B5_0/a_556_n150#"
+merge "nfet_03v3_CGC9B5_0/a_556_n150#" "nfet_03v3_CGC9B5_0/a_n52_n150#"
+merge "nfet_03v3_CGC9B5_0/a_n52_n150#" "nfet_03v3_CGC9B5_0/a_n660_n150#"
+merge "nfet_03v3_CGC9B5_0/a_n660_n150#" "nfet_03v3_CGC9B5_0/a_n1268_n150#"
+merge "nfet_03v3_CGC9B5_0/a_n1268_n150#" "VSS"
+merge "nfet_03v3_CGC9B5_1/a_1468_n150#" "nfet_03v3_CGC9B5_0/a_860_n150#" -1104.17 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -48806 -2674 0 0 0 0 0 0 0 0
+merge "nfet_03v3_CGC9B5_0/a_860_n150#" "nfet_03v3_CGC9B5_1/a_252_n150#"
+merge "nfet_03v3_CGC9B5_1/a_252_n150#" "nfet_03v3_CGC9B5_1/a_n964_n150#"
+merge "nfet_03v3_CGC9B5_1/a_n964_n150#" "nfet_03v3_CGC9B5_0/a_n356_n150#"
+merge "nfet_03v3_CGC9B5_0/a_n356_n150#" "nfet_03v3_CGC9B5_0/a_n1572_n150#"
+merge "nfet_03v3_CGC9B5_0/a_n1572_n150#" "Vd1"
