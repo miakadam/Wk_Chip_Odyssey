@@ -1,7 +1,7 @@
 magic
 tech gf180mcuD
 magscale 1 10
-timestamp 1756981609
+timestamp 1757500055
 << error_p >>
 rect -38 113 -27 159
 rect -38 -159 -27 -113
@@ -26,15 +26,11 @@ rect -266 194 266 266
 rect -266 150 -194 194
 rect -266 -150 -253 150
 rect -207 -150 -194 150
-rect 194 150 266 194
 rect -266 -194 -194 -150
-rect 194 -150 207 150
-rect 253 -150 266 150
-rect 194 -194 266 -150
+rect 194 -194 266 194
 rect -266 -266 266 -194
 << nsubdiffcont >>
 rect -253 -150 -207 150
-rect 207 -150 253 150
 << polysilicon >>
 rect -40 159 40 172
 rect -40 113 -27 159
@@ -48,23 +44,19 @@ rect -40 -172 40 -159
 rect -27 113 27 159
 rect -27 -159 27 -113
 << metal1 >>
-rect -253 207 253 253
-rect -253 150 -207 207
+rect -253 150 -207 161
 rect -38 113 -27 159
 rect 27 113 38 159
-rect 207 150 253 207
 rect -115 67 -69 78
 rect -115 -78 -69 -67
 rect 69 67 115 78
 rect 69 -78 115 -67
-rect -253 -207 -207 -150
+rect -253 -161 -207 -150
 rect -38 -159 -27 -113
 rect 27 -159 38 -113
-rect 207 -207 253 -150
-rect -253 -253 253 -207
 << properties >>
 string FIXED_BBOX -230 -230 230 230
 string gencell pfet_03v3
 string library gf180mcu
-string parameters w 0.8 l 0.4 m 1 nf 1 diffcov 100 polycov 100 guard 1 glc 1 grc 1 gtc 0 gbc 0 tbcov 100 rlcov 100 topc 1 botc 1 poverlap 0 doverlap 1 lmin 0.28 wmin 0.22 class mosfet full_metal 1 compatible {pfet_03v3 pfet_06v0} ad {int((nf+1)/2) * W/nf * 0.18u} as {int((nf+2)/2) * W/nf * 0.18u} pd {2*int((nf+1)/2) * (W/nf + 0.18u)} ps {2*int((nf+2)/2) * (W/nf + 0.18u)} nrd {0.18u / W} nrs {0.18u / W} sa 0 sb 0 sd 0
+string parameters w 0.8 l 0.4 m 1 nf 1 diffcov 100 polycov 100 guard 1 glc 1 grc 0 gtc 0 gbc 0 tbcov 100 rlcov 100 topc 1 botc 1 poverlap 0 doverlap 1 lmin 0.28 wmin 0.22 class mosfet full_metal 0 compatible {pfet_03v3 pfet_06v0}
 << end >>
