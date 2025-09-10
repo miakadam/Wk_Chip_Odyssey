@@ -47,9 +47,9 @@ N 300 -100 430 -100 {lab=sw_vout}
 N 40 40 170 40 {lab=sw_Vref}
 N 340 -30 435 -30 {lab=#net1}
 C {symbols/nfet_03v3.sym} 20 -30 0 0 {name=M1
-L=0.28u
-W=2u
-nf=1
+L=0.4u
+W=4u
+nf=2
 m=1
 ad="'int((nf+1)/2) * W/nf * 0.18u'"
 pd="'2*int((nf+1)/2) * (W/nf + 0.18u)'"
@@ -63,9 +63,9 @@ spiceprefix=X
 C {iopin.sym} -227.5 0 2 0 {name=p1 lab=avdd}
 C {iopin.sym} -222.5 -90 2 0 {name=p2 lab=avss}
 C {symbols/nfet_03v3.sym} 540 -30 0 0 {name=M3
-L=0.28u
-W=2u
-nf=1
+L=0.4u
+W=4u
+nf=2
 m=1
 ad="'int((nf+1)/2) * W/nf * 0.18u'"
 pd="'2*int((nf+1)/2) * (W/nf + 0.18u)'"
@@ -77,9 +77,9 @@ model=nfet_03v3
 spiceprefix=X
 }
 C {symbols/pfet_03v3.sym} 840 -30 0 1 {name=M4
-L=0.28u
-W=2u
-nf=1
+L=0.4u
+W=4u
+nf=2
 m=1
 ad="'int((nf+1)/2) * W/nf * 0.18u'"
 pd="'2*int((nf+1)/2) * (W/nf + 0.18u)'"
@@ -101,9 +101,9 @@ C {lab_wire.sym} 100 160 0 0 {name=p14 sig_type=std_logic lab=avdd}
 C {lab_wire.sym} 100 430 0 0 {name=p15 sig_type=std_logic lab=avss}
 C {lab_wire.sym} 660 -30 0 0 {name=p4 sig_type=std_logic lab=avss}
 C {symbols/pfet_03v3.sym} 320 -30 0 1 {name=M2
-L=0.28u
-W=2u
-nf=1
+L=0.4u
+W=4u
+nf=2
 m=1
 ad="'int((nf+1)/2) * W/nf * 0.18u'"
 pd="'2*int((nf+1)/2) * (W/nf + 0.18u)'"
@@ -115,7 +115,9 @@ model=pfet_03v3
 spiceprefix=X
 }
 C {lab_wire.sym} 750 -30 0 0 {name=p6 sig_type=std_logic lab=avdd}
-C {libs/WK_Kadam/inv_test.sym} 300 390 0 0 {name=x1v \{xschem version=3.4.7 file_version=1.2\}
+C {iopin.sym} 690 130 0 0 {name=p11 lab=vreflow}
+C {title.sym} -272.5 580 0 0 {name=l1 author="Mia"}
+C {libs/WK_Kadam/CDAC_INV_V0.sym} 0 380 0 0 {name=x1v \{xschem version=3.4.7 file_version=1.2\}
 G \{\}
 K \{type=subcircuit
 format="@name @pinlist @symname"
@@ -172,5 +174,3 @@ T \{in\} -295 -126 2 1 0.2 0.2 \{\}
 T \{out\} -85 -134 0 1 0.2 0.2 \{\}
 T \{avss\} -176 -15 1 1 0.2 0.2 \{\}
 }
-C {iopin.sym} 690 130 0 0 {name=p11 lab=vreflow}
-C {title.sym} -272.5 580 0 0 {name=l1 author="Mia"}

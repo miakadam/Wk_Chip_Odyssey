@@ -1,0 +1,28 @@
+magic
+tech gf180mcuD
+timestamp 1757546837
+<< checkpaint >>
+rect -206 150 252 156
+rect -212 -326 252 150
+rect -212 -332 246 -326
+<< error_s >>
+rect 15 -60 19 -57
+<< metal1 >>
+rect 0 0 20 20
+rect 0 -40 20 -20
+rect 0 -80 20 -60
+rect 0 -120 20 -100
+use nfet_03v3_CTG48X  X0
+timestamp 0
+transform 1 0 17 0 1 -91
+box -29 -41 29 41
+<< labels >>
+flabel metal1 0 0 20 20 0 FreeSans 128 0 0 0 a_n128_n224#
+port 0 nsew
+flabel metal1 0 -40 20 -20 0 FreeSans 128 0 0 0 a_n266_n362#
+port 1 nsew
+flabel metal1 0 -80 20 -60 0 FreeSans 128 0 0 0 a_40_n224#
+port 2 nsew
+flabel metal1 0 -120 20 -100 0 FreeSans 128 0 0 0 a_n40_n268#
+port 3 nsew
+<< end >>

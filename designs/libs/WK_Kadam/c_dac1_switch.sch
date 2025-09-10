@@ -15,18 +15,18 @@ N 300 0 300 40 {lab=sw_Vref}
 N 560 -100 560 -60 {lab=sw_vout}
 N 560 -100 820 -100 {lab=sw_vout}
 N 820 -100 820 -60 {lab=sw_vout}
-N 560 0 560 40 {lab=#net1}
-N 690 40 820 40 {lab=#net1}
-N 820 0 820 40 {lab=#net1}
+N 560 0 560 40 {lab=avss}
+N 690 40 820 40 {lab=avss}
+N 820 0 820 40 {lab=avss}
 N -120 -30 0 -30 {lab=sw_bit}
 N -120 -220 -120 -30 {lab=sw_bit}
 N -120 -220 930 -220 {lab=sw_bit}
 N 930 -220 930 -30 {lab=sw_bit}
 N 860 -30 930 -30 {lab=sw_bit}
-N 435 -30 520 -30 {lab=#net2}
+N 435 -30 520 -30 {lab=#net1}
 N -180 -220 -120 -220 {lab=sw_bit}
 N -120 270 -0 270 {lab=sw_bit}
-N 690 40 690 140 {lab=#net1}
+N 690 40 690 140 {lab=avss}
 N -227.5 0 -160 0 {lab=avdd}
 N 200 -30 300 -30 {lab=avdd}
 N 430 -100 560 -100 {lab=sw_vout}
@@ -39,13 +39,13 @@ N 100 130 100 180 {lab=avdd}
 N 100 380 100 440 {lab=avss}
 N 40 -30 160 -30 {lab=avss}
 N 730 -30 820 -30 {lab=avdd}
-N 435 -30 435 270 {lab=#net2}
+N 435 -30 435 270 {lab=#net1}
 N -120 -30 -120 270 {lab=sw_bit}
-N 220 270 435 270 {lab=#net2}
-N 560 40 690 40 {lab=#net1}
+N 220 270 435 270 {lab=#net1}
+N 560 40 690 40 {lab=avss}
 N 300 -100 430 -100 {lab=sw_vout}
 N 40 40 170 40 {lab=sw_Vref}
-N 340 -30 435 -30 {lab=#net2}
+N 340 -30 435 -30 {lab=#net1}
 C {symbols/nfet_03v3.sym} 20 -30 0 0 {name=M1
 L=0.28u
 W=2u
@@ -115,7 +115,7 @@ model=pfet_03v3
 spiceprefix=X
 }
 C {lab_wire.sym} 750 -30 0 0 {name=p6 sig_type=std_logic lab=avdd}
-C {libs/WK_Kadam/inv_test.sym} 300 390 0 0 {name=x1v \{xschem version=3.4.7 file_version=1.2\}
+C {libs/WK_Kadam/CDAC_INV_V0.sym} 0 380 0 0 {name=x1v \{xschem version=3.4.7 file_version=1.2\}
 G \{\}
 K \{type=subcircuit
 format="@name @pinlist @symname"

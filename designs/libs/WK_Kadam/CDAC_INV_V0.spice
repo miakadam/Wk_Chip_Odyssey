@@ -1,6 +1,15 @@
-** sch_path: /foss/designs/libs/WK_Kadam/CDAC_INV_V0.sch
-.subckt CDAC_INV_V0 avdd in out avss
-*.PININFO avdd:B avss:B in:B out:B
-XM3 out in avss avss nfet_03v3 L=0.4u W=2u nf=1 m=1
-XM4 out in avdd avdd pfet_03v3 L=0.4u W=4u nf=1 m=1
+* NGSPICE file created from CDAC_INV_V0.ext - technology: gf180mcuD
+
+.subckt nfet_03v3_Q7US5R a_n128_n224# a_n266_n362# a_40_n224# a_n40_n268#
+X0 a_40_n224# a_n40_n268# a_n128_n224# a_n266_n362# nfet_03v3 ad=0.88p pd=4.88u as=0.88p ps=4.88u w=2u l=0.4u
 .ends
+
+.subckt pfet_03v3_YXHA8C w_n290_n586# a_n128_n376# a_40_n376# a_n40_n468#
+X0 a_40_n376# a_n40_n468# a_n128_n376# w_n290_n586# pfet_03v3 ad=1.76p pd=8.88u as=1.76p ps=8.88u w=4u l=0.4u
+.ends
+
+.subckt CDAC_INV_V0 avdd avss in out
+XXM3 avss avss out in nfet_03v3_Q7US5R
+XXM4 avdd avdd out in pfet_03v3_YXHA8C
+.ends
+
