@@ -1,0 +1,8 @@
+** sch_path: /foss/designs/comparator/final_magic/inverter/osu_sc_inv_1.sch
+.subckt osu_sc_inv_1 A Y VDD VSS
+*.PININFO A:I Y:O VDD:I VSS:I
+M1 Y A VDD VDD pfet_03v3 L=0.3u W=1.7u nf=1 m=1
+M2 Y A VSS VSS nfet_03v3 L=0.3u W=0.85u nf=1 m=1
+.ends
+.GLOBAL VDD
+.GLOBAL VSS

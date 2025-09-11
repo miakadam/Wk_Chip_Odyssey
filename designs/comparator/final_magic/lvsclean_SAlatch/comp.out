@@ -1,0 +1,94 @@
+
+Circuit 1 cell pfet_03v3 and Circuit 2 cell pfet_03v3 are black boxes.
+Warning: Equate pins:  cell pfet_03v3 is a placeholder, treated as a black box.
+Warning: Equate pins:  cell pfet_03v3 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: pfet_03v3                       |Circuit 2: pfet_03v3                       
+-------------------------------------------|-------------------------------------------
+1                                          |1                                          
+2                                          |2                                          
+3                                          |3                                          
+4                                          |4                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes pfet_03v3 and pfet_03v3 are equivalent.
+
+Circuit 1 cell nfet_03v3 and Circuit 2 cell nfet_03v3 are black boxes.
+Warning: Equate pins:  cell nfet_03v3 is a placeholder, treated as a black box.
+Warning: Equate pins:  cell nfet_03v3 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: nfet_03v3                       |Circuit 2: nfet_03v3                       
+-------------------------------------------|-------------------------------------------
+1                                          |1                                          
+2                                          |2                                          
+3                                          |3                                          
+4                                          |4                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes nfet_03v3 and nfet_03v3 are equivalent.
+Flattening unmatched subcell pfet_03v3_USLA84 in circuit lvsclean_SAlatch (0)(4 instances)
+Flattening unmatched subcell pfet_03v3_USMA84 in circuit lvsclean_SAlatch (0)(2 instances)
+Flattening unmatched subcell pfet_03v3_US7E84 in circuit lvsclean_SAlatch (0)(4 instances)
+Flattening unmatched subcell pfet_03v3_U2WA84 in circuit lvsclean_SAlatch (0)(2 instances)
+Flattening unmatched subcell pfet_03v3_GABL2T in circuit lvsclean_SAlatch (0)(1 instance)
+Flattening unmatched subcell pfet_03v3_U2FB84 in circuit lvsclean_SAlatch (0)(1 instance)
+Flattening unmatched subcell nfet_03v3_MJTYYT in circuit lvsclean_SAlatch (0)(2 instances)
+Flattening unmatched subcell nfet_03v3_6BEH2F in circuit lvsclean_SAlatch (0)(2 instances)
+Flattening unmatched subcell pfet_03v3_CRJA84 in circuit lvsclean_SAlatch (0)(1 instance)
+Flattening unmatched subcell nfet_03v3_W5F4U7 in circuit lvsclean_SAlatch (0)(1 instance)
+
+Class lvsclean_SAlatch (0):  Merged 55 parallel devices.
+Class lvsclean_SAlatch (1):  Merged 7 parallel devices.
+Subcircuit summary:
+Circuit 1: lvsclean_SAlatch                |Circuit 2: lvsclean_SAlatch                
+-------------------------------------------|-------------------------------------------
+pfet_03v3 (44->15)                         |pfet_03v3 (18->15)                         
+nfet_03v3 (37->11)                         |nfet_03v3 (15->11)                         
+Number of devices: 26                      |Number of devices: 26                      
+Number of nets: 32                         |Number of nets: 32                         
+---------------------------------------------------------------------------------------
+Resolving symmetries by property value.
+Netlists do not match.
+   Networks match locally but not globally.
+   Probably connections are swapped.
+   Check the end of logfile comp.out for implicated nodes.
+NET mismatches: Class fragments follow (with fanout counts):
+Circuit 1: lvsclean_SAlatch                |Circuit 2: lvsclean_SAlatch                
+
+---------------------------------------------------------------------------------------
+Net: Vq                                    |Net: Vq                                    
+  pfet_03v3/(1|3) = 9                      |  pfet_03v3/(1|3) = 9                      
+  nfet_03v3/(1|3) = 3                      |  nfet_03v3/(1|3) = 3                      
+                                           |                                           
+Net: Vp                                    |Net: Vp                                    
+  pfet_03v3/(1|3) = 9                      |  pfet_03v3/(1|3) = 9                      
+  nfet_03v3/(1|3) = 3                      |  nfet_03v3/(1|3) = 3                      
+---------------------------------------------------------------------------------------
+Netlists do not match.
+Port matching may fail to disambiguate symmetries.
+
+Subcircuit pins:
+Circuit 1: lvsclean_SAlatch                |Circuit 2: lvsclean_SAlatch                
+-------------------------------------------|-------------------------------------------
+VSS                                        |VSS                                        
+Vout2                                      |Vout1 **Mismatch**                         
+Vout1                                      |Vout2 **Mismatch**                         
+Clk                                        |Clk                                        
+VDD                                        |VDD                                        
+Vin2                                       |Vin1 **Mismatch**                          
+Vin1                                       |Vin2 **Mismatch**                          
+off7                                       |off5 **Mismatch**                          
+off8                                       |off6 **Mismatch**                          
+off3                                       |off7 **Mismatch**                          
+off4                                       |off1 **Mismatch**                          
+off5                                       |off2 **Mismatch**                          
+off1                                       |off3 **Mismatch**                          
+off6                                       |off8 **Mismatch**                          
+off2                                       |off4 **Mismatch**                          
+---------------------------------------------------------------------------------------
+Cell pin lists for lvsclean_SAlatch and lvsclean_SAlatch altered to match.
+Device classes lvsclean_SAlatch and lvsclean_SAlatch are equivalent.
+
+Final result: Top level cell failed pin matching.

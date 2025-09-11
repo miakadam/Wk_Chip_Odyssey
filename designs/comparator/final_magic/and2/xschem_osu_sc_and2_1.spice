@@ -1,0 +1,12 @@
+** sch_path: /foss/designs/comparator/final_magic/and2/osu_sc_and2_1.sch
+.subckt osu_sc_and2_1 A B Y VDD VSS
+*.PININFO A:I B:I Y:O VDD:I VSS:I
+XM1 net1 A VDD VDD pfet_03v3 L=0.3u W=1.7u nf=1 m=1
+XM2 net1 B VDD VDD pfet_03v3 L=0.3u W=1.7u nf=1 m=1
+XM3 net1 A net2 VSS nfet_03v3 L=0.3u W=0.85u nf=1 m=1
+XM4 net2 B VSS VSS nfet_03v3 L=0.3u W=0.85u nf=1 m=1
+XM5 Y net1 VDD VDD pfet_03v3 L=0.3u W=1.7u nf=1 m=1
+XM6 Y net1 VSS VSS nfet_03v3 L=0.3u W=0.85u nf=1 m=1
+.ends
+.GLOBAL VDD
+.GLOBAL VSS

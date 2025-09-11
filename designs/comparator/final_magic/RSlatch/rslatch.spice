@@ -1,0 +1,17 @@
+* NGSPICE file created from rslatch.ext - technology: gf180mcuD
+
+.subckt pfet_03v3_L25D84 a_n128_n100# a_n40_n192# a_40_n100# w_n290_n310#
+X0 a_40_n100# a_n40_n192# a_n128_n100# w_n290_n310# pfet_03v3 ad=0.44p pd=2.88u as=0.44p ps=2.88u w=1u l=0.4u
+.ends
+
+.subckt nfet_03v3_EKTWUP a_n128_n100# a_n40_n192# a_40_n100# a_n266_n286#
+X0 a_40_n100# a_n40_n192# a_n128_n100# a_n266_n286# nfet_03v3 ad=0.44p pd=2.88u as=0.44p ps=2.88u w=1u l=0.4u
+.ends
+
+.subckt rslatch VDD Vout1 Vout2 Vin1 Vin2 VSS
+Xpfet_03v3_L25D84_0 Vout2 Vout1 VDD VDD pfet_03v3_L25D84
+XM2 Vout2 Vin2 VSS VSS nfet_03v3_EKTWUP
+XM3 VDD Vout2 Vout1 VDD pfet_03v3_L25D84
+Xnfet_03v3_EKTWUP_0 VSS Vin1 Vout1 VSS nfet_03v3_EKTWUP
+.ends
+

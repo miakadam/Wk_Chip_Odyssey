@@ -1,0 +1,12 @@
+** sch_path: /foss/designs/comparator/final_magic/nand3/nand3_1.sch
+.subckt nand3_1 A B Y VDD VSS C
+*.PININFO A:I B:I Y:O VDD:I VSS:I C:I
+XM1 Y A VDD VDD pfet_03v3 L=0.3u W=1.7u nf=1 m=1
+XM2 Y B VDD VDD pfet_03v3 L=0.3u W=1.7u nf=1 m=1
+XM3 Y A net1 VSS nfet_03v3 L=0.3u W=0.85u nf=1 m=1
+XM4 net1 B net2 VSS nfet_03v3 L=0.3u W=0.85u nf=1 m=1
+XM5 net2 C VSS VSS nfet_03v3 L=0.3u W=0.85u nf=1 m=1
+XM6 Y C VDD VDD pfet_03v3 L=0.3u W=1.7u nf=1 m=1
+.ends
+.GLOBAL VDD
+.GLOBAL VSS
