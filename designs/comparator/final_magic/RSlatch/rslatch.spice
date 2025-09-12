@@ -1,17 +1,39 @@
-* NGSPICE file created from rslatch.ext - technology: gf180mcuD
-
-.subckt pfet_03v3_L25D84 a_n128_n100# a_n40_n192# a_40_n100# w_n290_n310#
-X0 a_40_n100# a_n40_n192# a_n128_n100# w_n290_n310# pfet_03v3 ad=0.44p pd=2.88u as=0.44p ps=2.88u w=1u l=0.4u
-.ends
-
-.subckt nfet_03v3_EKTWUP a_n128_n100# a_n40_n192# a_40_n100# a_n266_n286#
-X0 a_40_n100# a_n40_n192# a_n128_n100# a_n266_n286# nfet_03v3 ad=0.44p pd=2.88u as=0.44p ps=2.88u w=1u l=0.4u
-.ends
+* NGSPICE file created from rslatch.ext - technology: (null)
 
 .subckt rslatch VDD Vout1 Vout2 Vin1 Vin2 VSS
-Xpfet_03v3_L25D84_0 Vout2 Vout1 VDD VDD pfet_03v3_L25D84
-XM2 Vout2 Vin2 VSS VSS nfet_03v3_EKTWUP
-XM3 VDD Vout2 Vout1 VDD pfet_03v3_L25D84
-Xnfet_03v3_EKTWUP_0 VSS Vin1 Vout1 VSS nfet_03v3_EKTWUP
+X0 Vout1 Vin1.t0 VSS VSS nfet_03v3
+**devattr s=17600,576 d=17600,576
+X1 VSS Vin2.t0 Vout2 VSS nfet_03v3
+**devattr s=17600,576 d=17600,576
+X2 Vout1 Vout2.t0 VDD VDD pfet_03v3
+**devattr s=17600,576 d=17600,576
+X3 VDD Vout1.t0 Vout2 VDD pfet_03v3
+**devattr s=17600,576 d=17600,576
+R0 Vout1 Vout1.t0 28.6507
+R1 Vout2 Vout2.t0 28.6289
+R2 VDD.n4 VDD.n0 743.51
+R3 VDD.n5 VDD.n4 743.51
+R4 VDD.n1 VDD.n0 58.9755
+R5 VDD.n5 VDD.n1 58.9755
+R6 VDD.n5 VDD.n2 58.9755
+R7 VDD.n2 VDD.n0 58.9755
+R8 VDD.n3 VDD.n1 18.7255
+R9 VDD.n3 VDD.n2 18.7255
+R10 VDD VDD.n0 2.57411
+R11 VDD VDD.n5 2.56961
+R12 VDD.n4 VDD.n3 1.5755
+R13 Vin2 Vin2.t0 27.3375
+R14 VSS.n4 VSS.n0 1356.14
+R15 VSS.n5 VSS.n4 1356.14
+R16 VSS.n1 VSS.n0 65.5283
+R17 VSS.n2 VSS.n0 65.5283
+R18 VSS.n5 VSS.n1 65.5283
+R19 VSS.n5 VSS.n2 65.5283
+R20 VSS.n4 VSS.n3 30.4042
+R21 VSS.n3 VSS.n1 20.8061
+R22 VSS.n3 VSS.n2 20.8061
+R23 VSS VSS.n5 2.30023
+R24 VSS VSS.n0 2.29348
+R25 Vin1 Vin1.t0 27.3375
 .ends
 

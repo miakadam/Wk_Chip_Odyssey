@@ -1,0 +1,6 @@
+| units: 0.5 tech: (null) format: MIT
+x A.t0 m1_2330_699 VDD VDD s=29920,856 d=17680,444 l=0 w=0 x=1960 y=280 pfet_03v3
+x A.t1 m1_2330_699 VSS VSS s=14960,516 d=8840,274 l=0 w=0 x=1960 y=-509 nfet_03v3
+r A.n0 A.t0 33.3866
+r A.n0 A.t1 25.7203
+r A A.n0 0.598357

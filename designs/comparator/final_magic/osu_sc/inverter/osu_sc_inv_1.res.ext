@@ -1,0 +1,29 @@
+scale 1000 1 0.5
+rnode "VDD.t0" 0 0 220 890 0
+rnode "VDD.t1" 0 0 190 890 0
+rnode "VDD" 0 0 140 1170 0
+resist "VDD" "VDD.t1" 3.30587
+resist "VDD" "VDD.t0" 660.328
+rnode "Y.t0" 0 0 250 890 0
+rnode "Y.t1" 0 0 250 295 0
+rnode "Y.n0" 0 0 310 750 0
+rnode "Y" 0 0 310 750 0
+resist "Y.n0" "Y.t0" 4.03835
+resist "Y" "Y.n0" 4.5
+resist "Y.n0" "Y.t1" 9.13024
+rnode "VSS.t1" 0 0 190 295 0
+rnode "VSS.t0" 0 0 220 295 0
+rnode "VSS.n0" 0 0 135 95 0
+rnode "VSS" 0 0 140 90 0
+resist "VSS" "VSS.n0" 0.00102273
+resist "VSS.n0" "VSS.t1" 8.62644
+resist "VSS.n0" "VSS.t0" 1487.67
+rnode "A.t1" 0 0 220 890 0
+rnode "A.t0" 0 0 220 295 0
+rnode "A.n0" 0 0 165 495 0
+rnode "A" 0 0 160 490 0
+resist "A" "A.n0" 12.5075
+resist "A.n0" "A.t0" 21.3853
+resist "A.n0" "A.t1" 45.1103
+device msubckt pfet_03v3 190 720 191 721  "VDD.t0" "A.t1" 120 0 "VDD.t1" 340 34000,880 "Y.t0" 340 34000,880
+device msubckt nfet_03v3 190 210 191 211  "VSS.t0" "A.t0" 120 0 "VSS.t1" 170 17000,540 "Y.t1" 170 17000,540

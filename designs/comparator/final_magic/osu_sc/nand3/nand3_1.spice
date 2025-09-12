@@ -1,0 +1,31 @@
+* NGSPICE file created from nand3_1.ext - technology: gf180mcuD
+
+.subckt nand3_1 A B Y VDD VSS C
+X0 a_390_210# B a_280_210# VSS nfet_03v3 ad=0.10625p pd=1.1u as=0.10625p ps=1.1u w=0.85u l=0.3u
+X1 Y A VDD VDD pfet_03v3 ad=0.4675p pd=2.25u as=0.85p ps=4.4u w=1.7u l=0.3u
+X2 VDD B Y VDD pfet_03v3 ad=0.4675p pd=2.25u as=0.4675p ps=2.25u w=1.7u l=0.3u
+X3 VSS C a_390_210# VSS nfet_03v3 ad=0.425p pd=2.7u as=0.10625p ps=1.1u w=0.85u l=0.3u
+X4 Y C VDD VDD pfet_03v3 ad=0.85p pd=4.4u as=0.4675p ps=2.25u w=1.7u l=0.3u
+X5 a_280_210# A Y VSS nfet_03v3 ad=0.10625p pd=1.1u as=0.425p ps=2.7u w=0.85u l=0.3u
+C0 Y C 0.07155f
+C1 C B 0.09906f
+C2 C A 0.00673f
+C3 Y VDD 0.55285f
+C4 VDD B 0.13874f
+C5 Y a_390_210# 0.0019f
+C6 A VDD 0.13662f
+C7 Y B 0.15205f
+C8 a_390_210# B 0.00165f
+C9 Y A 0.15535f
+C10 C VDD 0.11148f
+C11 A B 0.10655f
+C12 Y a_280_210# 0.00613f
+C13 Y VSS 0.4098f
+C14 C VSS 0.47294f
+C15 B VSS 0.31248f
+C16 A VSS 0.39434f
+C17 VDD VSS 1.81459f
+C18 a_390_210# VSS 0.00366f
+C19 a_280_210# VSS 0.0023f
+.ends
+

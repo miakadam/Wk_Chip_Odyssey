@@ -1,0 +1,10 @@
+** sch_path: /foss/designs/comparator/full_comparator.sch
+.subckt full_comparator off1 VDD VSS off2 CLK off3 Vin1 off4 Vin2 off5 Vout off6 off7 off8
+*.PININFO VDD:B VSS:B CLK:B Vin1:B Vin2:B Vout:B off1:B off2:B off3:B off4:B off5:B off6:B off7:B off8:B
+* noconn #net1
+x1 CLK Vin1 Vin2 VDD VSS out1 out2 off3 off2 off1 off8 off7 off6 off4 off5 lvsclean_SAlatch
+x2 VDD latch net1 inv1 inv2 VSS rslatch
+x4 VDD latch Vout VSS osu_sc_buf_4
+x3 VDD out1 inv1 VSS inv_mia
+x5 VDD out2 inv2 VSS inv_mia
+.ends

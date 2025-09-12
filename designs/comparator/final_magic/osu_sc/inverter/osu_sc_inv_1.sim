@@ -1,0 +1,14 @@
+| units: 0.5 tech: (null) format: MIT
+x A.t0 VSS.t1 Y.t1 VSS.t0 s=17000,540 d=17000,540 l=0 w=0 x=190 y=210 nfet_03v3
+x A.t1 VDD.t1 Y.t0 VDD.t0 s=34000,880 d=34000,880 l=0 w=0 x=190 y=720 pfet_03v3
+r A.n0 A.t1 45.1108
+r A.n0 A.t0 21.3858
+r A A.n0 12.508
+r VSS.n0 VSS.t0 1487.67
+r VSS.n0 VSS.t1 8.62694
+r VSS VSS.n0 0.00152273
+r Y.n0 Y.t1 9.13074
+r Y Y.n0 4.5005
+r Y.n0 Y.t0 4.03885
+r VDD VDD.t0 660.328
+r VDD VDD.t1 3.30637

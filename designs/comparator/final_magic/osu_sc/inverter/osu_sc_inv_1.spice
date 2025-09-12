@@ -1,0 +1,20 @@
+* NGSPICE file created from osu_sc_inv_1.ext - technology: (null)
+
+.subckt osu_sc_inv_1 A Y VDD VSS
+X0 Y.t1 A.t0 VSS.t1 VSS.t0 nfet_03v3
+**devattr s=17000,540 d=17000,540
+X1 Y.t0 A.t1 VDD.t1 VDD.t0 pfet_03v3
+**devattr s=34000,880 d=34000,880
+R0 A.n0 A.t1 45.1108
+R1 A.n0 A.t0 21.3858
+R2 A A.n0 12.508
+R3 VSS.n0 VSS.t0 1487.67
+R4 VSS.n0 VSS.t1 8.62694
+R5 VSS VSS.n0 0.00152273
+R6 Y.n0 Y.t1 9.13074
+R7 Y Y.n0 4.5005
+R8 Y.n0 Y.t0 4.03885
+R9 VDD VDD.t0 660.328
+R10 VDD VDD.t1 3.30637
+.ends
+

@@ -1,0 +1,21 @@
+* NGSPICE file created from buffer2x.ext - technology: gf180mcuD
+
+.subckt pfet_03v3_FUEB84 a_224_n170# a_n224_n262# a_n40_n262# a_40_n170# a_n312_n170#
++ a_n144_n170# w_n474_n380# a_144_n262#
+X0 a_40_n170# a_n40_n262# a_n144_n170# w_n474_n380# pfet_03v3 ad=0.442p pd=2.22u as=0.442p ps=2.22u w=1.7u l=0.4u
+X1 a_224_n170# a_144_n262# a_40_n170# w_n474_n380# pfet_03v3 ad=0.748p pd=4.28u as=0.442p ps=2.22u w=1.7u l=0.4u
+X2 a_n144_n170# a_n224_n262# a_n312_n170# w_n474_n380# pfet_03v3 ad=0.442p pd=2.22u as=0.748p ps=4.28u w=1.7u l=0.4u
+.ends
+
+.subckt nfet_03v3_5ZFFTM a_224_n85# a_144_n177# a_n144_n85# a_40_n85# a_n224_n177#
++ a_n40_n177# a_n450_n271# a_n312_n85#
+X0 a_224_n85# a_144_n177# a_40_n85# a_n450_n271# nfet_03v3 ad=0.374p pd=2.58u as=0.221p ps=1.37u w=0.85u l=0.4u
+X1 a_n144_n85# a_n224_n177# a_n312_n85# a_n450_n271# nfet_03v3 ad=0.221p pd=1.37u as=0.374p ps=2.58u w=0.85u l=0.4u
+X2 a_40_n85# a_n40_n177# a_n144_n85# a_n450_n271# nfet_03v3 ad=0.221p pd=1.37u as=0.221p ps=1.37u w=0.85u l=0.4u
+.ends
+
+.subckt buffer2x VDD A Y VSS
+XM3 VDD A m1_2330_699# Y m1_2330_699# VDD VDD m1_2330_699# pfet_03v3_FUEB84
+XM4 VSS m1_2330_699# VSS Y A m1_2330_699# VSS m1_2330_699# nfet_03v3_5ZFFTM
+.ends
+

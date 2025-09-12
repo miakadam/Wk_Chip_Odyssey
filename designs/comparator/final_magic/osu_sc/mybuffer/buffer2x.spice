@@ -1,0 +1,12 @@
+* NGSPICE file created from buffer2x.ext - technology: (null)
+
+.subckt buffer2x VDD A Y VSS
+X0 VDD A.t0 m1_2330_699# VDD pfet_03v3
+**devattr s=29920,856 d=17680,444
+X1 VSS A.t1 m1_2330_699# VSS nfet_03v3
+**devattr s=14960,516 d=8840,274
+R0 A.n0 A.t0 33.3866
+R1 A.n0 A.t1 25.7203
+R2 A A.n0 0.598357
+.ends
+

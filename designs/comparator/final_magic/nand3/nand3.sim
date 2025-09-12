@@ -1,0 +1,16 @@
+| units: 0.5 tech: (null) format: MIT
+x B.t1 Z VDD VDD s=26000,604 d=26000,604 l=0 w=0 x=2284 y=-649 pfet_03v3
+x A.t1 VDD Z VDD s=26000,604 d=44000,1176 l=0 w=0 x=2468 y=-649 pfet_03v3
+x B.t0 M1/a_n144_n100 M1/a_40_n100 VSS s=10400,304 d=10400,304 l=0 w=0 x=2284 y=-1509 nfet_03v3
+x A.t0 M1/a_40_n100 Z VSS s=10400,304 d=17600,576 l=0 w=0 x=2468 y=-1509 nfet_03v3
+x C.t0 VSS M1/a_n144_n100 VSS s=17600,576 d=10400,304 l=0 w=0 x=2100 y=-1509 nfet_03v3
+x C.t1 VDD Z VDD s=44000,1176 d=26000,604 l=0 w=0 x=2100 y=-649 pfet_03v3
+r A.n0 A.t1 41.0041
+r A.n0 A.t0 26.9438
+r A A.n0 5.7755
+r C.n0 C.t1 40.6313
+r C.n0 C.t0 27.3166
+r C C.n0 5.18407
+r B.n0 B.t1 40.8177
+r B.n0 B.t0 27.1302
+r B B.n0 5.47979

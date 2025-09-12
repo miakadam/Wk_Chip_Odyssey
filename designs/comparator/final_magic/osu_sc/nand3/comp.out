@@ -1,0 +1,34 @@
+
+Circuit 1 cell nfet_03v3 and Circuit 2 cell nfet_03v3 are black boxes.
+Equate elements:  no current cell.
+Device classes nfet_03v3 and nfet_03v3 are equivalent.
+
+Circuit 1 cell pfet_03v3 and Circuit 2 cell pfet_03v3 are black boxes.
+Equate elements:  no current cell.
+Device classes pfet_03v3 and pfet_03v3 are equivalent.
+
+Subcircuit summary:
+Circuit 1: nand3_1                         |Circuit 2: nand3_1                         
+-------------------------------------------|-------------------------------------------
+nfet_03v3 (3)                              |nfet_03v3 (3)                              
+pfet_03v3 (3)                              |pfet_03v3 (3)                              
+Number of devices: 6                       |Number of devices: 6                       
+Number of nets: 8                          |Number of nets: 8                          
+---------------------------------------------------------------------------------------
+Netlists match uniquely.
+
+Subcircuit pins:
+Circuit 1: nand3_1                         |Circuit 2: nand3_1                         
+-------------------------------------------|-------------------------------------------
+VDD                                        |VDD                                        
+Y                                          |Y                                          
+VSS                                        |VSS                                        
+B                                          |B                                          
+C                                          |C                                          
+A                                          |A                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes nand3_1 and nand3_1 are equivalent.
+
+Final result: Circuits match uniquely.
+.

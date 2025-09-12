@@ -1,0 +1,296 @@
+timestamp 1757681039
+version 8.3
+tech gf180mcuD
+style ngspice()
+scale 1000 1 0.5
+resistclasses 1000000 3250000 6300 7000 6300 7000 7300 1000000 60000 185000 60000 185000 6300 7000 6300 7000 6800 7300 350000 310000 1000000 90 90 90 90 60
+use osu_sc_buf_4 x4 -1 0 6205 0 1 2073
+use inv_mia x3 1 0 1295 0 1 2105
+use inv_mia x5 -1 0 14575 0 1 2105
+use rslatch x2 1 0 5355 0 1 3480
+use lvsclean_SAlatch x1 1 0 -9053 0 1 -1780
+port "Vout" 10 1725 2811 1725 2811 m2
+port "CLK" 4 1565 -5144 1565 -5144 m1
+port "Vin2" 8 1470 -3638 1470 -3638 m1
+port "Vin1" 6 1470 -3310 1470 -3310 m1
+port "out" 3 8161 1233 8161 1233 v
+port "in" 2 5645 1229 5645 1229 v
+port "Vout2" 6 5618 192 5618 192 m2
+node "latch" 3 636.17 5909 2527 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 97920 3620 0 0 0 0 0 0
+node "Vout" 5 1299.79 1725 2811 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 216000 7320 0 0 0 0 0 0
+node "CLK" 7 2729.33 1565 -5144 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 502080 12712 0 0 0 0 0 0 0 0
+node "Vin2" 6 1542.12 1470 -3638 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 375000 10150 0 0 0 0 0 0 0 0
+node "Vin1" 6 1686.85 1470 -3310 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 375000 10150 0 0 0 0 0 0 0 0
+node "out2" 3 990.447 9175 1203 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 87336 2440 97440 2590 0 0 0 0 0 0
+node "out" 2 565.966 8161 1233 v 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 66064 1892 27032 1058 0 0 0 0 0 0
+equiv "out" "inv2"
+node "inv1" 1 472.202 6823 1203 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 71232 2028 7656 366 0 0 0 0 0 0
+node "in" 4 1356.99 5645 1229 v 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 87196 2440 178460 4618 0 0 0 0 0 0
+equiv "in" "Vout2"
+equiv "in" "out1"
+substrate "VSUBS" 0 0 -1073741817 -1073741817 space 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+cap "Vin2" "CLK" 140.432
+cap "out" "out2" 17.6804
+cap "in" "latch" 1.37534
+cap "Vin2" "Vin1" 844
+cap "in" "inv1" 27.2975
+cap "out" "inv1" 21.9976
+cap "inv1" "latch" 1.20302
+cap "x1/Vin2" "CLK" 0.0322003
+cap "x1/Vin1" "x1/Vq" 0.342674
+cap "x1/Vp" "x1/Vq" -3.96454
+cap "x1/Vin2" "x1/a_15128_n2324#" 7.70063
+cap "x1/a_15128_n1361#" "x1/a_15128_n2324#" -1.42579
+cap "x1/VSS" "x1/Vin2" 11.1482
+cap "x1/Clk" "x1/Vin2" -6.37026
+cap "x1/Clk" "x1/VSS" -0.268493
+cap "x1/Vin2" "x1/Vq" 11.8423
+cap "x1/VSS" "x1/Vin1" 0.668655
+cap "x1/Clk" "x1/Vp" -0.00889807
+cap "x1/off4" "Vin1" 105.63
+cap "x1/Vp" "Vin2" 0.152497
+cap "x1/Vp" "Vin1" 0.32689
+cap "x1/off4" "Vin2" 0.23946
+cap "x1/Vp" "Vin2" 0.45749
+cap "Vin1" "x1/Vp" 25.1808
+cap "Vin1" "x1/VDD" 34.4865
+cap "Vin1" "x1/off4" 10.8289
+cap "Vin2" "x1/VDD" 0.101503
+cap "Vin2" "x1/off4" 0.07982
+cap "Vin2" "x1/off3" 0.31928
+cap "Vin1" "x1/off3" 59.146
+cap "x1/Vin1" "x1/Vp" 25.6982
+cap "x1/Vin2" "CLK" 61.9472
+cap "x1/Vin1" "CLK" 61.6541
+cap "x1/Vin2" "x1/VDD" 0.051709
+cap "x1/Vin1" "x1/VDD" 3.49604
+cap "CLK" "x1/VSS" -1.46316
+cap "x1/Vq" "x1/Vp" -2.57981
+cap "x1/Vin1" "x1/a_15128_n1361#" 17.9326
+cap "x1/Vin1" "x1/VSS" 60.016
+cap "x1/a_15216_n1453#" "x1/a_15216_n2416#" -16.0989
+cap "x1/Vin2" "x1/Vin1" 5.08595
+cap "x1/Vin2" "x1/Clk" -6.37026
+cap "x1/Vin2" "x1/VSS" 51.4723
+cap "x1/Vin1" "x1/a_15720_n2324#" 6.53692
+cap "x1/a_15128_n2324#" "x1/a_15128_n1361#" -1.42579
+cap "x1/Vin2" "x1/a_15128_n2324#" 10.8873
+cap "x1/a_15720_n2324#" "x1/VSS" -1.96421
+cap "x1/Vin2" "x1/a_15720_n2324#" 6.53692
+cap "x1/Vq" "x1/Vin1" 0.0969235
+cap "x1/Vq" "x1/Vin2" 13.7128
+cap "x1/Vin1" "x1/Vp" 50.3221
+cap "x1/a_15216_n1453#" "x1/Vin1" 182.641
+cap "x1/Vin1" "x1/a_15216_n2416#" 0.848402
+cap "x1/Vp" "x1/VSS" -1.81807
+cap "x1/a_15216_n1453#" "x1/Vin2" 0.831411
+cap "x1/Vin2" "x1/Vp" 7.75884
+cap "x1/Vin2" "x1/a_15216_n2416#" 204.796
+cap "x1/Vin2" "x1/Vin1" 1.40884
+cap "x1/VSS" "x1/Vin2" -0.269637
+cap "Vin1" "x1/Vp" 0.0359896
+cap "Vin2" "x1/Vp" 0.0218111
+cap "x1/off2" "Vin1" 0.0641638
+cap "x1/Vp" "Vin2" 0.319896
+cap "Vin1" "x1/Vp" 6.16019
+cap "x1/Clk" "x1/Vp" -0.394037
+cap "x1/Vp" "x1/Vin2" 0.0945147
+cap "x1/Vp" "x1/Vin1" 25.8541
+cap "x3/avss" "x1/Vin1" 0.246105
+cap "x1/Vp" "x1/Vin1" 6.68092
+cap "x1/Vp" "x1/Vin2" 0.0202431
+cap "x1/a_15216_n2416#" "x1/Vp" -0.0032553
+cap "x1/Vp" "x1/a_15382_n68#" -0.0270287
+cap "x1/Vp" "x3/avss" -0.996744
+cap "x1/Vin1" "x1/a_15382_n68#" 0.0397151
+cap "x3/in" "x1/VDD" 8.78472
+cap "x1/VDD" "x1/Clk" -1.10214
+cap "x3/in" "x1/Clk" 66.9507
+cap "x3/in" "x1/Clk" 20.2935
+cap "x3/in" "x1/VDD" 10.3414
+cap "x3/in" "x3/avdd" 0.0430252
+cap "x3/avdd" "x1/a_15520_1088#" 0.0430252
+cap "x3/in" "x3/avss" 0.31231
+cap "x3/avss" "x1/a_15520_1088#" 0.369331
+cap "x3/avss" "x1/Vout2" 0.398674
+cap "x3/avdd" "x1/VDD" 4.35657
+cap "x3/in" "x3/out" 0.451243
+cap "x3/avss" "x1/VDD" 14.6899
+cap "x3/avss" "x1/Clk" 76.3605
+cap "x3/avdd" "x1/VDD" 0.481481
+cap "x3/out" "x1/VDD" 4.97806
+cap "x1/Clk" "x3/out" 2.76218
+cap "x3/in" "x1/a_15520_1088#" 0.069304
+cap "x3/in" "x5/out" 0.0912775
+cap "x1/VDD" "x3/avss" 3.77466
+cap "x3/in" "x3/out" 0.069304
+cap "x5/out" "x1/Clk" 8.21622
+cap "x1/Clk" "x3/out" 16.007
+cap "x1/Vout2" "x3/out" 0.0985544
+cap "x5/out" "x1/VDD" 1.06547
+cap "x1/VDD" "x3/out" 1.83358
+cap "x1/Clk" "x3/avss" 6.83072
+cap "x1/VDD" "x5/avdd" 4.35657
+cap "x1/Clk" "x5/out" 10.553
+cap "x5/avdd" "x1/a_18256_1088#" 0.0430252
+cap "x1/VDD" "x5/avss" 14.6899
+cap "x5/avss" "x1/a_18256_1088#" 0.369331
+cap "x1/Vout1" "x5/avss" 0.398674
+cap "x1/VDD" "x5/out" 5.95343
+cap "x5/in" "x5/avdd" 0.0421647
+cap "x1/Vout1" "x5/out" 0.00727692
+cap "x1/Clk" "x5/in" 12.5028
+cap "x5/in" "x5/avss" 0.312677
+cap "x1/VDD" "x5/avdd" 0.481481
+cap "x5/in" "x5/out" 0.52116
+cap "x5/in" "x1/a_18256_1088#" 0.069304
+cap "x1/VDD" "x5/in" 9.37285
+cap "x1/Clk" "x5/avss" 76.3605
+cap "x1/VDD" "x5/in" 9.74356
+cap "x1/Clk" "x1/VDD" -1.10214
+cap "x1/Clk" "x5/in" 74.6253
+cap "x4/Y" "x3/in" 0.165155
+cap "x3/in" "x4/VSS" 11.522
+cap "x3/in" "x3/out" 1.31692
+cap "x3/in" "x3/avdd" 0.435111
+cap "x3/in" "x1/Clk" 2.51638
+cap "x3/in" "x1/VDD" 0.0147139
+cap "x3/in" "x4/a_100_200#" 0.895429
+cap "x3/in" "x4/VDD" 0.10991
+cap "x3/in" "x4/VSS" 52.7242
+cap "x3/in" "x3/avdd" 53.2146
+cap "x2/Vin2" "x3/out" 0.104525
+cap "x1/Clk" "x3/in" 20.2624
+cap "x4/A" "x3/out" -0.0764381
+cap "x3/in" "x3/out" -25.998
+cap "x3/in" "x1/VDD" 1.29578
+cap "x4/VSS" "x3/avdd" -13.4439
+cap "x1/Clk" "x4/VSS" 67.0235
+cap "x2/Vin2" "x3/in" 0.0318442
+cap "x4/A" "x3/in" -0.283614
+cap "x3/out" "x4/VSS" 29.2299
+cap "x3/out" "x3/avdd" 25.2091
+cap "x1/Clk" "x3/out" 2.76218
+cap "x5/avdd" "x5/out" 10.4242
+cap "x3/out" "x1/Clk" 16.2233
+cap "x3/out" "x5/out" 1.42109e-14
+cap "x3/avdd" "x4/VSS" 3.77824
+cap "x3/out" "x1/VDD" 0.243602
+cap "x3/out" "x3/in" 1.71031
+cap "x3/out" "x4/A" 0.301175
+cap "x5/avdd" "x4/VSS" 3.77824
+cap "x1/Clk" "x5/out" 8.43249
+cap "x3/out" "x2/VDD" 0.45333
+cap "x3/out" "x4/VSS" 85.0692
+cap "x5/out" "x3/in" 0.137303
+cap "x5/out" "x1/VDD" 0.243602
+cap "x3/out" "x1/Vout2" 0.137303
+cap "x2/VDD" "x5/out" 0.45333
+cap "x5/out" "x2/Vout2" 0.153237
+cap "x3/out" "x3/avdd" 10.4242
+cap "x5/in" "x5/out" 1.70869
+cap "x1/Clk" "x4/VSS" 6.83072
+cap "x5/out" "x4/VSS" 85.0692
+cap "x1/Vout2" "x5/out" 0.00161839
+cap "x5/in" "x5/avdd" 53.2146
+cap "x5/avdd" "x5/out" 25.2091
+cap "x5/in" "x3/out" 0.0318442
+cap "x3/out" "x5/out" 0.104525
+cap "x5/avss" "x5/avdd" -13.4439
+cap "x5/in" "x5/out" -16.4588
+cap "x5/in" "x5/avss" 38.723
+cap "x5/avss" "x5/out" 29.2299
+cap "x5/in" "x1/VDD" 1.29578
+cap "x5/in" "x1/Clk" 12.4716
+cap "x5/out" "x1/Clk" 10.553
+cap "x5/avss" "x1/Clk" 67.0235
+cap "x2/Vout2" "x5/out" 0.208784
+cap "x5/out" "x5/in" 1.40932
+cap "x5/avdd" "x5/in" 0.44225
+cap "x1/Clk" "x5/in" 10.3308
+cap "x5/avss" "x5/in" 7.99384
+cap "x1/VDD" "x5/in" 0.0252239
+cap "x3/in" "x4/VSS" 2.78665
+cap "x4/VSS" "x4/Y" 5.05366
+cap "x3/in" "x4/a_100_200#" 0.373199
+cap "x4/Y" "x4/a_100_200#" 8.38572
+cap "x4/VDD" "x4/Y" 42.2554
+cap "x3/in" "x3/avdd" 2.91729
+cap "x4/VSS" "x3/out" 11.9776
+cap "x3/in" "x2/Vout2" 0.161049
+cap "x3/avdd" "x4/A" 58.203
+cap "x2/VDD" "x3/avdd" 0.743606
+cap "x3/in" "x4/a_100_200#" 0.174714
+cap "x4/VDD" "x4/A" 9.12971
+cap "x4/A" "x4/a_100_200#" 35.639
+cap "x2/VDD" "x4/a_100_200#" 9.45008
+cap "x4/A" "x3/out" 10.2148
+cap "x3/avdd" "x2/Vout2" 3.07072
+cap "x4/Y" "x3/in" 0.0315539
+cap "x4/VSS" "x3/in" 14.0542
+cap "x3/avdd" "x4/a_100_200#" 14.6723
+cap "x3/avdd" "x3/out" 1.20757
+cap "x4/VSS" "x4/A" 7.44652
+cap "x4/a_100_200#" "x2/Vout2" 1.26909
+cap "x3/in" "x4/A" 8.00324
+cap "x3/out" "x2/Vout2" 0.813123
+cap "x4/VSS" "x3/avdd" 22.6928
+cap "x2/VDD" "x4/A" 0.608986
+cap "x5/avdd" "x4/A" 1.26049
+cap "x3/avdd" "x4/A" 20.7723
+cap "x4/VDD" "x2/Vout2" 0.0801511
+cap "x5/avdd" "x4/VSS" 0.188912
+cap "x3/in" "x2/Vout2" 0.115144
+cap "x3/out" "x2/Vout2" 0.502039
+cap "x3/avdd" "x4/VSS" 0.188912
+cap "x1/Clk" "x2/Vout2" 0.0671474
+cap "x2/Vout2" "x4/A" 4.81776
+cap "x4/VSS" "x5/out" 8.0659
+cap "x4/a_100_200#" "x4/A" 1.33604
+cap "x2/VDD" "x4/a_100_200#" 8.62561
+cap "x5/avdd" "x5/out" 1.33644
+cap "x5/avdd" "x2/Vout2" 13.3401
+cap "x4/Y" "x4/A" 0.406608
+cap "x2/Vout2" "x3/avdd" 5.74529
+cap "x4/VDD" "x4/A" 0.0173635
+cap "x3/in" "x4/A" 2.80366
+cap "x3/out" "x4/A" 4.31427
+cap "x2/Vout2" "x5/out" 2.61093
+cap "x1/Clk" "x4/A" 0.0671474
+cap "x3/out" "x4/VSS" 8.0659
+cap "x4/VSS" "x4/A" 1.12004
+cap "x2/Vout2" "x5/in" 1.65596
+cap "x2/Vout2" "x4/a_100_200#" 1.30192
+cap "x4/VDD" "x2/VDD" 0.524533
+cap "x2/VDD" "x4/A" 9.9987
+cap "x3/out" "x3/avdd" 1.33644
+cap "x5/out" "x2/Vout2" 3.52037
+cap "x5/in" "x2/Vout1" 0.00206177
+cap "x5/out" "x5/avdd" 1.20757
+cap "x2/Vout2" "x5/in" 0.663151
+cap "x5/avss" "x5/avdd" -1.56757
+cap "x5/avdd" "x2/VDD" 1.20913
+cap "x5/avdd" "x5/in" 2.91729
+cap "x5/avdd" "x2/Vout1" 0.277515
+cap "x5/avss" "x5/out" 11.9776
+cap "x5/avdd" "x2/Vout2" 4.3478
+cap "x5/out" "x2/Vout1" 0.312232
+merge "x4/VSS" "x2/VSS" -384.724 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "x2/VSS" "x5/avss"
+merge "x5/avss" "x3/avss"
+merge "x3/avss" "x1/VSS"
+merge "x1/VSS" "VSUBS"
+merge "x3/in" "x1/Vout1" -655.766 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -152 -88320 -2368 0 0 0 0 0 0
+merge "x1/Vout1" "in"
+merge "x5/in" "x1/Vout2" -249.959 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -152 -6400 -320 0 0 0 0 0 0
+merge "x1/Vout2" "out2"
+merge "x5/out" "x2/Vin2" -350.714 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -152 -19376 -804 0 0 0 0 0 0
+merge "x2/Vin2" "out"
+merge "x2/Vin1" "x3/out" -257.143 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -5168 -288 0 -112 0 0 0 0 0 0
+merge "x3/out" "inv1"
+merge "x1/Vin1" "Vin1" -1157.78 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -210000 -5825 0 0 0 0 0 0 0 0
+merge "x1/Vin2" "Vin2" -992.321 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -210000 -5825 0 0 0 0 0 0 0 0
+merge "x1/Clk" "CLK" -2461.21 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -397680 -10022 0 0 0 0 0 0 0 0
+merge "x4/Y" "Vout" -469 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -68700 -2470 0 0 0 0 0 0
+merge "x2/Vout1" "x4/A" -294.473 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -6808 -478 0 0 0 0 0 0
+merge "x4/A" "latch"

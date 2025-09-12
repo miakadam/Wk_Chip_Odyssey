@@ -1,0 +1,15 @@
+| units: 0.5 tech: gf180mcuD format: MIT
+x B a_280_210# a_390_210# VSS s=4250,220 d=4250,220 l=60 w=170 x=330 y=210 nfet_03v3
+x A VDD Y VDD s=34000,880 d=18700,450 l=60 w=340 x=190 y=720 pfet_03v3
+x B Y VDD VDD s=18700,450 d=18700,450 l=60 w=340 x=360 y=720 pfet_03v3
+x C a_390_210# VSS VSS s=4250,220 d=17000,540 l=60 w=170 x=440 y=210 nfet_03v3
+x C VDD Y VDD s=18700,450 d=34000,880 l=60 w=340 x=530 y=720 pfet_03v3
+x A Y a_280_210# VSS s=17000,540 d=4250,220 l=60 w=170 x=220 y=210 nfet_03v3
+R Y 77
+R C 127
+R B 115
+R A 114
+R VDD 1351
+R VSS 86
+R a_390_210# 21
+R a_280_210# 21

@@ -1,0 +1,11 @@
+* NGSPICE file created from inv_mia.ext - technology: (null)
+
+.subckt inv_mia avdd in out avss
+X0 out in.t1 avdd avdd pfet_03v3
+**devattr s=70400,1776 d=70400,1776
+X1 out in.t0 avss avss nfet_03v3
+**devattr s=35200,976 d=35200,976
+R0 in in.t1 49.8132
+R1 in in.t0 31.5367
+.ends
+

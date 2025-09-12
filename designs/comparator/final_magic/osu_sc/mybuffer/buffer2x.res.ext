@@ -1,0 +1,13 @@
+scale 1000 1 0.5
+rnode "VSS" 0 0 2180 -820 0
+rnode "A.t0" 0 0 2000 450 0
+rnode "A.t1" 0 0 2000 -425 0
+rnode "A.n0" 0 0 2000 26 0
+rnode "A" 0 0 1628 -1 0
+resist "A" "A.n0" 0.597857
+resist "A.n0" "A.t1" 25.7198
+resist "A.n0" "A.t0" 33.3861
+rnode "Y" 0 0 2740 -4 0
+rnode "VDD" 0 0 2190 930 0
+device msubckt nfet_03v3 1960 -510 1961 -509  "VSS" "A.t1" 160 0 "m1_2330_699#" 170 14960,516 "VSS" 170 8840,274
+device msubckt pfet_03v3 1960 280 1961 281  "VDD" "A.t0" 160 0 "m1_2330_699#" 340 29920,856 "VDD" 340 17680,444

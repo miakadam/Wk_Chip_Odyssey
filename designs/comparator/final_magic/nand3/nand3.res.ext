@@ -1,0 +1,31 @@
+scale 1000 1 0.5
+rnode "VDD" 0 0 2388 145 0
+rnode "B.t1" 0 0 2324 -400 0
+rnode "B.t0" 0 0 2324 -1410 0
+rnode "B.n0" 0 0 2324 -980 0
+rnode "B" 0 0 1712 -980 0
+resist "B" "B.n0" 5.47929
+resist "B.n0" "B.t0" 27.1297
+resist "B.n0" "B.t1" 40.8172
+rnode "C.t1" 0 0 2140 -400 0
+rnode "C.t0" 0 0 2140 -1410 0
+rnode "C.n0" 0 0 2140 -864 0
+rnode "C" 0 0 1712 -864 0
+resist "C" "C.n0" 5.18357
+resist "C.n0" "C.t0" 27.3161
+resist "C.n0" "C.t1" 40.6308
+rnode "VSS" 0 0 2316 -1805 0
+rnode "Z" 0 0 2798 -981 0
+rnode "A.t1" 0 0 2508 -400 0
+rnode "A.t0" 0 0 2508 -1410 0
+rnode "A.n0" 0 0 2508 -1096 0
+rnode "A" 0 0 1712 -1099 0
+resist "A" "A.n0" 5.775
+resist "A.n0" "A.t0" 26.9433
+resist "A.n0" "A.t1" 41.0036
+device msubckt pfet_03v3 2468 -650 2469 -649  "VDD" "A.t1" 160 0 "VDD" 500 26000,604 "Z" 500 44000,1176
+device msubckt pfet_03v3 2284 -650 2285 -649  "VDD" "B.t1" 160 0 "Z" 500 26000,604 "VDD" 500 26000,604
+device msubckt pfet_03v3 2100 -650 2101 -649  "VDD" "C.t1" 160 0 "VDD" 500 44000,1176 "Z" 500 26000,604
+device msubckt nfet_03v3 2284 -1510 2285 -1509  "VSS" "B.t0" 160 0 "M1/a_n144_n100#" 200 10400,304 "M1/a_40_n100#" 200 10400,304
+device msubckt nfet_03v3 2100 -1510 2101 -1509  "VSS" "C.t0" 160 0 "VSS" 200 17600,576 "M1/a_n144_n100#" 200 10400,304
+device msubckt nfet_03v3 2468 -1510 2469 -1509  "VSS" "A.t0" 160 0 "M1/a_40_n100#" 200 10400,304 "Z" 200 17600,576
