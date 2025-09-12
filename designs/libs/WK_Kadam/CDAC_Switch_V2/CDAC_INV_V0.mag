@@ -1,0 +1,29 @@
+magic
+tech gf180mcuD
+magscale 1 10
+timestamp 1757701119
+<< metal1 >>
+rect 1135 704 1181 1055
+rect 1069 20 1288 85
+rect 1069 -201 1121 20
+rect 1068 -266 1287 -201
+rect 1135 -843 1181 -492
+rect 1335 -556 1391 251
+use nfet_03v3_Q7US5R  XM3
+timestamp 1757701119
+transform 1 0 1250 0 1 -494
+box -290 -386 290 386
+use pfet_03v3_YXHA8C  XM4
+timestamp 1757701119
+transform 1 0 1250 0 1 506
+box -290 -586 290 586
+<< labels >>
+rlabel metal1 1139 954 1139 965 1 avdd
+port 0 n
+rlabel metal1 1076 -114 1076 -103 1 in
+port 1 n
+rlabel metal1 1339 -120 1339 -109 7 out
+port 2 w
+rlabel metal1 1147 -766 1147 -755 7 avss
+port 3 w
+<< end >>

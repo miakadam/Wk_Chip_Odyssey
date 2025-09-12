@@ -12,8 +12,8 @@ x1v avdd sw_bit net1 avss CDAC_INV_V0
 ** sym_path: /foss/designs/libs/WK_Kadam/CDAC_INV_V0.sym
 ** sch_path: /foss/designs/libs/WK_Kadam/CDAC_INV_V0.sch
 .subckt CDAC_INV_V0 avdd in out avss
-*.PININFO avdd:B avss:B in:B out:B
-M3 out in avss avss nfet_03v3 L=0.4u W=2u nf=1 m=1
-M4 out in avdd avdd pfet_03v3 L=0.4u W=4u nf=1 m=1
+.PININFO avdd:B avss:B in:B out:B
+XM3 out in avss avss nfet_03v3 L=0.4u W=2u nf=1 m=1
+XM4 out in avdd avdd pfet_03v3 L=0.4u W=4u nf=1 m=1
 .ends
 
