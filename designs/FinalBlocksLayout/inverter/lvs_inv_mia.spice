@@ -1,0 +1,15 @@
+* NGSPICE file created from inv_mia.ext - technology: gf180mcuD
+
+.subckt nfet_03v3_Q7US5R a_n128_n224# a_n266_n362# a_40_n224# a_n40_n268#
+X0 a_40_n224# a_n40_n268# a_n128_n224# a_n266_n362# nfet_03v3 ad=0.88p pd=4.88u as=0.88p ps=4.88u w=2u l=0.4u
+.ends
+
+.subckt pfet_03v3_YXHA8C w_n290_n586# a_n128_n376# a_40_n376# a_n40_n468#
+X0 a_40_n376# a_n40_n468# a_n128_n376# w_n290_n586# pfet_03v3 ad=1.76p pd=8.88u as=1.76p ps=8.88u w=4u l=0.4u
+.ends
+
+.subckt inv_mia avdd avss in out
+XXM3 avss avss out in nfet_03v3_Q7US5R
+XXM4 avdd avdd out in pfet_03v3_YXHA8C
+.ends
+

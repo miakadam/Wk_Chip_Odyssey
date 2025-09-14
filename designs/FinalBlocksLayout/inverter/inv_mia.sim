@@ -1,0 +1,5 @@
+| units: 0.5 tech: (null) format: MIT
+x in.t1 avdd out avdd s=70400,1776 d=70400,1776 l=0 w=0 x=5400 y=-639 pfet_03v3
+x in.t0 avss out avss s=35200,976 d=35200,976 l=0 w=0 x=5400 y=-1487 nfet_03v3
+r in in.t1 49.8132
+r in in.t0 31.5367

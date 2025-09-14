@@ -1,0 +1,11 @@
+scale 1000 1 0.5
+rnode "avdd" 0 0 5208 252 0
+rnode "out" 0 0 5564 -872 0
+rnode "avss" 0 0 5212 -1604 0
+rnode "in.t1" 0 0 5440 -240 0
+rnode "in.t0" 0 0 5440 -1288 0
+rnode "in" 0 0 5412 -876 0
+resist "in" "in.t0" 31.5362
+resist "in" "in.t1" 49.8127
+device msubckt pfet_03v3 5400 -640 5401 -639  "avdd" "in.t1" 160 0 "avdd" 800 70400,1776 "out" 800 70400,1776
+device msubckt nfet_03v3 5400 -1488 5401 -1487  "avss" "in.t0" 160 0 "avss" 400 35200,976 "out" 400 35200,976

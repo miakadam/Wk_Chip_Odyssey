@@ -1,0 +1,26 @@
+* NGSPICE file created from nand3.ext - technology: (null)
+
+.subckt nand3 VDD Z A B C VSS
+X0 VDD B.t1 Z VDD pfet_03v3
+**devattr s=26000,604 d=26000,604
+X1 Z A.t1 VDD VDD pfet_03v3
+**devattr s=26000,604 d=44000,1176
+X2 M1/a_40_n100# B.t0 M1/a_n144_n100# VSS nfet_03v3
+**devattr s=10400,304 d=10400,304
+X3 Z A.t0 M1/a_40_n100# VSS nfet_03v3
+**devattr s=10400,304 d=17600,576
+X4 M1/a_n144_n100# C.t0 VSS VSS nfet_03v3
+**devattr s=17600,576 d=10400,304
+X5 Z C.t1 VDD VDD pfet_03v3
+**devattr s=44000,1176 d=26000,604
+R0 A.n0 A.t1 41.0041
+R1 A.n0 A.t0 26.9438
+R2 A A.n0 5.7755
+R3 C.n0 C.t1 40.6313
+R4 C.n0 C.t0 27.3166
+R5 C C.n0 5.18407
+R6 B.n0 B.t1 40.8177
+R7 B.n0 B.t0 27.1302
+R8 B B.n0 5.47979
+.ends
+
