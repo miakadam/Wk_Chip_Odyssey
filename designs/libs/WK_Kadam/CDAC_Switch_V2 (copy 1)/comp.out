@@ -1,0 +1,94 @@
+
+Circuit 1 cell nfet_03v3 and Circuit 2 cell nfet_03v3 are black boxes.
+Warning: Equate pins:  cell nfet_03v3 is a placeholder, treated as a black box.
+Warning: Equate pins:  cell nfet_03v3 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: nfet_03v3                       |Circuit 2: nfet_03v3                       
+-------------------------------------------|-------------------------------------------
+1                                          |1                                          
+2                                          |2                                          
+3                                          |3                                          
+4                                          |4                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes nfet_03v3 and nfet_03v3 are equivalent.
+
+Circuit 1 cell pfet_03v3 and Circuit 2 cell pfet_03v3 are black boxes.
+Warning: Equate pins:  cell pfet_03v3 is a placeholder, treated as a black box.
+Warning: Equate pins:  cell pfet_03v3 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: pfet_03v3                       |Circuit 2: pfet_03v3                       
+-------------------------------------------|-------------------------------------------
+1                                          |1                                          
+2                                          |2                                          
+3                                          |3                                          
+4                                          |4                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes pfet_03v3 and pfet_03v3 are equivalent.
+Flattening unmatched subcell nfet_03v3_Q7US5R in circuit CDAC_INV_V0 (0)(1 instance)
+Flattening unmatched subcell pfet_03v3_YXHA8C in circuit CDAC_INV_V0 (0)(1 instance)
+
+Subcircuit summary:
+Circuit 1: CDAC_INV_V0                     |Circuit 2: CDAC_INV_V0                     
+-------------------------------------------|-------------------------------------------
+nfet_03v3 (1)                              |nfet_03v3 (1)                              
+pfet_03v3 (1)                              |pfet_03v3 (1)                              
+Number of devices: 2                       |Number of devices: 2                       
+Number of nets: 4                          |Number of nets: 4                          
+---------------------------------------------------------------------------------------
+Netlists match uniquely.
+
+Subcircuit pins:
+Circuit 1: CDAC_INV_V0                     |Circuit 2: CDAC_INV_V0                     
+-------------------------------------------|-------------------------------------------
+out                                        |out                                        
+in                                         |in                                         
+avss                                       |avss                                       
+avdd                                       |avdd                                       
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes CDAC_INV_V0 and CDAC_INV_V0 are equivalent.
+Flattening unmatched subcell pfet_03v3_YXQA8C in circuit c_dac2_switch (0)(2 instances)
+Flattening unmatched subcell nfet_03v3_QETW5R in circuit c_dac2_switch (0)(2 instances)
+
+Class c_dac2_switch (0):  Merged 4 parallel devices.
+Subcircuit summary:
+Circuit 1: c_dac2_switch                   |Circuit 2: c_dac2_switch                   
+-------------------------------------------|-------------------------------------------
+pfet_03v3 (4->2)                           |pfet_03v3 (2)                              
+nfet_03v3 (4->2)                           |nfet_03v3 (2)                              
+CDAC_INV_V0 (1)                            |CDAC_INV_V0 (1)                            
+Number of devices: 5                       |Number of devices: 5                       
+Number of nets: 7                          |Number of nets: 7                          
+---------------------------------------------------------------------------------------
+Netlists match uniquely with property errors.
+nfet_03v3_QETW5R_0/nfet_03v3:0 vs. nfet_03v3:M3:
+ w circuit1: 8e-06   circuit2: 4e-06   (delta=66.7%, cutoff=1%)
+nfet_03v3_QETW5R:XM1/nfet_03v3:0 vs. nfet_03v3:M1:
+ w circuit1: 8e-06   circuit2: 4e-06   (delta=66.7%, cutoff=1%)
+pfet_03v3_YXQA8C:XM4/pfet_03v3:0 vs. pfet_03v3:M4:
+ w circuit1: 8e-06   circuit2: 4e-06   (delta=66.7%, cutoff=1%)
+pfet_03v3_YXQA8C_0/pfet_03v3:0 vs. pfet_03v3:M2:
+ w circuit1: 8e-06   circuit2: 4e-06   (delta=66.7%, cutoff=1%)
+
+Subcircuit pins:
+Circuit 1: c_dac2_switch                   |Circuit 2: c_dac2_switch                   
+-------------------------------------------|-------------------------------------------
+vreflow                                    |vreflow                                    
+sw_Vref                                    |sw_Vref                                    
+sw_vout                                    |sw_vout                                    
+sw_bit                                     |sw_bit                                     
+avss                                       |avss                                       
+avdd                                       |avdd                                       
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes c_dac2_switch and c_dac2_switch are equivalent.
+
+Final result: Circuits match uniquely.
+Property errors were found.
+
+The following cells had property errors:
+ c_dac2_switch

@@ -1,0 +1,37 @@
+* NGSPICE file created from c_dac2_switch.ext - technology: gf180mcuD
+
+.subckt pfet_03v3_YXQA8C a_52_n468# a_132_n376# a_n132_n468# a_n220_n376# a_n52_n376#
++ w_n382_n586#
+X0 a_132_n376# a_52_n468# a_n52_n376# w_n382_n586# pfet_03v3 ad=1.76p pd=8.88u as=1.04p ps=4.52u w=4u l=0.4u
+X1 a_n52_n376# a_n132_n468# a_n220_n376# w_n382_n586# pfet_03v3 ad=1.04p pd=4.52u as=1.76p ps=8.88u w=4u l=0.4u
+.ends
+
+.subckt nfet_03v3_QETW5R a_52_n468# a_n358_n562# a_132_n424# a_n132_n468# a_n220_n424#
++ a_n52_n424#
+X0 a_n52_n424# a_n132_n468# a_n220_n424# a_n358_n562# nfet_03v3 ad=1.04p pd=4.52u as=1.76p ps=8.88u w=4u l=0.4u
+X1 a_132_n424# a_52_n468# a_n52_n424# a_n358_n562# nfet_03v3 ad=1.76p pd=8.88u as=1.04p ps=4.52u w=4u l=0.4u
+.ends
+
+.subckt nfet_03v3_Q7US5R a_n128_n224# a_n266_n362# a_40_n224# a_n40_n268#
+X0 a_40_n224# a_n40_n268# a_n128_n224# a_n266_n362# nfet_03v3 ad=0.88p pd=4.88u as=0.88p ps=4.88u w=2u l=0.4u
+.ends
+
+.subckt pfet_03v3_YXHA8C w_n290_n586# a_n128_n376# a_40_n376# a_n40_n468#
+X0 a_40_n376# a_n40_n468# a_n128_n376# w_n290_n586# pfet_03v3 ad=1.76p pd=8.88u as=1.76p ps=8.88u w=4u l=0.4u
+.ends
+
+.subckt CDAC_INV_V0 avdd in out avss
+XXM3 avss avss out in nfet_03v3_Q7US5R
+XXM4 avdd avdd out in pfet_03v3_YXHA8C
+.ends
+
+.subckt c_dac2_switch sw_vout sw_bit avss avdd sw_Vref vreflow
+Xpfet_03v3_YXQA8C_0 CDAC_INV_V0_0/out sw_vout CDAC_INV_V0_0/out sw_vout sw_Vref avdd
++ pfet_03v3_YXQA8C
+XXM1 sw_bit avss sw_Vref sw_bit sw_Vref sw_vout nfet_03v3_QETW5R
+XXM4 sw_bit sw_vout sw_bit sw_vout vreflow avdd pfet_03v3_YXQA8C
+XCDAC_INV_V0_0 avdd sw_bit CDAC_INV_V0_0/out avss CDAC_INV_V0
+Xnfet_03v3_QETW5R_0 CDAC_INV_V0_0/out avss vreflow CDAC_INV_V0_0/out vreflow sw_vout
++ nfet_03v3_QETW5R
+.ends
+

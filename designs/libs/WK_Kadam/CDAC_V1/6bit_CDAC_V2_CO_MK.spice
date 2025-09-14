@@ -1,0 +1,40 @@
+** sch_path: /foss/designs/libs/WK_Kadam/CDAC_V1/6bit_CDAC_V2_CO_MK.sch
+.subckt 6bit_CDAC_V2_CO_MK Vref_l Vdac avdd avss Vref_h cdbit6 cdbit5 cdbit3 cdbit1 cdbit2 cdbit4
+*.PININFO Vref_h:B Vdac:B avdd:B avss:B cdbit6:B cdbit5:B cdbit4:B cdbit3:B cdbit2:B cdbit1:B Vref_l:B
+x1 net6 cdbit6 avss avdd Vref_h Vref_l c_dac2_switch
+x2 net5 cdbit5 avss avdd Vref_h Vref_l c_dac2_switch
+x3 net4 cdbit4 avss avdd Vref_h Vref_l c_dac2_switch
+x4 net3 cdbit3 avss avdd Vref_h Vref_l c_dac2_switch
+x5 net2 cdbit2 avss avdd Vref_h Vref_l c_dac2_switch
+x6 net1 cdbit1 avss avdd Vref_h Vref_l c_dac2_switch
+XC8 Vdac avss cap_mim_1f0fF c_width=10e-6 c_length=10e-6 m=1
+XC9 Vdac net1 cap_mim_1f0fF c_width=10e-6 c_length=10e-6 m=1
+XC10 Vdac net2 cap_mim_1f0fF c_width=10e-6 c_length=10e-6 m=2
+XC11 Vdac net3 cap_mim_1f0fF c_width=10e-6 c_length=10e-6 m=4
+XC12 Vdac net4 cap_mim_1f0fF c_width=10e-6 c_length=10e-6 m=8
+XC13 Vdac net5 cap_mim_1f0fF c_width=10e-6 c_length=10e-6 m=16
+XC14 Vdac net6 cap_mim_1f0fF c_width=10e-6 c_length=10e-6 m=32
+.ends
+
+* expanding   symbol:  libs/WK_Kadam/CDAC_Switch_V2/c_dac2_switch.sym # of pins=6
+** sym_path: /foss/designs/libs/WK_Kadam/CDAC_Switch_V2/c_dac2_switch.sym
+** sch_path: /foss/designs/libs/WK_Kadam/CDAC_Switch_V2/c_dac2_switch.sch
+.subckt c_dac2_switch sw_vout sw_bit avss avdd sw_Vref vreflow
+*.PININFO avdd:B avss:B sw_bit:B sw_vout:B sw_Vref:B vreflow:B
+XM1 sw_vout sw_bit sw_Vref avss nfet_03v3 L=0.4u W=4u nf=2 m=1
+XM3 sw_vout net1 vreflow avss nfet_03v3 L=0.4u W=4u nf=2 m=1
+XM4 vreflow sw_bit sw_vout avdd pfet_03v3 L=0.4u W=4u nf=2 m=1
+XM2 sw_Vref net1 sw_vout avdd pfet_03v3 L=0.4u W=4u nf=2 m=1
+x1 avdd sw_bit net1 avss CDAC_INV_V0
+.ends
+
+
+* expanding   symbol:  libs/WK_Kadam/MK_INV_v1/CDAC_INV_V0.sym # of pins=4
+** sym_path: /foss/designs/libs/WK_Kadam/MK_INV_v1/CDAC_INV_V0.sym
+** sch_path: /foss/designs/libs/WK_Kadam/MK_INV_v1/CDAC_INV_V0.sch
+.subckt CDAC_INV_V0 avdd in out avss
+*.PININFO avdd:B avss:B in:B out:B
+XM3 out in avss avss nfet_03v3 L=0.4u W=2u nf=1 m=1
+XM4 out in avdd avdd pfet_03v3 L=0.4u W=4u nf=1 m=1
+.ends
+

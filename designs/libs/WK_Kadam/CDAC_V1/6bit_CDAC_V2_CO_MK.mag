@@ -1,0 +1,66 @@
+magic
+tech gf180mcuD
+magscale 1 10
+timestamp 1757884890
+<< checkpaint >>
+rect -2000 -6000 2006 -1999
+<< metal1 >>
+rect 0 0 200 200
+rect 0 -400 200 -200
+rect 0 -800 200 -600
+rect 0 -1200 200 -1000
+rect 0 -1600 200 -1400
+rect 0 -2000 200 -1800
+rect 0 -2400 200 -2200
+rect 0 -2800 200 -2600
+rect 0 -3200 200 -3000
+rect 0 -3600 200 -3400
+rect 0 -4000 200 -3800
+use c_dac2_switch  x1
+timestamp 0
+transform 1 0 0 0 1 -4000
+box 0 0 1 1
+use c_dac2_switch  x2
+timestamp 0
+transform 1 0 1 0 1 -4000
+box 0 0 1 1
+use c_dac2_switch  x3
+timestamp 0
+transform 1 0 2 0 1 -4000
+box 0 0 1 1
+use c_dac2_switch  x4
+timestamp 0
+transform 1 0 3 0 1 -4000
+box 0 0 1 1
+use c_dac2_switch  x5
+timestamp 0
+transform 1 0 4 0 1 -4000
+box 0 0 1 1
+use c_dac2_switch  x6
+timestamp 0
+transform 1 0 5 0 1 -4000
+box 0 0 1 1
+<< labels >>
+flabel metal1 0 0 200 200 0 FreeSans 1280 0 0 0 Vref_l
+port 0 nsew
+flabel metal1 0 -400 200 -200 0 FreeSans 1280 0 0 0 Vdac
+port 1 nsew
+flabel metal1 0 -800 200 -600 0 FreeSans 1280 0 0 0 avdd
+port 2 nsew
+flabel metal1 0 -1200 200 -1000 0 FreeSans 1280 0 0 0 avss
+port 3 nsew
+flabel metal1 0 -1600 200 -1400 0 FreeSans 1280 0 0 0 Vref_h
+port 4 nsew
+flabel metal1 0 -2000 200 -1800 0 FreeSans 1280 0 0 0 cdbit6
+port 5 nsew
+flabel metal1 0 -2400 200 -2200 0 FreeSans 1280 0 0 0 cdbit5
+port 6 nsew
+flabel metal1 0 -2800 200 -2600 0 FreeSans 1280 0 0 0 cdbit3
+port 7 nsew
+flabel metal1 0 -3200 200 -3000 0 FreeSans 1280 0 0 0 cdbit1
+port 8 nsew
+flabel metal1 0 -3600 200 -3400 0 FreeSans 1280 0 0 0 cdbit2
+port 9 nsew
+flabel metal1 0 -4000 200 -3800 0 FreeSans 1280 0 0 0 cdbit4
+port 10 nsew
+<< end >>
