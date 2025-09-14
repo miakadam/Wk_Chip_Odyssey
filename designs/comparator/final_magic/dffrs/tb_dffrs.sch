@@ -149,10 +149,9 @@ format="tcleval( @value )"
 value="
 .include $::180MCU_MODELS/design.ngspice
 .lib $::180MCU_MODELS/sm141064.ngspice typical
-"
 .include /foss/designs/comparator/final_magic/nand3/nand3.spice
 "}
-C {code_shown.sym} 330 -830 0 0 {name=NGSPICE only_toplevel=true value=
+C {code_shown.sym} 330 -800 0 0 {name=NGSPICE only_toplevel=true value=
 ".save all
 .control
 tran 100p 400n

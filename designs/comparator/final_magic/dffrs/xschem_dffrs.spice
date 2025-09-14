@@ -1,0 +1,24 @@
+** sch_path: /foss/designs/comparator/final_magic/dffrs/dffrs.sch
+.subckt dffrs vdd vss d clk setb resetb Q Qb
+*.PININFO vdd:B vss:B Q:B Qb:B d:B clk:B resetb:B setb:B
+x1 vdd net2 net1 net3 setb vss nand3
+x2 vdd net1 clk resetb net2 vss nand3
+x3 vdd Q Qb net1 setb vss nand3
+x4 vdd Qb resetb net4 Q vss nand3
+x5 vdd net4 net3 clk net1 vss nand3
+x6 vdd net3 d resetb net4 vss nand3
+.ends
+
+* expanding   symbol:  comparator/final_magic/nand3/nand3.sym # of pins=6
+** sym_path: /foss/designs/comparator/final_magic/nand3/nand3.sym
+** sch_path: /foss/designs/comparator/final_magic/nand3/nand3.sch
+.subckt nand3 VDD Z A B C VSS
+*.PININFO VDD:B VSS:B Z:B A:B B:B C:B
+XM1 Z A net1 VSS nfet_03v3 L=0.4u W=1u nf=1 m=1
+XM2 net1 B net2 VSS nfet_03v3 L=0.4u W=1u nf=1 m=1
+XM3 Z B VDD VDD pfet_03v3 L=0.4u W=2.5u nf=1 m=1
+XM4 Z A VDD VDD pfet_03v3 L=0.4u W=2.5u nf=1 m=1
+XM5 Z C VDD VDD pfet_03v3 L=0.4u W=2.5u nf=1 m=1
+XM6 net2 C VSS VSS nfet_03v3 L=0.4u W=1u nf=1 m=1
+.ends
+
