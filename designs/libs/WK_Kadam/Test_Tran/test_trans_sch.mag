@@ -1,0 +1,48 @@
+magic
+tech gf180mcuD
+magscale 1 5
+timestamp 1757859601
+<< metal1 >>
+rect 705 75 805 150
+rect 690 55 805 75
+rect 690 25 810 55
+rect 620 -100 660 -95
+rect 620 -155 630 -100
+rect 815 -105 860 -100
+rect 815 -150 825 -105
+rect 855 -150 860 -105
+rect 815 -155 860 -150
+rect 620 -160 660 -155
+rect 715 -350 730 -320
+rect 760 -350 770 -320
+rect 685 -530 785 -430
+<< via1 >>
+rect 630 -155 660 -100
+rect 825 -150 855 -105
+rect 730 -350 760 -320
+<< metal2 >>
+rect 510 -100 985 -85
+rect 510 -155 630 -100
+rect 660 -105 985 -100
+rect 660 -150 825 -105
+rect 855 -150 985 -105
+rect 660 -155 985 -150
+rect 510 -170 985 -155
+rect 535 -320 920 -315
+rect 535 -350 730 -320
+rect 760 -350 920 -320
+rect 535 -360 920 -350
+use nfet_03v3_QETW5R  M1
+timestamp 1757858313
+transform 1 0 746 0 1 -192
+box -191 -293 191 293
+<< labels >>
+rlabel metal2 525 -150 525 -105 7 S
+port 3 w
+rlabel metal2 540 -355 540 -325 7 D
+port 2 w
+rlabel metal1 720 110 755 120 7 G
+port 0 w
+rlabel metal1 700 -500 735 -490 7 B
+port 1 w
+<< end >>

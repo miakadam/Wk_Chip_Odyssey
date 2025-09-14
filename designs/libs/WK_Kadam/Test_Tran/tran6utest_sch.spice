@@ -1,0 +1,8 @@
+** sch_path: /foss/designs/libs/WK_Kadam/Test_tran/tran6utest.sch
+.subckt tran6utest
+
+XM1 net1 net2 net3 net4 nfet_03v3 L=0.4u W=6u nf=3 m=1
+* noconn #net2
+* noconn #net4
+* noconn #net3
+.ends

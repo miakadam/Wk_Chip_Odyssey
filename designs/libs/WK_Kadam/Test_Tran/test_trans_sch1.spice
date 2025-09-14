@@ -1,0 +1,5 @@
+** sch_path: /foss/designs/libs/WK_Kadam/Test_tran/test_trans_sch.sch
+.subckt test_trans_sch G B D S
+*.PININFO G:B B:B D:B S:B
+XM1 D G S B nfet_03v3 L=0.4u W=4u nf=2 m=1
+.ends

@@ -1,0 +1,156 @@
+timestamp 1757862833
+version 8.3
+tech gf180mcuD
+style ngspice()
+scale 1000 1 0.5
+resistclasses 1000000 3250000 6300 7000 6300 7000 7300 1000000 60000 185000 60000 185000 6300 7000 6300 7000 6800 7300 350000 310000 1000000 90 90 90 90 60
+use pfet_03v3_YXQA8C XM4 1 0 1922 0 1 846
+use nfet_03v3_QETW5R XM1 1 0 1922 0 1 -584
+use pfet_03v3_YXQA8C pfet_03v3_YXQA8C_0 1 0 3602 0 -1 -584
+use nfet_03v3_QETW5R nfet_03v3_QETW5R_0 1 0 3602 0 -1 846
+use CDAC_INV_V0 CDAC_INV_V0_0 1 0 1510 0 1 230
+port "avss" 2 1830 -1260 1840 -1220 m1
+port "sw_Vref" 4 2350 -880 2360 -840 m2
+port "sw_bit" 1 1890 100 1900 140 m1
+port "sw_vout" 0 2350 -380 2360 -340 m2
+port "vreflow" 5 2330 1100 2340 1140 m2
+port "avdd" 3 1800 1550 1810 1590 m1
+node "avdd" 0 118.741 3500 -1190 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 17500 640 0 0 0 0 0 0 0 0
+node "avss" 2 915.784 1830 -1260 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 206500 4220 0 0 0 0 0 0 0 0
+node "sw_Vref" 3 747.958 2350 -880 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 17328 912 235000 4900 0 0 0 0 0 0
+node "m1_2870_108#" 1 609.296 2870 108 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 153600 3100 0 0 0 0 0 0 0 0
+node "sw_bit" 1 585.762 1890 100 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 151800 3040 0 0 0 0 0 0 0 0
+node "sw_vout" 7 1468.08 2350 -380 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 34656 1824 552300 11440 0 0 0 0 0 0
+node "vreflow" 3 769.662 2330 1100 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 17328 912 235000 4900 0 0 0 0 0 0
+node "m1_3470_1370#" 0 108.959 3470 1370 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 12000 580 0 0 0 0 0 0 0 0
+node "avdd" 2 884.415 1800 1550 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 213400 4020 0 0 0 0 0 0 0 0
+substrate "VSUBS" 0 0 -1073741817 -1073741817 space 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+cap "avdd" "m1_2870_108#" 6.56721
+cap "sw_Vref" "sw_vout" 244.165
+cap "vreflow" "avdd" 64.1587
+cap "sw_Vref" "avdd" 23.2139
+cap "m1_2870_108#" "avdd" 10.5792
+cap "m1_3470_1370#" "avdd" 3.11631
+cap "m1_2870_108#" "avss" 5.618
+cap "sw_bit" "vreflow" 6.13547
+cap "m1_2870_108#" "sw_bit" 25.18
+cap "sw_Vref" "avss" 129.298
+cap "avdd" "sw_vout" 0.593352
+cap "sw_Vref" "sw_bit" 4.93019
+cap "sw_vout" "avdd" 11.6798
+cap "avss" "sw_vout" 13.7775
+cap "m1_2870_108#" "vreflow" 5.05659
+cap "m1_3470_1370#" "vreflow" 8.51626
+cap "sw_bit" "sw_vout" 112.962
+cap "m1_3470_1370#" "m1_2870_108#" 6.84447
+cap "avdd" "avss" 4.10991
+cap "sw_Vref" "m1_2870_108#" 6.24823
+cap "sw_bit" "avdd" 22.1565
+cap "sw_bit" "avss" 22.6219
+cap "sw_vout" "vreflow" 249.56
+cap "m1_2870_108#" "sw_vout" 111.436
+cap "m1_3470_1370#" "sw_vout" 4.92009
+cap "nfet_03v3_QETW5R_0/a_n52_n424#" "pfet_03v3_YXQA8C_0/w_n382_n586#" 10.8396
+cap "pfet_03v3_YXQA8C_0/a_n52_n376#" "CDAC_INV_V0_0/in" 37.2124
+cap "pfet_03v3_YXQA8C_0/a_n52_n376#" "nfet_03v3_QETW5R_0/a_n52_n424#" 91.0474
+cap "nfet_03v3_QETW5R_0/a_n52_n424#" "CDAC_INV_V0_0/in" 126.553
+cap "nfet_03v3_QETW5R_0/a_132_n424#" "nfet_03v3_QETW5R_0/a_n52_n424#" 0.545047
+cap "CDAC_INV_V0_0/avdd" "CDAC_INV_V0_0/avss" -0.27307
+cap "CDAC_INV_V0_0/out" "CDAC_INV_V0_0/avss" 0.825957
+cap "pfet_03v3_YXQA8C_0/w_n382_n586#" "CDAC_INV_V0_0/avss" 17.237
+cap "CDAC_INV_V0_0/out" "pfet_03v3_YXQA8C_0/w_n382_n586#" 12.1575
+cap "pfet_03v3_YXQA8C_0/a_n52_n376#" "CDAC_INV_V0_0/out" 1.1672
+cap "pfet_03v3_YXQA8C_0/a_n52_n376#" "CDAC_INV_V0_0/avss" 77.4874
+cap "CDAC_INV_V0_0/avdd" "pfet_03v3_YXQA8C_0/a_n52_n376#" 1.16045
+cap "CDAC_INV_V0_0/in" "CDAC_INV_V0_0/avss" 25.7115
+cap "CDAC_INV_V0_0/out" "CDAC_INV_V0_0/in" -0.556157
+cap "CDAC_INV_V0_0/avdd" "CDAC_INV_V0_0/in" 1.74712
+cap "CDAC_INV_V0_0/avdd" "nfet_03v3_QETW5R_0/a_n52_n424#" 18.334
+cap "nfet_03v3_QETW5R_0/a_n52_n424#" "CDAC_INV_V0_0/avss" 86.9792
+cap "CDAC_INV_V0_0/out" "nfet_03v3_QETW5R_0/a_n52_n424#" 71.8864
+cap "CDAC_INV_V0_0/in" "pfet_03v3_YXQA8C_0/w_n382_n586#" 3.23542
+cap "pfet_03v3_YXQA8C_0/a_n52_n376#" "nfet_03v3_QETW5R_0/a_n52_n424#" 86.8723
+cap "CDAC_INV_V0_0/avss" "nfet_03v3_QETW5R_0/a_n52_n424#" 32.3759
+cap "CDAC_INV_V0_0/out" "nfet_03v3_QETW5R_0/a_132_n424#" -0.0251944
+cap "nfet_03v3_QETW5R_0/a_n52_n424#" "CDAC_INV_V0_0/avdd" 3.4389
+cap "nfet_03v3_QETW5R_0/a_n52_n424#" "CDAC_INV_V0_0/out" 44.8442
+cap "CDAC_INV_V0_0/avss" "pfet_03v3_YXQA8C_0/w_n382_n586#" 1.3649
+cap "pfet_03v3_YXQA8C_0/a_n52_n376#" "pfet_03v3_YXQA8C_0/w_n382_n586#" 47.7635
+cap "nfet_03v3_QETW5R_0/a_n52_n424#" "nfet_03v3_QETW5R_0/a_132_n424#" 2.24347
+cap "CDAC_INV_V0_0/out" "CDAC_INV_V0_0/in" -2.72832
+cap "pfet_03v3_YXQA8C_0/w_n382_n586#" "CDAC_INV_V0_0/out" 42.1131
+cap "pfet_03v3_YXQA8C_0/a_n52_n376#" "CDAC_INV_V0_0/avss" 0.371136
+cap "pfet_03v3_YXQA8C_0/w_n382_n586#" "nfet_03v3_QETW5R_0/a_n52_n424#" 75.7904
+cap "pfet_03v3_YXQA8C_0/a_n52_n376#" "CDAC_INV_V0_0/out" 85.0854
+cap "CDAC_INV_V0_0/avss" "CDAC_INV_V0_0/out" 2.93257
+cap "nfet_03v3_QETW5R_0/a_n52_n424#" "CDAC_INV_V0_0/out" 64.4897
+cap "CDAC_INV_V0_0/in" "pfet_03v3_YXQA8C_0/a_n52_n376#" 4.98633
+cap "CDAC_INV_V0_0/in" "nfet_03v3_QETW5R_0/a_132_n424#" 85.3439
+cap "CDAC_INV_V0_0/in" "CDAC_INV_V0_0/avss" 25.0365
+cap "nfet_03v3_QETW5R_0/a_132_n424#" "CDAC_INV_V0_0/avdd" 108.219
+cap "CDAC_INV_V0_0/avdd" "CDAC_INV_V0_0/avss" 4.56691
+cap "CDAC_INV_V0_0/in" "CDAC_INV_V0_0/avdd" 117.18
+cap "pfet_03v3_YXQA8C_0/a_n52_n376#" "CDAC_INV_V0_0/out" -0.0914923
+cap "CDAC_INV_V0_0/out" "CDAC_INV_V0_0/avss" 5.41488
+cap "nfet_03v3_QETW5R_0/a_132_n424#" "CDAC_INV_V0_0/out" 48.6123
+cap "pfet_03v3_YXQA8C_0/a_n52_n376#" "nfet_03v3_QETW5R_0/a_n52_n424#" 2.12177
+cap "nfet_03v3_QETW5R_0/a_132_n424#" "nfet_03v3_QETW5R_0/a_n52_n424#" 90.7237
+cap "CDAC_INV_V0_0/in" "CDAC_INV_V0_0/out" -12.4618
+cap "nfet_03v3_QETW5R_0/a_n52_n424#" "CDAC_INV_V0_0/avss" 14.7935
+cap "CDAC_INV_V0_0/avdd" "CDAC_INV_V0_0/out" 6.50957
+cap "CDAC_INV_V0_0/avdd" "nfet_03v3_QETW5R_0/a_n52_n424#" 227.925
+cap "CDAC_INV_V0_0/in" "nfet_03v3_QETW5R_0/a_n52_n424#" 94.9855
+cap "CDAC_INV_V0_0/avdd" "nfet_03v3_QETW5R_0/a_n52_n424#" 18.4244
+cap "pfet_03v3_YXQA8C_0/w_n382_n586#" "nfet_03v3_QETW5R_0/a_n52_n424#" 11.4304
+cap "pfet_03v3_YXQA8C_0/w_n382_n586#" "CDAC_INV_V0_0/avss" 0.0534516
+cap "CDAC_INV_V0_0/avss" "CDAC_INV_V0_0/avdd" 0.982314
+cap "pfet_03v3_YXQA8C_0/a_n52_n376#" "CDAC_INV_V0_0/out" -0.0502311
+cap "nfet_03v3_QETW5R_0/a_132_n424#" "CDAC_INV_V0_0/out" 68.3354
+cap "nfet_03v3_QETW5R_0/a_n52_n424#" "pfet_03v3_YXQA8C_0/a_n52_n376#" 0.497811
+cap "CDAC_INV_V0_0/in" "CDAC_INV_V0_0/out" -2.9039
+cap "nfet_03v3_QETW5R_0/a_n52_n424#" "CDAC_INV_V0_0/out" 62.323
+cap "CDAC_INV_V0_0/avss" "CDAC_INV_V0_0/out" 36.2764
+cap "nfet_03v3_QETW5R_0/a_n52_n424#" "nfet_03v3_QETW5R_0/a_132_n424#" 89.9085
+cap "CDAC_INV_V0_0/avss" "nfet_03v3_QETW5R_0/a_132_n424#" 37.0647
+cap "CDAC_INV_V0_0/avss" "nfet_03v3_QETW5R_0/a_n52_n424#" 17.2914
+cap "CDAC_INV_V0_0/avdd" "CDAC_INV_V0_0/out" 29.5582
+cap "pfet_03v3_YXQA8C_0/w_n382_n586#" "CDAC_INV_V0_0/out" 30.2677
+cap "pfet_03v3_YXQA8C_0/w_n382_n586#" "nfet_03v3_QETW5R_0/a_132_n424#" 1.15567
+cap "CDAC_INV_V0_0/avdd" "nfet_03v3_QETW5R_0/a_132_n424#" 20.6392
+cap "CDAC_INV_V0_0/avdd" "CDAC_INV_V0_0/out" -0.793438
+cap "CDAC_INV_V0_0/avdd" "nfet_03v3_QETW5R_0/a_132_n424#" -9.91061
+cap "CDAC_INV_V0_0/in" "CDAC_INV_V0_0/avdd" -3.2972
+cap "CDAC_INV_V0_0/avdd" "nfet_03v3_QETW5R_0/a_n52_n424#" -4.69221
+merge "CDAC_INV_V0_0/VSUBS" "CDAC_INV_V0_0/avss" -465.89 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -6450 -842 0 0 0 0 0 0 0 0
+merge "CDAC_INV_V0_0/avss" "nfet_03v3_QETW5R_0/a_n358_n562#"
+merge "nfet_03v3_QETW5R_0/a_n358_n562#" "m1_3470_1370#"
+merge "m1_3470_1370#" "pfet_03v3_YXQA8C_0/VSUBS"
+merge "pfet_03v3_YXQA8C_0/VSUBS" "XM1/a_n358_n562#"
+merge "XM1/a_n358_n562#" "avss"
+merge "avss" "XM4/VSUBS"
+merge "XM4/VSUBS" "VSUBS"
+merge "CDAC_INV_V0_0/in" "XM1/a_52_n468#" -400.979 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -10180 -950 0 0 0 0 0 0 0 0
+merge "XM1/a_52_n468#" "XM1/a_n132_n468#"
+merge "XM1/a_n132_n468#" "XM4/a_52_n468#"
+merge "XM4/a_52_n468#" "XM4/a_n132_n468#"
+merge "XM4/a_n132_n468#" "sw_bit"
+merge "CDAC_INV_V0_0/out" "nfet_03v3_QETW5R_0/a_52_n468#" -494.311 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -7360 -870 0 0 0 0 0 0 0 0
+merge "nfet_03v3_QETW5R_0/a_52_n468#" "nfet_03v3_QETW5R_0/a_n132_n468#"
+merge "nfet_03v3_QETW5R_0/a_n132_n468#" "pfet_03v3_YXQA8C_0/a_52_n468#"
+merge "pfet_03v3_YXQA8C_0/a_52_n468#" "pfet_03v3_YXQA8C_0/a_n132_n468#"
+merge "pfet_03v3_YXQA8C_0/a_n132_n468#" "m1_2870_108#"
+merge "nfet_03v3_QETW5R_0/a_132_n424#" "nfet_03v3_QETW5R_0/a_n220_n424#" -470.553 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -10488 -732 0 0 0 0 0 0 0 0
+merge "nfet_03v3_QETW5R_0/a_n220_n424#" "XM4/a_n52_n376#"
+merge "XM4/a_n52_n376#" "vreflow"
+merge "nfet_03v3_QETW5R_0/a_n52_n424#" "pfet_03v3_YXQA8C_0/a_132_n376#" -1123.39 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -20976 -1464 0 0 0 0 0 0 0 0
+merge "pfet_03v3_YXQA8C_0/a_132_n376#" "pfet_03v3_YXQA8C_0/a_n220_n376#"
+merge "pfet_03v3_YXQA8C_0/a_n220_n376#" "XM1/a_n52_n424#"
+merge "XM1/a_n52_n424#" "XM4/a_132_n376#"
+merge "XM4/a_132_n376#" "XM4/a_n220_n376#"
+merge "XM4/a_n220_n376#" "sw_vout"
+merge "pfet_03v3_YXQA8C_0/a_n52_n376#" "XM1/a_132_n424#" -401.694 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -10488 -732 0 0 0 0 0 0 0 0
+merge "XM1/a_132_n424#" "XM1/a_n220_n424#"
+merge "XM1/a_n220_n424#" "sw_Vref"
+merge "CDAC_INV_V0_0/avdd" "pfet_03v3_YXQA8C_0/w_n382_n586#" -575.945 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -6350 -926 0 0 0 0 0 0 0 0
+merge "pfet_03v3_YXQA8C_0/w_n382_n586#" "XM4/w_n382_n586#"
+merge "XM4/w_n382_n586#" "avdd"

@@ -1,0 +1,14 @@
+* NGSPICE file created from tran6utest.ext - technology: gf180mcuD
+
+.subckt nfet_03v3_QDTW5R a_224_n624# a_40_n624# a_n224_n668# a_n40_n668# a_n144_n624#
++ a_n312_n624# a_n450_n762# a_144_n668#
+X0 a_n144_n624# a_n224_n668# a_n312_n624# a_n450_n762# nfet_03v3 ad=1.56p pd=6.52u as=2.64p ps=12.88u w=6u l=0.4u
+X1 a_40_n624# a_n40_n668# a_n144_n624# a_n450_n762# nfet_03v3 ad=1.56p pd=6.52u as=1.56p ps=6.52u w=6u l=0.4u
+X2 a_224_n624# a_144_n668# a_40_n624# a_n450_n762# nfet_03v3 ad=2.64p pd=12.88u as=1.56p ps=6.52u w=6u l=0.4u
+.ends
+
+.subckt tran6utest
+XXM1 m1_277_303# m1_80_1020# m1_200_1346# m1_200_1346# m1_277_303# m1_80_1020# VSUBS
++ m1_200_1346# nfet_03v3_QDTW5R
+.ends
+

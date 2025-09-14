@@ -1,0 +1,54 @@
+
+Circuit 1 cell nfet_03v3 and Circuit 2 cell nfet_03v3 are black boxes.
+Warning: Equate pins:  cell nfet_03v3 is a placeholder, treated as a black box.
+Warning: Equate pins:  cell nfet_03v3 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: nfet_03v3                       |Circuit 2: nfet_03v3                       
+-------------------------------------------|-------------------------------------------
+1                                          |1                                          
+2                                          |2                                          
+3                                          |3                                          
+4                                          |4                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes nfet_03v3 and nfet_03v3 are equivalent.
+Flattening unmatched subcell nfet_03v3_QDTW5R in circuit tran6utest (1)(1 instance)
+
+Class tran6utest (1):  Merged 2 parallel devices.
+Subcircuit summary:
+Circuit 1: tran6utest                      |Circuit 2: tran6utest                      
+-------------------------------------------|-------------------------------------------
+nfet_03v3 (1)                              |nfet_03v3 (3->1)                           
+Number of devices: 1                       |Number of devices: 1                       
+Number of nets: 4                          |Number of nets: 4                          
+---------------------------------------------------------------------------------------
+Resolving symmetries by property value.
+Resolving symmetries by pin name.
+Resolving symmetries by net name.
+Netlists match with 1 symmetry with property errors.
+  Parallelized instances disagree on pin connections.
+    Circuit1 instance nfet_03v3:M1 pin net1 connections are no connects (1)
+    Circuit2 instance nfet_03v3_QDTW5R:XM1/nfet_03v3:0 pin m1_80_1020# connections are tied together (0)
+  Parallelized instances disagree on pin connections.
+    Circuit1 instance nfet_03v3:M1 pin net2 connections are no connects (1)
+    Circuit2 instance nfet_03v3_QDTW5R:XM1/nfet_03v3:0 pin m1_200_1346# connections are tied together (0)
+  Parallelized instances disagree on pin connections.
+    Circuit1 instance nfet_03v3:M1 pin net3 connections are no connects (1)
+    Circuit2 instance nfet_03v3_QDTW5R:XM1/nfet_03v3:0 pin m1_277_303# connections are tied together (0)
+nfet_03v3:M1 vs. nfet_03v3_QDTW5R:XM1/nfet_03v3:0:
+ W circuit1: 6e-06   circuit2: 1.8e-05   (delta=100%, cutoff=1%)
+
+Subcircuit pins:
+Circuit 1: tran6utest                      |Circuit 2: tran6utest                      
+-------------------------------------------|-------------------------------------------
+(no pins)                                  |(no pins)                                  
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes tran6utest and tran6utest are equivalent.
+
+Final result: Circuits match uniquely.
+Property errors were found.
+
+The following cells had property errors:
+ tran6utest

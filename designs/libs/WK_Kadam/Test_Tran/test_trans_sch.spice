@@ -1,0 +1,12 @@
+* NGSPICE file created from test_trans_sch.ext - technology: gf180mcuD
+
+.subckt nfet_03v3_QETW5R a_52_n468# a_n358_n562# a_132_n424# a_n132_n468# a_n220_n424#
++ a_n52_n424#
+X0 a_n52_n424# a_n132_n468# a_n220_n424# a_n358_n562# nfet_03v3 ad=1.04p pd=4.52u as=1.76p ps=8.88u w=4u l=0.4u
+X1 a_132_n424# a_52_n468# a_n52_n424# a_n358_n562# nfet_03v3 ad=1.76p pd=8.88u as=1.04p ps=4.52u w=4u l=0.4u
+.ends
+
+.subckt test_trans_sch G B D S
+XM1 G B S G S D nfet_03v3_QETW5R
+.ends
+
