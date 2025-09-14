@@ -1,0 +1,53 @@
+** sch_path: /foss/designs/FinalBlocksLayout/SARlogic/SARlogic.sch
+.subckt SARlogic vdd vss clk reset comp_in d5 d4 d3 d2 d1 d0
+*.PININFO comp_in:I vdd:B vss:B clk:I reset:I d5:B d4:B d3:B d2:B d1:B d0:B
+* noconn #net15
+* noconn #net16
+* noconn #net17
+* noconn #net18
+* noconn #net19
+* noconn #net20
+* noconn #net21
+x1 vdd vss vss clk reset vdd net1 net7 dffrs
+x2 vdd vss net1 clk vdd reset net2 net8 dffrs
+x3 vdd vss net2 clk vdd reset net3 net9 dffrs
+x4 vdd vss net3 clk vdd reset net4 net10 dffrs
+x5 vdd vss net4 clk vdd reset net5 net11 dffrs
+x6 vdd vss net5 clk vdd reset net6 net12 dffrs
+x7 vdd vss net6 clk vdd reset net22 net13 dffrs
+x8 vdd vss vss vss net13 reset net14 net21 dffrs
+x9 vdd vss comp_in net14 net12 reset d0 net20 dffrs
+x10 vdd vss comp_in d0 net11 reset d1 net19 dffrs
+x11 vdd vss comp_in d1 net10 reset d2 net18 dffrs
+x12 vdd vss comp_in d2 net9 reset d3 net17 dffrs
+x13 vdd vss comp_in d3 net8 reset d4 net16 dffrs
+x14 vdd vss comp_in d4 net7 reset d5 net15 dffrs
+.ends
+
+* expanding   symbol:  FinalBlocksLayout/dffrs/dffrs.sym # of pins=8
+** sym_path: /foss/designs/FinalBlocksLayout/dffrs/dffrs.sym
+** sch_path: /foss/designs/FinalBlocksLayout/dffrs/dffrs.sch
+.subckt dffrs vdd vss d clk setb resetb Q Qb
+*.PININFO vdd:B vss:B Q:B Qb:B d:B clk:B resetb:B setb:B
+x1 vdd net2 net1 net3 setb vss nand3
+x2 vdd net1 clk resetb net2 vss nand3
+x3 vdd Q Qb net1 setb vss nand3
+x4 vdd Qb resetb net4 Q vss nand3
+x5 vdd net4 net3 clk net1 vss nand3
+x6 vdd net3 d resetb net4 vss nand3
+.ends
+
+
+* expanding   symbol:  comparator/final_magic/nand3/nand3.sym # of pins=6
+** sym_path: /foss/designs/comparator/final_magic/nand3/nand3.sym
+** sch_path: /foss/designs/comparator/final_magic/nand3/nand3.sch
+.subckt nand3 VDD Z A B C VSS
+*.PININFO VDD:B VSS:B Z:B A:B B:B C:B
+XM1 Z A net1 VSS nfet_03v3 L=0.4u W=1u nf=1 m=1
+XM2 net1 B net2 VSS nfet_03v3 L=0.4u W=1u nf=1 m=1
+XM3 Z B VDD VDD pfet_03v3 L=0.4u W=2.5u nf=1 m=1
+XM4 Z A VDD VDD pfet_03v3 L=0.4u W=2.5u nf=1 m=1
+XM5 Z C VDD VDD pfet_03v3 L=0.4u W=2.5u nf=1 m=1
+XM6 net2 C VSS VSS nfet_03v3 L=0.4u W=1u nf=1 m=1
+.ends
+

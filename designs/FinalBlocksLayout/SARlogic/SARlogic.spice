@@ -1,0 +1,47 @@
+* NGSPICE file created from SARlogic.ext - technology: gf180mcuD
+
+.subckt nfet_03v3_EPF4UP a_n224_n192# a_n40_n192# a_n450_n286# a_224_n100# a_n312_n100#
++ a_144_n192#
+X0 a_224_n100# a_144_n192# a_40_n100# a_n450_n286# nfet_03v3 ad=0.44p pd=2.88u as=0.26p ps=1.52u w=1u l=0.4u
+X1 a_n144_n100# a_n224_n192# a_n312_n100# a_n450_n286# nfet_03v3 ad=0.26p pd=1.52u as=0.44p ps=2.88u w=1u l=0.4u
+X2 a_40_n100# a_n40_n192# a_n144_n100# a_n450_n286# nfet_03v3 ad=0.26p pd=1.52u as=0.26p ps=1.52u w=1u l=0.4u
+.ends
+
+.subckt pfet_03v3_54RA84 a_224_n250# a_n40_n342# a_n224_n342# a_40_n250# a_n312_n250#
++ a_n144_n250# w_n474_n460# a_144_n342#
+X0 a_n144_n250# a_n224_n342# a_n312_n250# w_n474_n460# pfet_03v3 ad=0.65p pd=3.02u as=1.1p ps=5.88u w=2.5u l=0.4u
+X1 a_40_n250# a_n40_n342# a_n144_n250# w_n474_n460# pfet_03v3 ad=0.65p pd=3.02u as=0.65p ps=3.02u w=2.5u l=0.4u
+X2 a_224_n250# a_144_n342# a_40_n250# w_n474_n460# pfet_03v3 ad=1.1p pd=5.88u as=0.65p ps=3.02u w=2.5u l=0.4u
+.ends
+
+.subckt nand3 VDD Z A B C VSS
+XM1 C B VSS Z VSS A nfet_03v3_EPF4UP
+XM3 Z B C VDD VDD Z VDD A pfet_03v3_54RA84
+.ends
+
+.subckt dffrs d clk setb resetb Q Qb vss vdd
+Xnand3_0 vdd nand3_1/C nand3_6/C nand3_8/Z setb vss nand3
+Xnand3_1 vdd nand3_6/C clk resetb nand3_1/C vss nand3
+Xnand3_2 vdd Q Qb nand3_6/C setb vss nand3
+Xnand3_6 vdd nand3_8/C nand3_8/Z clk nand3_6/C vss nand3
+Xnand3_7 vdd Qb resetb nand3_8/C Q vss nand3
+Xnand3_8 vdd nand3_8/Z d resetb nand3_8/C vss nand3
+.ends
+
+.subckt SARlogic vdd vss clk reset comp_in d5 d4 d3 d2 d1 d0
+Xdffrs_10 comp_in d0 dffrs_3/Qb reset d1 dffrs_10/Qb vss vdd dffrs
+Xdffrs_11 comp_in dffrs_12/Q dffrs_4/Qb reset d0 dffrs_11/Qb vss vdd dffrs
+Xdffrs_12 vss vss dffrs_5/Qb reset dffrs_12/Q dffrs_12/Qb vss vdd dffrs
+Xdffrs_13 vss clk reset vdd dffrs_0/d dffrs_13/Qb vss vdd dffrs
+Xdffrs_14 comp_in d4 dffrs_13/Qb reset d5 dffrs_14/Qb vss vdd dffrs
+Xdffrs_0 dffrs_0/d clk vdd reset dffrs_1/d dffrs_0/Qb vss vdd dffrs
+Xdffrs_1 dffrs_1/d clk vdd reset dffrs_2/d dffrs_1/Qb vss vdd dffrs
+Xdffrs_2 dffrs_2/d clk vdd reset dffrs_3/d dffrs_2/Qb vss vdd dffrs
+Xdffrs_3 dffrs_3/d clk vdd reset dffrs_4/d dffrs_3/Qb vss vdd dffrs
+Xdffrs_4 dffrs_4/d clk vdd reset dffrs_5/d dffrs_4/Qb vss vdd dffrs
+Xdffrs_5 dffrs_5/d clk vdd reset dffrs_5/Q dffrs_5/Qb vss vdd dffrs
+Xdffrs_7 comp_in d3 dffrs_0/Qb reset d4 dffrs_7/Qb vss vdd dffrs
+Xdffrs_8 comp_in d2 dffrs_1/Qb reset d3 dffrs_8/Qb vss vdd dffrs
+Xdffrs_9 comp_in d1 dffrs_2/Qb reset d2 dffrs_9/Qb vss vdd dffrs
+.ends
+

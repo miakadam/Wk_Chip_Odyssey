@@ -85,8 +85,6 @@ C {iopin.sym} 530 -610 0 0 {name=p6 lab=vdd}
 C {iopin.sym} 530 -560 0 0 {name=p7 lab=vss}
 C {ipin.sym} 550 -510 0 0 {name=p8 lab=clk}
 C {ipin.sym} 550 -460 0 0 {name=p9 lab=reset}
-C {opin.sym} 530 -380 0 0 {name=p2 lab=d[5..0]}
-C {opin.sym} 530 -340 0 0 {name=p71 lab=db[5..0]}
 C {lab_pin.sym} 760 -740 1 0 {name=p4 sig_type=std_logic lab=vdd}
 C {lab_pin.sym} 700 -680 0 0 {name=p10 sig_type=std_logic lab=clk}
 C {lab_pin.sym} 700 -660 0 0 {name=p14 sig_type=std_logic lab=reset}
@@ -149,12 +147,6 @@ C {lab_pin.sym} 1460 -160 2 0 {name=p65 sig_type=std_logic lab=d3}
 C {lab_pin.sym} 1700 -160 2 0 {name=p66 sig_type=std_logic lab=d2}
 C {lab_pin.sym} 1940 -160 2 0 {name=p67 sig_type=std_logic lab=d1}
 C {lab_pin.sym} 2180 -160 2 0 {name=p68 sig_type=std_logic lab=d0}
-C {lab_pin.sym} 950 -400 2 0 {name=p70 sig_type=std_logic lab=db5}
-C {lab_pin.sym} 1190 -400 2 0 {name=p72 sig_type=std_logic lab=db4}
-C {lab_pin.sym} 1430 -400 2 0 {name=p73 sig_type=std_logic lab=db3}
-C {lab_pin.sym} 1670 -400 2 0 {name=p74 sig_type=std_logic lab=db2}
-C {lab_pin.sym} 1910 -400 2 0 {name=p75 sig_type=std_logic lab=db1}
-C {lab_pin.sym} 2150 -400 2 0 {name=p76 sig_type=std_logic lab=db0}
 C {lab_pin.sym} 700 -640 0 0 {name=p77 sig_type=std_logic lab=vdd}
 C {lab_pin.sym} 940 -660 0 0 {name=p78 sig_type=std_logic lab=vdd}
 C {lab_pin.sym} 1180 -660 0 0 {name=p79 sig_type=std_logic lab=vdd}
@@ -164,6 +156,19 @@ C {lab_pin.sym} 1900 -660 0 0 {name=p82 sig_type=std_logic lab=vdd}
 C {lab_pin.sym} 2140 -660 0 0 {name=p83 sig_type=std_logic lab=vdd}
 C {lab_pin.sym} 2280 -440 0 0 {name=p29 sig_type=std_logic lab=vss}
 C {lab_pin.sym} 2280 -420 0 0 {name=p84 sig_type=std_logic lab=vss}
+C {iopin.sym} 560 -380 0 1 {name=p2 lab=d5}
+C {iopin.sym} 560 -340 0 1 {name=p71 lab=d4}
+C {iopin.sym} 560 -300 0 1 {name=p85 lab=d3}
+C {iopin.sym} 560 -260 0 1 {name=p86 lab=d2}
+C {iopin.sym} 560 -220 0 1 {name=p87 lab=d1}
+C {iopin.sym} 560 -180 0 1 {name=p88 lab=d0}
+C {noconn.sym} 950 -400 0 1 {name=l1}
+C {noconn.sym} 1190 -400 0 1 {name=l2}
+C {noconn.sym} 1430 -400 0 1 {name=l3}
+C {noconn.sym} 1670 -400 0 1 {name=l4}
+C {noconn.sym} 1910 -400 0 1 {name=l5}
+C {noconn.sym} 2150 -400 0 1 {name=l6}
+C {noconn.sym} 2390 -400 0 1 {name=l7}
 C {FinalBlocksLayout/dffrs/dffrs.sym} 570 -470 0 0 {name=x1}
 C {FinalBlocksLayout/dffrs/dffrs.sym} 810 -470 0 0 {name=x2}
 C {FinalBlocksLayout/dffrs/dffrs.sym} 1050 -470 0 0 {name=x3}
@@ -171,10 +176,10 @@ C {FinalBlocksLayout/dffrs/dffrs.sym} 1290 -470 0 0 {name=x4}
 C {FinalBlocksLayout/dffrs/dffrs.sym} 1530 -470 0 0 {name=x5}
 C {FinalBlocksLayout/dffrs/dffrs.sym} 1770 -470 0 0 {name=x6}
 C {FinalBlocksLayout/dffrs/dffrs.sym} 2010 -470 0 0 {name=x7}
-C {FinalBlocksLayout/dffrs/dffrs.sym} 710 -210 0 0 {name=x8}
-C {FinalBlocksLayout/dffrs/dffrs.sym} 950 -210 0 0 {name=x9}
-C {FinalBlocksLayout/dffrs/dffrs.sym} 1190 -210 0 0 {name=x10}
+C {FinalBlocksLayout/dffrs/dffrs.sym} 2150 -210 0 0 {name=x8}
+C {FinalBlocksLayout/dffrs/dffrs.sym} 1910 -210 0 0 {name=x9}
+C {FinalBlocksLayout/dffrs/dffrs.sym} 1670 -210 0 0 {name=x10}
 C {FinalBlocksLayout/dffrs/dffrs.sym} 1430 -210 0 0 {name=x11}
-C {FinalBlocksLayout/dffrs/dffrs.sym} 1670 -210 0 0 {name=x12}
-C {FinalBlocksLayout/dffrs/dffrs.sym} 1910 -210 0 0 {name=x13}
-C {FinalBlocksLayout/dffrs/dffrs.sym} 2150 -210 0 0 {name=x14}
+C {FinalBlocksLayout/dffrs/dffrs.sym} 1190 -210 0 0 {name=x12}
+C {FinalBlocksLayout/dffrs/dffrs.sym} 950 -210 0 0 {name=x13}
+C {FinalBlocksLayout/dffrs/dffrs.sym} 710 -210 0 0 {name=x14}

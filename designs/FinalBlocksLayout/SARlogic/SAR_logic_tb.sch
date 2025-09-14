@@ -119,6 +119,8 @@ value="
 .include $::180MCU_MODELS/design.ngspice
 .lib $::180MCU_MODELS/sm141064.ngspice typical
 .include /foss/designs/FinalBlocksLayout/inverter/inv_mia.spice
+.include /foss/designs/FinalBlocksLayout/SARlogic/flatten/SARlogic.spice
+"
 .include /foss/designs/FinalBlocksLayout/dffrs/flattened/dffrs.spice
 "}
 C {code_shown.sym} 480 -590 0 0 {name=NGSPICE only_toplevel=true value=
@@ -137,15 +139,13 @@ tclcommand="
 xschem raw_read $netlist_dir/tb_ffrs.raw tran; xschem redraw
 "
 }
-C {lab_pin.sym} 690 -280 3 1 {name=p1 sig_type=std_logic lab=VDD_3V3}
-C {gnd.sym} 690 -160 0 0 {name=l1 lab=GND}
-C {lab_pin.sym} 840 -240 0 1 {name=p3 sig_type=std_logic lab=D[5..0]}
-C {lab_pin.sym} 840 -200 0 1 {name=p8 sig_type=std_logic lab=EOC}
-C {lab_pin.sym} 540 -240 0 0 {name=p9 sig_type=std_logic lab=CLK}
-C {lab_pin.sym} 540 -200 2 1 {name=p4 sig_type=std_logic lab=COMP_INB}
-C {lab_pin.sym} 840 -220 0 1 {name=p6 sig_type=std_logic lab=DB[5..0]}
+C {lab_pin.sym} 730 -360 3 1 {name=p1 sig_type=std_logic lab=VDD_3V3}
+C {gnd.sym} 730 -180 0 0 {name=l1 lab=GND}
+C {lab_pin.sym} 800 -320 0 1 {name=p3 sig_type=std_logic lab=d5}
+C {lab_pin.sym} 660 -290 0 0 {name=p9 sig_type=std_logic lab=CLK}
+C {lab_pin.sym} 660 -250 2 1 {name=p4 sig_type=std_logic lab=COMP_INB}
 C {lab_pin.sym} 500 -960 0 1 {name=p13 sig_type=std_logic lab=RESETB}
-C {lab_pin.sym} 540 -220 0 0 {name=p14 sig_type=std_logic lab=RESETB}
+C {lab_pin.sym} 660 -270 0 0 {name=p14 sig_type=std_logic lab=RESETB}
 C {lab_pin.sym} 820 -1050 3 1 {name=p11 sig_type=std_logic lab=VDD_3V3}
 C {gnd.sym} 820 -850 0 0 {name=l6 lab=GND}
 C {lab_pin.sym} 720 -960 0 0 {name=p15 sig_type=std_logic lab=COMP_IN}
@@ -155,4 +155,9 @@ C {lab_pin.sym} 380 -1050 3 1 {name=p21 sig_type=std_logic lab=VDD_3V3}
 C {gnd.sym} 380 -850 0 0 {name=l17 lab=GND}
 C {FinalBlocksLayout/inverter/inv_mia.sym} 280 -850 0 0 {name=x2}
 C {FinalBlocksLayout/inverter/inv_mia.sym} 720 -850 0 0 {name=x3}
-C {FinalBlocksLayout/SARlogic/SARlogic.sym} 330 -40 0 0 {name=x1}
+C {FinalBlocksLayout/SARlogic/SARlogic.sym} 540 -110 0 0 {name=x1}
+C {lab_pin.sym} 800 -300 0 1 {name=p6 sig_type=std_logic lab=d4}
+C {lab_pin.sym} 800 -280 0 1 {name=p7 sig_type=std_logic lab=d3}
+C {lab_pin.sym} 800 -260 0 1 {name=p8 sig_type=std_logic lab=d2}
+C {lab_pin.sym} 800 -240 0 1 {name=p12 sig_type=std_logic lab=d1}
+C {lab_pin.sym} 800 -220 0 1 {name=p18 sig_type=std_logic lab=d0}

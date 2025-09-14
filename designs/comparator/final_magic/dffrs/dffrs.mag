@@ -1,7 +1,7 @@
 magic
 tech gf180mcuD
 magscale 1 10
-timestamp 1757808491
+timestamp 1757845903
 << metal1 >>
 rect -365 2825 1182 2881
 rect -365 1804 -309 2825
@@ -493,7 +493,7 @@ rect -710 -3842 2590 -1693
 rect -710 -3898 316 -3842
 rect 372 -3898 2590 -3842
 rect -710 -5898 2590 -3898
-use nand3  nand3_0 /foss/designs/comparator/final_magic/nand3
+use nand3  nand3_0 nand3
 timestamp 1757649945
 transform 1 0 -2072 0 1 2640
 box 1712 -1805 2798 145
@@ -532,4 +532,6 @@ rlabel metal2 2620 -2750 2620 -2750 3 Qb
 port 7 e
 rlabel metal5 1260 2881 1260 2881 1 vdd
 port 0 n
+rlabel metal4 1368 -5898 1368 -5898 5 vss
+port 1 s
 << end >>
