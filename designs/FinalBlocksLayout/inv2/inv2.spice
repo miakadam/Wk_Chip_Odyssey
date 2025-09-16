@@ -1,0 +1,15 @@
+* NGSPICE file created from inv2.ext - technology: gf180mcuD
+
+.subckt pfet_03v3_LJVJK4 w_n300_n510# a_n138_n300# a_n50_n392# a_50_n300#
+X0 a_50_n300# a_n50_n392# a_n138_n300# w_n300_n510# pfet_03v3 ad=1.32p pd=6.88u as=1.32p ps=6.88u w=3u l=0.5u
+.ends
+
+.subckt nfet_03v3_EKBWUP a_n138_n100# a_n50_n192# a_50_n100# a_n276_n286#
+X0 a_50_n100# a_n50_n192# a_n138_n100# a_n276_n286# nfet_03v3 ad=0.44p pd=2.88u as=0.44p ps=2.88u w=1u l=0.5u
+.ends
+
+.subckt inv2 in vdd out vss
+XM1 vdd vdd in out pfet_03v3_LJVJK4
+XM2 vss in out vss nfet_03v3_EKBWUP
+.ends
+

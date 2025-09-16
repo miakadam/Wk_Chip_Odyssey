@@ -1,0 +1,28 @@
+** sch_path: /foss/designs/FinalBlocksLayout/or2/or2.sch
+.subckt or2 VDD VSS OUT A B
+*.PININFO VDD:B A:B B:B VSS:B OUT:B
+x1 VDD VSS net1 A B nor2
+x2 net1 VDD OUT VSS inv2
+.ends
+
+* expanding   symbol:  FinalBlocksLayout/nor2/nor2.sym # of pins=5
+** sym_path: /foss/designs/FinalBlocksLayout/nor2/nor2.sym
+** sch_path: /foss/designs/FinalBlocksLayout/nor2/nor2.sch
+.subckt nor2 VDD VSS OUT A B
+*.PININFO VDD:B VSS:B B:B A:B OUT:B
+XM1 OUT A VSS VSS nfet_03v3 L=0.5u W=1u nf=1 m=1
+XM2 OUT B VSS VSS nfet_03v3 L=0.5u W=1u nf=1 m=1
+XM3 OUT B net1 VDD pfet_03v3 L=0.5u W=3u nf=1 m=2
+XM4 net1 A VDD VDD pfet_03v3 L=0.5u W=3u nf=1 m=2
+.ends
+
+
+* expanding   symbol:  FinalBlocksLayout/inv2/inv2.sym # of pins=4
+** sym_path: /foss/designs/FinalBlocksLayout/inv2/inv2.sym
+** sch_path: /foss/designs/FinalBlocksLayout/inv2/inv2.sch
+.subckt inv2 in vdd out vss
+*.PININFO in:B out:B vss:B vdd:B
+XM1 out in vdd vdd pfet_03v3 L=0.5u W=3.0u nf=1 m=1
+XM2 out in vss vss nfet_03v3 L=0.5u W=1.0u nf=1 m=1
+.ends
+

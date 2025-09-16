@@ -1,0 +1,21 @@
+* NGSPICE file created from and2.ext - technology: gf180mcuD
+
+.subckt inv2 in vdd out vss
+X0 out in vdd vdd pfet_03v3 ad=1.32p pd=6.88u as=1.32p ps=6.88u w=3u l=0.5u
+X1 out in vss vss nfet_03v3 ad=0.44p pd=2.88u as=0.44p ps=2.88u w=1u l=0.5u
+.ends
+
+.subckt nand2 VDD OUT A B VSS
+X0 a_1640_n650# A OUT VSS nfet_03v3 ad=0.26p pd=1.52u as=0.44p ps=2.88u w=1u l=0.5u
+X1 VDD B OUT VDD pfet_03v3 ad=1.32p pd=6.88u as=1.32p ps=6.88u w=3u l=0.5u
+X2 VSS B a_1640_n650# VSS nfet_03v3 ad=0.44p pd=2.88u as=0.26p ps=1.52u w=1u l=0.5u
+X3 OUT A VDD VDD pfet_03v3 ad=1.32p pd=6.88u as=1.32p ps=6.88u w=3u l=0.5u
+X4 OUT A a_1640_n650# VSS nfet_03v3 ad=0.44p pd=2.88u as=0.26p ps=1.52u w=1u l=0.5u
+X5 a_1640_n650# B VSS VSS nfet_03v3 ad=0.26p pd=1.52u as=0.44p ps=2.88u w=1u l=0.5u
+.ends
+
+.subckt and2 VDD OUT A B VSS
+Xinv2_0 inv2_0/in VDD OUT VSS inv2
+Xnand2_0 VDD inv2_0/in B A VSS nand2
+.ends
+

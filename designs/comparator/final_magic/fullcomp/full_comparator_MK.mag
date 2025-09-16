@@ -1,7 +1,7 @@
 magic
 tech gf180mcuD
 magscale 1 10
-timestamp 1757714585
+timestamp 1757912824
 << metal1 >>
 rect 1480 4000 13900 4380
 rect 4011 1082 4089 4000
@@ -218,54 +218,4 @@ use inv_mia  x5
 timestamp 1757680375
 transform -1 0 14575 0 1 2105
 box 5150 -1650 5730 322
-<< labels >>
-rlabel metal1 1470 -3310 1470 -3310 7 Vin1
-port 6 w
-rlabel metal1 1470 -3638 1470 -3638 7 Vin2
-port 8 w
-rlabel space 3494 -2927 3494 -2927 5 off3
-port 5 s
-rlabel space 1992 -2918 1992 -2918 5 off4
-port 7 s
-rlabel space 3392 -1380 3392 -1380 1 off2
-port 3 n
-rlabel space 4035 -1380 4035 -1380 1 off1
-port 0 n
-rlabel space 11850 -1380 11850 -1380 1 off5
-port 9 n
-rlabel space 12501 -1380 12501 -1380 1 off6
-port 11 n
-rlabel space 13866 -2918 13866 -2918 5 off8
-port 13 s
-rlabel space 12405 -2927 12405 -2927 5 off7
-port 12 s
-rlabel metal2 5577 172 5577 172 7 out1
-rlabel metal2 10293 152 10293 152 3 out2
-rlabel metal2 5618 192 5618 192 1 Vout2
-port 6 n
-rlabel metal1 1565 -5144 1565 -5144 7 CLK
-port 4 w
-rlabel space 7953 146 7953 146 1 VDD
-rlabel space 5790 -4801 5790 -4801 7 VSS
-rlabel space 5543 2063 5543 2063 5 VSS
-port 2 s
-rlabel metal1 7897 1460 7897 1460 5 VSS
-rlabel metal1 9203 481 9203 481 5 VSS
-rlabel metal1 6775 481 6775 481 5 VSS
-rlabel space 9317 2389 9317 2389 1 VDD
-rlabel space 6535 2389 6535 2389 1 VDD
-rlabel space 7660 3060 7660 3060 1 VDD
-rlabel space 5523 3333 5523 3333 1 VDD
-port 1 n
-rlabel metal2 6801 2579 6801 2579 1 latch
-rlabel metal1 8411 1279 8411 1279 1 inv2
-rlabel metal1 7231 1279 7231 1279 1 inv1
-rlabel metal2 1725 2811 1725 2811 7 Vout
-port 10 w
-rlabel via1 5645 1229 5645 1229 3 in
-port 2 w
-rlabel via1 8161 1233 8161 1233 7 out
-port 3 w
-rlabel metal1 1524 4047 1530 4329 7 VDD
-rlabel metal1 1101 -5744 1107 -5462 7 VSS
 << end >>

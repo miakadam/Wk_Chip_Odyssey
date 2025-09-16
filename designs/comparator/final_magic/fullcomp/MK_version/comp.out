@@ -1,0 +1,170 @@
+
+Circuit 1 cell nfet_03v3 and Circuit 2 cell nfet_03v3 are black boxes.
+Warning: Equate pins:  cell nfet_03v3 is a placeholder, treated as a black box.
+Warning: Equate pins:  cell nfet_03v3 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: nfet_03v3                       |Circuit 2: nfet_03v3                       
+-------------------------------------------|-------------------------------------------
+1                                          |1                                          
+2                                          |2                                          
+3                                          |3                                          
+4                                          |4                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes nfet_03v3 and nfet_03v3 are equivalent.
+
+Circuit 1 cell pfet_03v3 and Circuit 2 cell pfet_03v3 are black boxes.
+Warning: Equate pins:  cell pfet_03v3 is a placeholder, treated as a black box.
+Warning: Equate pins:  cell pfet_03v3 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: pfet_03v3                       |Circuit 2: pfet_03v3                       
+-------------------------------------------|-------------------------------------------
+1                                          |1                                          
+2                                          |2                                          
+3                                          |3                                          
+4                                          |4                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes pfet_03v3 and pfet_03v3 are equivalent.
+
+Subcircuit summary:
+Circuit 1: rslatch                         |Circuit 2: rslatch                         
+-------------------------------------------|-------------------------------------------
+nfet_03v3 (2)                              |nfet_03v3 (2)                              
+pfet_03v3 (2)                              |pfet_03v3 (2)                              
+Number of devices: 4                       |Number of devices: 4                       
+Number of nets: 6                          |Number of nets: 6                          
+---------------------------------------------------------------------------------------
+Resolving symmetries by property value.
+Resolving symmetries by pin name.
+Netlists match uniquely.
+
+Subcircuit pins:
+Circuit 1: rslatch                         |Circuit 2: rslatch                         
+-------------------------------------------|-------------------------------------------
+VSS                                        |VSS                                        
+VDD                                        |VDD                                        
+Vin2                                       |Vin2                                       
+Vin1                                       |Vin1                                       
+Vout2                                      |Vout2                                      
+Vout1                                      |Vout1                                      
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes rslatch and rslatch are equivalent.
+
+Subcircuit summary:
+Circuit 1: inv_mia                         |Circuit 2: inv_mia                         
+-------------------------------------------|-------------------------------------------
+pfet_03v3 (1)                              |pfet_03v3 (1)                              
+nfet_03v3 (1)                              |nfet_03v3 (1)                              
+Number of devices: 2                       |Number of devices: 2                       
+Number of nets: 4                          |Number of nets: 4                          
+---------------------------------------------------------------------------------------
+Netlists match uniquely.
+
+Subcircuit pins:
+Circuit 1: inv_mia                         |Circuit 2: inv_mia                         
+-------------------------------------------|-------------------------------------------
+out                                        |out                                        
+in                                         |in                                         
+avss                                       |avss                                       
+avdd                                       |avdd                                       
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes inv_mia and inv_mia are equivalent.
+
+Class osu_sc_buf_4 (0):  Merged 6 parallel devices.
+Subcircuit summary:
+Circuit 1: osu_sc_buf_4                    |Circuit 2: osu_sc_buf_4                    
+-------------------------------------------|-------------------------------------------
+pfet_03v3 (5->2)                           |pfet_03v3 (5->2)                           
+nfet_03v3 (5->2)                           |nfet_03v3 (5->2)                           
+Number of devices: 4                       |Number of devices: 4                       
+Number of nets: 5                          |Number of nets: 5                          
+---------------------------------------------------------------------------------------
+Netlists match uniquely.
+
+Subcircuit pins:
+Circuit 1: osu_sc_buf_4                    |Circuit 2: osu_sc_buf_4                    
+-------------------------------------------|-------------------------------------------
+VDD                                        |VDD                                        
+VSS                                        |VSS                                        
+A                                          |A                                          
+Y                                          |Y                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes osu_sc_buf_4 and osu_sc_buf_4 are equivalent.
+
+Class lvsclean_SAlatch (0):  Merged 55 parallel devices.
+Class lvsclean_SAlatch (1):  Merged 7 parallel devices.
+Subcircuit summary:
+Circuit 1: lvsclean_SAlatch                |Circuit 2: lvsclean_SAlatch                
+-------------------------------------------|-------------------------------------------
+pfet_03v3 (44->15)                         |pfet_03v3 (44->15)                         
+nfet_03v3 (37->11)                         |nfet_03v3 (37->11)                         
+Number of devices: 26                      |Number of devices: 26                      
+Number of nets: 32                         |Number of nets: 32                         
+---------------------------------------------------------------------------------------
+Resolving symmetries by property value.
+Resolving symmetries by pin name.
+Netlists match uniquely.
+
+Subcircuit pins:
+Circuit 1: lvsclean_SAlatch                |Circuit 2: lvsclean_SAlatch                
+-------------------------------------------|-------------------------------------------
+Vout1                                      |Vout1                                      
+Vout2                                      |Vout2                                      
+VSS                                        |VSS                                        
+Vin1                                       |Vin1                                       
+Vin2                                       |Vin2                                       
+off5                                       |off5                                       
+off1                                       |off1                                       
+off6                                       |off6                                       
+off2                                       |off2                                       
+off7                                       |off7                                       
+off3                                       |off3                                       
+off8                                       |off8                                       
+off4                                       |off4                                       
+Clk                                        |Clk                                        
+VDD                                        |VDD                                        
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes lvsclean_SAlatch and lvsclean_SAlatch are equivalent.
+
+Subcircuit summary:
+Circuit 1: full_comparator_MK              |Circuit 2: full_comparator                 
+-------------------------------------------|-------------------------------------------
+rslatch (1)                                |rslatch (1)                                
+inv_mia (2)                                |inv_mia (2)                                
+osu_sc_buf_4 (1)                           |osu_sc_buf_4 (1)                           
+lvsclean_SAlatch (1)                       |lvsclean_SAlatch (1)                       
+Number of devices: 5                       |Number of devices: 5                       
+Number of nets: 20                         |Number of nets: 20                         
+---------------------------------------------------------------------------------------
+Netlists match uniquely.
+
+Subcircuit pins:
+Circuit 1: full_comparator_MK              |Circuit 2: full_comparator                 
+-------------------------------------------|-------------------------------------------
+CLK                                        |CLK                                        
+Vin1                                       |Vin1                                       
+Vin2                                       |Vin2                                       
+off3                                       |off3                                       
+off2                                       |off2                                       
+off1                                       |off1                                       
+off8                                       |off8                                       
+off7                                       |off7                                       
+off6                                       |off6                                       
+off4                                       |off4                                       
+off5                                       |off5                                       
+Vout                                       |Vout                                       
+VDD                                        |VDD                                        
+VSS                                        |VSS                                        
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes full_comparator_MK and full_comparator are equivalent.
+
+Final result: Circuits match uniquely.
+.

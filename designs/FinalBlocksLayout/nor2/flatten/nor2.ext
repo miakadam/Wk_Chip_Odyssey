@@ -1,0 +1,115 @@
+scale 1000 1 0.5
+rnode "OUT.t1" 0 0 3018 190 0
+rnode "OUT.t0" 0 0 2714 190 0
+rnode "OUT.n0" 0 0 3070 -107 0
+rnode "OUT.t3" 0 0 2030 -730 0
+rnode "OUT.t2" 0 0 2814 -730 0
+rnode "OUT.n1" 0 0 2866 -730 0
+rnode "OUT.n2" 0 0 3110 -370 0
+rnode "OUT" 0 0 3268 -371 0
+resist "OUT" "OUT.n2" 0.253929
+resist "OUT.n2" "OUT.n0" 0.295875
+resist "OUT.n2" "OUT.n1" 0.599211
+resist "OUT.n0" "OUT.t1" 3.95029
+resist "OUT.n0" "OUT.t0" 4.09152
+resist "OUT.n1" "OUT.t2" 9.288
+resist "OUT.n1" "OUT.t3" 10.3396
+rnode "VSS.n0" 0 0 2422 -1040 0
+rnode "VSS.n1" 0 0 2320 -730 0
+rnode "VSS.t0" 0 0 2764 -730 0
+rnode "VSS.n2" 0 0 3004 -730 0
+rnode "VSS.t1" 0 0 2714 -730 0
+rnode "VSS.t3" 0 0 2130 -730 0
+rnode "VSS.n3" 0 0 2320 -730 0
+rnode "VSS.n4" 0 0 2422 -911 0
+rnode "VSS.n5" 0 0 2524 -730 0
+rnode "VSS.n6" 0 0 2524 -730 0
+rnode "VSS.n7" 0 0 2524 -730 0
+rnode "VSS.n8" 0 0 2320 -730 0
+rnode "VSS.t2" 0 0 2080 -730 0
+rnode "VSS.n9" 0 0 1840 -730 0
+rnode "VSS" 0 0 2418 -1240 0
+resist "VSS" "VSS.n0" 0.0018
+resist "VSS.n4" "VSS.n3" 0.0253591
+resist "VSS.n5" "VSS.n4" 0.0253591
+resist "VSS.n4" "VSS.n0" 0.073481
+resist "VSS.n8" "VSS.n1" 1.3
+resist "VSS.n3" "VSS.n1" 1.3
+resist "VSS.n7" "VSS.n6" 1.3
+resist "VSS.n6" "VSS.n5" 1.3
+resist "VSS" "VSS.n9" 2.16662
+resist "VSS.n2" "VSS.n0" 2.16842
+resist "VSS.n5" "VSS.t1" 4.84652
+resist "VSS.n3" "VSS.t3" 4.84652
+resist "VSS.n9" "VSS.n1" 44.1399
+resist "VSS.n6" "VSS.n2" 44.1399
+resist "VSS.n8" "VSS.n7" 720.652
+resist "VSS.t2" "VSS.n8" 847.826
+resist "VSS.n7" "VSS.t0" 847.826
+resist "VSS.n9" "VSS.t2" 849.126
+resist "VSS.n2" "VSS.t0" 849.126
+rnode "B.t1" 0 0 2968 190 0
+rnode "B.t2" 0 0 2764 190 0
+rnode "B.n0" 0 0 2812 -190 0
+rnode "B.t0" 0 0 2764 -730 0
+rnode "B.n1" 0 0 2764 -448 0
+rnode "B" 0 0 1724 -448 0
+resist "B.n1" "B.n0" 0.241875
+resist "B" "B.n1" 6.15113
+resist "B.n1" "B.t0" 19.5061
+resist "B.n0" "B.t2" 34.0105
+resist "B.n0" "B.t1" 34.2306
+rnode "VDD.t3" 0 0 2334 190 0
+rnode "VDD.n0" 0 0 2524 190 0
+rnode "VDD" 0 0 2525 900 0
+rnode "VDD.t5" 0 0 2030 190 0
+rnode "VDD.n1" 0 0 2524 604 0
+rnode "VDD.n2" 0 0 2524 -224 0
+rnode "VDD.n3" 0 0 3208 190 0
+rnode "VDD.t1" 0 0 2968 190 0
+rnode "VDD.t0" 0 0 2764 190 0
+rnode "VDD.n4" 0 0 2524 190 0
+rnode "VDD.n5" 0 0 2524 190 0
+rnode "VDD.t2" 0 0 2284 190 0
+rnode "VDD.t4" 0 0 2080 190 0
+rnode "VDD.n6" 0 0 1840 190 0
+rnode "VDD.n7" 0 0 1840 190 0
+rnode "VDD.n8" 0 0 2524 700 0
+resist "VDD.n8" "VDD" 0.00045
+resist "VDD.n8" "VDD.n0" 0.560543
+resist "VDD.n7" "VDD.n6" 0.7875
+resist "VDD.n5" "VDD.n4" 0.7875
+resist "VDD.n4" "VDD.n0" 0.7875
+resist "VDD.n8" "VDD.n7" 0.868343
+resist "VDD.n0" "VDD.t3" 1.47333
+resist "VDD.n7" "VDD.t5" 1.47333
+resist "VDD.n3" "VDD" 2.09268
+resist "VDD.n4" "VDD.n2" 36.225
+resist "VDD.n4" "VDD.n1" 36.225
+resist "VDD.n3" "VDD.n2" 96.075
+resist "VDD.n6" "VDD.n2" 96.075
+resist "VDD.n6" "VDD.n1" 96.075
+resist "VDD.n3" "VDD.n1" 96.075
+resist "VDD.t4" "VDD.t2" 200
+resist "VDD.t0" "VDD.t1" 200
+resist "VDD.t2" "VDD.n5" 235.294
+resist "VDD.n5" "VDD.t0" 235.294
+resist "VDD.n6" "VDD.t4" 236.082
+resist "VDD.t1" "VDD.n3" 236.082
+rnode "A.t2" 0 0 2284 190 0
+rnode "A.t0" 0 0 2080 190 0
+rnode "A.n0" 0 0 2128 -190 0
+rnode "A.t1" 0 0 2080 -730 0
+rnode "A.n1" 0 0 2080 -292 0
+rnode "A" 0 0 1724 -291 0
+resist "A.n1" "A.n0" 0.095625
+resist "A" "A.n1" 5.049
+resist "A.n1" "A.t1" 19.6524
+resist "A.n0" "A.t0" 34.0105
+resist "A.n0" "A.t2" 34.2306
+device msubckt pfet_03v3 2714 -110 2715 -109  "VDD.t0" "B.t2" 200 0 "OUT.t0" 600 52800,1376 "a_2130_n110#" 600 31200,704
+device msubckt pfet_03v3 2234 -110 2235 -109  "VDD.t2" "A.t2" 200 0 "a_2130_n110#" 600 31200,704 "VDD.t3" 600 52800,1376
+device msubckt pfet_03v3 2918 -110 2919 -109  "VDD.t1" "B.t1" 200 0 "a_2130_n110#" 600 31200,704 "OUT.t1" 600 52800,1376
+device msubckt nfet_03v3 2030 -830 2031 -829  "VSS.t2" "A.t1" 200 0 "OUT.t3" 200 17600,576 "VSS.t3" 200 17600,576
+device msubckt nfet_03v3 2714 -830 2715 -829  "VSS.t0" "B.t0" 200 0 "VSS.t1" 200 17600,576 "OUT.t2" 200 17600,576
+device msubckt pfet_03v3 2030 -110 2031 -109  "VDD.t4" "A.t0" 200 0 "VDD.t5" 600 52800,1376 "a_2130_n110#" 600 31200,704

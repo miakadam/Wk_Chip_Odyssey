@@ -1,0 +1,21 @@
+* NGSPICE file created from or2.ext - technology: gf180mcuD
+
+.subckt nor2 VDD VSS OUT A B
+X0 a_2130_n110# A VDD VDD pfet_03v3 ad=0.78p pd=3.52u as=1.32p ps=6.88u w=3u l=0.5u
+X1 OUT B VSS VSS nfet_03v3 ad=0.44p pd=2.88u as=0.44p ps=2.88u w=1u l=0.5u
+X2 VSS A OUT VSS nfet_03v3 ad=0.44p pd=2.88u as=0.44p ps=2.88u w=1u l=0.5u
+X3 OUT B a_2130_n110# VDD pfet_03v3 ad=1.32p pd=6.88u as=0.78p ps=3.52u w=3u l=0.5u
+X4 VDD A a_2130_n110# VDD pfet_03v3 ad=1.32p pd=6.88u as=0.78p ps=3.52u w=3u l=0.5u
+X5 a_2130_n110# B OUT VDD pfet_03v3 ad=0.78p pd=3.52u as=1.32p ps=6.88u w=3u l=0.5u
+.ends
+
+.subckt inv2 in vdd out vss
+X0 out in vdd vdd pfet_03v3 ad=1.32p pd=6.88u as=1.32p ps=6.88u w=3u l=0.5u
+X1 out in vss vss nfet_03v3 ad=0.44p pd=2.88u as=0.44p ps=2.88u w=1u l=0.5u
+.ends
+
+.subckt or2 VDD VSS OUT A B
+Xnor2_0 VDD VSS inv2_0/in A B nor2
+Xinv2_0 inv2_0/in VDD OUT VSS inv2
+.ends
+

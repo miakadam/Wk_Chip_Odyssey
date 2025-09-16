@@ -38,7 +38,6 @@ N 760 -360 820 -360 {lab=Comp_Out}
 N 820 -360 850 -360 {lab=Comp_Out}
 N 900 -440 900 -400 {lab=VDD_3V3}
 N 900 -320 900 -280 {lab=GND}
-C {comparator/full_comparator.sym} 180 -260 0 0 {name=x1}
 C {vsource.sym} 140 -150 0 0 {name=V4 value=3.3 savecurrent=false}
 C {gnd.sym} 140 -120 0 0 {name=l13 lab=GND}
 C {lab_pin.sym} 140 -180 0 1 {name=p11 sig_type=std_logic lab=off1}
@@ -107,9 +106,11 @@ format="tcleval( @value )"
 value="
 .include $::180MCU_MODELS/design.ngspice
 .lib $::180MCU_MODELS/sm141064.ngspice typical
+.include /foss/designs/comparator/final_magic/fullcomp/MK_version/flatten/full_comparator.spice
+.include /foss/designs/comparator/final_magic/osu_sc/inverter/mia/inv_mia.spice
+"
 .include /foss/designs/comparator/final_magic/lvsclean_SAlatch/lvsclean_SAlatch.spice
 .include /foss/designs/comparator/final_magic/RSlatch/rslatch.spice
-.include /foss/designs/comparator/final_magic/osu_sc/inverter/mia/inv_mia.spice
 .include /foss/designs/comparator/final_magic/osu_sc/buff4x/osu_sc_buf_4.spice
 "}
 C {code_shown.sym} 130 -780 0 0 {name=NGSPICE only_toplevel=true value=
@@ -145,3 +146,4 @@ C {lab_pin.sym} 1250 -330 0 1 {name=p7 sig_type=std_logic lab=VDD_3V3}
 C {lab_pin.sym} 1370 -240 0 1 {name=p9 sig_type=std_logic lab=Comp_Out_b}
 C {gnd.sym} 1250 -130 0 0 {name=l7 lab=GND}
 C {lab_pin.sym} 1150 -240 2 1 {name=p12 sig_type=std_logic lab=Comp_Out}
+C {comparator/final_magic/fullcomp/full_comparator.sym} 180 -260 0 0 {name=x1}

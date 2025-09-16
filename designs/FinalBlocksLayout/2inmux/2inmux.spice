@@ -1,0 +1,36 @@
+* NGSPICE file created from 2inmux.ext - technology: gf180mcuD
+
+.subckt or2 VDD VSS OUT A B
+X0 OUT a_268_670# VSS VSS nfet_03v3 ad=0.44p pd=2.88u as=0.44p ps=2.88u w=1u l=0.5u
+X1 OUT a_268_670# VDD VDD pfet_03v3 ad=1.32p pd=6.88u as=1.32p ps=6.88u w=3u l=0.5u
+X2 a_456_1390# A VDD VDD pfet_03v3 ad=0.78p pd=3.52u as=1.32p ps=6.88u w=3u l=0.5u
+X3 a_456_1390# B a_268_670# VDD pfet_03v3 ad=0.78p pd=3.52u as=1.32p ps=6.88u w=3u l=0.5u
+X4 a_268_670# B a_456_1390# VDD pfet_03v3 ad=1.32p pd=6.88u as=0.78p ps=3.52u w=3u l=0.5u
+X5 VSS A a_268_670# VSS nfet_03v3 ad=0.44p pd=2.88u as=0.44p ps=2.88u w=1u l=0.5u
+X6 VDD A a_456_1390# VDD pfet_03v3 ad=1.32p pd=6.88u as=0.78p ps=3.52u w=3u l=0.5u
+X7 a_268_670# B VSS VSS nfet_03v3 ad=0.44p pd=2.88u as=0.44p ps=2.88u w=1u l=0.5u
+.ends
+
+.subckt inv2 in vdd out vss
+X0 out in vdd vdd pfet_03v3 ad=1.32p pd=6.88u as=1.32p ps=6.88u w=3u l=0.5u
+X1 out in vss vss nfet_03v3 ad=0.44p pd=2.88u as=0.44p ps=2.88u w=1u l=0.5u
+.ends
+
+.subckt and2 VDD OUT A B VSS
+X0 a_n1203_400# B a_n1391_1120# VSS nfet_03v3 ad=0.26p pd=1.52u as=0.44p ps=2.88u w=1u l=0.5u
+X1 a_n1203_400# A VSS VSS nfet_03v3 ad=0.26p pd=1.52u as=0.44p ps=2.88u w=1u l=0.5u
+X2 a_n1391_1120# B VDD VDD pfet_03v3 ad=1.32p pd=6.88u as=1.32p ps=6.88u w=3u l=0.5u
+X3 OUT a_n1391_1120# VDD VDD pfet_03v3 ad=1.32p pd=6.88u as=1.32p ps=6.88u w=3u l=0.5u
+X4 OUT a_n1391_1120# VSS VSS nfet_03v3 ad=0.44p pd=2.88u as=0.44p ps=2.88u w=1u l=0.5u
+X5 VSS A a_n1203_400# VSS nfet_03v3 ad=0.44p pd=2.88u as=0.26p ps=1.52u w=1u l=0.5u
+X6 VDD A a_n1391_1120# VDD pfet_03v3 ad=1.32p pd=6.88u as=1.32p ps=6.88u w=3u l=0.5u
+X7 a_n1391_1120# B a_n1203_400# VSS nfet_03v3 ad=0.44p pd=2.88u as=0.26p ps=1.52u w=1u l=0.5u
+.ends
+
+.subckt x2inmux Bit Load VDD OUT VSS In
+Xor2_0 VDD VSS OUT or2_0/A or2_0/B or2
+Xinv2_0 Load VDD and2_1/A VSS inv2
+Xand2_0 VDD or2_0/A Bit Load VSS and2
+Xand2_1 VDD or2_0/B and2_1/A In VSS and2
+.ends
+

@@ -1,0 +1,6 @@
+** sch_path: /foss/designs/FinalBlocksLayout/inv2/inv2.sch
+.subckt inv2 in vdd out vss
+*.PININFO in:B out:B vss:B vdd:B
+XM1 out in vdd vdd pfet_03v3 L=0.5u W=3.0u nf=1 m=1
+XM2 out in vss vss nfet_03v3 L=0.5u W=1.0u nf=1 m=1
+.ends

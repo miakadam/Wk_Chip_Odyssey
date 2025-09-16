@@ -1,0 +1,19 @@
+* NGSPICE file created from nand2.ext - technology: gf180mcuD
+
+.subckt nfet_03v3_EMCFTP a_n378_n286# a_n52_n100# a_52_n192# a_n152_n192# a_152_n100#
++ a_n240_n100#
+X0 a_152_n100# a_52_n192# a_n52_n100# a_n378_n286# nfet_03v3 ad=0.44p pd=2.88u as=0.26p ps=1.52u w=1u l=0.5u
+X1 a_n52_n100# a_n152_n192# a_n240_n100# a_n378_n286# nfet_03v3 ad=0.26p pd=1.52u as=0.44p ps=2.88u w=1u l=0.5u
+.ends
+
+.subckt pfet_03v3_LJVJK4 w_n300_n510# a_n138_n300# a_n50_n392# a_50_n300#
+X0 a_50_n300# a_n50_n392# a_n138_n300# w_n300_n510# pfet_03v3 ad=1.32p pd=6.88u as=1.32p ps=6.88u w=3u l=0.5u
+.ends
+
+.subckt nand2 VDD OUT A B VSS
+XXM1 VSS m1_1652_n588# B B VSS VSS nfet_03v3_EMCFTP
+XXM2 VDD OUT B VDD pfet_03v3_LJVJK4
+Xnfet_03v3_EMCFTP_0 VSS m1_1652_n588# A A OUT OUT nfet_03v3_EMCFTP
+Xpfet_03v3_LJVJK4_0 VDD VDD A OUT pfet_03v3_LJVJK4
+.ends
+

@@ -1,0 +1,31 @@
+magic
+tech gf180mcuD
+magscale 1 10
+timestamp 1757999881
+<< metal1 >>
+rect -1553 2125 415 2130
+rect -1553 -10 415 -5
+<< metal2 >>
+rect -1647 910 -1640 966
+rect 415 832 422 888
+rect -1647 754 -1640 810
+use inv2  inv2_0
+timestamp 1757998295
+transform 1 0 -1435 0 1 1360
+box 1250 -1370 1850 770
+use nand2  nand2_0
+timestamp 1757925391
+transform 1 0 -2843 0 1 1050
+box 1203 -1060 2778 1080
+<< labels >>
+rlabel metal1 -580 2130 -580 2130 1 VDD
+port 0 n
+rlabel metal2 422 858 422 858 3 OUT
+port 1 e
+rlabel metal2 -1647 937 -1647 937 7 A
+port 2 w
+rlabel metal2 -1647 782 -1647 782 7 B
+port 3 w
+rlabel metal1 -521 -10 -521 -10 5 VSS
+port 4 s
+<< end >>

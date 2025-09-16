@@ -1,0 +1,7 @@
+.subckt nand2 VDD OUT A B VSS
+*.PININFO VDD:B VSS:B B:B A:B OUT:B
+XM1 OUT A net1 VSS nfet_03v3 L=0.5u W=1u nf=1 m=2
+XM2 OUT A VDD VDD pfet_03v3 L=0.5u W=3u nf=1 m=1
+XM3 net1 B VSS VSS nfet_03v3 L=0.5u W=1u nf=1 m=2
+XM4 OUT B VDD VDD pfet_03v3 L=0.5u W=3u nf=1 m=1
+.ends

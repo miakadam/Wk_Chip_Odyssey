@@ -1,0 +1,122 @@
+* NGSPICE file created from full_comparator_MK.ext - technology: gf180mcuD
+
+.subckt rslatch VDD Vout1 Vout2 Vin1 Vin2 VSS
+X0 Vout1 Vin1 VSS VSS nfet_03v3 ad=0.44p pd=2.88u as=0.44p ps=2.88u w=1u l=0.4u
+X1 VSS Vin2 Vout2 VSS nfet_03v3 ad=0.44p pd=2.88u as=0.44p ps=2.88u w=1u l=0.4u
+X2 Vout1 Vout2 VDD VDD pfet_03v3 ad=0.44p pd=2.88u as=0.44p ps=2.88u w=1u l=0.4u
+X3 VDD Vout1 Vout2 VDD pfet_03v3 ad=0.44p pd=2.88u as=0.44p ps=2.88u w=1u l=0.4u
+.ends
+
+.subckt inv_mia avdd avss in out
+X0 out in avdd avdd pfet_03v3 ad=1.76p pd=8.88u as=1.76p ps=8.88u w=4u l=0.4u
+X1 out in avss avss nfet_03v3 ad=0.88p pd=4.88u as=0.88p ps=4.88u w=2u l=0.4u
+.ends
+
+.subckt osu_sc_buf_4 A Y VDD VSS
+X0 Y a_100_200# VDD VDD pfet_03v3 ad=0.4675p pd=2.25u as=0.4675p ps=2.25u w=1.7u l=0.3u
+X1 Y a_100_200# VSS VSS nfet_03v3 ad=0.23375p pd=1.4u as=0.23375p ps=1.4u w=0.85u l=0.3u
+X2 VSS A a_100_200# VSS nfet_03v3 ad=0.23375p pd=1.4u as=0.425p ps=2.7u w=0.85u l=0.3u
+X3 VSS a_100_200# Y VSS nfet_03v3 ad=0.23375p pd=1.4u as=0.23375p ps=1.4u w=0.85u l=0.3u
+X4 Y a_100_200# VDD VDD pfet_03v3 ad=0.4675p pd=2.25u as=0.4675p ps=2.25u w=1.7u l=0.3u
+X5 VDD A a_100_200# VDD pfet_03v3 ad=0.4675p pd=2.25u as=0.85p ps=4.4u w=1.7u l=0.3u
+X6 VSS a_100_200# Y VSS nfet_03v3 ad=0.425p pd=2.7u as=0.23375p ps=1.4u w=0.85u l=0.3u
+X7 VDD a_100_200# Y VDD pfet_03v3 ad=0.4675p pd=2.25u as=0.4675p ps=2.25u w=1.7u l=0.3u
+X8 Y a_100_200# VSS VSS nfet_03v3 ad=0.23375p pd=1.4u as=0.23375p ps=1.4u w=0.85u l=0.3u
+X9 VDD a_100_200# Y VDD pfet_03v3 ad=0.85p pd=4.4u as=0.4675p ps=2.25u w=1.7u l=0.3u
+.ends
+
+.subckt lvsclean_SAlatch Clk Vin1 Vin2 VDD VSS Vout1 Vout2 off3 off2 off1 off8 off7
++ off6 off4 off5
+X0 VDD Clk Vq VDD pfet_03v3 ad=0.352p pd=2.48u as=0.352p ps=2.48u w=0.8u l=0.4u
+X1 Vq Vin2 a_15720_n2324# VSS nfet_03v3 ad=0.39p pd=2.02u as=0.39p ps=2.02u w=1.5u l=1u
+X2 Vq off7 Vq VDD pfet_03v3 ad=0.352p pd=2.48u as=8.032p ps=53.68u w=0.8u l=0.4u
+X3 Vout1 Vout2 VDD VDD pfet_03v3 ad=0.26p pd=1.52u as=0.26p ps=1.52u w=1u l=1u
+X4 Vq off5 Vq VDD pfet_03v3 ad=0.352p pd=2.48u as=0 ps=0 w=0.8u l=0.4u
+X5 VDD a_15520_1088# a_15432_1180# VDD pfet_03v3 ad=0.26p pd=1.52u as=0.44p ps=2.88u w=1u l=1u
+X6 Vp off4 Vp VDD pfet_03v3 ad=0.208p pd=1.32u as=8.032p ps=53.68u w=0.8u l=0.4u
+X7 a_18456_1180# a_18256_1088# VDD VDD pfet_03v3 ad=0.44p pd=2.88u as=0.26p ps=1.52u w=1u l=1u
+X8 Vp off2 Vp VDD pfet_03v3 ad=0.352p pd=2.48u as=0 ps=0 w=0.8u l=0.4u
+X9 Vp a_15382_n68# a_15294_24# VSS nfet_03v3 ad=0.52p pd=2.52u as=0.88p ps=4.88u w=2u l=1u
+X10 Vq off8 Vq VDD pfet_03v3 ad=0.352p pd=2.48u as=0 ps=0 w=0.8u l=0.4u
+X11 Vq off8 Vq VDD pfet_03v3 ad=0.208p pd=1.32u as=0 ps=0 w=0.8u l=0.4u
+X12 Vq Vin2 a_15720_n2324# VSS nfet_03v3 ad=0.39p pd=2.02u as=0.39p ps=2.02u w=1.5u l=1u
+X13 a_15720_n2324# Vin1 Vp VSS nfet_03v3 ad=0.39p pd=2.02u as=0.39p ps=2.02u w=1.5u l=1u
+X14 Vp off4 Vp VDD pfet_03v3 ad=0.208p pd=1.32u as=0 ps=0 w=0.8u l=0.4u
+X15 Vp a_15216_n1453# a_15128_n1361# VSS nfet_03v3 ad=0.39p pd=2.02u as=0.66p ps=3.88u w=1.5u l=1u
+X16 Vout1 Vout2 Vp VSS nfet_03v3 ad=0.52p pd=2.52u as=0.52p ps=2.52u w=2u l=1u
+X17 Vout1 Vout2 Vp VSS nfet_03v3 ad=0.52p pd=2.52u as=0.52p ps=2.52u w=2u l=1u
+X18 Vp Vin1 a_15720_n2324# VSS nfet_03v3 ad=0.39p pd=2.02u as=0.39p ps=2.02u w=1.5u l=1u
+X19 Vp off4 Vp VDD pfet_03v3 ad=0.352p pd=2.48u as=0 ps=0 w=0.8u l=0.4u
+X20 Vq Vout1 Vout2 VSS nfet_03v3 ad=0.52p pd=2.52u as=0.52p ps=2.52u w=2u l=1u
+X21 a_15720_n2324# Vin1 Vp VSS nfet_03v3 ad=0.39p pd=2.02u as=0.39p ps=2.02u w=1.5u l=1u
+X22 Vout1 Clk VDD VDD pfet_03v3 ad=0.352p pd=2.48u as=0.352p ps=2.48u w=0.8u l=0.4u
+X23 a_16798_24# a_16598_n68# Vout1 VSS nfet_03v3 ad=0.88p pd=4.88u as=0.52p ps=2.52u w=2u l=1u
+X24 Vq Vout1 Vout2 VSS nfet_03v3 ad=0.52p pd=2.52u as=0.52p ps=2.52u w=2u l=1u
+X25 Vp off4 Vp VDD pfet_03v3 ad=0.208p pd=1.32u as=0 ps=0 w=0.8u l=0.4u
+X26 Vq off6 Vq VDD pfet_03v3 ad=0.352p pd=2.48u as=0 ps=0 w=0.8u l=0.4u
+X27 Vout2 Vout1 VDD VDD pfet_03v3 ad=0.26p pd=1.52u as=0.26p ps=1.52u w=1u l=1u
+X28 a_18594_24# a_18394_n68# Vq VSS nfet_03v3 ad=0.88p pd=4.88u as=0.52p ps=2.52u w=2u l=1u
+X29 Vq off8 Vq VDD pfet_03v3 ad=0.208p pd=1.32u as=0 ps=0 w=0.8u l=0.4u
+X30 Vout2 Vout1 Vq VSS nfet_03v3 ad=0.52p pd=2.52u as=0.52p ps=2.52u w=2u l=1u
+X31 Vp Vin1 a_15720_n2324# VSS nfet_03v3 ad=0.39p pd=2.02u as=0.39p ps=2.02u w=1.5u l=1u
+X32 VDD Clk Vout2 VDD pfet_03v3 ad=0.352p pd=2.48u as=0.352p ps=2.48u w=0.8u l=0.4u
+X33 Vp off3 Vp VDD pfet_03v3 ad=0.352p pd=2.48u as=0 ps=0 w=0.8u l=0.4u
+X34 Vq Vin2 a_15720_n2324# VSS nfet_03v3 ad=0.39p pd=2.02u as=0.39p ps=2.02u w=1.5u l=1u
+X35 Vq off8 Vq VDD pfet_03v3 ad=0.208p pd=1.32u as=0 ps=0 w=0.8u l=0.4u
+X36 Vq a_15216_n2416# a_15128_n2324# VSS nfet_03v3 ad=0.39p pd=2.02u as=0.66p ps=3.88u w=1.5u l=1u
+X37 a_17212_n3110# a_17132_n3202# a_15720_n2324# VSS nfet_03v3 ad=0.352p pd=2.48u as=0.208p ps=1.32u w=0.8u l=0.4u
+X38 Vout1 Vout2 VDD VDD pfet_03v3 ad=0.26p pd=1.52u as=0.26p ps=1.52u w=1u l=1u
+X39 a_15720_n2324# Vin2 Vq VSS nfet_03v3 ad=0.39p pd=2.02u as=0.39p ps=2.02u w=1.5u l=1u
+X40 a_18760_n1361# a_18560_n1453# Vq VSS nfet_03v3 ad=0.66p pd=3.88u as=0.39p ps=2.02u w=1.5u l=1u
+X41 a_15720_n2324# Vin2 Vq VSS nfet_03v3 ad=0.39p pd=2.02u as=0.39p ps=2.02u w=1.5u l=1u
+X42 Vp off4 Vp VDD pfet_03v3 ad=0.208p pd=1.32u as=0 ps=0 w=0.8u l=0.4u
+X43 a_15720_n2324# Vin1 Vp VSS nfet_03v3 ad=0.39p pd=2.02u as=0.39p ps=2.02u w=1.5u l=1u
+X44 Vp Vin1 a_15720_n2324# VSS nfet_03v3 ad=0.39p pd=2.02u as=0.39p ps=2.02u w=1.5u l=1u
+X45 Vout2 Vout1 VDD VDD pfet_03v3 ad=0.26p pd=1.52u as=0.26p ps=1.52u w=1u l=1u
+X46 VDD Vout2 Vout1 VDD pfet_03v3 ad=0.26p pd=1.52u as=0.26p ps=1.52u w=1u l=1u
+X47 Vq off8 Vq VDD pfet_03v3 ad=0.208p pd=1.32u as=0 ps=0 w=0.8u l=0.4u
+X48 Vp off3 Vp VDD pfet_03v3 ad=0.208p pd=1.32u as=0 ps=0 w=0.8u l=0.4u
+X49 VSS a_16764_n3202# a_16676_n3110# VSS nfet_03v3 ad=0.208p pd=1.32u as=0.352p ps=2.48u w=0.8u l=0.4u
+X50 a_15720_n2324# Vin1 Vp VSS nfet_03v3 ad=0.39p pd=2.02u as=0.39p ps=2.02u w=1.5u l=1u
+X51 Vp Vin1 a_15720_n2324# VSS nfet_03v3 ad=0.39p pd=2.02u as=0.39p ps=2.02u w=1.5u l=1u
+X52 Vp Clk VDD VDD pfet_03v3 ad=0.352p pd=2.48u as=0.352p ps=2.48u w=0.8u l=0.4u
+X53 Vout2 a_17178_n68# a_17090_24# VSS nfet_03v3 ad=0.52p pd=2.52u as=0.88p ps=4.88u w=2u l=1u
+X54 a_18760_n2324# a_18560_n2416# Vp VSS nfet_03v3 ad=0.66p pd=3.88u as=0.39p ps=2.02u w=1.5u l=1u
+X55 a_15720_n2324# Clk VSS VSS nfet_03v3 ad=0.208p pd=1.32u as=0.208p ps=1.32u w=0.8u l=0.4u
+X56 VDD Vout2 Vout1 VDD pfet_03v3 ad=0.26p pd=1.52u as=0.26p ps=1.52u w=1u l=1u
+X57 Vp off2 Vp VDD pfet_03v3 ad=0.208p pd=1.32u as=0 ps=0 w=0.8u l=0.4u
+X58 Vq off7 Vq VDD pfet_03v3 ad=0.208p pd=1.32u as=0 ps=0 w=0.8u l=0.4u
+X59 a_15720_n2324# Vin2 Vq VSS nfet_03v3 ad=0.39p pd=2.02u as=0.39p ps=2.02u w=1.5u l=1u
+X60 Vq Vin2 a_15720_n2324# VSS nfet_03v3 ad=0.39p pd=2.02u as=0.39p ps=2.02u w=1.5u l=1u
+X61 Vp Vin1 a_15720_n2324# VSS nfet_03v3 ad=0.39p pd=2.02u as=0.39p ps=2.02u w=1.5u l=1u
+X62 Vq off8 Vq VDD pfet_03v3 ad=0.208p pd=1.32u as=0 ps=0 w=0.8u l=0.4u
+X63 Vp off4 Vp VDD pfet_03v3 ad=0.352p pd=2.48u as=0 ps=0 w=0.8u l=0.4u
+X64 Vp off3 Vp VDD pfet_03v3 ad=0.208p pd=1.32u as=0 ps=0 w=0.8u l=0.4u
+X65 a_15720_n2324# Vin1 Vp VSS nfet_03v3 ad=0.39p pd=2.02u as=0.39p ps=2.02u w=1.5u l=1u
+X66 VDD Vout1 Vout2 VDD pfet_03v3 ad=0.26p pd=1.52u as=0.26p ps=1.52u w=1u l=1u
+X67 Vq off7 Vq VDD pfet_03v3 ad=0.208p pd=1.32u as=0 ps=0 w=0.8u l=0.4u
+X68 Vq off8 Vq VDD pfet_03v3 ad=0.208p pd=1.32u as=0 ps=0 w=0.8u l=0.4u
+X69 Vp Vout2 Vout1 VSS nfet_03v3 ad=0.52p pd=2.52u as=0.52p ps=2.52u w=2u l=1u
+X70 Vp off4 Vp VDD pfet_03v3 ad=0.208p pd=1.32u as=0 ps=0 w=0.8u l=0.4u
+X71 Vp off3 Vp VDD pfet_03v3 ad=0.208p pd=1.32u as=0 ps=0 w=0.8u l=0.4u
+X72 Vp off4 Vp VDD pfet_03v3 ad=0.208p pd=1.32u as=0 ps=0 w=0.8u l=0.4u
+X73 Vq off7 Vq VDD pfet_03v3 ad=0.208p pd=1.32u as=0 ps=0 w=0.8u l=0.4u
+X74 Vq off6 Vq VDD pfet_03v3 ad=0.208p pd=1.32u as=0 ps=0 w=0.8u l=0.4u
+X75 Vq off8 Vq VDD pfet_03v3 ad=0.352p pd=2.48u as=0 ps=0 w=0.8u l=0.4u
+X76 Vq Vin2 a_15720_n2324# VSS nfet_03v3 ad=0.39p pd=2.02u as=0.39p ps=2.02u w=1.5u l=1u
+X77 VDD Vout1 Vout2 VDD pfet_03v3 ad=0.26p pd=1.52u as=0.26p ps=1.52u w=1u l=1u
+X78 a_15720_n2324# Vin2 Vq VSS nfet_03v3 ad=0.39p pd=2.02u as=0.39p ps=2.02u w=1.5u l=1u
+X79 Vp off1 Vp VDD pfet_03v3 ad=0.352p pd=2.48u as=0 ps=0 w=0.8u l=0.4u
+X80 a_15720_n2324# Vin2 Vq VSS nfet_03v3 ad=0.39p pd=2.02u as=0.39p ps=2.02u w=1.5u l=1u
+.ends
+
+.subckt full_comparator_MK off1 VDD VSS off2 CLK off3 Vin1 off4 Vin2 off5 Vout off6
++ off7 off8
+Xx2 VDD x4/A x2/Vout2 x3/out x5/out VSS rslatch
+Xx3 VDD VSS x3/in x3/out inv_mia
+Xx4 x4/A Vout VDD VSS osu_sc_buf_4
+Xx5 VDD VSS x5/in x5/out inv_mia
+Xlvsclean_SAlatch_0 CLK Vin1 Vin2 VDD VSS x3/in x5/in off3 off2 off1 off8 off7 off6
++ off4 off5 lvsclean_SAlatch
+.ends
+

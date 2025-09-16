@@ -1,0 +1,502 @@
+timestamp 1757918779
+version 8.3
+tech gf180mcuD
+style ngspice()
+scale 1000 1 0.5
+resistclasses 1000000 3250000 6300 7000 6300 7000 7300 1000000 60000 185000 60000 185000 6300 7000 6300 7000 6800 7300 350000 310000 1000000 90 90 90 90 60
+use lvsclean_SAlatch lvsclean_SAlatch_0 1 0 -9053 0 1 -1780
+use inv_mia x5 -1 0 14575 0 1 2105
+use osu_sc_buf_4 x4 -1 0 6205 0 1 2073
+use inv_mia x3 1 0 1295 0 1 2105
+use rslatch x2 1 0 5355 0 1 3480
+port "Vout" 10 1725 2815 1725 2815 m2
+port "CLK" 4 1565 -5140 1565 -5140 m1
+port "Vin2" 8 1470 -3637 1470 -3637 m1
+port "Vin1" 6 1470 -3315 1470 -3315 m1
+port "off7" 12 12401 -2930 12401 -2930 m1
+port "off3" 5 3482 -2930 3482 -2930 m1
+port "off8" 13 13862 -2921 13862 -2921 m1
+port "off4" 7 2011 -2921 2011 -2921 m1
+port "off6" 11 12483 -1376 12483 -1376 m1
+port "off5" 9 11839 -1376 11839 -1376 m1
+port "off1" 0 4020 -1377 4020 -1377 m1
+port "off2" 3 3377 -1377 3377 -1377 m1
+port "VSS" 2 1039 -5618 1039 -5618 m1
+port "VDD" 1 1480 4186 1480 4186 m1
+node "m2_5909_2527#" 3 615.528 5909 2527 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 97920 3620 0 0 0 0 0 0
+node "Vout" 5 1236.23 1725 2815 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 216000 7320 0 0 0 0 0 0
+node "CLK" 7 1971.69 1565 -5140 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 502080 12712 0 0 0 0 0 0 0 0
+node "Vin2" 6 1542.12 1470 -3637 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 375000 10150 0 0 0 0 0 0 0 0
+node "Vin1" 6 1584 1470 -3315 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 375000 10150 0 0 0 0 0 0 0 0
+node "off7" 2 31.3175 12401 -2930 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 228 158 0 0 0 0 0 0 0 0
+node "off3" 2 23.8775 3482 -2930 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 228 158 0 0 0 0 0 0 0 0
+node "off8" 30 394.122 13862 -2921 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2973 1988 0 0 0 0 0 0 0 0
+node "off4" 30 298.709 2011 -2921 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2973 1988 0 0 0 0 0 0 0 0
+node "off6" 2 31.4959 12483 -1376 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 304 160 0 0 0 0 0 0 0 0
+node "off5" 2 31.4959 11839 -1376 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 304 160 0 0 0 0 0 0 0 0
+node "off1" 2 31.1138 4020 -1377 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 228 158 0 0 0 0 0 0 0 0
+node "off2" 2 31.1138 3377 -1377 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 228 158 0 0 0 0 0 0 0 0
+node "m1_9175_1203#" 3 835.567 9175 1203 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 87336 2440 97440 2590 0 0 0 0 0 0
+node "m1_8123_1191#" 2 506.848 8123 1191 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 66064 1892 27032 1058 0 0 0 0 0 0
+node "VSS" 28 18297.4 1039 -5618 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 5376232 45176 2476269 46548 0 0 0 0 0 0
+node "m1_6823_1203#" 1 410.294 6823 1203 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 71232 2028 7656 366 0 0 0 0 0 0
+node "m1_5565_1201#" 4 1160.58 5565 1201 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 87196 2440 178460 4618 0 0 0 0 0 0
+node "VDD" 13 14352.6 1480 4186 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 5634262 48584 76178 2128 202520 5328 0 0 0 0
+substrate "VSUBS" 0 0 -1073741817 -1073741817 space 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+cap "Vin1" "Vin2" 844
+cap "m2_5909_2527#" "m1_5565_1201#" 1.37534
+cap "VSS" "off6" 0.00695324
+cap "VSS" "Vin2" 129.24
+cap "m1_8123_1191#" "m1_9175_1203#" 17.6804
+cap "VSS" "VDD" 270.198
+cap "off8" "VSS" 0.00668324
+cap "Vin1" "VSS" 128.579
+cap "VSS" "off7" 0.0120781
+cap "m2_5909_2527#" "VDD" 52.6003
+cap "VSS" "m1_6823_1203#" 88.7312
+cap "off3" "Vin1" 9.19078
+cap "off5" "off6" 0.290409
+cap "Vin1" "off4" 116.708
+cap "off3" "VSS" 0.0104194
+cap "CLK" "Vin2" 140.432
+cap "off2" "VSS" 0.0049618
+cap "VDD" "off1" 0.189544
+cap "m2_5909_2527#" "m1_6823_1203#" 1.20302
+cap "off4" "VSS" 0.00522191
+cap "m2_5909_2527#" "VSS" 0.00558317
+cap "m1_8123_1191#" "m1_6823_1203#" 12.0356
+cap "VSS" "m1_8123_1191#" 87.9468
+cap "m1_5565_1201#" "VDD" 21.1225
+cap "VSS" "off1" 0.0485314
+cap "m1_9175_1203#" "VDD" 152.865
+cap "off5" "VSS" 0.0786285
+cap "CLK" "VSS" 1401.38
+cap "m1_5565_1201#" "m1_6823_1203#" 27.2975
+cap "off2" "off1" 0.217806
+cap "Vout" "VDD" 80.9096
+cap "VSS" "m1_5565_1201#" 192.804
+cap "VSS" "m1_9175_1203#" 147.175
+cap "CLK" "lvsclean_SAlatch_0/VSS" 180.977
+cap "lvsclean_SAlatch_0/Vin2" "CLK" 0.0322003
+cap "lvsclean_SAlatch_0/Clk" "lvsclean_SAlatch_0/Vp" -0.00889807
+cap "lvsclean_SAlatch_0/VSS" "lvsclean_SAlatch_0/a_16676_n3110#" 0.0360536
+cap "lvsclean_SAlatch_0/Clk" "lvsclean_SAlatch_0/Vin2" -6.37026
+cap "lvsclean_SAlatch_0/VSS" "lvsclean_SAlatch_0/a_16764_n3202#" 0.192462
+cap "lvsclean_SAlatch_0/VSS" "lvsclean_SAlatch_0/Vin1" 0.148047
+cap "lvsclean_SAlatch_0/VSS" "lvsclean_SAlatch_0/Vin2" 0.251306
+cap "lvsclean_SAlatch_0/VSS" "lvsclean_SAlatch_0/Clk" 1.80561
+cap "lvsclean_SAlatch_0/VSS" "lvsclean_SAlatch_0/Clk" 36.0795
+cap "lvsclean_SAlatch_0/VSS" "lvsclean_SAlatch_0/a_16764_n3202#" 1.04504
+cap "lvsclean_SAlatch_0/a_15720_n2324#" "lvsclean_SAlatch_0/VSS" 1.65969
+cap "lvsclean_SAlatch_0/VSS" "lvsclean_SAlatch_0/a_17132_n3202#" 0.847956
+cap "lvsclean_SAlatch_0/Clk" "lvsclean_SAlatch_0/VSS" 248.758
+cap "lvsclean_SAlatch_0/a_15720_n2324#" "lvsclean_SAlatch_0/VSS" 9.91012
+cap "lvsclean_SAlatch_0/Vin2" "lvsclean_SAlatch_0/Clk" -0.214728
+cap "lvsclean_SAlatch_0/Clk" "lvsclean_SAlatch_0/VSS" 415.65
+cap "lvsclean_SAlatch_0/VSS" "lvsclean_SAlatch_0/a_15720_n2324#" 0.444041
+cap "lvsclean_SAlatch_0/Clk" "lvsclean_SAlatch_0/VSS" 259.074
+cap "Vin1" "lvsclean_SAlatch_0/off4" 0.0195425
+cap "Vin1" "lvsclean_SAlatch_0/VDD" 20.9609
+cap "Vin1" "lvsclean_SAlatch_0/Vp" 10.8182
+cap "Vin1" "lvsclean_SAlatch_0/off3" 14.5646
+cap "lvsclean_SAlatch_0/a_15216_n2416#" "CLK" -2.1666
+cap "lvsclean_SAlatch_0/Vin2" "CLK" 52.7231
+cap "lvsclean_SAlatch_0/Vin1" "lvsclean_SAlatch_0/VSS" -7.11412
+cap "CLK" "lvsclean_SAlatch_0/Vq" -1.27179
+cap "lvsclean_SAlatch_0/a_15128_n2324#" "CLK" -0.592708
+cap "lvsclean_SAlatch_0/VSS" "CLK" 323.732
+cap "lvsclean_SAlatch_0/Vin1" "CLK" 52.43
+cap "lvsclean_SAlatch_0/Vin1" "lvsclean_SAlatch_0/Vp" 21.8436
+cap "lvsclean_SAlatch_0/Vp" "CLK" -1.31313
+cap "CLK" "lvsclean_SAlatch_0/a_15216_n1453#" -1.04858
+cap "lvsclean_SAlatch_0/Vin1" "lvsclean_SAlatch_0/VDD" 12.0715
+cap "lvsclean_SAlatch_0/Vin1" "lvsclean_SAlatch_0/off3" 10.1029
+cap "lvsclean_SAlatch_0/a_15128_n1361#" "CLK" -0.282596
+cap "lvsclean_SAlatch_0/Vin2" "lvsclean_SAlatch_0/VSS" -6.6856
+cap "lvsclean_SAlatch_0/VSS" "lvsclean_SAlatch_0/a_15720_n2324#" 22.1623
+cap "lvsclean_SAlatch_0/Vin1" "lvsclean_SAlatch_0/a_15128_n1361#" 17.9326
+cap "lvsclean_SAlatch_0/a_15128_n1361#" "lvsclean_SAlatch_0/a_15128_n2324#" -2.85158
+cap "lvsclean_SAlatch_0/a_15128_n1361#" "lvsclean_SAlatch_0/VSS" 1.11676
+cap "lvsclean_SAlatch_0/Vin1" "lvsclean_SAlatch_0/Vq" 0.342674
+cap "lvsclean_SAlatch_0/Vin1" "lvsclean_SAlatch_0/VSS" 61.5353
+cap "lvsclean_SAlatch_0/Vin1" "lvsclean_SAlatch_0/Vin2" -0.0592701
+cap "lvsclean_SAlatch_0/Vin1" "lvsclean_SAlatch_0/Vp" 57.8526
+cap "lvsclean_SAlatch_0/VSS" "lvsclean_SAlatch_0/a_15128_n2324#" 2.51386
+cap "lvsclean_SAlatch_0/Vin2" "lvsclean_SAlatch_0/a_15128_n2324#" 18.5879
+cap "lvsclean_SAlatch_0/Vin1" "lvsclean_SAlatch_0/a_15216_n2416#" 0.848402
+cap "lvsclean_SAlatch_0/Vq" "lvsclean_SAlatch_0/Clk" -1.09089
+cap "lvsclean_SAlatch_0/VSS" "lvsclean_SAlatch_0/Vq" 7.1051
+cap "lvsclean_SAlatch_0/VSS" "lvsclean_SAlatch_0/Clk" 43.2548
+cap "lvsclean_SAlatch_0/Vin2" "lvsclean_SAlatch_0/Clk" -6.37026
+cap "lvsclean_SAlatch_0/Clk" "lvsclean_SAlatch_0/Vp" -1.19137
+cap "lvsclean_SAlatch_0/Vq" "lvsclean_SAlatch_0/Vp" -6.54435
+cap "lvsclean_SAlatch_0/Vin2" "lvsclean_SAlatch_0/Vq" 25.5551
+cap "lvsclean_SAlatch_0/Vin2" "lvsclean_SAlatch_0/VSS" 64.1913
+cap "lvsclean_SAlatch_0/VSS" "lvsclean_SAlatch_0/Vp" 6.3335
+cap "lvsclean_SAlatch_0/Vin2" "lvsclean_SAlatch_0/Vp" 3.67645
+cap "lvsclean_SAlatch_0/VSS" "lvsclean_SAlatch_0/a_15216_n2416#" 9.15317
+cap "lvsclean_SAlatch_0/Vin2" "lvsclean_SAlatch_0/a_15216_n2416#" 204.796
+cap "lvsclean_SAlatch_0/a_15216_n1453#" "lvsclean_SAlatch_0/Vin1" 182.641
+cap "lvsclean_SAlatch_0/a_15216_n1453#" "lvsclean_SAlatch_0/Vin2" 0.831411
+cap "lvsclean_SAlatch_0/a_15216_n1453#" "lvsclean_SAlatch_0/VSS" 3.66876
+cap "lvsclean_SAlatch_0/a_15216_n1453#" "lvsclean_SAlatch_0/a_15216_n2416#" -16.0989
+cap "lvsclean_SAlatch_0/a_15720_n2324#" "lvsclean_SAlatch_0/Vin2" 6.04936
+cap "lvsclean_SAlatch_0/VSS" "lvsclean_SAlatch_0/Vq" 9.00559
+cap "lvsclean_SAlatch_0/a_15720_n2324#" "lvsclean_SAlatch_0/VSS" 20.0606
+cap "lvsclean_SAlatch_0/Vq" "lvsclean_SAlatch_0/Vin1" 0.0969235
+cap "lvsclean_SAlatch_0/a_15720_n2324#" "lvsclean_SAlatch_0/Vin1" 6.04936
+cap "lvsclean_SAlatch_0/VSS" "lvsclean_SAlatch_0/Vin2" 0.509917
+cap "lvsclean_SAlatch_0/Vp" "lvsclean_SAlatch_0/Vin2" 3.9247
+cap "lvsclean_SAlatch_0/Vp" "lvsclean_SAlatch_0/VSS" -0.350986
+cap "lvsclean_SAlatch_0/Vin2" "lvsclean_SAlatch_0/Vin1" 6.32759
+cap "lvsclean_SAlatch_0/VSS" "lvsclean_SAlatch_0/Vin1" 1.32064
+cap "lvsclean_SAlatch_0/VSS" "lvsclean_SAlatch_0/Vq" 5.57484
+cap "lvsclean_SAlatch_0/a_15720_n2324#" "lvsclean_SAlatch_0/VSS" 6.85089
+cap "lvsclean_SAlatch_0/Vin2" "lvsclean_SAlatch_0/VSS" 1.09147
+cap "lvsclean_SAlatch_0/Vin1" "lvsclean_SAlatch_0/VSS" 1.25519
+cap "lvsclean_SAlatch_0/VSS" "lvsclean_SAlatch_0/Vp" 1.31237
+cap "lvsclean_SAlatch_0/a_18560_n1453#" "lvsclean_SAlatch_0/VSS" 2.34847
+cap "lvsclean_SAlatch_0/a_18560_n2416#" "lvsclean_SAlatch_0/VSS" 5.73546
+cap "lvsclean_SAlatch_0/Vq" "lvsclean_SAlatch_0/VSS" 5.79703
+cap "lvsclean_SAlatch_0/Vin2" "lvsclean_SAlatch_0/VSS" 41.2496
+cap "lvsclean_SAlatch_0/Vp" "lvsclean_SAlatch_0/VSS" 14.8859
+cap "lvsclean_SAlatch_0/a_18760_n1361#" "lvsclean_SAlatch_0/VSS" 0.857412
+cap "lvsclean_SAlatch_0/Vin1" "lvsclean_SAlatch_0/VSS" 12.2824
+cap "lvsclean_SAlatch_0/Vq" "lvsclean_SAlatch_0/Clk" -1.19137
+cap "lvsclean_SAlatch_0/Clk" "lvsclean_SAlatch_0/Vin2" -9.52642
+cap "lvsclean_SAlatch_0/Clk" "lvsclean_SAlatch_0/Vp" -3.86117
+cap "lvsclean_SAlatch_0/Clk" "lvsclean_SAlatch_0/VSS" 56.7007
+cap "lvsclean_SAlatch_0/Clk" "lvsclean_SAlatch_0/Vin1" -1.99356
+cap "lvsclean_SAlatch_0/a_18760_n2324#" "lvsclean_SAlatch_0/VSS" 1.75363
+cap "lvsclean_SAlatch_0/VSS" "lvsclean_SAlatch_0/a_15720_n2324#" 7.22227
+cap "lvsclean_SAlatch_0/a_18760_n2324#" "lvsclean_SAlatch_0/Clk" -0.592708
+cap "lvsclean_SAlatch_0/a_18760_n1361#" "lvsclean_SAlatch_0/Clk" -0.282596
+cap "lvsclean_SAlatch_0/a_18560_n1453#" "lvsclean_SAlatch_0/Clk" -0.823274
+cap "lvsclean_SAlatch_0/Clk" "lvsclean_SAlatch_0/Vin2" -9.56465
+cap "lvsclean_SAlatch_0/Vp" "lvsclean_SAlatch_0/Clk" -4.03281
+cap "lvsclean_SAlatch_0/Vin1" "lvsclean_SAlatch_0/Clk" -2.41061
+cap "lvsclean_SAlatch_0/Clk" "lvsclean_SAlatch_0/VSS" 331.218
+cap "lvsclean_SAlatch_0/a_18560_n2416#" "lvsclean_SAlatch_0/Clk" -1.92145
+cap "lvsclean_SAlatch_0/Vq" "lvsclean_SAlatch_0/Clk" -1.26617
+cap "lvsclean_SAlatch_0/off4" "lvsclean_SAlatch_0/Vp" 0.0629899
+cap "lvsclean_SAlatch_0/off4" "Vin2" 0.07982
+cap "lvsclean_SAlatch_0/Vp" "Vin2" 0.174308
+cap "lvsclean_SAlatch_0/off4" "Vin1" 0.18521
+cap "lvsclean_SAlatch_0/Vp" "Vin1" 0.36288
+cap "VSS" "lvsclean_SAlatch_0/off3" 0.174396
+cap "lvsclean_SAlatch_0/Vp" "Vin2" 0.515833
+cap "lvsclean_SAlatch_0/off4" "Vin1" 0.555629
+cap "lvsclean_SAlatch_0/VDD" "Vin1" 1.75146
+cap "lvsclean_SAlatch_0/off3" "Vin1" 14.9988
+cap "lvsclean_SAlatch_0/off4" "lvsclean_SAlatch_0/off3" 0.260807
+cap "lvsclean_SAlatch_0/off4" "Vin2" 0.23946
+cap "lvsclean_SAlatch_0/Vp" "lvsclean_SAlatch_0/off2" 0.0109035
+cap "lvsclean_SAlatch_0/off3" "Vin2" 0.195559
+cap "lvsclean_SAlatch_0/off2" "Vin1" 0.0641638
+cap "lvsclean_SAlatch_0/Clk" "lvsclean_SAlatch_0/off3" 0.00263395
+cap "lvsclean_SAlatch_0/Vp" "Vin1" 11.6536
+cap "lvsclean_SAlatch_0/off4" "VSS" -0.00188424
+cap "lvsclean_SAlatch_0/Vin1" "lvsclean_SAlatch_0/VDD" 3.19858
+cap "VSS" "lvsclean_SAlatch_0/off1" 0.540669
+cap "lvsclean_SAlatch_0/Clk" "lvsclean_SAlatch_0/VSS" 11.0911
+cap "lvsclean_SAlatch_0/Vin2" "lvsclean_SAlatch_0/Vp" 0.272457
+cap "VSS" "lvsclean_SAlatch_0/VSS" -15.4382
+cap "lvsclean_SAlatch_0/off4" "VSS" 0.285594
+cap "lvsclean_SAlatch_0/Clk" "lvsclean_SAlatch_0/VDD" -116.4
+cap "lvsclean_SAlatch_0/Clk" "lvsclean_SAlatch_0/a_15128_n1361#" -0.310112
+cap "VSS" "lvsclean_SAlatch_0/VDD" 261.242
+cap "lvsclean_SAlatch_0/VDD" "lvsclean_SAlatch_0/Vp" -5.22943
+cap "lvsclean_SAlatch_0/Vin2" "lvsclean_SAlatch_0/VDD" 0.153212
+cap "lvsclean_SAlatch_0/Vin1" "lvsclean_SAlatch_0/off3" 10.3705
+cap "lvsclean_SAlatch_0/VDD" "lvsclean_SAlatch_0/VSS" 0.207566
+cap "lvsclean_SAlatch_0/Clk" "lvsclean_SAlatch_0/off3" -2.71556
+cap "lvsclean_SAlatch_0/Clk" "lvsclean_SAlatch_0/a_15216_n1453#" -1.11802
+cap "lvsclean_SAlatch_0/off3" "VSS" 6.34498
+cap "lvsclean_SAlatch_0/Vin1" "lvsclean_SAlatch_0/Vp" 22.2853
+cap "lvsclean_SAlatch_0/off3" "lvsclean_SAlatch_0/Vin2" 0.123721
+cap "lvsclean_SAlatch_0/Clk" "VSS" 292.1
+cap "lvsclean_SAlatch_0/off3" "lvsclean_SAlatch_0/VSS" 0.252328
+cap "lvsclean_SAlatch_0/Clk" "lvsclean_SAlatch_0/Vp" -9.88655
+cap "VSS" "lvsclean_SAlatch_0/Vp" 55.0665
+cap "lvsclean_SAlatch_0/VSS" "lvsclean_SAlatch_0/Vin2" 0.0659923
+cap "lvsclean_SAlatch_0/Vp" "lvsclean_SAlatch_0/a_15382_n68#" -0.0270287
+cap "lvsclean_SAlatch_0/Vout1" "lvsclean_SAlatch_0/VSS" 0.636389
+cap "lvsclean_SAlatch_0/VSS" "lvsclean_SAlatch_0/Vin1" 0.435644
+cap "VSS" "lvsclean_SAlatch_0/VSS" -14.9298
+cap "lvsclean_SAlatch_0/a_15216_n1453#" "lvsclean_SAlatch_0/VSS" 3.73233
+cap "lvsclean_SAlatch_0/Vp" "lvsclean_SAlatch_0/Clk" -4.66499
+cap "lvsclean_SAlatch_0/VDD" "lvsclean_SAlatch_0/VSS" 0.0406867
+cap "lvsclean_SAlatch_0/Vp" "lvsclean_SAlatch_0/VSS" 37.0171
+cap "lvsclean_SAlatch_0/Vp" "lvsclean_SAlatch_0/Vin2" 0.103852
+cap "lvsclean_SAlatch_0/Vp" "lvsclean_SAlatch_0/a_15216_n2416#" -0.0032553
+cap "lvsclean_SAlatch_0/a_15382_n68#" "lvsclean_SAlatch_0/Vin1" 0.0397151
+cap "lvsclean_SAlatch_0/VSS" "lvsclean_SAlatch_0/a_15128_n1361#" 1.17119
+cap "lvsclean_SAlatch_0/Clk" "lvsclean_SAlatch_0/VSS" 14.0036
+cap "lvsclean_SAlatch_0/Vp" "lvsclean_SAlatch_0/Vin1" 15.0654
+cap "lvsclean_SAlatch_0/Vp" "lvsclean_SAlatch_0/VSS" 0.0170122
+cap "lvsclean_SAlatch_0/Vq" "lvsclean_SAlatch_0/Clk" -4.66499
+cap "VSS" "lvsclean_SAlatch_0/Vq" 0.0650991
+cap "lvsclean_SAlatch_0/VSS" "lvsclean_SAlatch_0/Vq" 45.7719
+cap "lvsclean_SAlatch_0/VSS" "lvsclean_SAlatch_0/VDD" 0.156833
+cap "lvsclean_SAlatch_0/VSS" "lvsclean_SAlatch_0/a_18560_n1453#" 3.01569
+cap "lvsclean_SAlatch_0/VSS" "lvsclean_SAlatch_0/Clk" 18.9525
+cap "VSS" "lvsclean_SAlatch_0/VSS" -17.4242
+cap "lvsclean_SAlatch_0/VSS" "lvsclean_SAlatch_0/a_18760_n1361#" 0.89622
+cap "lvsclean_SAlatch_0/VSS" "lvsclean_SAlatch_0/Vout2" 1.906
+cap "lvsclean_SAlatch_0/Clk" "lvsclean_SAlatch_0/VSS" 16.0166
+cap "lvsclean_SAlatch_0/Clk" "lvsclean_SAlatch_0/a_18560_n1453#" -1.11802
+cap "lvsclean_SAlatch_0/Clk" "VSS" 285.722
+cap "lvsclean_SAlatch_0/Clk" "lvsclean_SAlatch_0/VDD" -116.395
+cap "VSS" "lvsclean_SAlatch_0/VSS" -18.0291
+cap "lvsclean_SAlatch_0/Clk" "lvsclean_SAlatch_0/Vq" -9.32108
+cap "lvsclean_SAlatch_0/off7" "lvsclean_SAlatch_0/Clk" -2.71556
+cap "lvsclean_SAlatch_0/VDD" "lvsclean_SAlatch_0/VSS" 0.303781
+cap "VSS" "lvsclean_SAlatch_0/off5" 0.708418
+cap "lvsclean_SAlatch_0/VDD" "VSS" 299.858
+cap "lvsclean_SAlatch_0/off8" "VSS" 0.317299
+cap "lvsclean_SAlatch_0/off7" "lvsclean_SAlatch_0/VSS" 0.380085
+cap "lvsclean_SAlatch_0/off7" "VSS" 7.16543
+cap "VSS" "lvsclean_SAlatch_0/Vq" 63.7419
+cap "lvsclean_SAlatch_0/VDD" "lvsclean_SAlatch_0/Vq" -6.36484
+cap "lvsclean_SAlatch_0/Clk" "lvsclean_SAlatch_0/a_18760_n1361#" -0.310112
+cap "VSS" "lvsclean_SAlatch_0/off7" 0.225799
+cap "lvsclean_SAlatch_0/off8" "lvsclean_SAlatch_0/off7" 0.260807
+cap "lvsclean_SAlatch_0/Clk" "lvsclean_SAlatch_0/off7" 0.00263395
+cap "lvsclean_SAlatch_0/off6" "lvsclean_SAlatch_0/Vq" 0.0145187
+cap "VSS" "lvsclean_SAlatch_0/off8" -0.00241111
+cap "lvsclean_SAlatch_0/off8" "lvsclean_SAlatch_0/Vq" 0.0624383
+cap "lvsclean_SAlatch_0/off8" "lvsclean_SAlatch_0/VDD" 0.0604293
+cap "lvsclean_SAlatch_0/off8" "lvsclean_SAlatch_0/Vq" 0.000551651
+cap "lvsclean_SAlatch_0/off4" "lvsclean_SAlatch_0/off2" 0.324963
+cap "lvsclean_SAlatch_0/off1" "lvsclean_SAlatch_0/off2" 2.55351e-15
+cap "lvsclean_SAlatch_0/off4" "lvsclean_SAlatch_0/VDD" -0.00243012
+cap "lvsclean_SAlatch_0/off4" "VSS" 0.00690887
+cap "lvsclean_SAlatch_0/off2" "lvsclean_SAlatch_0/VDD" 0.00808994
+cap "lvsclean_SAlatch_0/Clk" "lvsclean_SAlatch_0/VDD" -119.476
+cap "lvsclean_SAlatch_0/off2" "x3/avss" -0.0049618
+cap "lvsclean_SAlatch_0/Clk" "x3/avss" 294.661
+cap "lvsclean_SAlatch_0/off2" "lvsclean_SAlatch_0/off1" 7.77156e-16
+cap "lvsclean_SAlatch_0/Clk" "lvsclean_SAlatch_0/off1" 0.00819547
+cap "lvsclean_SAlatch_0/Vp" "x3/avss" 0.00636013
+cap "lvsclean_SAlatch_0/VDD" "x3/avss" 327.643
+cap "lvsclean_SAlatch_0/Vp" "lvsclean_SAlatch_0/off1" 0.00276335
+cap "lvsclean_SAlatch_0/VDD" "lvsclean_SAlatch_0/off1" 0.188251
+cap "lvsclean_SAlatch_0/off1" "x3/avss" 1.32213
+cap "lvsclean_SAlatch_0/Vout1" "x3/avss" -15.6795
+cap "lvsclean_SAlatch_0/Clk" "x3/avss" 0.0775242
+cap "lvsclean_SAlatch_0/a_15520_1088#" "x3/avdd" 0.0370017
+cap "lvsclean_SAlatch_0/Clk" "lvsclean_SAlatch_0/Vout1" 0.0246458
+cap "lvsclean_SAlatch_0/a_15520_1088#" "x3/avss" 0.261088
+cap "lvsclean_SAlatch_0/a_15520_1088#" "lvsclean_SAlatch_0/Vout1" 0.0596014
+cap "lvsclean_SAlatch_0/Vp" "x3/avss" 0.146701
+cap "lvsclean_SAlatch_0/Vout1" "x3/avss" -14.8497
+cap "lvsclean_SAlatch_0/a_15520_1088#" "x5/avss" 0.150638
+cap "lvsclean_SAlatch_0/Vout1" "x5/avss" 0.960579
+cap "x3/out" "lvsclean_SAlatch_0/Vout2" 0.0985544
+cap "lvsclean_SAlatch_0/Vout1" "lvsclean_SAlatch_0/a_15520_1088#" 0.00970256
+cap "lvsclean_SAlatch_0/Vout1" "x3/out" 0.520547
+cap "x5/avss" "lvsclean_SAlatch_0/Vout2" 0.973221
+cap "lvsclean_SAlatch_0/Vout1" "x3/avdd" 0.0430252
+cap "lvsclean_SAlatch_0/a_15520_1088#" "x3/avdd" 0.00602353
+cap "lvsclean_SAlatch_0/a_18256_1088#" "x5/avdd" 0.0430252
+cap "lvsclean_SAlatch_0/Vout2" "x5/out" 0.52116
+cap "lvsclean_SAlatch_0/VSS" "lvsclean_SAlatch_0/a_18256_1088#" 0.411726
+cap "lvsclean_SAlatch_0/Vout2" "x5/avdd" 0.0421647
+cap "x5/out" "lvsclean_SAlatch_0/Vout1" 0.0985544
+cap "lvsclean_SAlatch_0/VSS" "lvsclean_SAlatch_0/Vout2" 0.769894
+cap "lvsclean_SAlatch_0/VSS" "lvsclean_SAlatch_0/Vout1" 0.861451
+cap "lvsclean_SAlatch_0/Vout2" "lvsclean_SAlatch_0/a_18256_1088#" 0.069304
+cap "lvsclean_SAlatch_0/Vout2" "lvsclean_SAlatch_0/VSS" 2.11873
+cap "lvsclean_SAlatch_0/VSS" "lvsclean_SAlatch_0/Clk" 1.24138
+cap "lvsclean_SAlatch_0/Vq" "lvsclean_SAlatch_0/VSS" 0.146701
+cap "lvsclean_SAlatch_0/Vout2" "lvsclean_SAlatch_0/Clk" 0.0246458
+cap "lvsclean_SAlatch_0/off5" "lvsclean_SAlatch_0/VDD" 0.206615
+cap "lvsclean_SAlatch_0/off5" "lvsclean_SAlatch_0/Vq" 0.00368446
+cap "lvsclean_SAlatch_0/off5" "lvsclean_SAlatch_0/VSS" 1.76342
+cap "lvsclean_SAlatch_0/VSS" "lvsclean_SAlatch_0/VDD" 371.374
+cap "lvsclean_SAlatch_0/off5" "lvsclean_SAlatch_0/Clk" 0.0109273
+cap "lvsclean_SAlatch_0/Clk" "lvsclean_SAlatch_0/VDD" -119.235
+cap "lvsclean_SAlatch_0/off5" "lvsclean_SAlatch_0/off6" 2.22045e-15
+cap "lvsclean_SAlatch_0/off6" "lvsclean_SAlatch_0/VDD" 0.0107866
+cap "lvsclean_SAlatch_0/Clk" "lvsclean_SAlatch_0/VSS" 285.722
+cap "lvsclean_SAlatch_0/off6" "lvsclean_SAlatch_0/VSS" -0.00695324
+cap "lvsclean_SAlatch_0/off8" "lvsclean_SAlatch_0/VDD" -0.00324016
+cap "lvsclean_SAlatch_0/off5" "lvsclean_SAlatch_0/off6" 2.22045e-15
+cap "lvsclean_SAlatch_0/off8" "VSS" 0.00803703
+cap "lvsclean_SAlatch_0/off8" "lvsclean_SAlatch_0/off6" 0.433283
+cap "lvsclean_SAlatch_0/VDD" "lvsclean_SAlatch_0/Vout1" -0.0089633
+cap "lvsclean_SAlatch_0/Vout1" "lvsclean_SAlatch_0/Clk" 5.43091
+cap "lvsclean_SAlatch_0/Vout1" "x4/VSS" -11.8305
+cap "lvsclean_SAlatch_0/VDD" "lvsclean_SAlatch_0/Clk" 70.8541
+cap "lvsclean_SAlatch_0/VDD" "lvsclean_SAlatch_0/off1" 0.398591
+cap "lvsclean_SAlatch_0/VDD" "x4/VSS" 4.85606
+cap "lvsclean_SAlatch_0/VDD" "lvsclean_SAlatch_0/Vp" 0.0311037
+cap "lvsclean_SAlatch_0/Clk" "x4/VSS" 290.457
+cap "x3/avdd" "x4/VSS" -5.35153
+cap "lvsclean_SAlatch_0/Clk" "lvsclean_SAlatch_0/VDD" -1.10214
+cap "lvsclean_SAlatch_0/Clk" "x4/VSS" 417.152
+cap "lvsclean_SAlatch_0/VDD" "x4/VSS" 15.5309
+cap "lvsclean_SAlatch_0/Vout1" "lvsclean_SAlatch_0/Clk" 54.2336
+cap "lvsclean_SAlatch_0/Vout1" "lvsclean_SAlatch_0/VDD" 6.39281
+cap "x3/avdd" "lvsclean_SAlatch_0/VDD" 2.11811
+cap "lvsclean_SAlatch_0/Vout1" "x3/out" 1.30142
+cap "lvsclean_SAlatch_0/Vout1" "x4/VSS" -9.02666
+cap "lvsclean_SAlatch_0/VDD" "x3/avdd" 2.71994
+cap "x5/avss" "lvsclean_SAlatch_0/Vout1" 2.47413
+cap "lvsclean_SAlatch_0/Clk" "x3/out" 0.169807
+cap "x5/in" "x5/avss" 0.0746894
+cap "lvsclean_SAlatch_0/Clk" "lvsclean_SAlatch_0/Vout1" 0.596625
+cap "x5/avss" "x3/avdd" -5.21259
+cap "lvsclean_SAlatch_0/Vout2" "x3/out" 0.137303
+cap "x3/out" "lvsclean_SAlatch_0/VDD" 7.05524
+cap "lvsclean_SAlatch_0/Clk" "x5/avss" 417.284
+cap "x5/avss" "x5/out" 11.451
+cap "lvsclean_SAlatch_0/Vout1" "x3/out" 0.0590619
+cap "lvsclean_SAlatch_0/Vout1" "lvsclean_SAlatch_0/VDD" 8.9
+cap "x5/avss" "x3/out" 22.3105
+cap "x5/avss" "lvsclean_SAlatch_0/VDD" 26.8871
+cap "lvsclean_SAlatch_0/Clk" "x5/out" 0.169807
+cap "lvsclean_SAlatch_0/VDD" "x5/out" 7.78265
+cap "x5/avss" "x5/out" 11.7668
+cap "lvsclean_SAlatch_0/Vout2" "x5/out" 0.0590619
+cap "x5/avss" "lvsclean_SAlatch_0/Clk" 417.4
+cap "x5/avss" "lvsclean_SAlatch_0/VDD" 29.1759
+cap "lvsclean_SAlatch_0/Clk" "lvsclean_SAlatch_0/Vout2" 0.596625
+cap "lvsclean_SAlatch_0/VDD" "lvsclean_SAlatch_0/Vout2" 11.9757
+cap "x5/avss" "lvsclean_SAlatch_0/Vout2" 4.12643
+cap "x5/avdd" "lvsclean_SAlatch_0/VDD" 4.83805
+cap "x5/avdd" "x5/avss" -10.5649
+cap "lvsclean_SAlatch_0/Vout1" "x5/out" 0.137303
+cap "lvsclean_SAlatch_0/VDD" "lvsclean_SAlatch_0/Clk" 33.0691
+cap "x5/out" "lvsclean_SAlatch_0/VDD" 1.15649
+cap "lvsclean_SAlatch_0/VDD" "lvsclean_SAlatch_0/Vout2" 18.4432
+cap "lvsclean_SAlatch_0/VDD" "x5/avss" 20.38
+cap "lvsclean_SAlatch_0/Vout2" "lvsclean_SAlatch_0/Clk" 54.8034
+cap "x5/avss" "lvsclean_SAlatch_0/Clk" 418.823
+cap "x5/out" "lvsclean_SAlatch_0/Vout2" 1.30144
+cap "x5/avss" "lvsclean_SAlatch_0/Vout2" -1.84917
+cap "x5/avss" "lvsclean_SAlatch_0/Vout2" -5.30018
+cap "lvsclean_SAlatch_0/Clk" "x5/avss" 218.024
+cap "lvsclean_SAlatch_0/Clk" "lvsclean_SAlatch_0/Vout2" 4.76745
+cap "x5/avss" "lvsclean_SAlatch_0/VDD" 10.4213
+cap "lvsclean_SAlatch_0/Clk" "lvsclean_SAlatch_0/VDD" 1.27925
+cap "x4/a_100_200#" "lvsclean_SAlatch_0/VDD" 0.125477
+cap "x4/VSS" "x4/Y" 0.32145
+cap "lvsclean_SAlatch_0/VDD" "x4/Y" 2.56425
+cap "x4/VSS" "lvsclean_SAlatch_0/VDD" 14.9439
+cap "lvsclean_SAlatch_0/VDD" "lvsclean_SAlatch_0/Vout1" 43.5752
+cap "x4/a_100_200#" "x4/A" 33.7049
+cap "lvsclean_SAlatch_0/Vout1" "x3/out" 0.0155009
+cap "lvsclean_SAlatch_0/Vout1" "x4/A" -0.0737204
+cap "lvsclean_SAlatch_0/VDD" "x4/A" 34.9131
+cap "x3/out" "x4/A" 0.0486002
+cap "x4/VSS" "x4/Y" 0.222941
+cap "x4/VSS" "lvsclean_SAlatch_0/Vout1" 50.6154
+cap "x4/VSS" "lvsclean_SAlatch_0/VDD" 22.2028
+cap "x4/a_100_200#" "lvsclean_SAlatch_0/Vout1" 1.37717
+cap "x4/VSS" "x4/A" 6.43308
+cap "x4/a_100_200#" "lvsclean_SAlatch_0/VDD" 21.1268
+cap "lvsclean_SAlatch_0/Vout1" "x4/Y" 0.165155
+cap "lvsclean_SAlatch_0/VDD" "x4/Y" 2.56425
+cap "x5/out" "lvsclean_SAlatch_0/Vout1" 0.0318442
+cap "x5/avss" "lvsclean_SAlatch_0/Vout1" 6.19276
+cap "x4/A" "lvsclean_SAlatch_0/Vout1" 10.4129
+cap "x5/out" "x5/avss" 2.79014
+cap "x3/out" "lvsclean_SAlatch_0/Vout1" -24.3468
+cap "x2/Vout2" "lvsclean_SAlatch_0/Clk" 0.00503606
+cap "lvsclean_SAlatch_0/Vout1" "x5/avdd" 17.6221
+cap "x5/avss" "x4/A" 2.28748
+cap "x5/out" "x3/out" -8.88178e-16
+cap "x2/Vout2" "x4/a_100_200#" 0.00796432
+cap "x3/out" "x4/A" 14.7052
+cap "x4/A" "x5/avdd" 64.025
+cap "x5/avss" "x3/out" 141.67
+cap "lvsclean_SAlatch_0/Vout1" "x4/Y" 0.0315539
+cap "x5/avss" "x5/avdd" 2.86322
+cap "x3/out" "x5/avdd" 38.6306
+cap "x4/A" "x4/Y" 0.406608
+cap "x2/Vout2" "lvsclean_SAlatch_0/Vout1" 0.276193
+cap "x5/out" "x2/Vout2" 0.391486
+cap "lvsclean_SAlatch_0/Vout1" "x4/a_100_200#" 0.0453846
+cap "x5/in" "x2/Vout2" 0.074373
+cap "x2/Vout2" "x4/A" 4.76964
+cap "x4/A" "lvsclean_SAlatch_0/Clk" 0.0671474
+cap "x5/avss" "x2/Vout2" 1.03299
+cap "x4/A" "x4/a_100_200#" 1.33604
+cap "x2/Vout2" "x3/out" 1.31516
+cap "x2/Vout2" "x5/avdd" 15.8178
+cap "x3/out" "lvsclean_SAlatch_0/Clk" 0.0464609
+cap "x5/avdd" "x4/a_100_200#" 7.19938
+cap "x2/Vout2" "x5/out" 6.10184
+cap "x2/Vout2" "lvsclean_SAlatch_0/Clk" 0.0621114
+cap "x2/Vout2" "lvsclean_SAlatch_0/Vout2" 2.24474
+cap "x5/out" "x3/out" -8.88178e-16
+cap "x2/Vout2" "x5/avss" 0.0998552
+cap "lvsclean_SAlatch_0/VDD" "x2/Vout2" 15.1175
+cap "x3/out" "lvsclean_SAlatch_0/Vout2" 0.0318442
+cap "x5/out" "lvsclean_SAlatch_0/Vout2" -14.8076
+cap "x5/out" "lvsclean_SAlatch_0/Clk" 0.0464609
+cap "x5/out" "x5/avss" 132.199
+cap "lvsclean_SAlatch_0/VDD" "x5/out" 39.1504
+cap "x5/avss" "lvsclean_SAlatch_0/Vout2" 22.4064
+cap "x5/out" "x2/Vout1" 0.312232
+cap "lvsclean_SAlatch_0/VDD" "lvsclean_SAlatch_0/Vout2" 62.8464
+cap "lvsclean_SAlatch_0/VDD" "x5/avss" -0.479446
+cap "x2/Vout1" "lvsclean_SAlatch_0/Vout2" 0.00206177
+cap "lvsclean_SAlatch_0/VDD" "x2/Vout1" 5.6284
+cap "lvsclean_SAlatch_0/Vout2" "lvsclean_SAlatch_0/VDD" 2.80115
+cap "lvsclean_SAlatch_0/Vout2" "x5/out" 0.107881
+cap "lvsclean_SAlatch_0/VDD" "x5/out" 0.522019
+cap "x5/avss" "lvsclean_SAlatch_0/Vout2" 0.0306558
+cap "x4/Y" "x4/VSS" 3.26095
+cap "x4/Y" "x4/VDD" 43.0266
+cap "x4/a_100_200#" "x4/VDD" 0.125477
+cap "x4/A" "x4/Y" -4.44089e-16
+cap "x4/VDD" "x4/a_100_200#" 21.3335
+cap "x4/VDD" "x4/Y" 5.08891
+cap "x4/a_100_200#" "x4/Y" 8.38572
+cap "x4/Y" "x4/VSS" 1.24832
+cap "x4/VDD" "x4/A" 1.12139
+cap "x4/a_100_200#" "x3/in" 0.020788
+cap "x4/a_100_200#" "x4/A" 1.11256
+cap "x4/A" "x5/avdd" 0.676559
+cap "x4/a_100_200#" "x5/avdd" 18.0942
+cap "x4/VSS" "x5/avdd" -0.88419
+cap "x5/avdd" "x2/Vout2" 0.385551
+cap "x5/avdd" "x4/Y" -0.104671
+cap "x4/a_100_200#" "x2/Vout2" 0.00796432
+cap "x2/Vout1" "x5/avdd" 0.280916
+cap "x2/Vout2" "x5/avdd" 0.478644
+merge "x4/VSS" "x5/avss" -10993.9 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -2171525 -14950 -1367366 -27791 0 0 0 0 0 0
+merge "x5/avss" "x2/VSS"
+merge "x2/VSS" "x3/avss"
+merge "x3/avss" "lvsclean_SAlatch_0/VSS"
+merge "lvsclean_SAlatch_0/VSS" "VSS"
+merge "VSS" "VSUBS"
+merge "x3/in" "lvsclean_SAlatch_0/Vout1" -523.64 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -152 -88320 -2368 0 0 0 0 0 0
+merge "lvsclean_SAlatch_0/Vout1" "m1_5565_1201#"
+merge "lvsclean_SAlatch_0/Clk" "CLK" -3019.11 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -432160 -10884 0 0 0 0 0 0 0 0
+merge "x2/VDD" "x4/VDD" -3160.96 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -588306 -7969 0 0 -27280 -1002 0 0 0 0
+merge "x4/VDD" "x5/avdd"
+merge "x5/avdd" "x3/avdd"
+merge "x3/avdd" "lvsclean_SAlatch_0/VDD"
+merge "lvsclean_SAlatch_0/VDD" "VDD"
+merge "x5/out" "x2/Vin2" -341.359 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -152 -19376 -804 0 0 0 0 0 0
+merge "x2/Vin2" "m1_8123_1191#"
+merge "x2/Vin1" "x3/out" -244.238 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -5168 -288 0 -112 0 0 0 0 0 0
+merge "x3/out" "m1_6823_1203#"
+merge "lvsclean_SAlatch_0/Vout2" "x5/in" -193.325 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -152 -6400 -320 0 0 0 0 0 0
+merge "x5/in" "m1_9175_1203#"
+merge "lvsclean_SAlatch_0/Vin1" "Vin1" -955.061 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -177675 -4963 0 0 0 0 0 0 0 0
+merge "lvsclean_SAlatch_0/Vin2" "Vin2" -881.582 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -177675 -4963 0 0 0 0 0 0 0 0
+merge "x2/Vout1" "x4/A" -303.101 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -6808 -478 0 0 0 0 0 0
+merge "x4/A" "m2_5909_2527#"
+merge "x4/Y" "Vout" -319.773 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -42840 -1608 0 0 0 0 0 0
+merge "lvsclean_SAlatch_0/off1" "off1" -29.9676 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -152 0 0 0 0 0 0 0 0
+merge "lvsclean_SAlatch_0/off2" "off2" -30.2411 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -152 0 0 0 0 0 0 0 0
+merge "lvsclean_SAlatch_0/off3" "off3" -74.138 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -152 0 0 0 0 0 0 0 0
+merge "lvsclean_SAlatch_0/off5" "off5" -29.9676 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -152 0 0 0 0 0 0 0 0
+merge "lvsclean_SAlatch_0/off4" "off4" -391.269 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -1982 0 0 0 0 0 0 0 0
+merge "lvsclean_SAlatch_0/off6" "off6" -30.3323 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -152 0 0 0 0 0 0 0 0
+merge "lvsclean_SAlatch_0/off7" "off7" -30.2018 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -152 0 0 0 0 0 0 0 0
+merge "lvsclean_SAlatch_0/off8" "off8" -391.36 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -1982 0 0 0 0 0 0 0 0

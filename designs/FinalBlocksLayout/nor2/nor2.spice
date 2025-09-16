@@ -1,0 +1,19 @@
+* NGSPICE file created from nor2.ext - technology: gf180mcuD
+
+.subckt nfet_03v3_EKBWUP a_n138_n100# a_n50_n192# a_50_n100# a_n276_n286#
+X0 a_50_n100# a_n50_n192# a_n138_n100# a_n276_n286# nfet_03v3 ad=0.44p pd=2.88u as=0.44p ps=2.88u w=1u l=0.5u
+.ends
+
+.subckt pfet_03v3_LJLJK4 a_152_n300# a_n240_n300# w_n402_n510# a_n52_n300# a_52_n392#
++ a_n152_n392#
+X0 a_152_n300# a_52_n392# a_n52_n300# w_n402_n510# pfet_03v3 ad=1.32p pd=6.88u as=0.78p ps=3.52u w=3u l=0.5u
+X1 a_n52_n300# a_n152_n392# a_n240_n300# w_n402_n510# pfet_03v3 ad=0.78p pd=3.52u as=1.32p ps=6.88u w=3u l=0.5u
+.ends
+
+.subckt nor2 VDD VSS OUT A B
+Xnfet_03v3_EKBWUP_0 VSS B OUT VSS nfet_03v3_EKBWUP
+XXM1 OUT A VSS VSS nfet_03v3_EKBWUP
+XXM3 VDD VDD VDD m1_2142_237# A A pfet_03v3_LJLJK4
+Xpfet_03v3_LJLJK4_0 OUT OUT VDD m1_2142_237# B B pfet_03v3_LJLJK4
+.ends
+
