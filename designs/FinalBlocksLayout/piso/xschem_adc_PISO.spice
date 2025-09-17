@@ -1,0 +1,110 @@
+** sch_path: /foss/designs/FinalBlocksLayout/piso/adc_PISO.sch
+.subckt adc_PISO load B6 B5 B4 serial_out avdd B3 avss B2 B1 clk
+*.PININFO avdd:B avss:B clk:B B6:B B5:B B4:B B3:B B2:B B1:B load:B serial_out:B
+x7 avss load avdd D6 avss B6 2inmux
+x8 Q6 load avdd D5 avss B5 2inmux
+x27 Q5 load avdd D4 avss B4 2inmux
+x28 Q4 load avdd D3 avss B3 2inmux
+x29 Q3 load avdd D2 avss B2 2inmux
+x30 Q2 load avdd D1 avss B1 2inmux
+x1 avdd avss D6 clk avdd avdd Q6 net1 dffrs
+x2 avdd avss D5 clk avdd avdd Q5 net2 dffrs
+x3 avdd avss D4 clk avdd avdd Q4 net3 dffrs
+x4 avdd avss D3 clk avdd avdd Q3 net4 dffrs
+x5 avdd avss D2 clk avdd avdd Q2 net5 dffrs
+x6 avdd avss D1 clk avdd avdd serial_out net6 dffrs
+.ends
+
+* expanding   symbol:  FinalBlocksLayout/2inmux/2inmux.sym # of pins=6
+** sym_path: /foss/designs/FinalBlocksLayout/2inmux/2inmux.sym
+** sch_path: /foss/designs/FinalBlocksLayout/2inmux/2inmux.sch
+.subckt 2inmux Bit Load VDD OUT VSS In
+*.PININFO VDD:B Bit:B In:B VSS:B Load:B OUT:B
+x1 VDD net3 Bit Load VSS and2
+x2 VDD net2 net1 In VSS and2
+x3 VDD VSS OUT net3 net2 or2
+x4 Load VDD net1 VSS inv2
+.ends
+
+
+* expanding   symbol:  FinalBlocksLayout/dffrs/dffrs.sym # of pins=8
+** sym_path: /foss/designs/FinalBlocksLayout/dffrs/dffrs.sym
+** sch_path: /foss/designs/FinalBlocksLayout/dffrs/dffrs.sch
+.subckt dffrs vdd vss d clk setb resetb Q Qb
+*.PININFO vdd:B vss:B Q:B Qb:B d:B clk:B resetb:B setb:B
+x1 vdd net2 net1 net3 setb vss nand3
+x2 vdd net1 clk resetb net2 vss nand3
+x3 vdd Q Qb net1 setb vss nand3
+x4 vdd Qb resetb net4 Q vss nand3
+x5 vdd net4 net3 clk net1 vss nand3
+x6 vdd net3 d resetb net4 vss nand3
+.ends
+
+
+* expanding   symbol:  FinalBlocksLayout/and2/and2.sym # of pins=5
+** sym_path: /foss/designs/FinalBlocksLayout/and2/and2.sym
+** sch_path: /foss/designs/FinalBlocksLayout/and2/and2.sch
+.subckt and2 VDD OUT A B VSS
+*.PININFO VDD:B A:B B:B VSS:B OUT:B
+x1 VDD net1 B A VSS nand2
+x2 net1 VDD OUT VSS inv2
+.ends
+
+
+* expanding   symbol:  FinalBlocksLayout/or2/or2.sym # of pins=5
+** sym_path: /foss/designs/FinalBlocksLayout/or2/or2.sym
+** sch_path: /foss/designs/FinalBlocksLayout/or2/or2.sch
+.subckt or2 VDD VSS OUT A B
+*.PININFO VDD:B A:B B:B VSS:B OUT:B
+x1 VDD VSS net1 A B nor2
+x2 net1 VDD OUT VSS inv2
+.ends
+
+
+* expanding   symbol:  FinalBlocksLayout/inv2/inv2.sym # of pins=4
+** sym_path: /foss/designs/FinalBlocksLayout/inv2/inv2.sym
+** sch_path: /foss/designs/FinalBlocksLayout/inv2/inv2.sch
+.subckt inv2 in vdd out vss
+*.PININFO in:B out:B vss:B vdd:B
+XM1 out in vdd vdd pfet_03v3 L=0.5u W=3.0u nf=1 m=1
+XM2 out in vss vss nfet_03v3 L=0.5u W=1.0u nf=1 m=1
+.ends
+
+
+* expanding   symbol:  comparator/final_magic/nand3/nand3.sym # of pins=6
+** sym_path: /foss/designs/comparator/final_magic/nand3/nand3.sym
+** sch_path: /foss/designs/comparator/final_magic/nand3/nand3.sch
+.subckt nand3 VDD Z A B C VSS
+*.PININFO VDD:B VSS:B Z:B A:B B:B C:B
+XM1 Z A net1 VSS nfet_03v3 L=0.4u W=1u nf=1 m=1
+XM2 net1 B net2 VSS nfet_03v3 L=0.4u W=1u nf=1 m=1
+XM3 Z B VDD VDD pfet_03v3 L=0.4u W=2.5u nf=1 m=1
+XM4 Z A VDD VDD pfet_03v3 L=0.4u W=2.5u nf=1 m=1
+XM5 Z C VDD VDD pfet_03v3 L=0.4u W=2.5u nf=1 m=1
+XM6 net2 C VSS VSS nfet_03v3 L=0.4u W=1u nf=1 m=1
+.ends
+
+
+* expanding   symbol:  FinalBlocksLayout/nand2/nand2.sym # of pins=5
+** sym_path: /foss/designs/FinalBlocksLayout/nand2/nand2.sym
+** sch_path: /foss/designs/FinalBlocksLayout/nand2/nand2.sch
+.subckt nand2 VDD OUT A B VSS
+*.PININFO VDD:B VSS:B B:B A:B OUT:B
+XM1 OUT A net1 VSS nfet_03v3 L=0.5u W=1u nf=1 m=2
+XM2 OUT A VDD VDD pfet_03v3 L=0.5u W=3u nf=1 m=1
+XM3 net1 B VSS VSS nfet_03v3 L=0.5u W=1u nf=1 m=2
+XM4 OUT B VDD VDD pfet_03v3 L=0.5u W=3u nf=1 m=1
+.ends
+
+
+* expanding   symbol:  FinalBlocksLayout/nor2/nor2.sym # of pins=5
+** sym_path: /foss/designs/FinalBlocksLayout/nor2/nor2.sym
+** sch_path: /foss/designs/FinalBlocksLayout/nor2/nor2.sch
+.subckt nor2 VDD VSS OUT A B
+*.PININFO VDD:B VSS:B B:B A:B OUT:B
+XM1 OUT A VSS VSS nfet_03v3 L=0.5u W=1u nf=1 m=1
+XM2 OUT B VSS VSS nfet_03v3 L=0.5u W=1u nf=1 m=1
+XM3 OUT B net1 VDD pfet_03v3 L=0.5u W=3u nf=1 m=2
+XM4 net1 A VDD VDD pfet_03v3 L=0.5u W=3u nf=1 m=2
+.ends
+

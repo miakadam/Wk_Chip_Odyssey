@@ -1,0 +1,85 @@
+* NGSPICE file created from adc_PISO.ext - technology: gf180mcuD
+
+.subckt 2inmux Bit Load VDD OUT VSS In
+X0 a_256_1130# Load VDD VDD pfet_03v3 ad=1.32p pd=6.88u as=1.32p ps=6.88u w=3u l=0.5u
+X1 VSS a_1812_410# a_2484_n766# VSS nfet_03v3 ad=0.44p pd=2.88u as=0.44p ps=2.88u w=1u l=0.5u
+X2 a_2672_n46# a_1812_n1930# a_2484_n766# VDD pfet_03v3 ad=0.78p pd=3.52u as=1.32p ps=6.88u w=3u l=0.5u
+X3 a_444_n1930# In a_256_n1210# VSS nfet_03v3 ad=0.26p pd=1.52u as=0.44p ps=2.88u w=1u l=0.5u
+X4 a_444_410# Bit VSS VSS nfet_03v3 ad=0.26p pd=1.52u as=0.44p ps=2.88u w=1u l=0.5u
+X5 a_2484_n766# a_1812_n1930# a_2672_n46# VDD pfet_03v3 ad=1.32p pd=6.88u as=0.78p ps=3.52u w=3u l=0.5u
+X6 OUT a_2484_n766# VDD VDD pfet_03v3 ad=1.32p pd=6.88u as=1.32p ps=6.88u w=3u l=0.5u
+X7 VSS Bit a_444_410# VSS nfet_03v3 ad=0.44p pd=2.88u as=0.26p ps=1.52u w=1u l=0.5u
+X8 a_2672_n46# a_1812_410# VDD VDD pfet_03v3 ad=0.78p pd=3.52u as=1.32p ps=6.88u w=3u l=0.5u
+X9 a_256_n1210# In VDD VDD pfet_03v3 ad=1.32p pd=6.88u as=1.32p ps=6.88u w=3u l=0.5u
+X10 a_2484_n766# a_1812_n1930# VSS VSS nfet_03v3 ad=0.44p pd=2.88u as=0.44p ps=2.88u w=1u l=0.5u
+X11 VSS a_n450_n1010# a_444_n1930# VSS nfet_03v3 ad=0.44p pd=2.88u as=0.26p ps=1.52u w=1u l=0.5u
+X12 a_1812_n1930# a_256_n1210# VDD VDD pfet_03v3 ad=1.32p pd=6.88u as=1.32p ps=6.88u w=3u l=0.5u
+X13 VDD a_1812_410# a_2672_n46# VDD pfet_03v3 ad=1.32p pd=6.88u as=0.78p ps=3.52u w=3u l=0.5u
+X14 a_444_410# Load a_256_1130# VSS nfet_03v3 ad=0.26p pd=1.52u as=0.44p ps=2.88u w=1u l=0.5u
+X15 a_n450_n1010# Load VSS VSS nfet_03v3 ad=0.44p pd=2.88u as=0.44p ps=2.88u w=1u l=0.5u
+X16 OUT a_2484_n766# VSS VSS nfet_03v3 ad=0.44p pd=2.88u as=0.44p ps=2.88u w=1u l=0.5u
+X17 VDD Bit a_256_1130# VDD pfet_03v3 ad=1.32p pd=6.88u as=1.32p ps=6.88u w=3u l=0.5u
+X18 a_1812_410# a_256_1130# VDD VDD pfet_03v3 ad=1.32p pd=6.88u as=1.32p ps=6.88u w=3u l=0.5u
+X19 a_256_1130# Load a_444_410# VSS nfet_03v3 ad=0.44p pd=2.88u as=0.26p ps=1.52u w=1u l=0.5u
+X20 a_1812_410# a_256_1130# VSS VSS nfet_03v3 ad=0.44p pd=2.88u as=0.44p ps=2.88u w=1u l=0.5u
+X21 VDD a_n450_n1010# a_256_n1210# VDD pfet_03v3 ad=1.32p pd=6.88u as=1.32p ps=6.88u w=3u l=0.5u
+X22 a_256_n1210# In a_444_n1930# VSS nfet_03v3 ad=0.44p pd=2.88u as=0.26p ps=1.52u w=1u l=0.5u
+X23 a_1812_n1930# a_256_n1210# VSS VSS nfet_03v3 ad=0.44p pd=2.88u as=0.44p ps=2.88u w=1u l=0.5u
+X24 a_444_n1930# a_n450_n1010# VSS VSS nfet_03v3 ad=0.26p pd=1.52u as=0.44p ps=2.88u w=1u l=0.5u
+X25 a_n450_n1010# Load VDD VDD pfet_03v3 ad=1.32p pd=6.88u as=1.32p ps=6.88u w=3u l=0.5u
+.ends
+
+.subckt dffrs vdd vss d clk setb resetb Q Qb
+X0 a_292_1130# a_108_n4625# a_108_1130# vss nfet_03v3 ad=0.26p pd=1.52u as=0.26p ps=1.52u w=1u l=0.4u
+X1 a_1778_n3279# a_28_n5577# a_1594_n3279# vss nfet_03v3 ad=0.26p pd=1.52u as=0.26p ps=1.52u w=1u l=0.4u
+X2 a_28_n1167# setb vdd vdd pfet_03v3 ad=0.65p pd=3.02u as=1.1p ps=5.88u w=2.5u l=0.4u
+X3 a_28_n1167# a_28_n3372# vdd vdd pfet_03v3 ad=1.1p pd=5.88u as=0.65p ps=3.02u w=2.5u l=0.4u
+X4 a_108_n1075# a_28_n1167# vss vss nfet_03v3 ad=0.26p pd=1.52u as=0.44p ps=2.88u w=1u l=0.4u
+X5 a_108_n3280# a_28_n3372# vss vss nfet_03v3 ad=0.26p pd=1.52u as=0.44p ps=2.88u w=1u l=0.4u
+X6 a_28_n3372# a_28_n1167# vdd vdd pfet_03v3 ad=0.65p pd=3.02u as=1.1p ps=5.88u w=2.5u l=0.4u
+X7 Q setb vdd vdd pfet_03v3 ad=0.65p pd=3.02u as=1.1p ps=5.88u w=2.5u l=0.4u
+X8 Qb resetb vdd vdd pfet_03v3 ad=1.1p pd=5.88u as=0.65p ps=3.02u w=2.5u l=0.4u
+X9 vdd resetb a_108_n4625# vdd pfet_03v3 ad=0.65p pd=3.02u as=0.65p ps=3.02u w=2.5u l=0.4u
+X10 a_28_n3372# clk vdd vdd pfet_03v3 ad=1.1p pd=5.88u as=0.65p ps=3.02u w=2.5u l=0.4u
+X11 Q Qb a_1778_n1075# vss nfet_03v3 ad=0.44p pd=2.88u as=0.26p ps=1.52u w=1u l=0.4u
+X12 a_1594_n3279# Q vss vss nfet_03v3 ad=0.26p pd=1.52u as=0.44p ps=2.88u w=1u l=0.4u
+X13 a_28_n3372# clk a_292_n1075# vss nfet_03v3 ad=0.44p pd=2.88u as=0.26p ps=1.52u w=1u l=0.4u
+X14 vdd a_28_n5577# Qb vdd pfet_03v3 ad=0.65p pd=3.02u as=0.65p ps=3.02u w=2.5u l=0.4u
+X15 a_108_1130# setb vss vss nfet_03v3 ad=0.26p pd=1.52u as=0.44p ps=2.88u w=1u l=0.4u
+X16 a_28_n1167# a_28_n3372# a_292_1130# vss nfet_03v3 ad=0.44p pd=2.88u as=0.26p ps=1.52u w=1u l=0.4u
+X17 a_1778_n1075# a_28_n3372# a_1594_n1075# vss nfet_03v3 ad=0.26p pd=1.52u as=0.26p ps=1.52u w=1u l=0.4u
+X18 a_28_n5577# a_108_n4625# a_292_n3280# vss nfet_03v3 ad=0.44p pd=2.88u as=0.26p ps=1.52u w=1u l=0.4u
+X19 a_28_n5577# a_28_n3372# vdd vdd pfet_03v3 ad=0.65p pd=3.02u as=1.1p ps=5.88u w=2.5u l=0.4u
+X20 a_108_n5485# a_28_n5577# vss vss nfet_03v3 ad=0.26p pd=1.52u as=0.44p ps=2.88u w=1u l=0.4u
+X21 vdd a_28_n3372# Q vdd pfet_03v3 ad=0.65p pd=3.02u as=0.65p ps=3.02u w=2.5u l=0.4u
+X22 Qb Q vdd vdd pfet_03v3 ad=0.65p pd=3.02u as=1.1p ps=5.88u w=2.5u l=0.4u
+X23 a_292_n1075# resetb a_108_n1075# vss nfet_03v3 ad=0.26p pd=1.52u as=0.26p ps=1.52u w=1u l=0.4u
+X24 a_292_n3280# clk a_108_n3280# vss nfet_03v3 ad=0.26p pd=1.52u as=0.26p ps=1.52u w=1u l=0.4u
+X25 a_1594_n1075# setb vss vss nfet_03v3 ad=0.26p pd=1.52u as=0.44p ps=2.88u w=1u l=0.4u
+X26 a_28_n5577# a_108_n4625# vdd vdd pfet_03v3 ad=1.1p pd=5.88u as=0.65p ps=3.02u w=2.5u l=0.4u
+X27 a_108_n4625# d a_292_n5485# vss nfet_03v3 ad=0.44p pd=2.88u as=0.26p ps=1.52u w=1u l=0.4u
+X28 a_108_n4625# a_28_n5577# vdd vdd pfet_03v3 ad=0.65p pd=3.02u as=1.1p ps=5.88u w=2.5u l=0.4u
+X29 vdd a_108_n4625# a_28_n1167# vdd pfet_03v3 ad=0.65p pd=3.02u as=0.65p ps=3.02u w=2.5u l=0.4u
+X30 vdd resetb a_28_n3372# vdd pfet_03v3 ad=0.65p pd=3.02u as=0.65p ps=3.02u w=2.5u l=0.4u
+X31 Q Qb vdd vdd pfet_03v3 ad=1.1p pd=5.88u as=0.65p ps=3.02u w=2.5u l=0.4u
+X32 vdd clk a_28_n5577# vdd pfet_03v3 ad=0.65p pd=3.02u as=0.65p ps=3.02u w=2.5u l=0.4u
+X33 Qb resetb a_1778_n3279# vss nfet_03v3 ad=0.44p pd=2.88u as=0.26p ps=1.52u w=1u l=0.4u
+X34 a_292_n5485# resetb a_108_n5485# vss nfet_03v3 ad=0.26p pd=1.52u as=0.26p ps=1.52u w=1u l=0.4u
+X35 a_108_n4625# d vdd vdd pfet_03v3 ad=1.1p pd=5.88u as=0.65p ps=3.02u w=2.5u l=0.4u
+.ends
+
+.subckt adc_PISO load B6 B5 B4 serial_out avdd B3 avss B2 B1 clk
+X2inmux_4 dffrs_2/Q load avdd dffrs_3/d avss B3 2inmux
+X2inmux_3 dffrs_1/Q load avdd dffrs_2/d avss B4 2inmux
+X2inmux_5 dffrs_3/Q load avdd dffrs_4/d avss B2 2inmux
+Xdffrs_0 avdd avss dffrs_0/d clk avdd avdd dffrs_0/Q dffrs_0/Qb dffrs
+Xdffrs_1 avdd avss dffrs_1/d clk avdd avdd dffrs_1/Q dffrs_1/Qb dffrs
+Xdffrs_2 avdd avss dffrs_2/d clk avdd avdd dffrs_2/Q dffrs_2/Qb dffrs
+Xdffrs_3 avdd avss dffrs_3/d clk avdd avdd dffrs_3/Q dffrs_3/Qb dffrs
+Xdffrs_4 avdd avss dffrs_4/d clk avdd avdd dffrs_4/Q dffrs_4/Qb dffrs
+Xdffrs_5 avdd avss dffrs_5/d clk avdd avdd serial_out dffrs_5/Qb dffrs
+X2inmux_0 avss load avdd dffrs_0/d avss B6 2inmux
+X2inmux_1 dffrs_4/Q load avdd dffrs_5/d avss B1 2inmux
+X2inmux_2 dffrs_0/Q load avdd dffrs_1/d avss B5 2inmux
+.ends
+

@@ -86,7 +86,7 @@ device=resistor
 m=1}
 C {lab_pin.sym} 1000 -400 3 0 {name=p1 sig_type=std_logic lab=VDD_3V3}
 C {gnd.sym} 980 -400 0 1 {name=l1 lab=GND}
-C {lab_pin.sym} 900 -440 0 0 {name=p2 sig_type=std_logic lab=CLK}
+C {lab_pin.sym} 900 -450 0 0 {name=p2 sig_type=std_logic lab=CLK}
 C {devices/code_shown.sym} 380 -1060 0 0 {name=MODELS only_toplevel=true
 format="tcleval( @value )"
 value="
@@ -119,8 +119,8 @@ C {lab_pin.sym} 980 -530 1 0 {name=p7 sig_type=std_logic lab=B4}
 C {lab_pin.sym} 1000 -530 1 0 {name=p8 sig_type=std_logic lab=B3}
 C {lab_pin.sym} 1020 -530 1 0 {name=p9 sig_type=std_logic lab=B2}
 C {lab_pin.sym} 1040 -530 1 0 {name=p11 sig_type=std_logic lab=B1}
-C {lab_pin.sym} 900 -480 0 0 {name=p3 sig_type=std_logic lab=serial_in}
-C {lab_pin.sym} 900 -460 0 0 {name=p4 sig_type=std_logic lab=load}
+C {lab_pin.sym} 800 -590 0 0 {name=p3 sig_type=std_logic lab=serial_in}
+C {lab_pin.sym} 900 -470 0 0 {name=p4 sig_type=std_logic lab=load}
 C {vsource.sym} 660 -400 0 1 {name=V1 value="PULSE(0 3.3 0n 100p 100p 20n 120n)" savecurrent=false}
 C {gnd.sym} 660 -370 0 0 {name=l2 lab=GND}
 C {lab_wire.sym} 660 -450 0 0 {name=p14 sig_type=std_logic lab=load}
