@@ -1,0 +1,182 @@
+
+Circuit 1 cell nfet_03v3 and Circuit 2 cell nfet_03v3 are black boxes.
+Warning: Equate pins:  cell nfet_03v3 is a placeholder, treated as a black box.
+Warning: Equate pins:  cell nfet_03v3 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: nfet_03v3                       |Circuit 2: nfet_03v3                       
+-------------------------------------------|-------------------------------------------
+1                                          |1                                          
+2                                          |2                                          
+3                                          |3                                          
+4                                          |4                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes nfet_03v3 and nfet_03v3 are equivalent.
+
+Circuit 1 cell pfet_03v3 and Circuit 2 cell pfet_03v3 are black boxes.
+Warning: Equate pins:  cell pfet_03v3 is a placeholder, treated as a black box.
+Warning: Equate pins:  cell pfet_03v3 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: pfet_03v3                       |Circuit 2: pfet_03v3                       
+-------------------------------------------|-------------------------------------------
+1                                          |1                                          
+2                                          |2                                          
+3                                          |3                                          
+4                                          |4                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes pfet_03v3 and pfet_03v3 are equivalent.
+
+Subcircuit summary:
+Circuit 1: inv2                            |Circuit 2: inv2                            
+-------------------------------------------|-------------------------------------------
+pfet_03v3 (1)                              |pfet_03v3 (1)                              
+nfet_03v3 (1)                              |nfet_03v3 (1)                              
+Number of devices: 2                       |Number of devices: 2                       
+Number of nets: 4                          |Number of nets: 4                          
+---------------------------------------------------------------------------------------
+Netlists match uniquely.
+
+Subcircuit pins:
+Circuit 1: inv2                            |Circuit 2: inv2                            
+-------------------------------------------|-------------------------------------------
+out                                        |out                                        
+in                                         |in                                         
+vdd                                        |vdd                                        
+vss                                        |vss                                        
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes inv2 and inv2 are equivalent.
+Flattening unmatched subcell rslatch in circuit comparator_no_offsetcal (1)(1 instance)
+Flattening unmatched subcell osu_sc_buf_4 in circuit comparator_no_offsetcal (1)(1 instance)
+Flattening unmatched subcell no_offsetLatch in circuit comparator_no_offsetcal (1)(1 instance)
+Flattening unmatched subcell inv_mia in circuit comparator_no_offsetcal (1)(2 instances)
+
+Class comparator_no_offsetcal (0):  Merged 39 parallel devices.
+Class comparator_no_offsetcal (1):  Merged 5 parallel devices.
+Subcircuit summary:
+Circuit 1: comparator_no_offsetcal         |Circuit 2: comparator_no_offsetcal         
+-------------------------------------------|-------------------------------------------
+pfet_03v3 (23->13)                         |pfet_03v3 (23->13)                         
+nfet_03v3 (46->17)                         |nfet_03v3 (46->17)                         
+Number of devices: 30                      |Number of devices: 30                      
+Number of nets: 30                         |Number of nets: 30                         
+---------------------------------------------------------------------------------------
+Netlists match uniquely.
+
+Subcircuit pins:
+Circuit 1: comparator_no_offsetcal         |Circuit 2: comparator_no_offsetcal         
+-------------------------------------------|-------------------------------------------
+CLK                                        |CLK                                        
+VSS                                        |VSS                                        
+Vin1                                       |Vin1                                       
+Vin2                                       |Vin2                                       
+Vout                                       |Vout                                       
+VDD                                        |VDD                                        
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes comparator_no_offsetcal and comparator_no_offsetcal are equivalent.
+Flattening unmatched subcell 2inmux in circuit adc_PISO (1)(6 instances)
+Flattening unmatched subcell and2 in circuit adc_PISO (1)(12 instances)
+Flattening unmatched subcell nand2 in circuit adc_PISO (1)(12 instances)
+Flattening unmatched subcell or2 in circuit adc_PISO (1)(6 instances)
+Flattening unmatched subcell nor2 in circuit adc_PISO (1)(6 instances)
+Flattening unmatched subcell dffrs in circuit adc_PISO (1)(6 instances)
+Flattening unmatched subcell nand3 in circuit adc_PISO (1)(36 instances)
+
+Flattening instances of inv2 in cell adc_PISO (1) makes a better match
+Making another compare attempt.
+
+Class adc_PISO (0):  Merged 36 parallel devices.
+Subcircuit summary:
+Circuit 1: adc_PISO                        |Circuit 2: adc_PISO                        
+-------------------------------------------|-------------------------------------------
+nfet_03v3 (192->168)                       |nfet_03v3 (192->168)                       
+pfet_03v3 (180->168)                       |pfet_03v3 (180->168)                       
+Number of devices: 336                     |Number of devices: 336                     
+Number of nets: 178                        |Number of nets: 178                        
+---------------------------------------------------------------------------------------
+Netlists match uniquely.
+
+Subcircuit pins:
+Circuit 1: adc_PISO                        |Circuit 2: adc_PISO                        
+-------------------------------------------|-------------------------------------------
+load                                       |load                                       
+clk                                        |clk                                        
+serial_out                                 |serial_out                                 
+avss                                       |avss                                       
+avdd                                       |avdd                                       
+B1                                         |B1                                         
+B3                                         |B3                                         
+B4                                         |B4                                         
+B2                                         |B2                                         
+B5                                         |B5                                         
+B6                                         |B6                                         
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes adc_PISO and adc_PISO are equivalent.
+Flattening unmatched subcell dffrs in circuit SARlogic (1)(14 instances)
+Flattening unmatched subcell nand3 in circuit SARlogic (1)(84 instances)
+
+Subcircuit summary:
+Circuit 1: SARlogic                        |Circuit 2: SARlogic                        
+-------------------------------------------|-------------------------------------------
+nfet_03v3 (252)                            |nfet_03v3 (252)                            
+pfet_03v3 (252)                            |pfet_03v3 (252)                            
+Number of devices: 504                     |Number of devices: 504                     
+Number of nets: 257                        |Number of nets: 257                        
+---------------------------------------------------------------------------------------
+Netlists match uniquely.
+
+Subcircuit pins:
+Circuit 1: SARlogic                        |Circuit 2: SARlogic                        
+-------------------------------------------|-------------------------------------------
+comp_in                                    |comp_in                                    
+clk                                        |clk                                        
+d5                                         |d5                                         
+vdd                                        |vdd                                        
+vss                                        |vss                                        
+reset                                      |reset                                      
+d4                                         |d4                                         
+d3                                         |d3                                         
+d0                                         |d0                                         
+d1                                         |d1                                         
+d2                                         |d2                                         
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes SARlogic and SARlogic are equivalent.
+
+Subcircuit summary:
+Circuit 1: comp_SAR_final                  |Circuit 2: comp_SAR_final                  
+-------------------------------------------|-------------------------------------------
+comparator_no_offsetcal (1)                |comparator_no_offsetcal (1)                
+inv2 (1)                                   |inv2 (1)                                   
+adc_PISO (1)                               |adc_PISO (1)                               
+SARlogic (1)                               |SARlogic (1)                               
+Number of devices: 4                       |Number of devices: 4                       
+Number of nets: 18                         |Number of nets: 18                         
+---------------------------------------------------------------------------------------
+Netlists match uniquely.
+
+Subcircuit pins:
+Circuit 1: comp_SAR_final                  |Circuit 2: comp_SAR_final                  
+-------------------------------------------|-------------------------------------------
+Vin1                                       |Vin1                                       
+Vin2                                       |Vin2                                       
+Comp_out                                   |Comp_out                                   
+Reset                                      |Reset                                      
+SAR_in                                     |SAR_in                                     
+Piso_out                                   |Piso_out                                   
+Clk_piso                                   |Clk_piso                                   
+Load                                       |Load                                       
+Clk                                        |Clk                                        
+Vdd                                        |Vdd                                        
+Vss                                        |Vss                                        
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes comp_SAR_final and comp_SAR_final are equivalent.
+
+Final result: Circuits match uniquely.
+.

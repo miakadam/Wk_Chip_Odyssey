@@ -53,8 +53,8 @@ logy=0
 digital=1}
 B 2 1250 -550 2050 -150 {flags=graph
 y1=0
-ypos1=0.1
-ypos2=2.1
+ypos1=0.12567343
+ypos2=2.0256734
 divy=5
 subdivy=1
 unity=1
@@ -127,7 +127,7 @@ C {code_shown.sym} 480 -590 0 0 {name=NGSPICE only_toplevel=true value=
 ".save all
 .control
 tran 100p 250n
-write tb_ffrs.raw
+write SAR_logic_tb.raw
 quit
 .endc"}
 C {devices/launcher.sym} 880 -590 0 0 {name=h3
@@ -136,7 +136,7 @@ tclcommand="xschem save; xschem netlist; xschem simulate"}
 C {launcher.sym} 880 -535 0 0 {name=h5 
 descr="load ngspice waves" 
 tclcommand="
-xschem raw_read $netlist_dir/tb_ffrs.raw tran; xschem redraw
+xschem raw_read $netlist_dir/SAR_logic_tb.raw tran; xschem redraw
 "
 }
 C {lab_pin.sym} 730 -360 3 1 {name=p1 sig_type=std_logic lab=VDD_3V3}

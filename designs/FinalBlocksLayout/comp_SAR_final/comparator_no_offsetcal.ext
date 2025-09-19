@@ -1,0 +1,363 @@
+timestamp 1758264283
+version 8.3
+tech gf180mcuD
+style ngspice()
+scale 1000 1 0.5
+resistclasses 1000000 3250000 6300 7000 6300 7000 7300 1000000 60000 185000 60000 185000 6300 7000 6300 7000 6800 7300 350000 310000 1000000 90 90 90 90 60
+parameters nfet_03v3_dss l=l w=w a1=as p1=ps a2=ad p2=pd l1=s_sab l2=d_sab
+parameters nfet_03v3 l=l w=w a1=as p1=ps a2=ad p2=pd
+parameters pfet_03v3_dss l=l w=w a1=as p1=ps a2=ad p2=pd l1=s_sab l2=d_sab
+parameters pfet_03v3 l=l w=w a1=as p1=ps a2=ad p2=pd
+port "Vin2" 4 3225 -3637 3225 -3637 m1
+port "Vin1" 3 3225 -3315 3225 -3315 m1
+port "CLK" 2 3320 -5140 3320 -5140 m1
+port "Vout" 5 3480 2815 3480 2815 m2
+port "VDD" 0 3235 4186 3235 4186 m1
+port "VSS" 1 2794 -5618 2794 -5618 m1
+node "a_8159_n4890#" 12 97.5038 8159 -4890 ndif 0 0 0 0 14080 496 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 7176 404 0 0 0 0 0 0 0 0
+node "a_7623_n4890#" 12 183.468 7623 -4890 ndif 0 0 0 0 14080 496 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 7176 404 0 0 0 0 0 0 0 0
+node "a_8079_n4982#" 32 261.62 8079 -4982 p 0 0 0 0 0 0 0 0 0 0 0 0 27520 848 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 11552 608 0 0 0 0 0 0 0 0
+node "a_7711_n4982#" 32 287.48 7711 -4982 p 0 0 0 0 0 0 0 0 0 0 0 0 27520 848 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 11552 608 0 0 0 0 0 0 0 0
+node "a_9707_n4104#" 22 108.284 9707 -4104 ndif 0 0 0 0 26400 776 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 13616 684 0 0 0 0 0 0 0 0
+node "a_6075_n4104#" 22 110.658 6075 -4104 ndif 0 0 0 0 26400 776 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 13616 684 0 0 0 0 0 0 0 0
+node "a_9507_n4196#" 19 472.054 9507 -4196 p 0 0 0 0 0 0 0 0 0 0 0 0 96800 1368 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 18032 968 0 0 0 0 0 0 0 0
+node "a_6163_n4196#" 19 482.385 6163 -4196 p 0 0 0 0 0 0 0 0 0 0 0 0 96800 1368 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 18032 968 0 0 0 0 0 0 0 0
+node "a_9707_n3141#" 22 107.844 9707 -3141 ndif 0 0 0 0 26400 776 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 13616 684 0 0 0 0 0 0 0 0
+node "a_6667_n4104#" 363 1734.08 6667 -4104 ndif 0 0 0 0 328640 8608 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 212016 7992 803666 21894 49060 1388 0 0 0 0
+node "a_6075_n3141#" 22 108.378 6075 -3141 ndif 0 0 0 0 26400 776 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 13616 684 0 0 0 0 0 0 0 0
+node "a_9507_n3233#" 19 467.447 9507 -3233 p 0 0 0 0 0 0 0 0 0 0 0 0 96800 1368 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 18032 968 0 0 0 0 0 0 0 0
+node "Vin2" 360 6391.55 3225 -3637 m1 0 0 0 0 0 0 0 0 0 0 0 0 968180 13684 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 755735 22364 146285 4958 28160 1344 64672 2424 0 0
+equiv "Vin2" "no_offsetLatch_0.Vin2"
+node "Vin1" 359 6369.09 3225 -3315 m1 0 0 0 0 0 0 0 0 0 0 0 0 968000 13680 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 760185 22414 146785 4964 28160 1344 64672 2424 0 0
+equiv "Vin1" "no_offsetLatch_0.Vin1"
+node "a_6163_n3233#" 19 469.781 6163 -3233 p 0 0 0 0 0 0 0 0 0 0 0 0 96800 1368 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 18032 968 0 0 0 0 0 0 0 0
+node "a_9541_n1756#" 29 261.459 9541 -1756 ndif 0 0 0 0 35200 976 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 18216 884 0 0 0 0 0 0 0 0
+node "a_8037_n1756#" 29 251.603 8037 -1756 ndif 0 0 0 0 35200 976 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 18216 884 0 0 0 0 0 0 0 0
+node "a_9341_n1848#" 22 488.848 9341 -1848 p 0 0 0 0 0 0 0 0 0 0 0 0 116800 1568 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 18032 968 0 0 0 0 0 0 0 0
+node "a_8125_n1848#" 22 486.962 8125 -1848 p 0 0 0 0 0 0 0 0 0 0 0 0 116800 1568 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 18032 968 0 0 0 0 0 0 0 0
+node "a_7745_n1756#" 29 251.603 7745 -1756 ndif 0 0 0 0 35200 976 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 18216 884 0 0 0 0 0 0 0 0
+node "a_6241_n1756#" 29 261.459 6241 -1756 ndif 0 0 0 0 35200 976 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 18216 884 0 0 0 0 0 0 0 0
+node "a_7545_n1848#" 22 487.114 7545 -1848 p 0 0 0 0 0 0 0 0 0 0 0 0 116800 1568 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 18032 968 0 0 0 0 0 0 0 0
+node "a_6329_n1848#" 22 488.848 6329 -1848 p 0 0 0 0 0 0 0 0 0 0 0 0 116800 1568 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 18032 968 0 0 0 0 0 0 0 0
+node "no_offsetLatch_0.Vq" 300 3002.42 6363 -4104 ndif 0 0 0 0 270400 6864 14080 496 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 348080 11260 559344 16522 424312 11804 0 0 0 0
+node "a_9403_n600#" 16 22.8766 9403 -600 pdif 0 0 0 0 0 0 17600 576 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 9016 484 0 0 0 0 0 0 0 0
+node "a_6379_n600#" 16 22.8766 6379 -600 pdif 0 0 0 0 0 0 17600 576 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 9016 484 0 0 0 0 0 0 0 0
+node "a_9203_n692#" 15 211.104 9203 -692 p 0 0 0 0 0 0 0 0 0 0 0 0 76800 1168 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 18032 968 0 0 0 0 0 0 0 0
+node "a_6467_n692#" 15 211.104 6467 -692 p 0 0 0 0 0 0 0 0 0 0 0 0 76800 1168 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 18032 968 0 0 0 0 0 0 0 0
+node "no_offsetLatch_0.Vp" 300 2651.82 5227 -580 pdif 0 0 0 0 270400 6864 14080 496 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 346822 11260 571744 16832 415332 11580 0 0 0 0
+node "CLK" 258 13292.6 3320 -5140 m1 0 0 0 0 0 0 0 0 0 0 0 0 137600 4240 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1366428 36140 895680 22664 0 0 0 0 0 0
+equiv "CLK" "no_offsetLatch_0.Clk"
+node "no_offsetLatch_0.Vout2" 525 4796.25 6633 -1848 p 0 0 0 0 83200 2016 55680 1712 0 0 0 0 775360 12640 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 654336 19734 429200 11688 171136 4338 0 0 0 0
+equiv "no_offsetLatch_0.Vout2" "x5.in"
+node "x5.out" 132 1462.13 8125 1658 p 0 0 0 0 35200 976 70400 1776 0 0 0 0 30720 928 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 208664 5872 32440 1234 0 0 0 0 0 0
+equiv "x5.out" "x2.Vin2"
+node "x3.out" 132 1467.34 6775 617 ndif 0 0 0 0 35200 976 70400 1776 0 0 0 0 30720 928 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 208664 5872 32440 1234 0 0 0 0 0 0
+equiv "x3.out" "x2.Vin1"
+node "no_offsetLatch_0.Vout1" 526 4857.8 6087 -580 pdif 0 0 0 0 83200 2016 55680 1712 0 0 0 0 775360 12640 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 654300 19736 464700 12428 155416 4856 0 0 0 0
+equiv "no_offsetLatch_0.Vout1" "x3.in"
+node "x2.Vout2" 70 759.479 7665 2478 p 0 0 0 0 17600 576 17600 576 0 0 0 0 30720 928 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 61052 2636 94288 3428 0 0 0 0 0 0
+node "Vout" 107 1174.29 3480 2815 m2 0 0 0 0 37400 1120 74800 1800 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 122800 4620 118700 4050 0 0 0 0 0 0
+equiv "Vout" "x4.Y"
+node "x4.A" 207 1418.47 5885 2503 p 0 0 0 0 17600 576 17600 576 0 0 0 0 93720 3068 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 58524 2684 193264 6936 0 0 0 0 0 0
+equiv "x4.A" "x2.Vout1"
+node "a_5265_2223#" 523 1367.6 5265 2223 p 0 0 0 0 17000 540 34000 880 0 0 0 0 252000 8320 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 56900 2280 0 0 0 0 0 0 0 0
+node "VDD" 34090 32737.7 3235 4186 m1 6070640 28480 0 0 1727568 47976 445120 12408 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 5254542 67874 736002 20636 673640 16766 0 0 0 0
+equiv "VDD" "x2.VDD"
+equiv "VDD" "x3.avdd"
+equiv "VDD" "x4.VDD"
+equiv "VDD" "x5.avdd"
+equiv "VDD" "no_offsetLatch_0.VDD"
+substrate "VSS" 0 0 2794 -5618 m1 0 0 0 0 176640 5292 2882272 64300 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 5040011 58866 3026073 55818 0 0 0 0 0 0
+equiv "VSS" "x2.VSS"
+equiv "VSS" "x3.avss"
+equiv "VSS" "x4.VSS"
+equiv "VSS" "x5.avss"
+equiv "VSS" "no_offsetLatch_0.VSS"
+cap "a_6075_n4104#" "a_6667_n4104#" 1.7141
+cap "no_offsetLatch_0.Vq" "VDD" 362.804
+cap "a_8159_n4890#" "a_6667_n4104#" 64.2318
+cap "CLK" "a_8079_n4982#" 120.181
+cap "a_7545_n1848#" "no_offsetLatch_0.Vp" 14.7115
+cap "x2.Vout2" "x3.out" 21.9214
+cap "no_offsetLatch_0.Vout2" "a_6379_n600#" 0.812894
+cap "a_7545_n1848#" "a_7745_n1756#" 2.35066
+cap "Vout" "x4.A" 29.8052
+cap "x3.out" "no_offsetLatch_0.Vout1" 417.827
+cap "a_9341_n1848#" "a_9541_n1756#" 2.35066
+cap "no_offsetLatch_0.Vp" "a_8125_n1848#" 6.50565
+cap "a_6467_n692#" "VDD" 319.698
+cap "a_8037_n1756#" "a_8125_n1848#" 2.35066
+cap "no_offsetLatch_0.Vp" "a_9507_n3233#" 0.502704
+cap "no_offsetLatch_0.Vout2" "a_6329_n1848#" 61.6849
+cap "no_offsetLatch_0.Vout2" "a_8037_n1756#" 71.398
+cap "no_offsetLatch_0.Vout2" "no_offsetLatch_0.Vp" 254.137
+cap "CLK" "a_7623_n4890#" 10.8547
+cap "a_9341_n1848#" "Vin1" 0.0397151
+cap "x4.A" "a_5265_2223#" 305.396
+cap "Vin1" "a_9507_n4196#" 100.261
+cap "a_6163_n4196#" "a_6667_n4104#" 11.0039
+cap "a_9403_n600#" "VDD" 170.391
+cap "no_offsetLatch_0.Vout2" "a_7745_n1756#" 7.76144
+cap "a_9341_n1848#" "VDD" 5.44271
+cap "no_offsetLatch_0.Vq" "a_9403_n600#" 0.165074
+cap "a_6075_n4104#" "no_offsetLatch_0.Vp" 0.636191
+cap "a_9341_n1848#" "no_offsetLatch_0.Vq" 85.4989
+cap "no_offsetLatch_0.Vq" "a_9507_n4196#" 0.656308
+cap "a_8159_n4890#" "no_offsetLatch_0.Vp" 3.0509
+cap "CLK" "a_9707_n3141#" 0.00845496
+cap "Vin2" "a_8125_n1848#" 5.15963
+cap "Vin2" "a_9507_n3233#" 98.8074
+cap "CLK" "a_6163_n3233#" 0.125971
+cap "Vin1" "CLK" 90.1315
+cap "no_offsetLatch_0.Vout2" "Vin2" 8.32102
+cap "CLK" "VDD" 2154.29
+cap "a_6667_n4104#" "a_7711_n4982#" 6.32563
+cap "no_offsetLatch_0.Vout2" "x5.out" 417.842
+cap "Vout" "no_offsetLatch_0.Vout1" 0.196709
+cap "no_offsetLatch_0.Vout1" "a_6667_n4104#" 3.74352
+cap "no_offsetLatch_0.Vq" "CLK" 201.709
+cap "x2.Vout2" "a_5265_2223#" 0.0159286
+cap "Vin2" "a_6075_n4104#" 18.5879
+cap "a_8159_n4890#" "Vin2" 0.442085
+cap "Vin1" "a_9707_n4104#" 9.33509
+cap "no_offsetLatch_0.Vout1" "a_5265_2223#" 1.44334
+cap "a_7545_n1848#" "a_8125_n1848#" 5.51901
+cap "a_6163_n4196#" "no_offsetLatch_0.Vp" 1.91307
+cap "a_9341_n1848#" "a_9403_n600#" 0.16343
+cap "a_6667_n4104#" "a_8079_n4982#" 25.9332
+cap "no_offsetLatch_0.Vout2" "a_7545_n1848#" 81.805
+cap "x3.out" "VDD" 453.744
+cap "CLK" "a_6467_n692#" 19.1199
+cap "no_offsetLatch_0.Vq" "a_9707_n4104#" 0.0763382
+cap "a_6379_n600#" "no_offsetLatch_0.Vout1" 7.50187
+cap "no_offsetLatch_0.Vout2" "a_8125_n1848#" 73.5311
+cap "no_offsetLatch_0.Vout2" "a_9203_n692#" 100.897
+cap "CLK" "a_9403_n600#" 3.56018
+cap "x4.A" "x5.out" 13.0141
+cap "a_6667_n4104#" "a_7623_n4890#" 0.894482
+cap "no_offsetLatch_0.Vp" "a_7711_n4982#" 0.59274
+cap "a_9341_n1848#" "CLK" 0.113252
+cap "Vin2" "a_6163_n4196#" 265.739
+cap "CLK" "a_9507_n4196#" 9.20026
+cap "no_offsetLatch_0.Vout1" "a_6329_n1848#" 41.8946
+cap "no_offsetLatch_0.Vout1" "a_8037_n1756#" 12.4963
+cap "no_offsetLatch_0.Vout1" "no_offsetLatch_0.Vp" 386.968
+cap "no_offsetLatch_0.Vout1" "a_7745_n1756#" 75.1565
+cap "a_9707_n3141#" "a_6667_n4104#" 0.460224
+cap "a_6163_n3233#" "a_6667_n4104#" 4.09168
+cap "no_offsetLatch_0.Vp" "a_8079_n4982#" 0.59274
+cap "Vin1" "a_6667_n4104#" 1684.02
+cap "a_9707_n4104#" "a_9507_n4196#" 2.35066
+cap "Vout" "VDD" 859.204
+cap "Vin2" "a_7711_n4982#" 9.43998
+cap "Vin2" "no_offsetLatch_0.Vout1" 5.26746
+cap "x2.Vout2" "x5.out" 39.7957
+cap "no_offsetLatch_0.Vq" "a_6667_n4104#" 1596.93
+cap "VDD" "a_5265_2223#" 870.447
+cap "no_offsetLatch_0.Vout2" "x4.A" 0.00206177
+cap "no_offsetLatch_0.Vout1" "x5.out" 0.267702
+cap "no_offsetLatch_0.Vp" "a_7623_n4890#" 0.169729
+cap "CLK" "a_9707_n4104#" 2.30591
+cap "x3.out" "CLK" 0.216267
+cap "a_6379_n600#" "VDD" 170.391
+cap "a_9707_n3141#" "no_offsetLatch_0.Vp" 0.183225
+cap "a_6329_n1848#" "a_6163_n3233#" 0.423493
+cap "a_6163_n3233#" "no_offsetLatch_0.Vp" 67.7985
+cap "Vin1" "a_6329_n1848#" 0.811967
+cap "a_7545_n1848#" "no_offsetLatch_0.Vout1" 77.4712
+cap "Vin1" "a_8037_n1756#" 0.094041
+cap "Vin1" "no_offsetLatch_0.Vp" 1335.77
+cap "a_6163_n4196#" "a_6075_n4104#" 2.35066
+cap "Vin2" "a_7623_n4890#" 0.602791
+cap "a_6329_n1848#" "VDD" 5.44271
+cap "VDD" "no_offsetLatch_0.Vp" 362.804
+cap "a_8037_n1756#" "VDD" 0.499241
+cap "a_6241_n1756#" "a_6329_n1848#" 2.35066
+cap "a_6241_n1756#" "no_offsetLatch_0.Vp" 79.9446
+cap "Vin1" "a_7745_n1756#" 2.02604
+cap "x2.Vout2" "no_offsetLatch_0.Vout2" 2.31911
+cap "a_9507_n4196#" "a_6667_n4104#" 13.5073
+cap "no_offsetLatch_0.Vout1" "a_8125_n1848#" 85.6385
+cap "a_6163_n3233#" "a_6075_n3141#" 2.35066
+cap "a_9203_n692#" "no_offsetLatch_0.Vout1" 2.60199
+cap "a_9541_n1756#" "Vin2" 0.302112
+cap "Vin1" "a_6075_n3141#" 17.9326
+cap "no_offsetLatch_0.Vq" "no_offsetLatch_0.Vp" 1232.28
+cap "no_offsetLatch_0.Vq" "a_8037_n1756#" 2.46377
+cap "a_7745_n1756#" "VDD" 0.499241
+cap "no_offsetLatch_0.Vout2" "no_offsetLatch_0.Vout1" 2827.03
+cap "Vin2" "a_9707_n3141#" 10.0435
+cap "a_6379_n600#" "a_6467_n692#" 2.35066
+cap "Vin2" "a_6163_n3233#" 1.86142
+cap "no_offsetLatch_0.Vq" "a_7745_n1756#" 1.85512
+cap "Vin2" "Vin1" 4778.82
+cap "CLK" "a_6667_n4104#" 76.766
+cap "a_6329_n1848#" "a_6467_n692#" 1.22433
+cap "a_6467_n692#" "no_offsetLatch_0.Vp" 1.89662
+cap "no_offsetLatch_0.Vq" "Vin2" 1268.44
+cap "x5.out" "VDD" 456.992
+cap "x2.Vout2" "x4.A" 488.106
+cap "a_9707_n4104#" "a_6667_n4104#" 3.84727
+cap "a_8159_n4890#" "a_8079_n4982#" 1.18676
+cap "a_9507_n4196#" "no_offsetLatch_0.Vp" 25.1857
+cap "a_7545_n1848#" "Vin1" 5.94014
+cap "x4.A" "no_offsetLatch_0.Vout1" 11.7145
+cap "a_6379_n600#" "CLK" 3.56018
+cap "a_9541_n1756#" "a_9507_n3233#" 0.142145
+cap "a_7545_n1848#" "VDD" 2.71312
+cap "no_offsetLatch_0.Vout2" "a_9541_n1756#" 9.08341
+cap "a_9707_n3141#" "a_9507_n3233#" 2.35066
+cap "Vin1" "a_8125_n1848#" 0.837984
+cap "no_offsetLatch_0.Vq" "a_7545_n1848#" 6.99782
+cap "a_6329_n1848#" "CLK" 0.113252
+cap "Vin1" "a_9507_n3233#" 183.858
+cap "CLK" "no_offsetLatch_0.Vp" 193.642
+cap "no_offsetLatch_0.Vout2" "Vin1" 4.94565
+cap "a_9341_n1848#" "Vin2" 1.03541
+cap "VDD" "a_8125_n1848#" 2.71312
+cap "a_9203_n692#" "VDD" 319.823
+cap "Vin2" "a_9507_n4196#" 205.148
+cap "no_offsetLatch_0.Vout2" "VDD" 3021.98
+cap "no_offsetLatch_0.Vq" "a_8125_n1848#" 15.3272
+cap "no_offsetLatch_0.Vq" "a_9203_n692#" 1.8699
+cap "CLK" "a_6075_n3141#" 0.00845496
+cap "no_offsetLatch_0.Vq" "a_9507_n3233#" 64.1814
+cap "no_offsetLatch_0.Vout2" "no_offsetLatch_0.Vq" 392.87
+cap "x2.Vout2" "no_offsetLatch_0.Vout1" 0.276193
+cap "a_9707_n4104#" "no_offsetLatch_0.Vp" 52.1225
+cap "a_8159_n4890#" "Vin1" 0.176198
+cap "Vin2" "CLK" 178.548
+cap "Vout" "a_5265_2223#" 386.698
+cap "CLK" "x5.out" 0.216267
+cap "no_offsetLatch_0.Vq" "a_6075_n4104#" 52.8361
+cap "no_offsetLatch_0.Vout2" "a_6467_n692#" 4.97019
+cap "a_8159_n4890#" "no_offsetLatch_0.Vq" 1.0362
+cap "a_9203_n692#" "a_9403_n600#" 2.35066
+cap "Vin2" "a_9707_n4104#" 19.2182
+cap "a_9341_n1848#" "a_9203_n692#" 1.22433
+cap "x4.A" "VDD" 932.485
+cap "no_offsetLatch_0.Vout2" "a_9403_n600#" 7.50187
+cap "a_9341_n1848#" "a_9507_n3233#" 0.423493
+cap "a_6163_n4196#" "a_6163_n3233#" 4.73262
+cap "Vin1" "a_6163_n4196#" 3.88
+cap "a_9507_n4196#" "a_9507_n3233#" 4.73262
+cap "a_9341_n1848#" "no_offsetLatch_0.Vout2" 41.8946
+cap "a_7711_n4982#" "a_7623_n4890#" 1.18676
+cap "a_7545_n1848#" "CLK" 0.0354943
+cap "x3.out" "x5.out" 67.1759
+cap "no_offsetLatch_0.Vq" "a_6163_n4196#" 16.5451
+cap "CLK" "a_8125_n1848#" 0.0354943
+cap "a_9203_n692#" "CLK" 19.1199
+cap "no_offsetLatch_0.Vp" "a_6667_n4104#" 2450.31
+cap "CLK" "a_9507_n3233#" 0.125971
+cap "no_offsetLatch_0.Vout2" "CLK" 236.356
+cap "x2.Vout2" "VDD" 606.904
+cap "no_offsetLatch_0.Vout1" "Vin1" 8.23378
+cap "a_6667_n4104#" "a_6075_n3141#" 0.460224
+cap "no_offsetLatch_0.Vout1" "VDD" 3029.19
+cap "no_offsetLatch_0.Vq" "a_7711_n4982#" 1.49689
+cap "CLK" "a_6075_n4104#" 2.30591
+cap "a_6241_n1756#" "no_offsetLatch_0.Vout1" 9.08341
+cap "a_8159_n4890#" "CLK" 10.8547
+cap "Vin2" "a_6667_n4104#" 1614.19
+cap "Vin1" "a_8079_n4982#" 10.441
+cap "no_offsetLatch_0.Vq" "no_offsetLatch_0.Vout1" 257
+cap "a_6379_n600#" "a_6329_n1848#" 0.16343
+cap "no_offsetLatch_0.Vout2" "x3.out" 0.267702
+cap "a_6379_n600#" "no_offsetLatch_0.Vp" 0.165074
+cap "no_offsetLatch_0.Vq" "a_8079_n4982#" 2.19499
+cap "x4.A" "CLK" 0.0671474
+cap "a_6329_n1848#" "no_offsetLatch_0.Vp" 85.7486
+cap "a_8037_n1756#" "no_offsetLatch_0.Vp" 1.87766
+cap "no_offsetLatch_0.Vout1" "a_6467_n692#" 100.897
+cap "a_7745_n1756#" "no_offsetLatch_0.Vp" 2.48631
+cap "a_6163_n4196#" "CLK" 9.20026
+cap "no_offsetLatch_0.Vp" "a_6075_n3141#" 64.105
+cap "no_offsetLatch_0.Vout1" "a_9403_n600#" 0.71196
+cap "a_9341_n1848#" "no_offsetLatch_0.Vout1" 61.6849
+cap "no_offsetLatch_0.Vq" "a_7623_n4890#" 2.9123
+cap "a_9541_n1756#" "VDD" 1.94901
+cap "Vin1" "a_9707_n3141#" 17.9326
+cap "Vin2" "no_offsetLatch_0.Vp" 713.35
+cap "x3.out" "x4.A" 49.2592
+cap "Vin2" "a_8037_n1756#" 2.02604
+cap "Vin1" "a_6163_n3233#" 243.585
+cap "a_9507_n3233#" "a_6667_n4104#" 2.00693
+cap "a_9541_n1756#" "no_offsetLatch_0.Vq" 79.9446
+cap "no_offsetLatch_0.Vout2" "a_6667_n4104#" 4.84565
+cap "x2.Vout2" "CLK" 0.0671474
+cap "CLK" "a_7711_n4982#" 120.181
+cap "a_6241_n1756#" "a_6163_n3233#" 0.142145
+cap "no_offsetLatch_0.Vq" "a_9707_n3141#" 63.6436
+cap "no_offsetLatch_0.Vq" "Vin1" 634.923
+cap "no_offsetLatch_0.Vout1" "CLK" 236.172
+cap "a_6241_n1756#" "VDD" 1.94901
+device msubckt nfet_03v3 8079 -4890 8080 -4889 l=80 w=160 "VSS" "a_8079_n4982#" 160 0 "a_6667_n4104#" 160 8320,264 "a_8159_n4890#" 160 14080,496
+device msubckt nfet_03v3 7895 -4890 7896 -4889 l=80 w=160 "VSS" "CLK" 160 0 "VSS" 160 8320,264 "a_6667_n4104#" 160 8320,264
+device msubckt nfet_03v3 7711 -4890 7712 -4889 l=80 w=160 "VSS" "a_7711_n4982#" 160 0 "a_7623_n4890#" 160 14080,496 "VSS" 160 8320,264
+device msubckt nfet_03v3 9507 -4104 9508 -4103 l=200 w=300 "VSS" "a_9507_n4196#" 400 0 "no_offsetLatch_0.Vp" 300 15600,404 "a_9707_n4104#" 300 26400,776
+device msubckt nfet_03v3 9203 -4104 9204 -4103 l=200 w=300 "VSS" "Vin1" 400 0 "a_6667_n4104#" 300 15600,404 "no_offsetLatch_0.Vp" 300 15600,404
+device msubckt nfet_03v3 8899 -4104 8900 -4103 l=200 w=300 "VSS" "Vin2" 400 0 "no_offsetLatch_0.Vq" 300 15600,404 "a_6667_n4104#" 300 15600,404
+device msubckt nfet_03v3 8595 -4104 8596 -4103 l=200 w=300 "VSS" "Vin2" 400 0 "a_6667_n4104#" 300 15600,404 "no_offsetLatch_0.Vq" 300 15600,404
+device msubckt nfet_03v3 8291 -4104 8292 -4103 l=200 w=300 "VSS" "Vin1" 400 0 "no_offsetLatch_0.Vp" 300 15600,404 "a_6667_n4104#" 300 15600,404
+device msubckt nfet_03v3 7987 -4104 7988 -4103 l=200 w=300 "VSS" "Vin1" 400 0 "a_6667_n4104#" 300 15600,404 "no_offsetLatch_0.Vp" 300 15600,404
+device msubckt nfet_03v3 7683 -4104 7684 -4103 l=200 w=300 "VSS" "Vin2" 400 0 "no_offsetLatch_0.Vq" 300 15600,404 "a_6667_n4104#" 300 15600,404
+device msubckt nfet_03v3 7379 -4104 7380 -4103 l=200 w=300 "VSS" "Vin2" 400 0 "a_6667_n4104#" 300 15600,404 "no_offsetLatch_0.Vq" 300 15600,404
+device msubckt nfet_03v3 7075 -4104 7076 -4103 l=200 w=300 "VSS" "Vin1" 400 0 "no_offsetLatch_0.Vp" 300 15600,404 "a_6667_n4104#" 300 15600,404
+device msubckt nfet_03v3 6771 -4104 6772 -4103 l=200 w=300 "VSS" "Vin1" 400 0 "a_6667_n4104#" 300 15600,404 "no_offsetLatch_0.Vp" 300 15600,404
+device msubckt nfet_03v3 6467 -4104 6468 -4103 l=200 w=300 "VSS" "Vin2" 400 0 "no_offsetLatch_0.Vq" 300 15600,404 "a_6667_n4104#" 300 15600,404
+device msubckt nfet_03v3 6163 -4104 6164 -4103 l=200 w=300 "VSS" "a_6163_n4196#" 400 0 "a_6075_n4104#" 300 26400,776 "no_offsetLatch_0.Vq" 300 15600,404
+device msubckt nfet_03v3 9507 -3141 9508 -3140 l=200 w=300 "VSS" "a_9507_n3233#" 400 0 "no_offsetLatch_0.Vq" 300 15600,404 "a_9707_n3141#" 300 26400,776
+device msubckt nfet_03v3 9203 -3141 9204 -3140 l=200 w=300 "VSS" "Vin2" 400 0 "a_6667_n4104#" 300 15600,404 "no_offsetLatch_0.Vq" 300 15600,404
+device msubckt nfet_03v3 8899 -3141 8900 -3140 l=200 w=300 "VSS" "Vin1" 400 0 "no_offsetLatch_0.Vp" 300 15600,404 "a_6667_n4104#" 300 15600,404
+device msubckt nfet_03v3 8595 -3141 8596 -3140 l=200 w=300 "VSS" "Vin1" 400 0 "a_6667_n4104#" 300 15600,404 "no_offsetLatch_0.Vp" 300 15600,404
+device msubckt nfet_03v3 8291 -3141 8292 -3140 l=200 w=300 "VSS" "Vin2" 400 0 "no_offsetLatch_0.Vq" 300 15600,404 "a_6667_n4104#" 300 15600,404
+device msubckt nfet_03v3 7987 -3141 7988 -3140 l=200 w=300 "VSS" "Vin2" 400 0 "a_6667_n4104#" 300 15600,404 "no_offsetLatch_0.Vq" 300 15600,404
+device msubckt nfet_03v3 7683 -3141 7684 -3140 l=200 w=300 "VSS" "Vin1" 400 0 "no_offsetLatch_0.Vp" 300 15600,404 "a_6667_n4104#" 300 15600,404
+device msubckt nfet_03v3 7379 -3141 7380 -3140 l=200 w=300 "VSS" "Vin1" 400 0 "a_6667_n4104#" 300 15600,404 "no_offsetLatch_0.Vp" 300 15600,404
+device msubckt nfet_03v3 7075 -3141 7076 -3140 l=200 w=300 "VSS" "Vin2" 400 0 "no_offsetLatch_0.Vq" 300 15600,404 "a_6667_n4104#" 300 15600,404
+device msubckt nfet_03v3 6771 -3141 6772 -3140 l=200 w=300 "VSS" "Vin2" 400 0 "a_6667_n4104#" 300 15600,404 "no_offsetLatch_0.Vq" 300 15600,404
+device msubckt nfet_03v3 6467 -3141 6468 -3140 l=200 w=300 "VSS" "Vin1" 400 0 "no_offsetLatch_0.Vp" 300 15600,404 "a_6667_n4104#" 300 15600,404
+device msubckt nfet_03v3 6163 -3141 6164 -3140 l=200 w=300 "VSS" "a_6163_n3233#" 400 0 "a_6075_n3141#" 300 26400,776 "no_offsetLatch_0.Vp" 300 15600,404
+device msubckt nfet_03v3 9341 -1756 9342 -1755 l=200 w=400 "VSS" "a_9341_n1848#" 400 0 "no_offsetLatch_0.Vq" 400 20800,504 "a_9541_n1756#" 400 35200,976
+device msubckt nfet_03v3 9037 -1756 9038 -1755 l=200 w=400 "VSS" "no_offsetLatch_0.Vout1" 400 0 "no_offsetLatch_0.Vout2" 400 20800,504 "no_offsetLatch_0.Vq" 400 20800,504
+device msubckt nfet_03v3 8733 -1756 8734 -1755 l=200 w=400 "VSS" "no_offsetLatch_0.Vout1" 400 0 "no_offsetLatch_0.Vq" 400 20800,504 "no_offsetLatch_0.Vout2" 400 20800,504
+device msubckt nfet_03v3 8429 -1756 8430 -1755 l=200 w=400 "VSS" "no_offsetLatch_0.Vout1" 400 0 "no_offsetLatch_0.Vout2" 400 20800,504 "no_offsetLatch_0.Vq" 400 20800,504
+device msubckt nfet_03v3 8125 -1756 8126 -1755 l=200 w=400 "VSS" "a_8125_n1848#" 400 0 "a_8037_n1756#" 400 35200,976 "no_offsetLatch_0.Vout2" 400 20800,504
+device msubckt nfet_03v3 7545 -1756 7546 -1755 l=200 w=400 "VSS" "a_7545_n1848#" 400 0 "no_offsetLatch_0.Vout1" 400 20800,504 "a_7745_n1756#" 400 35200,976
+device msubckt nfet_03v3 7241 -1756 7242 -1755 l=200 w=400 "VSS" "no_offsetLatch_0.Vout2" 400 0 "no_offsetLatch_0.Vp" 400 20800,504 "no_offsetLatch_0.Vout1" 400 20800,504
+device msubckt nfet_03v3 6937 -1756 6938 -1755 l=200 w=400 "VSS" "no_offsetLatch_0.Vout2" 400 0 "no_offsetLatch_0.Vout1" 400 20800,504 "no_offsetLatch_0.Vp" 400 20800,504
+device msubckt nfet_03v3 6633 -1756 6634 -1755 l=200 w=400 "VSS" "no_offsetLatch_0.Vout2" 400 0 "no_offsetLatch_0.Vp" 400 20800,504 "no_offsetLatch_0.Vout1" 400 20800,504
+device msubckt nfet_03v3 6329 -1756 6330 -1755 l=200 w=400 "VSS" "a_6329_n1848#" 400 0 "a_6241_n1756#" 400 35200,976 "no_offsetLatch_0.Vp" 400 20800,504
+device msubckt pfet_03v3 10643 -580 10644 -579 l=80 w=160 "VDD" "CLK" 160 0 "no_offsetLatch_0.Vq" 160 14080,496 "VDD" 160 14080,496
+device msubckt pfet_03v3 9783 -580 9784 -579 l=80 w=160 "VDD" "CLK" 160 0 "no_offsetLatch_0.Vout2" 160 14080,496 "VDD" 160 14080,496
+device msubckt pfet_03v3 9203 -600 9204 -599 l=200 w=200 "VDD" "a_9203_n692#" 400 0 "VDD" 200 10400,304 "a_9403_n600#" 200 17600,576
+device msubckt pfet_03v3 8899 -600 8900 -599 l=200 w=200 "VDD" "no_offsetLatch_0.Vout2" 400 0 "no_offsetLatch_0.Vout1" 200 10400,304 "VDD" 200 10400,304
+device msubckt pfet_03v3 8595 -600 8596 -599 l=200 w=200 "VDD" "no_offsetLatch_0.Vout2" 400 0 "VDD" 200 10400,304 "no_offsetLatch_0.Vout1" 200 10400,304
+device msubckt pfet_03v3 8291 -600 8292 -599 l=200 w=200 "VDD" "no_offsetLatch_0.Vout1" 400 0 "no_offsetLatch_0.Vout2" 200 10400,304 "VDD" 200 10400,304
+device msubckt pfet_03v3 7987 -600 7988 -599 l=200 w=200 "VDD" "no_offsetLatch_0.Vout1" 400 0 "VDD" 200 10400,304 "no_offsetLatch_0.Vout2" 200 10400,304
+device msubckt pfet_03v3 7683 -600 7684 -599 l=200 w=200 "VDD" "no_offsetLatch_0.Vout2" 400 0 "no_offsetLatch_0.Vout1" 200 10400,304 "VDD" 200 10400,304
+device msubckt pfet_03v3 7379 -600 7380 -599 l=200 w=200 "VDD" "no_offsetLatch_0.Vout2" 400 0 "VDD" 200 10400,304 "no_offsetLatch_0.Vout1" 200 10400,304
+device msubckt pfet_03v3 7075 -600 7076 -599 l=200 w=200 "VDD" "no_offsetLatch_0.Vout1" 400 0 "no_offsetLatch_0.Vout2" 200 10400,304 "VDD" 200 10400,304
+device msubckt pfet_03v3 6771 -600 6772 -599 l=200 w=200 "VDD" "no_offsetLatch_0.Vout1" 400 0 "VDD" 200 10400,304 "no_offsetLatch_0.Vout2" 200 10400,304
+device msubckt pfet_03v3 6467 -600 6468 -599 l=200 w=200 "VDD" "a_6467_n692#" 400 0 "a_6379_n600#" 200 17600,576 "VDD" 200 10400,304
+device msubckt pfet_03v3 6007 -580 6008 -579 l=80 w=160 "VDD" "CLK" 160 0 "VDD" 160 14080,496 "no_offsetLatch_0.Vout1" 160 14080,496
+device msubckt pfet_03v3 5147 -580 5148 -579 l=80 w=160 "VDD" "CLK" 160 0 "VDD" 160 14080,496 "no_offsetLatch_0.Vp" 160 14080,496
+device msubckt nfet_03v3 9095 617 9096 618 l=80 w=400 "VSS" "no_offsetLatch_0.Vout2" 160 0 "x5.out" 400 35200,976 "VSS" 400 35200,976
+device msubckt nfet_03v3 6695 617 6696 618 l=80 w=400 "VSS" "no_offsetLatch_0.Vout1" 160 0 "VSS" 400 35200,976 "x3.out" 400 35200,976
+device msubckt pfet_03v3 9095 1465 9096 1466 l=80 w=800 "VDD" "no_offsetLatch_0.Vout2" 160 0 "x5.out" 800 70400,1776 "VDD" 800 70400,1776
+device msubckt nfet_03v3 8125 1750 8126 1751 l=80 w=200 "VSS" "x5.out" 160 0 "x2.Vout2" 200 17600,576 "VSS" 200 17600,576
+device msubckt nfet_03v3 7665 1750 7666 1751 l=80 w=200 "VSS" "x3.out" 160 0 "VSS" 200 17600,576 "x4.A" 200 17600,576
+device msubckt pfet_03v3 6695 1465 6696 1466 l=80 w=800 "VDD" "no_offsetLatch_0.Vout1" 160 0 "VDD" 800 70400,1776 "x3.out" 800 70400,1776
+device msubckt nfet_03v3 5945 2273 5946 2274 l=60 w=170 "VSS" "x4.A" 120 0 "VSS" 170 9350,280 "a_5265_2223#" 170 17000,540
+device msubckt nfet_03v3 5775 2273 5776 2274 l=60 w=170 "VSS" "a_5265_2223#" 120 0 "Vout" 170 9350,280 "VSS" 170 9350,280
+device msubckt nfet_03v3 5605 2273 5606 2274 l=60 w=170 "VSS" "a_5265_2223#" 120 0 "VSS" 170 9350,280 "Vout" 170 9350,280
+device msubckt nfet_03v3 5435 2273 5436 2274 l=60 w=170 "VSS" "a_5265_2223#" 120 0 "Vout" 170 9350,280 "VSS" 170 9350,280
+device msubckt nfet_03v3 5265 2273 5266 2274 l=60 w=170 "VSS" "a_5265_2223#" 120 0 "VSS" 170 17000,540 "Vout" 170 9350,280
+device msubckt pfet_03v3 8125 2570 8126 2571 l=80 w=200 "VDD" "x4.A" 160 0 "x2.Vout2" 200 17600,576 "VDD" 200 17600,576
+device msubckt pfet_03v3 7665 2570 7666 2571 l=80 w=200 "VDD" "x2.Vout2" 160 0 "VDD" 200 17600,576 "x4.A" 200 17600,576
+device msubckt pfet_03v3 5945 2783 5946 2784 l=60 w=340 "VDD" "x4.A" 120 0 "VDD" 340 18700,450 "a_5265_2223#" 340 34000,880
+device msubckt pfet_03v3 5775 2783 5776 2784 l=60 w=340 "VDD" "a_5265_2223#" 120 0 "Vout" 340 18700,450 "VDD" 340 18700,450
+device msubckt pfet_03v3 5605 2783 5606 2784 l=60 w=340 "VDD" "a_5265_2223#" 120 0 "VDD" 340 18700,450 "Vout" 340 18700,450
+device msubckt pfet_03v3 5435 2783 5436 2784 l=60 w=340 "VDD" "a_5265_2223#" 120 0 "Vout" 340 18700,450 "VDD" 340 18700,450
+device msubckt pfet_03v3 5265 2783 5266 2784 l=60 w=340 "VDD" "a_5265_2223#" 120 0 "VDD" 340 34000,880 "Vout" 340 18700,450

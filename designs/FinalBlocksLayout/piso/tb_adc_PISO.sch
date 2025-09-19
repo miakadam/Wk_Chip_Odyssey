@@ -92,8 +92,7 @@ format="tcleval( @value )"
 value="
 .include $::180MCU_MODELS/design.ngspice
 .lib $::180MCU_MODELS/sm141064.ngspice typical
-.include /foss/designs/FinalBlocksLayout/2inmux/flatten/2inmux.spice
-.include /foss/designs/FinalBlocksLayout/dffrs/flattened/dffrs.spice
+.include /foss/designs/FinalBlocksLayout/piso/flatten/adc_PISO.spice
 "}
 C {code_shown.sym} 380 -930 0 0 {name=NGSPICE only_toplevel=true value=
 ".save all
@@ -120,7 +119,6 @@ C {lab_pin.sym} 1000 -530 1 0 {name=p8 sig_type=std_logic lab=B3}
 C {lab_pin.sym} 1020 -530 1 0 {name=p9 sig_type=std_logic lab=B2}
 C {lab_pin.sym} 1040 -530 1 0 {name=p11 sig_type=std_logic lab=B1}
 C {lab_pin.sym} 800 -590 0 0 {name=p3 sig_type=std_logic lab=serial_in}
-C {lab_pin.sym} 900 -470 0 0 {name=p4 sig_type=std_logic lab=load}
 C {vsource.sym} 660 -400 0 1 {name=V1 value="PULSE(0 3.3 0n 100p 100p 20n 120n)" savecurrent=false}
 C {gnd.sym} 660 -370 0 0 {name=l2 lab=GND}
 C {lab_wire.sym} 660 -450 0 0 {name=p14 sig_type=std_logic lab=load}
@@ -175,3 +173,9 @@ footprint=1206
 device=resistor
 m=1}
 C {FinalBlocksLayout/piso/adc_PISO.sym} 780 -290 0 0 {name=x1}
+C {FinalBlocksLayout/inv2/inv2.sym} 1230 -340 0 0 {name=x2}
+C {lab_wire.sym} 1330 -340 0 1 {name=p22 sig_type=std_logic lab=load_b}
+C {lab_wire.sym} 1150 -340 0 0 {name=p23 sig_type=std_logic lab=load}
+C {lab_pin.sym} 1230 -400 0 1 {name=p24 sig_type=std_logic lab=VDD_3V3}
+C {gnd.sym} 1230 -280 0 1 {name=l5 lab=GND}
+C {lab_wire.sym} 900 -470 0 0 {name=p4 sig_type=std_logic lab=load_b}

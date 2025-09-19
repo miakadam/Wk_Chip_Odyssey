@@ -1,0 +1,45 @@
+v {xschem version=3.4.7 file_version=1.2}
+G {}
+K {type=primative
+format="@name @pinlist @symname"
+template="name=x1"
+}
+V {}
+S {}
+E {}
+L 7 430 -60 450 -60 {}
+L 7 360 10 360 30 {}
+L 7 340 10 340 30 {}
+L 7 430 -40 450 -40 {}
+L 7 250 -10 270 -10 {}
+L 7 430 -20 450 -20 {}
+L 7 250 -50 270 -50 {}
+L 7 250 -30 270 -30 {}
+L 7 250 -70 270 -70 {}
+L 7 340 -110 340 -90 {}
+L 7 360 -110 360 -90 {}
+B 5 447.5 -62.5 452.5 -57.5 {name=Clk_piso dir=inout}
+B 5 357.5 27.5 362.5 32.5 {name=Vdd dir=inout}
+B 5 337.5 27.5 342.5 32.5 {name=Vss dir=inout}
+B 5 447.5 -42.5 452.5 -37.5 {name=Load dir=inout}
+B 5 247.5 -12.5 252.5 -7.5 {name=Clk dir=inout}
+B 5 447.5 -22.5 452.5 -17.5 {name=Piso_out dir=inout}
+B 5 247.5 -52.5 252.5 -47.5 {name=Vin1 dir=inout}
+B 5 247.5 -32.5 252.5 -27.5 {name=Vin2 dir=inout}
+B 5 247.5 -72.5 252.5 -67.5 {name=Comp_out dir=inout}
+B 5 337.5 -112.5 342.5 -107.5 {name=Reset dir=inout}
+B 5 357.5 -112.5 362.5 -107.5 {name=SAR_in dir=inout}
+P 4 5 430 -90 270 -90 270 10 430 10 430 -90 {}
+T {@symname} 369 14 0 0 0.3 0.3 {}
+T {@name} 375 -112 0 0 0.2 0.2 {}
+T {Clk_piso} 425 -64 0 1 0.2 0.2 {}
+T {Vdd} 364 5 1 1 0.2 0.2 {}
+T {Vss} 344 5 1 1 0.2 0.2 {}
+T {Load} 425 -44 0 1 0.2 0.2 {}
+T {Clk} 275 -14 0 0 0.2 0.2 {}
+T {Piso_out} 425 -24 0 1 0.2 0.2 {}
+T {Vin1} 275 -54 0 0 0.2 0.2 {}
+T {Vin2} 275 -34 0 0 0.2 0.2 {}
+T {Comp_out} 275 -74 0 0 0.2 0.2 {}
+T {Reset} 336 -85 3 1 0.2 0.2 {}
+T {SAR_in} 356 -85 3 1 0.2 0.2 {}

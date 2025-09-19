@@ -1,0 +1,403 @@
+timestamp 1758264133
+version 8.3
+tech gf180mcuD
+style ngspice()
+scale 1000 1 0.5
+resistclasses 1000000 3250000 6300 7000 6300 7000 7300 1000000 60000 185000 60000 185000 6300 7000 6300 7000 6800 7300 350000 310000 1000000 90 90 90 90 60
+use no_offsetLatch no_offsetLatch_0 1 0 -9053 0 1 -1780
+use inv_mia x5 -1 0 14575 0 1 2105
+use osu_sc_buf_4 x4 -1 0 6205 0 1 2073
+use inv_mia x3 1 0 1295 0 1 2105
+use rslatch x2 1 0 5355 0 1 3480
+port "Vout" 5 3480 2815 3480 2815 m2
+port "CLK" 2 3320 -5140 3320 -5140 m1
+port "Vin2" 4 3225 -3637 3225 -3637 m1
+port "Vin1" 3 3225 -3315 3225 -3315 m1
+port "VSS" 1 2794 -5618 2794 -5618 m1
+port "VDD" 0 3235 4186 3235 4186 m1
+node "m2_5909_2527#" 3 615.528 5909 2527 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 97920 3620 0 0 0 0 0 0
+node "Vout" 3 633.418 3480 2815 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 110700 3810 0 0 0 0 0 0
+node "CLK" 5 1440.47 3320 -5140 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 361680 9202 0 0 0 0 0 0 0 0
+node "Vin2" 4 1012.2 3225 -3637 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 243375 6640 0 0 0 0 0 0 0 0
+node "Vin1" 4 1105.15 3225 -3315 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 243375 6640 0 0 0 0 0 0 0 0
+node "m1_9175_1203#" 3 835.567 9175 1203 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 87336 2440 97440 2590 0 0 0 0 0 0
+node "m1_8123_1191#" 2 506.848 8123 1191 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 66064 1892 27032 1058 0 0 0 0 0 0
+node "VSS" 27 16187.4 2794 -5618 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 4252187 37452 2476269 46548 0 0 0 0 0 0
+node "m1_6823_1203#" 1 410.294 6823 1203 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 71232 2028 7656 366 0 0 0 0 0 0
+node "m1_5565_1201#" 4 1161.16 5565 1201 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 87196 2440 178460 4618 0 0 0 0 0 0
+node "VDD" 13 12207.3 3235 4186 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 4408382 42132 76178 2128 202520 5328 0 0 0 0
+substrate "VSUBS" 0 0 -1073741817 -1073741817 space 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+cap "m2_5909_2527#" "VDD" 52.6003
+cap "m1_9175_1203#" "m1_8123_1191#" 17.6804
+cap "m1_5565_1201#" "VSS" 192.541
+cap "m1_9175_1203#" "VDD" 152.865
+cap "m1_6823_1203#" "m1_5565_1201#" 27.2975
+cap "Vin1" "VSS" 128.223
+cap "m2_5909_2527#" "VSS" 0.00558317
+cap "Vin2" "VSS" 128.885
+cap "m2_5909_2527#" "m1_6823_1203#" 1.20302
+cap "m1_9175_1203#" "VSS" 147.175
+cap "m2_5909_2527#" "m1_5565_1201#" 1.37534
+cap "CLK" "VSS" 1089.03
+cap "m1_8123_1191#" "VSS" 87.9468
+cap "Vin1" "Vin2" 547.756
+cap "m1_8123_1191#" "m1_6823_1203#" 12.0356
+cap "VDD" "VSS" 198.932
+cap "Vin2" "CLK" 90.1857
+cap "VDD" "m1_5565_1201#" 21.1225
+cap "m1_6823_1203#" "VSS" 88.7312
+cap "VDD" "Vout" 68.9361
+cap "CLK" "no_offsetLatch_0/VSS" 206.223
+cap "CLK" "no_offsetLatch_0/Vin2" 0.0322003
+cap "no_offsetLatch_0/VSS" "no_offsetLatch_0/Vin2" 0.251306
+cap "no_offsetLatch_0/Clk" "no_offsetLatch_0/Vp" -0.00889807
+cap "no_offsetLatch_0/a_16676_n3110#" "no_offsetLatch_0/VSS" 0.0360536
+cap "no_offsetLatch_0/Clk" "no_offsetLatch_0/Vin2" -6.37026
+cap "no_offsetLatch_0/a_16764_n3202#" "no_offsetLatch_0/VSS" 0.192462
+cap "no_offsetLatch_0/VSS" "no_offsetLatch_0/Clk" -23.4404
+cap "no_offsetLatch_0/VSS" "no_offsetLatch_0/Vin1" 0.148047
+cap "no_offsetLatch_0/VSS" "no_offsetLatch_0/a_16764_n3202#" 1.04504
+cap "no_offsetLatch_0/VSS" "no_offsetLatch_0/Clk" 99.1574
+cap "no_offsetLatch_0/a_15720_n2324#" "no_offsetLatch_0/VSS" 4.41143
+cap "no_offsetLatch_0/VSS" "no_offsetLatch_0/a_17132_n3202#" 0.847956
+cap "no_offsetLatch_0/VSS" "no_offsetLatch_0/Clk" 248.758
+cap "no_offsetLatch_0/a_15720_n2324#" "no_offsetLatch_0/VSS" 7.15838
+cap "no_offsetLatch_0/VSS" "no_offsetLatch_0/Clk" 530.263
+cap "no_offsetLatch_0/Clk" "no_offsetLatch_0/Vin2" -0.214728
+cap "no_offsetLatch_0/a_15720_n2324#" "no_offsetLatch_0/VSS" 0.444041
+cap "no_offsetLatch_0/VSS" "no_offsetLatch_0/Clk" 81.3829
+cap "no_offsetLatch_0/Vin2" "no_offsetLatch_0/VSS" -3.61703
+cap "no_offsetLatch_0/VSS" "no_offsetLatch_0/a_15720_n2324#" 22.1623
+cap "no_offsetLatch_0/VSS" "no_offsetLatch_0/Vq" 3.19509
+cap "no_offsetLatch_0/VSS" "no_offsetLatch_0/a_15216_n1453#" 3.35048
+cap "CLK" "no_offsetLatch_0/a_15216_n2416#" -2.1666
+cap "no_offsetLatch_0/VSS" "CLK" 369.81
+cap "no_offsetLatch_0/a_15128_n1361#" "CLK" -0.282596
+cap "no_offsetLatch_0/Vin1" "CLK" 52.824
+cap "CLK" "no_offsetLatch_0/a_15128_n2324#" -0.592708
+cap "no_offsetLatch_0/Vp" "CLK" -1.31313
+cap "no_offsetLatch_0/VSS" "no_offsetLatch_0/a_15216_n2416#" 6.91599
+cap "no_offsetLatch_0/Vin2" "CLK" 52.7231
+cap "no_offsetLatch_0/Vin1" "no_offsetLatch_0/VSS" -5.74374
+cap "no_offsetLatch_0/VSS" "no_offsetLatch_0/a_15128_n1361#" 1.06696
+cap "no_offsetLatch_0/a_15216_n1453#" "CLK" -1.04858
+cap "CLK" "no_offsetLatch_0/Vq" -1.27179
+cap "no_offsetLatch_0/VSS" "no_offsetLatch_0/a_15128_n2324#" 2.23815
+cap "no_offsetLatch_0/Vp" "no_offsetLatch_0/VSS" 3.62683
+cap "no_offsetLatch_0/Vin1" "no_offsetLatch_0/Vp" 6.88235
+cap "no_offsetLatch_0/Vq" "no_offsetLatch_0/Vin1" 0.439598
+cap "no_offsetLatch_0/a_15128_n1361#" "no_offsetLatch_0/a_15128_n2324#" -2.85158
+cap "no_offsetLatch_0/Clk" "no_offsetLatch_0/Vp" -1.19137
+cap "no_offsetLatch_0/a_15128_n2324#" "no_offsetLatch_0/Vin2" 18.5879
+cap "no_offsetLatch_0/a_15216_n1453#" "no_offsetLatch_0/VSS" 0.318281
+cap "no_offsetLatch_0/Vq" "no_offsetLatch_0/Vp" -6.54435
+cap "no_offsetLatch_0/a_15128_n2324#" "no_offsetLatch_0/VSS" 0.275711
+cap "no_offsetLatch_0/a_15720_n2324#" "no_offsetLatch_0/Vin2" 6.04936
+cap "no_offsetLatch_0/a_15720_n2324#" "no_offsetLatch_0/VSS" 20.0606
+cap "no_offsetLatch_0/Clk" "no_offsetLatch_0/Vin2" -6.37026
+cap "no_offsetLatch_0/a_15216_n2416#" "no_offsetLatch_0/Vin1" 0.848402
+cap "no_offsetLatch_0/Vq" "no_offsetLatch_0/Vin2" 25.5551
+cap "no_offsetLatch_0/Vp" "no_offsetLatch_0/Vin1" 51.1968
+cap "no_offsetLatch_0/Clk" "no_offsetLatch_0/VSS" -2.82298
+cap "no_offsetLatch_0/Vq" "no_offsetLatch_0/VSS" 6.19357
+cap "no_offsetLatch_0/a_15128_n1361#" "no_offsetLatch_0/Vin1" 17.9326
+cap "no_offsetLatch_0/Vin1" "no_offsetLatch_0/Vin2" 4.85947
+cap "no_offsetLatch_0/Vin1" "no_offsetLatch_0/VSS" 61.3835
+cap "no_offsetLatch_0/a_15216_n2416#" "no_offsetLatch_0/Vin2" 204.796
+cap "no_offsetLatch_0/Vp" "no_offsetLatch_0/Vin2" 7.60115
+cap "no_offsetLatch_0/a_15216_n1453#" "no_offsetLatch_0/Vin1" 182.641
+cap "no_offsetLatch_0/Clk" "no_offsetLatch_0/Vq" -1.09089
+cap "no_offsetLatch_0/a_15216_n2416#" "no_offsetLatch_0/VSS" 2.23718
+cap "no_offsetLatch_0/a_15216_n1453#" "no_offsetLatch_0/a_15216_n2416#" -16.0989
+cap "no_offsetLatch_0/Vp" "no_offsetLatch_0/VSS" 2.35569
+cap "no_offsetLatch_0/a_15720_n2324#" "no_offsetLatch_0/Vin1" 6.04936
+cap "no_offsetLatch_0/a_15128_n1361#" "no_offsetLatch_0/VSS" 0.0497956
+cap "no_offsetLatch_0/Vin2" "no_offsetLatch_0/VSS" 61.1908
+cap "no_offsetLatch_0/a_15216_n1453#" "no_offsetLatch_0/Vin2" 0.831411
+cap "no_offsetLatch_0/Vin2" "no_offsetLatch_0/VSS" 0.441855
+cap "no_offsetLatch_0/Vin1" "no_offsetLatch_0/Vin2" 1.40884
+cap "no_offsetLatch_0/Vin1" "no_offsetLatch_0/VSS" 0.890599
+cap "no_offsetLatch_0/Vq" "no_offsetLatch_0/VSS" 9.00559
+cap "no_offsetLatch_0/VSS" "no_offsetLatch_0/Vp" 8.18229
+cap "no_offsetLatch_0/Vq" "no_offsetLatch_0/Clk" -1.19137
+cap "no_offsetLatch_0/VSS" "no_offsetLatch_0/a_18760_n1361#" 0.0408718
+cap "no_offsetLatch_0/Vin2" "no_offsetLatch_0/Clk" -3.8311
+cap "no_offsetLatch_0/VSS" "no_offsetLatch_0/a_18560_n1453#" 0.282585
+cap "no_offsetLatch_0/Vin1" "no_offsetLatch_0/Clk" -1.99356
+cap "no_offsetLatch_0/VSS" "no_offsetLatch_0/a_18560_n2416#" 0.858805
+cap "no_offsetLatch_0/Vp" "no_offsetLatch_0/Clk" -3.86117
+cap "no_offsetLatch_0/VSS" "no_offsetLatch_0/Vq" 6.73841
+cap "no_offsetLatch_0/VSS" "no_offsetLatch_0/Vin2" 8.29416
+cap "no_offsetLatch_0/a_18760_n2324#" "no_offsetLatch_0/VSS" 0.0408718
+cap "no_offsetLatch_0/VSS" "no_offsetLatch_0/a_15720_n2324#" 6.85089
+cap "no_offsetLatch_0/VSS" "no_offsetLatch_0/Vin1" 4.64317
+cap "no_offsetLatch_0/a_18560_n2416#" "no_offsetLatch_0/Clk" -1.92145
+cap "no_offsetLatch_0/VSS" "no_offsetLatch_0/a_18560_n2416#" 4.87666
+cap "no_offsetLatch_0/VSS" "no_offsetLatch_0/a_15720_n2324#" 7.22227
+cap "no_offsetLatch_0/Clk" "no_offsetLatch_0/a_18760_n1361#" -0.282596
+cap "no_offsetLatch_0/a_18760_n2324#" "no_offsetLatch_0/Clk" -0.592708
+cap "no_offsetLatch_0/VSS" "no_offsetLatch_0/a_18760_n2324#" 1.71276
+cap "no_offsetLatch_0/Clk" "no_offsetLatch_0/Vin1" -2.41061
+cap "no_offsetLatch_0/VSS" "no_offsetLatch_0/Vin1" 8.53443
+cap "no_offsetLatch_0/VSS" "no_offsetLatch_0/a_18760_n1361#" 0.81654
+cap "no_offsetLatch_0/Clk" "no_offsetLatch_0/Vp" -4.03281
+cap "no_offsetLatch_0/VSS" "no_offsetLatch_0/Vp" 8.01596
+cap "no_offsetLatch_0/Clk" "no_offsetLatch_0/a_18560_n1453#" -0.823274
+cap "no_offsetLatch_0/Vq" "no_offsetLatch_0/Clk" -1.26617
+cap "no_offsetLatch_0/VSS" "no_offsetLatch_0/a_18560_n1453#" 2.06588
+cap "no_offsetLatch_0/VSS" "no_offsetLatch_0/Vq" 2.3499
+cap "no_offsetLatch_0/Clk" "no_offsetLatch_0/Vin2" -15.26
+cap "no_offsetLatch_0/VSS" "no_offsetLatch_0/Clk" 245.058
+cap "no_offsetLatch_0/VSS" "no_offsetLatch_0/Vin2" 34.0469
+cap "no_offsetLatch_0/Clk" "no_offsetLatch_0/VSS" 142.861
+cap "no_offsetLatch_0/Clk" "no_offsetLatch_0/a_15216_n1453#" -1.11802
+cap "no_offsetLatch_0/Vp" "no_offsetLatch_0/VSS" 19.3604
+cap "no_offsetLatch_0/Vp" "VSS" 0.27032
+cap "no_offsetLatch_0/VSS" "no_offsetLatch_0/a_15128_n1361#" 1.17119
+cap "no_offsetLatch_0/VSS" "no_offsetLatch_0/Clk" 32.0626
+cap "no_offsetLatch_0/Vp" "no_offsetLatch_0/Vin2" 0.0945147
+cap "VSS" "no_offsetLatch_0/Clk" 292.1
+cap "no_offsetLatch_0/Vp" "no_offsetLatch_0/Vin1" 7.0383
+cap "no_offsetLatch_0/Vp" "no_offsetLatch_0/Clk" -4.70846
+cap "no_offsetLatch_0/VSS" "no_offsetLatch_0/a_15216_n1453#" 3.56551
+cap "no_offsetLatch_0/Clk" "no_offsetLatch_0/a_15128_n1361#" -0.310112
+cap "no_offsetLatch_0/VSS" "no_offsetLatch_0/Vout1" 0.223383
+cap "no_offsetLatch_0/VSS" "VSS" -30.8763
+cap "no_offsetLatch_0/VSS" "no_offsetLatch_0/Vin1" -2.77556e-17
+cap "no_offsetLatch_0/VSS" "no_offsetLatch_0/VDD" 0.0186848
+cap "no_offsetLatch_0/VSS" "no_offsetLatch_0/Vin2" 0.0659923
+cap "no_offsetLatch_0/VSS" "no_offsetLatch_0/Vp" 17.6567
+cap "no_offsetLatch_0/Vp" "no_offsetLatch_0/Vin2" 0.0202431
+cap "no_offsetLatch_0/Vin1" "no_offsetLatch_0/a_15382_n68#" 0.0397151
+cap "no_offsetLatch_0/Vout1" "no_offsetLatch_0/VSS" 0.413007
+cap "no_offsetLatch_0/VSS" "no_offsetLatch_0/VDD" 0.0220019
+cap "no_offsetLatch_0/Vp" "no_offsetLatch_0/a_15382_n68#" -0.0270287
+cap "no_offsetLatch_0/a_15216_n2416#" "no_offsetLatch_0/Vp" -0.0032553
+cap "no_offsetLatch_0/Clk" "no_offsetLatch_0/Vp" -4.66499
+cap "no_offsetLatch_0/Clk" "no_offsetLatch_0/VSS" -6.96783
+cap "no_offsetLatch_0/VSS" "no_offsetLatch_0/Vin1" 0.435644
+cap "no_offsetLatch_0/Vp" "no_offsetLatch_0/Vin1" 8.27166
+cap "no_offsetLatch_0/VSS" "VSS" 0.508325
+cap "no_offsetLatch_0/VSS" "no_offsetLatch_0/a_15216_n1453#" 0.166817
+cap "no_offsetLatch_0/Clk" "no_offsetLatch_0/Vq" -4.66499
+cap "no_offsetLatch_0/VSS" "no_offsetLatch_0/a_18560_n1453#" 0.155133
+cap "no_offsetLatch_0/VSS" "VSS" 0.0440199
+cap "no_offsetLatch_0/VSS" "no_offsetLatch_0/Vp" 0.0170122
+cap "no_offsetLatch_0/VSS" "no_offsetLatch_0/Vq" 7.88048
+cap "no_offsetLatch_0/Clk" "VSS" 142.861
+cap "no_offsetLatch_0/VSS" "no_offsetLatch_0/Clk" 34.9691
+cap "no_offsetLatch_0/VSS" "no_offsetLatch_0/a_18560_n1453#" 2.86055
+cap "no_offsetLatch_0/VSS" "VSS" -17.4682
+cap "no_offsetLatch_0/a_18760_n1361#" "no_offsetLatch_0/Clk" -0.310112
+cap "no_offsetLatch_0/Vq" "no_offsetLatch_0/Clk" -4.70846
+cap "no_offsetLatch_0/VSS" "no_offsetLatch_0/VDD" 0.156833
+cap "no_offsetLatch_0/VSS" "no_offsetLatch_0/a_18760_n1361#" 0.89622
+cap "no_offsetLatch_0/Vq" "VSS" 0.325496
+cap "no_offsetLatch_0/VSS" "no_offsetLatch_0/Vout2" 1.906
+cap "no_offsetLatch_0/Vq" "no_offsetLatch_0/VSS" 37.8914
+cap "no_offsetLatch_0/a_18560_n1453#" "no_offsetLatch_0/Clk" -1.11802
+cap "no_offsetLatch_0/VSS" "VSS" -18.0291
+cap "VSS" "no_offsetLatch_0/Clk" 142.861
+cap "x3/avss" "no_offsetLatch_0/Vout1" -30.9832
+cap "x3/avss" "no_offsetLatch_0/Clk" 294.661
+cap "x3/avss" "no_offsetLatch_0/VDD" 0.160333
+cap "x3/avss" "no_offsetLatch_0/Vp" 0.146701
+cap "no_offsetLatch_0/Vout1" "x3/avdd" 0.0430252
+cap "x3/avdd" "no_offsetLatch_0/a_15520_1088#" 0.0430252
+cap "no_offsetLatch_0/Vout2" "x3/avss" 0.224923
+cap "no_offsetLatch_0/Clk" "x3/avss" 0.0775242
+cap "no_offsetLatch_0/a_15520_1088#" "x3/avss" 0.411726
+cap "no_offsetLatch_0/Vout1" "x3/avss" 0.786187
+cap "no_offsetLatch_0/Vout1" "x3/out" 0.451243
+cap "no_offsetLatch_0/Vout1" "no_offsetLatch_0/Clk" 0.0246458
+cap "no_offsetLatch_0/Vout1" "no_offsetLatch_0/a_15520_1088#" 0.069304
+cap "no_offsetLatch_0/Vout1" "x3/out" 0.069304
+cap "no_offsetLatch_0/Vout2" "x5/avss" 0.967083
+cap "no_offsetLatch_0/Vout1" "x5/avss" 0.934573
+cap "no_offsetLatch_0/Vout1" "x5/out" 0.0649419
+cap "no_offsetLatch_0/Vout2" "x3/out" 0.0985544
+cap "x5/out" "no_offsetLatch_0/Vout1" 0.0336124
+cap "no_offsetLatch_0/a_18256_1088#" "no_offsetLatch_0/Vout2" 0.069304
+cap "no_offsetLatch_0/a_18256_1088#" "no_offsetLatch_0/VSS" 0.411726
+cap "no_offsetLatch_0/Vout2" "x5/out" 0.52116
+cap "x5/avdd" "no_offsetLatch_0/Vout2" 0.0421647
+cap "no_offsetLatch_0/Vout2" "no_offsetLatch_0/Clk" 0.0033888
+cap "no_offsetLatch_0/VSS" "no_offsetLatch_0/Clk" 0.0106596
+cap "no_offsetLatch_0/VSS" "no_offsetLatch_0/Vout1" 0.555372
+cap "no_offsetLatch_0/a_18256_1088#" "x5/avdd" 0.0430252
+cap "no_offsetLatch_0/VSS" "no_offsetLatch_0/Vout2" 0.716865
+cap "no_offsetLatch_0/Clk" "no_offsetLatch_0/VSS" 144.092
+cap "no_offsetLatch_0/VSS" "no_offsetLatch_0/VDD" 0.180828
+cap "no_offsetLatch_0/Clk" "no_offsetLatch_0/Vout2" 0.021257
+cap "no_offsetLatch_0/VSS" "no_offsetLatch_0/Vout2" 1.95297
+cap "no_offsetLatch_0/VSS" "no_offsetLatch_0/Vq" 0.146701
+cap "no_offsetLatch_0/Clk" "VSS" 142.861
+cap "no_offsetLatch_0/VDD" "no_offsetLatch_0/Vout1" -0.0089633
+cap "no_offsetLatch_0/VDD" "no_offsetLatch_0/Clk" 4.19369
+cap "x4/VSS" "no_offsetLatch_0/Clk" 396.205
+cap "no_offsetLatch_0/VDD" "no_offsetLatch_0/Clk" 66.4262
+cap "no_offsetLatch_0/VDD" "x4/VSS" -4.48482
+cap "no_offsetLatch_0/Vout1" "no_offsetLatch_0/Clk" 29.804
+cap "no_offsetLatch_0/Vout1" "no_offsetLatch_0/VDD" -3.25627
+cap "no_offsetLatch_0/Vout1" "x4/VSS" -24.9438
+cap "x3/out" "no_offsetLatch_0/VDD" 4.78462
+cap "x4/VSS" "x3/out" 10.2778
+cap "no_offsetLatch_0/Vout1" "x3/out" 1.33408
+cap "no_offsetLatch_0/Clk" "no_offsetLatch_0/VDD" -0.867932
+cap "x4/VSS" "no_offsetLatch_0/Clk" 417.395
+cap "no_offsetLatch_0/Clk" "no_offsetLatch_0/Vout1" 30.4571
+cap "no_offsetLatch_0/VDD" "x3/avdd" 4.4978
+cap "x4/VSS" "no_offsetLatch_0/VDD" 22.2423
+cap "x4/VSS" "x3/avdd" -10.5641
+cap "no_offsetLatch_0/Vout1" "no_offsetLatch_0/VDD" 18.5491
+cap "x4/VSS" "no_offsetLatch_0/Vout1" 6.48331
+cap "x5/avss" "x5/in" 0.0746894
+cap "x5/out" "no_offsetLatch_0/Clk" 0.169807
+cap "x5/out" "no_offsetLatch_0/VDD" 1.11563
+cap "x5/avss" "no_offsetLatch_0/Vout1" 0.0774834
+cap "x5/out" "no_offsetLatch_0/Vout2" 0.00161839
+cap "x3/out" "x5/avss" 12.0328
+cap "x5/avss" "no_offsetLatch_0/VDD" 21.5092
+cap "x5/avss" "no_offsetLatch_0/Clk" 417.04
+cap "x5/out" "x5/avss" 11.7783
+cap "x3/out" "no_offsetLatch_0/Vout1" 0.0264016
+cap "x5/out" "x5/in" 0.0247832
+cap "x3/out" "no_offsetLatch_0/Clk" 0.169807
+cap "x3/out" "no_offsetLatch_0/VDD" 2.27062
+cap "x3/out" "no_offsetLatch_0/Vout2" 0.137303
+cap "no_offsetLatch_0/VDD" "x3/avdd" 0.340248
+cap "x5/out" "no_offsetLatch_0/Vout1" 0.137303
+cap "x5/avss" "x5/out" 11.4395
+cap "x5/avss" "no_offsetLatch_0/Clk" 417.4
+cap "no_offsetLatch_0/Vout2" "x5/avss" 4.12643
+cap "x5/avss" "no_offsetLatch_0/VDD" 28.8581
+cap "x5/avdd" "x5/avss" -10.5649
+cap "no_offsetLatch_0/Vout2" "x5/out" 0.0326603
+cap "no_offsetLatch_0/Vout2" "no_offsetLatch_0/Clk" 0.596625
+cap "x5/out" "no_offsetLatch_0/VDD" 6.66702
+cap "no_offsetLatch_0/Vout2" "no_offsetLatch_0/VDD" 13.0147
+cap "x5/avdd" "no_offsetLatch_0/VDD" 4.83805
+cap "no_offsetLatch_0/Vout2" "x5/out" 1.30144
+cap "no_offsetLatch_0/VDD" "no_offsetLatch_0/Vout2" 17.4042
+cap "no_offsetLatch_0/Clk" "no_offsetLatch_0/Vout2" 59.5709
+cap "no_offsetLatch_0/VDD" "x5/avss" 16.9528
+cap "no_offsetLatch_0/Clk" "x5/avss" 474.921
+cap "no_offsetLatch_0/VDD" "x5/out" 1.15649
+cap "no_offsetLatch_0/Clk" "no_offsetLatch_0/VDD" 34.3484
+cap "x5/avss" "no_offsetLatch_0/Vout2" -1.84917
+cap "VSS" "no_offsetLatch_0/VDD" -0.77641
+cap "no_offsetLatch_0/Vout2" "VSS" -5.30018
+cap "VSS" "no_offsetLatch_0/Clk" 56.1781
+cap "no_offsetLatch_0/VDD" "x4/VSS" 7.5318
+cap "no_offsetLatch_0/VDD" "x4/a_100_200#" 0.125477
+cap "x4/Y" "no_offsetLatch_0/VDD" 2.56425
+cap "x4/Y" "no_offsetLatch_0/VDD" 2.56425
+cap "x4/Y" "x4/VSS" 0.544391
+cap "no_offsetLatch_0/VDD" "x4/VSS" 7.41212
+cap "x4/Y" "no_offsetLatch_0/Vout1" 0.0509522
+cap "no_offsetLatch_0/Vout1" "no_offsetLatch_0/VDD" 0.075775
+cap "no_offsetLatch_0/Vout1" "x4/VSS" 1.88334
+cap "no_offsetLatch_0/VDD" "x4/a_100_200#" 0.109466
+cap "no_offsetLatch_0/Vout1" "x4/a_100_200#" 0.107872
+cap "x4/VSS" "no_offsetLatch_0/VDD" 19.8138
+cap "x4/a_100_200#" "no_offsetLatch_0/Vout1" 1.31468
+cap "no_offsetLatch_0/VDD" "x2/Vout2" 5.33613
+cap "x4/A" "no_offsetLatch_0/Vout1" 7.53549
+cap "x2/Vin2" "no_offsetLatch_0/Vout1" 0.0318442
+cap "no_offsetLatch_0/Vout1" "x3/out" -26.0152
+cap "x4/Y" "no_offsetLatch_0/Vout1" 0.145757
+cap "x4/A" "x4/a_100_200#" 33.7049
+cap "x4/VSS" "no_offsetLatch_0/Vout1" 54.9248
+cap "x4/A" "x3/out" 10.1384
+cap "no_offsetLatch_0/VDD" "no_offsetLatch_0/Vout1" 61.1215
+cap "x2/Vout2" "no_offsetLatch_0/Vout1" 0.161049
+cap "x4/VSS" "x4/A" 7.38941
+cap "x4/VSS" "x3/out" 37.5406
+cap "no_offsetLatch_0/VDD" "x4/a_100_200#" 28.2167
+cap "no_offsetLatch_0/VDD" "x4/A" 63.3086
+cap "no_offsetLatch_0/VDD" "x3/out" 20.7606
+cap "x2/Vout2" "x3/out" 0.813123
+cap "x5/avss" "x5/avdd" 5.25227
+cap "x4/A" "x5/avss" 1.33115
+cap "x5/out" "x5/avdd" 11.7606
+cap "x3/out" "x2/Vout2" 0.502039
+cap "x5/out" "x5/in" 1.6839
+cap "x4/a_100_200#" "x4/A" 1.33604
+cap "no_offsetLatch_0/Clk" "x5/out" 0.0464609
+cap "x3/out" "x5/avss" 104.129
+cap "x4/A" "x5/avdd" 38.7403
+cap "x2/Vout2" "x5/avss" 1.11536
+cap "x5/out" "x2/Vout2" 2.52328
+cap "x3/out" "x5/out" -1.77636e-15
+cap "x4/A" "no_offsetLatch_0/Clk" 0.0671474
+cap "no_offsetLatch_0/Vout1" "x4/A" 2.80366
+cap "x4/A" "x4/Y" 0.406608
+cap "x4/a_100_200#" "x2/Vout2" 0.00796432
+cap "x3/out" "x5/avdd" 17.87
+cap "x2/Vout2" "x5/avdd" 21.2514
+cap "x5/in" "x2/Vout2" 1.65596
+cap "no_offsetLatch_0/Vout1" "x3/out" 1.6839
+cap "no_offsetLatch_0/Clk" "x2/Vout2" 0.0671474
+cap "no_offsetLatch_0/Vout1" "x2/Vout2" 0.115144
+cap "x5/out" "x5/avss" 66.8992
+cap "x3/out" "no_offsetLatch_0/Clk" 0.0464609
+cap "x3/out" "x4/A" 4.61545
+cap "x4/A" "x2/Vout2" 4.76964
+cap "x2/Vout1" "no_offsetLatch_0/VDD" 2.51762
+cap "x2/Vout2" "x5/avss" 0.0174846
+cap "x2/Vout2" "no_offsetLatch_0/VDD" 4.3478
+cap "no_offsetLatch_0/VDD" "x5/avss" -0.479446
+cap "no_offsetLatch_0/Vout2" "x3/out" 0.0318442
+cap "x5/out" "x2/Vout1" 0.312232
+cap "x2/Vout2" "x5/out" 3.97005
+cap "x5/out" "x5/avss" 68.0901
+cap "x5/out" "no_offsetLatch_0/VDD" 27.3897
+cap "no_offsetLatch_0/Vout2" "x2/Vout1" 0.00206177
+cap "x2/Vout2" "no_offsetLatch_0/Vout2" 0.663151
+cap "no_offsetLatch_0/Vout2" "x5/avss" 22.4064
+cap "no_offsetLatch_0/Vout2" "no_offsetLatch_0/VDD" 62.8464
+cap "x5/out" "no_offsetLatch_0/Vout2" -16.4915
+cap "x5/avss" "no_offsetLatch_0/Vout2" 0.0306558
+cap "x5/out" "no_offsetLatch_0/Vout2" 0.107881
+cap "x5/avdd" "no_offsetLatch_0/Vout2" 2.80115
+cap "x5/avdd" "x5/out" 0.522019
+cap "x4/VDD" "x4/Y" 2.81738
+cap "x4/VDD" "x4/a_100_200#" 0.125477
+cap "x4/Y" "x4/VSS" 4.50927
+cap "x4/Y" "x4/a_100_200#" 8.38572
+cap "x4/VDD" "x4/Y" 45.2981
+cap "x4/VDD" "x4/a_100_200#" 1.02479
+cap "x3/in" "x4/a_100_200#" 0.020788
+cap "x4/a_100_200#" "x4/VDD" 38.4029
+cap "x4/Y" "x4/VDD" -0.104671
+cap "x4/a_100_200#" "x4/A" 1.11256
+cap "x4/A" "x4/VDD" 1.2755
+cap "x4/a_100_200#" "x2/Vout2" 0.00796432
+cap "x5/avdd" "x2/Vout2" 0.864194
+cap "x5/avdd" "x4/VSS" -0.88419
+cap "x5/avdd" "x4/A" 0.80337
+merge "x4/VSS" "x5/avss" -10489.3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -1655754 -12269 -1739722 -34933 0 0 0 0 0 0
+merge "x5/avss" "x2/VSS"
+merge "x2/VSS" "x3/avss"
+merge "x3/avss" "no_offsetLatch_0/VSS"
+merge "no_offsetLatch_0/VSS" "VSS"
+merge "VSS" "VSUBS"
+merge "x3/in" "no_offsetLatch_0/Vout1" -523.772 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -152 -88320 -2368 0 0 0 0 0 0
+merge "no_offsetLatch_0/Vout1" "m1_5565_1201#"
+merge "x2/VDD" "x4/VDD" -2551.17 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -522762 -4779 -16800 -520 -94000 -2630 0 0 0 0
+merge "x4/VDD" "x5/avdd"
+merge "x5/avdd" "x3/avdd"
+merge "x3/avdd" "no_offsetLatch_0/VDD"
+merge "no_offsetLatch_0/VDD" "VDD"
+merge "no_offsetLatch_0/Clk" "CLK" -2394.09 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -361680 -9202 0 0 0 0 0 0 0 0
+merge "x5/out" "x2/Vin2" -341.359 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -152 -19376 -804 0 0 0 0 0 0
+merge "x2/Vin2" "m1_8123_1191#"
+merge "x2/Vin1" "x3/out" -244.238 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -5168 -288 0 -112 0 0 0 0 0 0
+merge "x3/out" "m1_6823_1203#"
+merge "no_offsetLatch_0/Vin1" "Vin1" -518.149 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -72675 -2163 0 0 0 0 0 0 0 0
+merge "no_offsetLatch_0/Vin2" "Vin2" -458.853 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -72675 -2163 0 0 0 0 0 0 0 0
+merge "no_offsetLatch_0/Vout2" "x5/in" -192.861 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -152 -6400 -320 0 0 0 0 0 0
+merge "x5/in" "m1_9175_1203#"
+merge "x2/Vout1" "x4/A" -303.101 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -6808 -478 0 0 0 0 0 0
+merge "x4/A" "m2_5909_2527#"
+merge "x4/Y" "Vout" -64.5356 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -120 0 0 0 0 0 0

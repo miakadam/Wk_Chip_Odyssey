@@ -1,0 +1,68 @@
+
+Circuit 1 cell pfet_03v3 and Circuit 2 cell pfet_03v3 are black boxes.
+Warning: Equate pins:  cell pfet_03v3 is a placeholder, treated as a black box.
+Warning: Equate pins:  cell pfet_03v3 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: pfet_03v3                       |Circuit 2: pfet_03v3                       
+-------------------------------------------|-------------------------------------------
+1                                          |1                                          
+2                                          |2                                          
+3                                          |3                                          
+4                                          |4                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes pfet_03v3 and pfet_03v3 are equivalent.
+
+Circuit 1 cell nfet_03v3 and Circuit 2 cell nfet_03v3 are black boxes.
+Warning: Equate pins:  cell nfet_03v3 is a placeholder, treated as a black box.
+Warning: Equate pins:  cell nfet_03v3 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: nfet_03v3                       |Circuit 2: nfet_03v3                       
+-------------------------------------------|-------------------------------------------
+1                                          |1                                          
+2                                          |2                                          
+3                                          |3                                          
+4                                          |4                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes nfet_03v3 and nfet_03v3 are equivalent.
+Flattening unmatched subcell pfet_03v3_USLA84 in circuit no_offsetLatch (0)(2 instances)
+Flattening unmatched subcell pfet_03v3_GABL2T in circuit no_offsetLatch (0)(1 instance)
+Flattening unmatched subcell pfet_03v3_U2FB84 in circuit no_offsetLatch (0)(1 instance)
+Flattening unmatched subcell nfet_03v3_MJTYYT in circuit no_offsetLatch (0)(2 instances)
+Flattening unmatched subcell nfet_03v3_6BEH2F in circuit no_offsetLatch (0)(2 instances)
+Flattening unmatched subcell pfet_03v3_CRJA84 in circuit no_offsetLatch (0)(1 instance)
+Flattening unmatched subcell nfet_03v3_W5F4U7 in circuit no_offsetLatch (0)(1 instance)
+
+Class no_offsetLatch (0):  Merged 33 parallel devices.
+Class no_offsetLatch (1):  Merged 5 parallel devices.
+Subcircuit summary:
+Circuit 1: no_offsetLatch                  |Circuit 2: no_offsetLatch                  
+-------------------------------------------|-------------------------------------------
+pfet_03v3 (14->7)                          |pfet_03v3 (14->7)                          
+nfet_03v3 (37->11)                         |nfet_03v3 (37->11)                         
+Number of devices: 18                      |Number of devices: 18                      
+Number of nets: 24                         |Number of nets: 24                         
+---------------------------------------------------------------------------------------
+Resolving symmetries by property value.
+Resolving symmetries by pin name.
+Netlists match uniquely.
+
+Subcircuit pins:
+Circuit 1: no_offsetLatch                  |Circuit 2: no_offsetLatch                  
+-------------------------------------------|-------------------------------------------
+Vin1                                       |Vin1                                       
+Vin2                                       |Vin2                                       
+VSS                                        |VSS                                        
+Vout1                                      |Vout1                                      
+Vout2                                      |Vout2                                      
+Clk                                        |Clk                                        
+VDD                                        |VDD                                        
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes no_offsetLatch and no_offsetLatch are equivalent.
+
+Final result: Circuits match uniquely.
+.

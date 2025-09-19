@@ -1,0 +1,630 @@
+* NGSPICE file created from comparator_no_offsetcal.ext - technology: (null)
+
+.subckt comparator_no_offsetcal VDD VSS CLK Vin1 Vin2 Vout
+X0 VDD.t41 a_5265_2223 Vout.t0 VDD.t40 pfet_03v3
+**devattr s=18700,450 d=18700,450
+X1 VDD.t43 a_6467_n692 a_6379_n600 VDD.t42 pfet_03v3
+**devattr s=17600,576 d=10400,304
+X2 lvsclean_SAlatch_0.Vout1.t6 lvsclean_SAlatch_0.Vout2.t9 lvsclean_SAlatch_0.Vp.t0 VSS.t4 nfet_03v3
+**devattr s=20800,504 d=20800,504
+X3 VSS.t23 a_7711_n4982 a_7623_n4890 VSS.t22 nfet_03v3
+**devattr s=14080,496 d=8320,264
+X4 VDD.t39 a_5265_2223 Vout.t1 VDD.t38 pfet_03v3
+**devattr s=18700,450 d=18700,450
+X5 VDD.t31 lvsclean_SAlatch_0.Vout2.t10 x5.out VDD.t30 pfet_03v3
+**devattr s=70400,1776 d=70400,1776
+X6 lvsclean_SAlatch_0.Vp.t15 CLK.t0 VDD.t7 VDD.t6 pfet_03v3
+**devattr s=14080,496 d=14080,496
+X7 a_9403_n600 a_9203_n692 VDD.t1 VDD.t0 pfet_03v3
+**devattr s=10400,304 d=17600,576
+X8 VDD.t3 CLK.t1 lvsclean_SAlatch_0.Vout2.t0 VDD.t2 pfet_03v3
+**devattr s=14080,496 d=14080,496
+X9 lvsclean_SAlatch_0.Vout2.t1 a_8125_n1848 a_8037_n1756 VSS.t19 nfet_03v3
+**devattr s=35200,976 d=20800,504
+X10 lvsclean_SAlatch_0.Vq Vin2.t0 a_6667_n4104.t20 VSS.t13 nfet_03v3
+**devattr s=15600,404 d=15600,404
+X11 a_6667_n4104.t10 Vin1.t0 lvsclean_SAlatch_0.Vp.t14 VSS.t17 nfet_03v3
+**devattr s=15600,404 d=15600,404
+X12 VDD.t17 lvsclean_SAlatch_0.Vout1.t9 lvsclean_SAlatch_0.Vout2.t2 VDD.t16 pfet_03v3
+**devattr s=10400,304 d=10400,304
+X13 lvsclean_SAlatch_0.Vout2.t5 lvsclean_SAlatch_0.Vout1.t10 VDD.t21 VDD.t20 pfet_03v3
+**devattr s=10400,304 d=10400,304
+X14 lvsclean_SAlatch_0.Vp.t16 a_6163_n3233 a_6075_n3141 VSS.t18 nfet_03v3
+**devattr s=26400,776 d=15600,404
+X15 lvsclean_SAlatch_0.Vp.t6 Vin1.t1 a_6667_n4104.t2 VSS.t9 nfet_03v3
+**devattr s=15600,404 d=15600,404
+X16 a_6667_n4104.t19 Vin2.t1 lvsclean_SAlatch_0.Vq VSS.t6 nfet_03v3
+**devattr s=15600,404 d=15600,404
+X17 a_6667_n4104.t3 Vin1.t2 lvsclean_SAlatch_0.Vp.t7 VSS.t10 nfet_03v3
+**devattr s=15600,404 d=15600,404
+X18 a_9707_n4104 a_9507_n4196 lvsclean_SAlatch_0.Vp.t3 VSS.t5 nfet_03v3
+**devattr s=15600,404 d=26400,776
+X19 Vout.t5 a_5265_2223 VSS.t39 VSS.t38 nfet_03v3
+**devattr s=9350,280 d=9350,280
+X20 lvsclean_SAlatch_0.Vout1.t3 lvsclean_SAlatch_0.Vout2.t11 VDD.t33 VDD.t32 pfet_03v3
+**devattr s=10400,304 d=10400,304
+X21 VDD.t5 CLK.t2 lvsclean_SAlatch_0.Vq VDD.t4 pfet_03v3
+**devattr s=14080,496 d=14080,496
+X22 a_7745_n1756 a_7545_n1848 lvsclean_SAlatch_0.Vout1.t8 VSS.t24 nfet_03v3
+**devattr s=20800,504 d=35200,976
+X23 a_5265_2223 x4.A VSS.t26 VSS.t25 nfet_03v3
+**devattr s=9350,280 d=17000,540
+X24 lvsclean_SAlatch_0.Vq lvsclean_SAlatch_0.Vout1.t11 lvsclean_SAlatch_0.Vout2.t6 VSS.t31 nfet_03v3
+**devattr s=20800,504 d=20800,504
+X25 x4.A x2.Vout2 VDD.t45 VDD.t44 pfet_03v3
+**devattr s=17600,576 d=17600,576
+X26 x4.A x3.out VSS.t44 VSS.t43 nfet_03v3
+**devattr s=17600,576 d=17600,576
+X27 lvsclean_SAlatch_0.Vq a_6163_n4196 a_6075_n4104 VSS.t18 nfet_03v3
+**devattr s=26400,776 d=15600,404
+X28 lvsclean_SAlatch_0.Vout1.t2 lvsclean_SAlatch_0.Vout2.t12 VDD.t11 VDD.t10 pfet_03v3
+**devattr s=10400,304 d=10400,304
+X29 a_6667_n4104.t18 Vin2.t2 lvsclean_SAlatch_0.Vq VSS.t8 nfet_03v3
+**devattr s=15600,404 d=15600,404
+X30 a_6667_n4104.t17 Vin2.t3 lvsclean_SAlatch_0.Vq VSS.t10 nfet_03v3
+**devattr s=15600,404 d=15600,404
+X31 Vout.t2 a_5265_2223 VDD.t37 VDD.t36 pfet_03v3
+**devattr s=18700,450 d=18700,450
+X32 Vout.t4 a_5265_2223 VSS.t37 VSS.t36 nfet_03v3
+**devattr s=17000,540 d=9350,280
+X33 lvsclean_SAlatch_0.Vout1.t7 CLK.t3 VDD.t9 VDD.t8 pfet_03v3
+**devattr s=14080,496 d=14080,496
+X34 lvsclean_SAlatch_0.Vp.t4 Vin1.t3 a_6667_n4104.t0 VSS.t7 nfet_03v3
+**devattr s=15600,404 d=15600,404
+X35 lvsclean_SAlatch_0.Vq Vin2.t4 a_6667_n4104.t16 VSS.t12 nfet_03v3
+**devattr s=15600,404 d=15600,404
+X36 a_5265_2223 x4.A VDD.t25 VDD.t24 pfet_03v3
+**devattr s=18700,450 d=34000,880
+X37 VDD.t13 lvsclean_SAlatch_0.Vout2.t13 lvsclean_SAlatch_0.Vout1.t1 VDD.t12 pfet_03v3
+**devattr s=10400,304 d=10400,304
+X38 lvsclean_SAlatch_0.Vout2.t3 lvsclean_SAlatch_0.Vout1.t12 VDD.t19 VDD.t18 pfet_03v3
+**devattr s=10400,304 d=10400,304
+X39 lvsclean_SAlatch_0.Vp.t2 lvsclean_SAlatch_0.Vout2.t14 lvsclean_SAlatch_0.Vout1.t5 VSS.t3 nfet_03v3
+**devattr s=20800,504 d=20800,504
+X40 a_6667_n4104.t1 Vin1.t4 lvsclean_SAlatch_0.Vp.t5 VSS.t8 nfet_03v3
+**devattr s=15600,404 d=15600,404
+X41 Vout.t3 a_5265_2223 VDD.t35 VDD.t34 pfet_03v3
+**devattr s=34000,880 d=18700,450
+X42 lvsclean_SAlatch_0.Vq lvsclean_SAlatch_0.Vout1.t13 lvsclean_SAlatch_0.Vout2.t4 VSS.t30 nfet_03v3
+**devattr s=20800,504 d=20800,504
+X43 a_9541_n1756 a_9341_n1848 lvsclean_SAlatch_0.Vq VSS.t42 nfet_03v3
+**devattr s=20800,504 d=35200,976
+X44 lvsclean_SAlatch_0.Vq Vin2.t5 a_6667_n4104.t15 VSS.t7 nfet_03v3
+**devattr s=15600,404 d=15600,404
+X45 VDD.t23 x4.A x2.Vout2 VDD.t22 pfet_03v3
+**devattr s=17600,576 d=17600,576
+X46 VSS.t41 x5.out x2.Vout2 VSS.t40 nfet_03v3
+**devattr s=17600,576 d=17600,576
+X47 a_6667_n4104.t4 Vin1.t5 lvsclean_SAlatch_0.Vp.t8 VSS.t11 nfet_03v3
+**devattr s=15600,404 d=15600,404
+X48 lvsclean_SAlatch_0.Vp.t9 Vin1.t6 a_6667_n4104.t5 VSS.t12 nfet_03v3
+**devattr s=15600,404 d=15600,404
+X49 lvsclean_SAlatch_0.Vout1.t4 lvsclean_SAlatch_0.Vout2.t15 lvsclean_SAlatch_0.Vp.t1 VSS.t2 nfet_03v3
+**devattr s=20800,504 d=20800,504
+X50 lvsclean_SAlatch_0.Vq Vin2.t6 a_6667_n4104.t14 VSS.t14 nfet_03v3
+**devattr s=15600,404 d=15600,404
+X51 x3.out lvsclean_SAlatch_0.Vout1.t14 VSS.t29 VSS.t28 nfet_03v3
+**devattr s=35200,976 d=35200,976
+X52 lvsclean_SAlatch_0.Vp.t13 a_6329_n1848 a_6241_n1756 VSS.t16 nfet_03v3
+**devattr s=35200,976 d=20800,504
+X53 a_6667_n4104.t21 CLK.t4 VSS.t21 VSS.t20 nfet_03v3
+**devattr s=8320,264 d=8320,264
+X54 a_8159_n4890 a_8079_n4982 a_6667_n4104.t8 VSS.t15 nfet_03v3
+**devattr s=8320,264 d=14080,496
+X55 VSS.t35 a_5265_2223 Vout.t6 VSS.t34 nfet_03v3
+**devattr s=9350,280 d=9350,280
+X56 VSS.t1 lvsclean_SAlatch_0.Vout2.t16 x5.out VSS.t0 nfet_03v3
+**devattr s=35200,976 d=35200,976
+X57 x3.out lvsclean_SAlatch_0.Vout1.t15 VDD.t27 VDD.t26 pfet_03v3
+**devattr s=70400,1776 d=70400,1776
+X58 VDD.t15 lvsclean_SAlatch_0.Vout2.t17 lvsclean_SAlatch_0.Vout1.t0 VDD.t14 pfet_03v3
+**devattr s=10400,304 d=10400,304
+X59 lvsclean_SAlatch_0.Vout2.t7 lvsclean_SAlatch_0.Vout1.t16 lvsclean_SAlatch_0.Vq VSS.t27 nfet_03v3
+**devattr s=20800,504 d=20800,504
+X60 a_6667_n4104.t13 Vin2.t7 lvsclean_SAlatch_0.Vq VSS.t17 nfet_03v3
+**devattr s=15600,404 d=15600,404
+X61 a_6667_n4104.t12 Vin2.t8 lvsclean_SAlatch_0.Vq VSS.t11 nfet_03v3
+**devattr s=15600,404 d=15600,404
+X62 VSS.t33 a_5265_2223 Vout.t7 VSS.t32 nfet_03v3
+**devattr s=9350,280 d=9350,280
+X63 lvsclean_SAlatch_0.Vp.t10 Vin1.t7 a_6667_n4104.t6 VSS.t13 nfet_03v3
+**devattr s=15600,404 d=15600,404
+X64 lvsclean_SAlatch_0.Vp.t11 Vin1.t8 a_6667_n4104.t7 VSS.t14 nfet_03v3
+**devattr s=15600,404 d=15600,404
+X65 lvsclean_SAlatch_0.Vq Vin2.t9 a_6667_n4104.t11 VSS.t9 nfet_03v3
+**devattr s=15600,404 d=15600,404
+X66 a_6667_n4104.t9 Vin1.t9 lvsclean_SAlatch_0.Vp.t12 VSS.t6 nfet_03v3
+**devattr s=15600,404 d=15600,404
+X67 VDD.t29 lvsclean_SAlatch_0.Vout1.t17 lvsclean_SAlatch_0.Vout2.t8 VDD.t28 pfet_03v3
+**devattr s=10400,304 d=10400,304
+X68 a_9707_n3141 a_9507_n3233 lvsclean_SAlatch_0.Vq VSS.t5 nfet_03v3
+**devattr s=15600,404 d=26400,776
+R0 Vout.n5 Vout.n4 6.5435
+R1 Vout.n2 Vout.n1 6.5435
+R2 x4.Y Vout.n8 4.5005
+R3 x4.Y Vout 2.44925
+R4 Vout.n6 Vout.n3 2.17483
+R5 Vout.n4 Vout.t7 2.03874
+R6 Vout.n4 Vout.t5 2.03874
+R7 Vout.n1 Vout.t6 2.03874
+R8 Vout.n1 Vout.t4 2.03874
+R9 Vout.n8 Vout.n0 2.00383
+R10 Vout.n0 Vout.t0 1.13285
+R11 Vout.n0 Vout.t3 1.13285
+R12 Vout.n3 Vout.t1 1.13285
+R13 Vout.n3 Vout.t2 1.13285
+R14 Vout.n5 Vout.n2 0.5105
+R15 Vout.n7 Vout.n6 0.5105
+R16 Vout.n7 Vout.n2 0.2165
+R17 Vout.n6 Vout.n5 0.2165
+R18 Vout.n8 Vout.n7 0.1175
+R19 VDD.n61 VDD.t26 869.717
+R20 VDD.n27 VDD.t30 869.717
+R21 VDD.t12 VDD.t0 490.324
+R22 VDD.t32 VDD.t12 490.324
+R23 VDD.t28 VDD.t32 490.324
+R24 VDD.t20 VDD.t28 490.324
+R25 VDD.t14 VDD.t20 490.324
+R26 VDD.t10 VDD.t14 490.324
+R27 VDD.t16 VDD.t10 490.324
+R28 VDD.t18 VDD.t16 490.324
+R29 VDD.t42 VDD.t18 490.324
+R30 VDD.t0 VDD.n48 467.743
+R31 VDD.n50 VDD.t42 467.743
+R32 VDD.n51 VDD.t8 398.652
+R33 VDD.n33 VDD.t2 398.652
+R34 VDD.t8 VDD.n50 389.878
+R35 VDD.n48 VDD.t2 389.878
+R36 VDD.t22 VDD.n3 372.543
+R37 VDD.n6 VDD.t44 372.543
+R38 VDD.n5 VDD.t22 370.969
+R39 VDD.t44 VDD.n5 370.969
+R40 VDD.n25 VDD.n23 287.351
+R41 VDD.n26 VDD.n24 287.351
+R42 VDD.t36 VDD.t38 265.625
+R43 VDD.n16 VDD.t24 242.189
+R44 VDD.t40 VDD.n18 195.312
+R45 VDD.n55 VDD.t6 190.464
+R46 VDD.n31 VDD.t4 190.464
+R47 VDD.n19 VDD.t40 179.689
+R48 VDD.t24 VDD.n15 145.413
+R49 VDD.n19 VDD.t36 85.938
+R50 VDD.n18 VDD.t34 70.313
+R51 VDD.n3 VDD.n1 58.9755
+R52 VDD.n6 VDD.n1 58.9755
+R53 VDD.n6 VDD.n2 58.9755
+R54 VDD.n3 VDD.n2 58.9755
+R55 VDD.n51 VDD.n23 54.0755
+R56 VDD.n33 VDD.n25 54.0755
+R57 VDD.n33 VDD.n26 54.0755
+R58 VDD.n51 VDD.n24 54.0755
+R59 VDD.n55 VDD.n54 29.3622
+R60 VDD.n32 VDD.n31 29.3622
+R61 VDD.t38 VDD.n16 23.438
+R62 VDD.n47 VDD.n25 20.1255
+R63 VDD.n47 VDD.n26 20.1255
+R64 VDD.n49 VDD.n23 20.1255
+R65 VDD.n49 VDD.n24 20.1255
+R66 VDD.n56 VDD.n55 19.9167
+R67 VDD.n31 VDD.n30 19.9167
+R68 VDD.n4 VDD.n1 18.7255
+R69 VDD.n4 VDD.n2 18.7255
+R70 VDD.n58 VDD.n57 14.6602
+R71 VDD.n29 VDD.n28 13.8113
+R72 VDD.n16 VDD.n10 12.6005
+R73 VDD.n20 VDD.n19 12.6005
+R74 VDD.n18 VDD.n17 12.6005
+R75 VDD.n45 VDD.n44 12.136
+R76 VDD.n43 VDD.n42 12.136
+R77 VDD.n41 VDD.n40 12.136
+R78 VDD.n39 VDD.n38 12.136
+R79 VDD.n37 VDD.n36 12.136
+R80 VDD.n49 VDD.n22 11.111
+R81 VDD.n47 VDD.n46 11.111
+R82 VDD.n30 VDD.n29 9.86945
+R83 VDD.n35 VDD.n34 9.536
+R84 VDD.n53 VDD.n52 9.536
+R85 VDD.n57 VDD.n56 9.536
+R86 VDD.n34 VDD.t3 7.4755
+R87 VDD.n52 VDD.t9 7.4755
+R88 VDD.n56 VDD.t7 7.4755
+R89 VDD.n30 VDD.t5 7.4755
+R90 VDD.n7 VDD.t45 4.4205
+R91 VDD.n0 VDD.t23 4.4205
+R92 VDD.n17 VDD.t35 3.38176
+R93 VDD.n34 VDD.n33 2.1905
+R94 VDD.n52 VDD.n51 2.1905
+R95 VDD.n12 VDD.n11 2.16583
+R96 VDD.n14 VDD.n13 2.16583
+R97 VDD.n27 VDD.t31 1.99236
+R98 VDD.n62 VDD.t27 1.91107
+R99 VDD.n61 VDD.n60 1.83762
+R100 VDD.n28 VDD.n27 1.83762
+R101 VDD.n44 VDD.t1 1.8205
+R102 VDD.n44 VDD.t13 1.8205
+R103 VDD.n42 VDD.t33 1.8205
+R104 VDD.n42 VDD.t29 1.8205
+R105 VDD.n40 VDD.t21 1.8205
+R106 VDD.n40 VDD.t15 1.8205
+R107 VDD.n38 VDD.t11 1.8205
+R108 VDD.n38 VDD.t17 1.8205
+R109 VDD.n36 VDD.t19 1.8205
+R110 VDD.n36 VDD.t43 1.8205
+R111 VDD.n5 VDD.n4 1.5755
+R112 VDD.n7 VDD.n6 1.5755
+R113 VDD.n3 VDD.n0 1.5755
+R114 VDD.n48 VDD.n47 1.5755
+R115 VDD.n50 VDD.n49 1.5755
+R116 VDD.n11 VDD.t37 1.13285
+R117 VDD.n11 VDD.t41 1.13285
+R118 VDD.n13 VDD.t25 1.13285
+R119 VDD.n13 VDD.t39 1.13285
+R120 VDD.n9 VDD.n8 1.058
+R121 VDD.n8 VDD.n0 1.01373
+R122 VDD.n8 VDD.n7 0.979984
+R123 VDD.n59 VDD.n21 0.750875
+R124 VDD.n39 VDD.n37 0.667
+R125 VDD.n45 VDD.n43 0.662
+R126 VDD.n41 VDD.n39 0.643429
+R127 VDD.n43 VDD.n41 0.638429
+R128 VDD.n54 VDD.n53 0.58325
+R129 VDD.n35 VDD.n32 0.58325
+R130 VDD.n37 VDD.n22 0.47525
+R131 VDD.n46 VDD.n45 0.47525
+R132 VDD.n59 VDD.n58 0.381816
+R133 VDD.n57 VDD.n54 0.34025
+R134 VDD.n53 VDD.n22 0.34025
+R135 VDD.n46 VDD.n35 0.34025
+R136 VDD.n28 VDD.n9 0.289447
+R137 VDD.n60 VDD.n9 0.279974
+R138 VDD.n60 VDD.n59 0.256289
+R139 x3.avdd VDD.n62 0.207699
+R140 VDD.n17 VDD.n12 0.1355
+R141 VDD.n15 VDD.n14 0.109786
+R142 VDD.n21 VDD.n10 0.103357
+R143 VDD.n62 VDD.n61 0.0965492
+R144 VDD.n58 VDD 0.0942895
+R145 VDD.n21 VDD.n20 0.0519286
+R146 VDD.n14 VDD.n10 0.0455
+R147 VDD.n20 VDD.n12 0.0197857
+R148 VDD.n32 VDD.n29 0.0068
+R149 VDD.n15 x4.VDD 0.00371429
+R150 lvsclean_SAlatch_0.Vout2.n0 lvsclean_SAlatch_0.Vout2.t10 49.7997
+R151 x5.in lvsclean_SAlatch_0.Vout2.t16 31.5367
+R152 lvsclean_SAlatch_0.Vout2.t17 lvsclean_SAlatch_0.Vout2.t12 19.735
+R153 lvsclean_SAlatch_0.Vout2.n6 lvsclean_SAlatch_0.Vout2.t17 18.9075
+R154 lvsclean_SAlatch_0.Vout2.n13 lvsclean_SAlatch_0.Vout2.t0 16.9998
+R155 lvsclean_SAlatch_0.Vout2.n3 lvsclean_SAlatch_0.Vout2.t9 13.6729
+R156 lvsclean_SAlatch_0.Vout2.n4 lvsclean_SAlatch_0.Vout2.t15 13.3844
+R157 lvsclean_SAlatch_0.Vout2.n3 lvsclean_SAlatch_0.Vout2.t14 13.3445
+R158 lvsclean_SAlatch_0.Vout2.n5 lvsclean_SAlatch_0.Vout2.n2 12.247
+R159 lvsclean_SAlatch_0.Vout2.n12 lvsclean_SAlatch_0.Vout2.n11 11.2403
+R160 lvsclean_SAlatch_0.Vout2.n5 lvsclean_SAlatch_0.Vout2.n4 9.4181
+R161 lvsclean_SAlatch_0.Vout2.n7 lvsclean_SAlatch_0.Vout2.n1 7.4449
+R162 lvsclean_SAlatch_0.Vout2 lvsclean_SAlatch_0.Vout2.n0 6.95074
+R163 lvsclean_SAlatch_0.Vout2.n9 lvsclean_SAlatch_0.Vout2.n8 6.75194
+R164 lvsclean_SAlatch_0.Vout2 lvsclean_SAlatch_0.Vout2.n13 6.32761
+R165 lvsclean_SAlatch_0.Vout2.n10 lvsclean_SAlatch_0.Vout2.t11 5.04666
+R166 lvsclean_SAlatch_0.Vout2.n7 lvsclean_SAlatch_0.Vout2.n6 4.94262
+R167 lvsclean_SAlatch_0.Vout2.n10 lvsclean_SAlatch_0.Vout2.t13 4.84137
+R168 lvsclean_SAlatch_0.Vout2.n12 lvsclean_SAlatch_0.Vout2.n9 2.836
+R169 lvsclean_SAlatch_0.Vout2.n12 lvsclean_SAlatch_0.Vout2.n10 2.75432
+R170 lvsclean_SAlatch_0.Vout2.n2 lvsclean_SAlatch_0.Vout2.t2 1.8205
+R171 lvsclean_SAlatch_0.Vout2.n2 lvsclean_SAlatch_0.Vout2.t3 1.8205
+R172 lvsclean_SAlatch_0.Vout2.n1 lvsclean_SAlatch_0.Vout2.t8 1.8205
+R173 lvsclean_SAlatch_0.Vout2.n1 lvsclean_SAlatch_0.Vout2.t5 1.8205
+R174 lvsclean_SAlatch_0.Vout2.n8 lvsclean_SAlatch_0.Vout2.t4 0.8195
+R175 lvsclean_SAlatch_0.Vout2.n8 lvsclean_SAlatch_0.Vout2.t1 0.8195
+R176 lvsclean_SAlatch_0.Vout2.n11 lvsclean_SAlatch_0.Vout2.t6 0.8195
+R177 lvsclean_SAlatch_0.Vout2.n11 lvsclean_SAlatch_0.Vout2.t7 0.8195
+R178 lvsclean_SAlatch_0.Vout2.n13 lvsclean_SAlatch_0.Vout2.n12 0.733357
+R179 lvsclean_SAlatch_0.Vout2.n6 lvsclean_SAlatch_0.Vout2.n5 0.5315
+R180 lvsclean_SAlatch_0.Vout2.n4 lvsclean_SAlatch_0.Vout2.n3 0.289009
+R181 lvsclean_SAlatch_0.Vout2.n9 lvsclean_SAlatch_0.Vout2.n7 0.184462
+R182 lvsclean_SAlatch_0.Vout2.n0 x5.in 0.014
+R183 lvsclean_SAlatch_0.Vp.n14 lvsclean_SAlatch_0.Vp.t15 19.5626
+R184 lvsclean_SAlatch_0.Vp.n15 lvsclean_SAlatch_0.Vp.n0 11.9065
+R185 lvsclean_SAlatch_0.Vp.n16 lvsclean_SAlatch_0.Vp.n15 11.2495
+R186 lvsclean_SAlatch_0.Vp.n2 lvsclean_SAlatch_0.Vp.n1 11.243
+R187 lvsclean_SAlatch_0.Vp.n8 lvsclean_SAlatch_0.Vp.n3 8.80104
+R188 lvsclean_SAlatch_0.Vp.n5 lvsclean_SAlatch_0.Vp.n4 6.60725
+R189 lvsclean_SAlatch_0.Vp.n11 lvsclean_SAlatch_0.Vp.n10 6.52262
+R190 lvsclean_SAlatch_0.Vp.n7 lvsclean_SAlatch_0.Vp.n5 6.386
+R191 lvsclean_SAlatch_0.Vp.n14 lvsclean_SAlatch_0.Vp.n13 5.44213
+R192 lvsclean_SAlatch_0.Vp.n10 lvsclean_SAlatch_0.Vp.n9 4.36738
+R193 lvsclean_SAlatch_0.Vp.n7 lvsclean_SAlatch_0.Vp.n6 4.36738
+R194 lvsclean_SAlatch_0.Vp.n13 lvsclean_SAlatch_0.Vp.n12 4.3505
+R195 lvsclean_SAlatch_0.Vp.n13 lvsclean_SAlatch_0.Vp.n11 2.2505
+R196 lvsclean_SAlatch_0.Vp.n10 lvsclean_SAlatch_0.Vp.n8 2.14009
+R197 lvsclean_SAlatch_0.Vp.n5 lvsclean_SAlatch_0.Vp.n2 1.50001
+R198 lvsclean_SAlatch_0.Vp.n11 lvsclean_SAlatch_0.Vp.n2 1.49326
+R199 lvsclean_SAlatch_0.Vp.n12 lvsclean_SAlatch_0.Vp.t8 1.0925
+R200 lvsclean_SAlatch_0.Vp.n12 lvsclean_SAlatch_0.Vp.t16 1.0925
+R201 lvsclean_SAlatch_0.Vp.n9 lvsclean_SAlatch_0.Vp.t5 1.0925
+R202 lvsclean_SAlatch_0.Vp.n9 lvsclean_SAlatch_0.Vp.t6 1.0925
+R203 lvsclean_SAlatch_0.Vp.n3 lvsclean_SAlatch_0.Vp.t3 1.0925
+R204 lvsclean_SAlatch_0.Vp.n3 lvsclean_SAlatch_0.Vp.t9 1.0925
+R205 lvsclean_SAlatch_0.Vp.n6 lvsclean_SAlatch_0.Vp.t14 1.0925
+R206 lvsclean_SAlatch_0.Vp.n6 lvsclean_SAlatch_0.Vp.t11 1.0925
+R207 lvsclean_SAlatch_0.Vp.n4 lvsclean_SAlatch_0.Vp.t12 1.0925
+R208 lvsclean_SAlatch_0.Vp.n4 lvsclean_SAlatch_0.Vp.t4 1.0925
+R209 lvsclean_SAlatch_0.Vp.n1 lvsclean_SAlatch_0.Vp.t7 1.0925
+R210 lvsclean_SAlatch_0.Vp.n1 lvsclean_SAlatch_0.Vp.t10 1.0925
+R211 lvsclean_SAlatch_0.Vp.n0 lvsclean_SAlatch_0.Vp.t1 0.8195
+R212 lvsclean_SAlatch_0.Vp.n0 lvsclean_SAlatch_0.Vp.t2 0.8195
+R213 lvsclean_SAlatch_0.Vp.t0 lvsclean_SAlatch_0.Vp.n16 0.8195
+R214 lvsclean_SAlatch_0.Vp.n16 lvsclean_SAlatch_0.Vp.t13 0.8195
+R215 lvsclean_SAlatch_0.Vp.n8 lvsclean_SAlatch_0.Vp.n7 0.314375
+R216 lvsclean_SAlatch_0.Vp.n15 lvsclean_SAlatch_0.Vp.n14 0.16025
+R217 lvsclean_SAlatch_0.Vout1.n0 lvsclean_SAlatch_0.Vout1.t15 49.7997
+R218 x3.in lvsclean_SAlatch_0.Vout1.t14 31.5367
+R219 lvsclean_SAlatch_0.Vout1.t10 lvsclean_SAlatch_0.Vout1.t17 19.735
+R220 lvsclean_SAlatch_0.Vout1.n8 lvsclean_SAlatch_0.Vout1.n7 18.0852
+R221 lvsclean_SAlatch_0.Vout1.n13 lvsclean_SAlatch_0.Vout1.t7 16.9998
+R222 lvsclean_SAlatch_0.Vout1.n5 lvsclean_SAlatch_0.Vout1.t10 14.5537
+R223 lvsclean_SAlatch_0.Vout1.n5 lvsclean_SAlatch_0.Vout1.n4 14.2885
+R224 lvsclean_SAlatch_0.Vout1.n3 lvsclean_SAlatch_0.Vout1.t11 13.6729
+R225 lvsclean_SAlatch_0.Vout1.n4 lvsclean_SAlatch_0.Vout1.t13 13.3844
+R226 lvsclean_SAlatch_0.Vout1.n3 lvsclean_SAlatch_0.Vout1.t16 13.3445
+R227 lvsclean_SAlatch_0.Vout1.n12 lvsclean_SAlatch_0.Vout1.n2 11.24
+R228 lvsclean_SAlatch_0.Vout1.n8 lvsclean_SAlatch_0.Vout1.n6 7.16477
+R229 lvsclean_SAlatch_0.Vout1 lvsclean_SAlatch_0.Vout1.n0 6.95627
+R230 lvsclean_SAlatch_0.Vout1.n11 lvsclean_SAlatch_0.Vout1.n10 6.75194
+R231 lvsclean_SAlatch_0.Vout1 lvsclean_SAlatch_0.Vout1.n13 6.32624
+R232 lvsclean_SAlatch_0.Vout1.n1 lvsclean_SAlatch_0.Vout1.t9 5.04666
+R233 lvsclean_SAlatch_0.Vout1.n1 lvsclean_SAlatch_0.Vout1.t12 4.84137
+R234 lvsclean_SAlatch_0.Vout1.n12 lvsclean_SAlatch_0.Vout1.n11 2.836
+R235 lvsclean_SAlatch_0.Vout1.n12 lvsclean_SAlatch_0.Vout1.n1 2.75432
+R236 lvsclean_SAlatch_0.Vout1.n6 lvsclean_SAlatch_0.Vout1.t0 1.8205
+R237 lvsclean_SAlatch_0.Vout1.n6 lvsclean_SAlatch_0.Vout1.t2 1.8205
+R238 lvsclean_SAlatch_0.Vout1.n7 lvsclean_SAlatch_0.Vout1.t1 1.8205
+R239 lvsclean_SAlatch_0.Vout1.n7 lvsclean_SAlatch_0.Vout1.t3 1.8205
+R240 lvsclean_SAlatch_0.Vout1.n2 lvsclean_SAlatch_0.Vout1.t5 0.8195
+R241 lvsclean_SAlatch_0.Vout1.n2 lvsclean_SAlatch_0.Vout1.t6 0.8195
+R242 lvsclean_SAlatch_0.Vout1.n10 lvsclean_SAlatch_0.Vout1.t8 0.8195
+R243 lvsclean_SAlatch_0.Vout1.n10 lvsclean_SAlatch_0.Vout1.t4 0.8195
+R244 lvsclean_SAlatch_0.Vout1.n13 lvsclean_SAlatch_0.Vout1.n12 0.733357
+R245 lvsclean_SAlatch_0.Vout1.n9 lvsclean_SAlatch_0.Vout1.n5 0.440894
+R246 lvsclean_SAlatch_0.Vout1.n9 lvsclean_SAlatch_0.Vout1.n8 0.426875
+R247 lvsclean_SAlatch_0.Vout1.n4 lvsclean_SAlatch_0.Vout1.n3 0.289009
+R248 lvsclean_SAlatch_0.Vout1.n11 lvsclean_SAlatch_0.Vout1.n9 0.0607115
+R249 lvsclean_SAlatch_0.Vout1.n0 x3.in 0.014
+R250 VSS.n59 VSS.n58 115023
+R251 VSS.n48 VSS.n47 84649.9
+R252 VSS.n58 VSS.n57 9921.43
+R253 VSS.n32 VSS.n9 6412.93
+R254 VSS.n55 VSS.n9 2262.67
+R255 VSS.n57 VSS.n56 2114.66
+R256 VSS.n56 VSS.t28 1596.98
+R257 VSS.n48 VSS.t0 1596.98
+R258 VSS.n58 VSS.t36 457.683
+R259 VSS.n32 VSS.n31 439.834
+R260 VSS.n56 VSS.n21 425.178
+R261 VSS.n45 VSS.n5 414.478
+R262 VSS.n55 VSS.n54 325
+R263 VSS.n31 VSS.t40 293.137
+R264 VSS.t40 VSS.n29 293.137
+R265 VSS.n29 VSS.t43 293.137
+R266 VSS.n54 VSS.t43 293.137
+R267 VSS.n56 VSS.n55 248.53
+R268 VSS.n57 VSS.n9 208.317
+R269 VSS.n43 VSS.n6 205.139
+R270 VSS.n61 VSS.n6 205.139
+R271 VSS.n61 VSS.n7 205.139
+R272 VSS.n43 VSS.n7 205.139
+R273 VSS.n47 VSS.n33 193.514
+R274 VSS.n60 VSS.n59 193.514
+R275 VSS.t32 VSS.t38 191.642
+R276 VSS.n17 VSS.t25 174.732
+R277 VSS.n41 VSS.n40 166.989
+R278 VSS.n39 VSS.n2 166.989
+R279 VSS.t34 VSS.n15 140.912
+R280 VSS.n16 VSS.t34 129.639
+R281 VSS.n48 VSS.n32 126.242
+R282 VSS.n38 VSS.n34 118.222
+R283 VSS.t42 VSS.t5 108.16
+R284 VSS.t31 VSS.t12 108.16
+R285 VSS.t27 VSS.t6 108.16
+R286 VSS.t30 VSS.t7 108.16
+R287 VSS.t2 VSS.t8 108.16
+R288 VSS.t3 VSS.t9 108.16
+R289 VSS.t4 VSS.t11 108.16
+R290 VSS.t16 VSS.t18 108.16
+R291 VSS.t20 VSS.t14 99.0382
+R292 VSS.t10 VSS.t20 99.0382
+R293 VSS.n56 VSS.n23 98.7258
+R294 VSS.n49 VSS.n48 98.7258
+R295 VSS.n21 VSS.t25 95.8208
+R296 VSS.t12 VSS.t42 89.9163
+R297 VSS.t6 VSS.t31 89.9163
+R298 VSS.t7 VSS.t27 89.9163
+R299 VSS.t17 VSS.t30 89.9163
+R300 VSS.t13 VSS.t2 89.9163
+R301 VSS.t8 VSS.t3 89.9163
+R302 VSS.t9 VSS.t4 89.9163
+R303 VSS.t11 VSS.t16 89.9163
+R304 VSS.t5 VSS.n33 80.7944
+R305 VSS.t19 VSS.n35 80.7944
+R306 VSS.n37 VSS.t24 80.7944
+R307 VSS.n60 VSS.t18 80.7944
+R308 VSS.n40 VSS.n39 80.5005
+R309 VSS.t15 VSS.t19 69.0663
+R310 VSS.t24 VSS.t22 69.0663
+R311 VSS.n30 VSS.n24 65.5283
+R312 VSS.n53 VSS.n24 65.5283
+R313 VSS.n53 VSS.n25 65.5283
+R314 VSS.n30 VSS.n25 65.5283
+R315 VSS.t38 VSS.n16 62.0019
+R316 VSS.n15 VSS.t36 50.7289
+R317 VSS.n36 VSS.n6 30.5283
+R318 VSS.n36 VSS.n7 30.5283
+R319 VSS.n35 VSS.t17 27.3662
+R320 VSS.n37 VSS.t13 27.3662
+R321 VSS.t14 VSS.t15 20.8505
+R322 VSS.t22 VSS.t10 20.8505
+R323 VSS.n28 VSS.n24 20.8061
+R324 VSS.n28 VSS.n25 20.8061
+R325 VSS.n39 VSS.n38 18.8616
+R326 VSS.n40 VSS.n34 18.8616
+R327 x3.avss VSS.n4 17.8218
+R328 VSS.n42 x5.avss 16.9677
+R329 VSS.n17 VSS.t32 16.91
+R330 VSS.n1 VSS.n0 11.0305
+R331 VSS.n21 VSS.n20 10.4005
+R332 VSS.n18 VSS.n17 10.4005
+R333 VSS.n16 VSS.n11 10.4005
+R334 VSS.n15 VSS.n14 10.4005
+R335 VSS.n14 VSS.t37 8.70131
+R336 VSS.n63 VSS.n62 7.7564
+R337 VSS.n44 VSS.n42 7.59387
+R338 VSS.n41 VSS.n3 6.64904
+R339 VSS.n19 VSS.n10 6.5795
+R340 VSS.n13 VSS.n12 6.5795
+R341 VSS.n62 VSS.n61 6.33584
+R342 VSS.n44 VSS.n43 6.32806
+R343 VSS.n38 VSS.n1 6.23383
+R344 VSS.n26 VSS.t41 4.7885
+R345 VSS.n52 VSS.t44 4.7885
+R346 VSS.n65 VSS.n2 3.8722
+R347 VSS.n45 VSS.n44 3.52248
+R348 VSS.n62 VSS.n5 3.51469
+R349 VSS.n22 VSS.t29 2.9111
+R350 VSS.n27 VSS.t1 2.9111
+R351 VSS.n0 VSS.t21 2.048
+R352 VSS.n0 VSS.t23 2.048
+R353 VSS.n10 VSS.t26 2.03874
+R354 VSS.n10 VSS.t33 2.03874
+R355 VSS.n12 VSS.t39 2.03874
+R356 VSS.n12 VSS.t35 2.03874
+R357 VSS.n38 VSS.n37 1.73383
+R358 VSS.n35 VSS.n34 1.73383
+R359 VSS.n50 VSS.n49 1.70279
+R360 VSS.n50 VSS.n23 1.62925
+R361 VSS.n30 VSS.n26 1.3005
+R362 VSS.n31 VSS.n30 1.3005
+R363 VSS.n29 VSS.n28 1.3005
+R364 VSS.n53 VSS.n52 1.3005
+R365 VSS.n54 VSS.n53 1.3005
+R366 VSS.n51 VSS.n50 1.29323
+R367 VSS.n51 VSS.n26 1.00923
+R368 VSS.n8 VSS.n2 0.999917
+R369 VSS.n8 VSS.n5 0.999917
+R370 VSS.n46 VSS.n45 0.999917
+R371 VSS.n46 VSS.n41 0.999917
+R372 VSS.n52 VSS.n51 0.984484
+R373 VSS.n65 VSS.n64 0.949529
+R374 VSS.n64 VSS.n3 0.907842
+R375 VSS.n43 VSS.n33 0.867167
+R376 VSS.t20 VSS.n36 0.867167
+R377 VSS.n61 VSS.n60 0.867167
+R378 lvsclean_SAlatch_0.VSS VSS.n65 0.664071
+R379 VSS.n63 VSS.n4 0.238053
+R380 VSS.n4 VSS 0.222184
+R381 VSS.n22 x3.avss 0.188808
+R382 x5.avss VSS.n27 0.188808
+R383 VSS.n64 VSS.n63 0.163684
+R384 lvsclean_SAlatch_0.VSS VSS.n1 0.1605
+R385 VSS.n18 VSS.n11 0.154786
+R386 VSS.n14 VSS.n13 0.1355
+R387 VSS.n49 VSS.n27 0.128901
+R388 VSS.n23 VSS.n22 0.127885
+R389 VSS.n42 VSS.n3 0.112526
+R390 VSS.n20 VSS.n19 0.109786
+R391 VSS.n19 VSS.n18 0.0455
+R392 VSS.n59 VSS.n8 0.0215413
+R393 VSS.n47 VSS.n46 0.0215413
+R394 VSS.n13 VSS.n11 0.0197857
+R395 VSS.n20 x4.VSS 0.00371429
+R396 CLK.n4 CLK.t0 21.1483
+R397 CLK.n3 CLK.t3 21.1483
+R398 CLK.n2 CLK.t1 21.1483
+R399 CLK.n1 CLK.t2 21.1483
+R400 CLK.n0 CLK.t4 20.5929
+R401 CLK.n1 CLK.n0 19.1491
+R402 CLK.n5 CLK.n4 15.5861
+R403 CLK.n3 CLK.n2 4.47208
+R404 CLK.n5 CLK.n0 3.56405
+R405 CLK CLK.n5 1.32418
+R406 CLK.n2 CLK.n1 1.01892
+R407 CLK.n4 CLK.n3 1.01892
+R408 Vin2.n7 Vin2.n6 23.1032
+R409 Vin2.n3 Vin2.n2 23.1032
+R410 Vin2.n0 Vin2.t4 22.8502
+R411 Vin2.n2 Vin2.t6 16.3656
+R412 Vin2.n6 Vin2.t9 16.3641
+R413 Vin2.n2 Vin2.t7 16.021
+R414 Vin2.n6 Vin2.t2 16.0195
+R415 Vin2.n8 Vin2.t8 11.5195
+R416 Vin2.n5 Vin2.t0 11.5195
+R417 Vin2.n4 Vin2.t3 11.5195
+R418 Vin2.n1 Vin2.t5 11.5195
+R419 Vin2.n0 Vin2.t1 11.5195
+R420 Vin2 Vin2.n8 3.51835
+R421 Vin2.n7 Vin2.n5 2.53166
+R422 Vin2.n1 Vin2.n0 2.48408
+R423 Vin2.n3 Vin2.n1 1.40666
+R424 Vin2.n8 Vin2.n7 0.647658
+R425 Vin2.n4 Vin2.n3 0.647132
+R426 Vin2.n5 Vin2.n4 0.234605
+R427 a_6667_n4104.n13 a_6667_n4104.n5 11.2899
+R428 a_6667_n4104.n14 a_6667_n4104.n13 8.49339
+R429 a_6667_n4104.n10 a_6667_n4104.n6 4.89725
+R430 a_6667_n4104.n15 a_6667_n4104.n3 4.89725
+R431 a_6667_n4104.n9 a_6667_n4104.n7 4.89725
+R432 a_6667_n4104.n2 a_6667_n4104.n0 4.89725
+R433 a_6667_n4104.n18 a_6667_n4104.n17 4.89725
+R434 a_6667_n4104.n17 a_6667_n4104.n16 4.88712
+R435 a_6667_n4104.n9 a_6667_n4104.n8 4.88712
+R436 a_6667_n4104.n2 a_6667_n4104.n1 4.88712
+R437 a_6667_n4104.n12 a_6667_n4104.n11 4.4
+R438 a_6667_n4104.n14 a_6667_n4104.n4 4.35275
+R439 a_6667_n4104.n5 a_6667_n4104.t8 2.048
+R440 a_6667_n4104.n5 a_6667_n4104.t21 2.048
+R441 a_6667_n4104.n13 a_6667_n4104.n12 1.95895
+R442 a_6667_n4104.n16 a_6667_n4104.t15 1.0925
+R443 a_6667_n4104.n16 a_6667_n4104.t10 1.0925
+R444 a_6667_n4104.n6 a_6667_n4104.t11 1.0925
+R445 a_6667_n4104.n6 a_6667_n4104.t4 1.0925
+R446 a_6667_n4104.n11 a_6667_n4104.t2 1.0925
+R447 a_6667_n4104.n11 a_6667_n4104.t12 1.0925
+R448 a_6667_n4104.n3 a_6667_n4104.t16 1.0925
+R449 a_6667_n4104.n3 a_6667_n4104.t9 1.0925
+R450 a_6667_n4104.n4 a_6667_n4104.t5 1.0925
+R451 a_6667_n4104.n4 a_6667_n4104.t19 1.0925
+R452 a_6667_n4104.n7 a_6667_n4104.t6 1.0925
+R453 a_6667_n4104.n7 a_6667_n4104.t18 1.0925
+R454 a_6667_n4104.n8 a_6667_n4104.t20 1.0925
+R455 a_6667_n4104.n8 a_6667_n4104.t1 1.0925
+R456 a_6667_n4104.n0 a_6667_n4104.t14 1.0925
+R457 a_6667_n4104.n0 a_6667_n4104.t3 1.0925
+R458 a_6667_n4104.n1 a_6667_n4104.t7 1.0925
+R459 a_6667_n4104.n1 a_6667_n4104.t17 1.0925
+R460 a_6667_n4104.t0 a_6667_n4104.n18 1.0925
+R461 a_6667_n4104.n18 a_6667_n4104.t13 1.0925
+R462 a_6667_n4104.n10 a_6667_n4104.n9 0.849071
+R463 a_6667_n4104.n9 a_6667_n4104.n2 0.849071
+R464 a_6667_n4104.n17 a_6667_n4104.n2 0.849071
+R465 a_6667_n4104.n17 a_6667_n4104.n15 0.849071
+R466 a_6667_n4104.n15 a_6667_n4104.n14 0.534875
+R467 a_6667_n4104.n12 a_6667_n4104.n10 0.487625
+R468 Vin1.n7 Vin1.n6 23.1032
+R469 Vin1.n3 Vin1.n2 23.1032
+R470 Vin1.n0 Vin1.t6 22.5295
+R471 Vin1.n2 Vin1.t0 16.3641
+R472 Vin1.n6 Vin1.t4 16.3626
+R473 Vin1.n2 Vin1.t8 16.0225
+R474 Vin1.n6 Vin1.t1 16.021
+R475 Vin1.n8 Vin1.t5 11.5195
+R476 Vin1.n5 Vin1.t7 11.5195
+R477 Vin1.n4 Vin1.t2 11.5195
+R478 Vin1.n1 Vin1.t3 11.5195
+R479 Vin1.n0 Vin1.t9 11.5195
+R480 Vin1.n1 Vin1.n0 4.00673
+R481 Vin1 Vin1.n8 3.5169
+R482 Vin1.n7 Vin1.n5 3.16619
+R483 Vin1.n3 Vin1.n1 0.650658
+R484 Vin1.n8 Vin1.n7 0.280193
+R485 Vin1.n4 Vin1.n3 0.279681
+R486 Vin1.n5 Vin1.n4 0.231705
+.ends
+

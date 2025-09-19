@@ -1,0 +1,82 @@
+* NGSPICE file created from no_offsetLatch.ext - technology: gf180mcuD
+
+.subckt pfet_03v3_USLA84 a_n128_n80# a_40_n80# a_n40_n172# w_n290_n290#
+X0 a_40_n80# a_n40_n172# a_n128_n80# w_n290_n290# pfet_03v3 ad=0.352p pd=2.48u as=0.352p ps=2.48u w=0.8u l=0.4u
+.ends
+
+.subckt pfet_03v3_GABL2T a_252_n100# a_n860_n192# a_1164_n100# a_n356_n100# a_n1268_n100#
++ a_860_n100# a_n52_n100# a_356_n192# a_n964_n100# a_52_n192# a_n660_n100# a_964_n192#
++ a_n556_n192# a_660_n192# a_n252_n192# w_n1718_n310# a_n1164_n192# a_556_n100#
+X0 a_556_n100# a_356_n192# a_252_n100# w_n1718_n310# pfet_03v3 ad=0.26p pd=1.52u as=0.26p ps=1.52u w=1u l=1u
+X1 a_n660_n100# a_n860_n192# a_n964_n100# w_n1718_n310# pfet_03v3 ad=0.26p pd=1.52u as=0.26p ps=1.52u w=1u l=1u
+X2 a_n356_n100# a_n556_n192# a_n660_n100# w_n1718_n310# pfet_03v3 ad=0.26p pd=1.52u as=0.26p ps=1.52u w=1u l=1u
+X3 a_n52_n100# a_n252_n192# a_n356_n100# w_n1718_n310# pfet_03v3 ad=0.26p pd=1.52u as=0.26p ps=1.52u w=1u l=1u
+X4 a_1468_n100# a_1268_n192# a_1164_n100# w_n1718_n310# pfet_03v3 ad=0.44p pd=2.88u as=0.26p ps=1.52u w=1u l=1u
+X5 a_252_n100# a_52_n192# a_n52_n100# w_n1718_n310# pfet_03v3 ad=0.26p pd=1.52u as=0.26p ps=1.52u w=1u l=1u
+X6 a_1164_n100# a_964_n192# a_860_n100# w_n1718_n310# pfet_03v3 ad=0.26p pd=1.52u as=0.26p ps=1.52u w=1u l=1u
+X7 a_n1268_n100# a_n1468_n192# a_n1556_n100# w_n1718_n310# pfet_03v3 ad=0.26p pd=1.52u as=0.44p ps=2.88u w=1u l=1u
+X8 a_860_n100# a_660_n192# a_556_n100# w_n1718_n310# pfet_03v3 ad=0.26p pd=1.52u as=0.26p ps=1.52u w=1u l=1u
+X9 a_n964_n100# a_n1164_n192# a_n1268_n100# w_n1718_n310# pfet_03v3 ad=0.26p pd=1.52u as=0.26p ps=1.52u w=1u l=1u
+.ends
+
+.subckt pfet_03v3_U2FB84 a_n128_n80# a_40_n80# a_n40_n172# w_n290_n290#
+X0 a_40_n80# a_n40_n172# a_n128_n80# w_n290_n290# pfet_03v3 ad=0.352p pd=2.48u as=0.352p ps=2.48u w=0.8u l=0.4u
+.ends
+
+.subckt nfet_03v3_MJTYYT a_n100_n292# a_404_n200# a_100_n200# a_n508_n200# a_n204_n200#
++ a_204_n292# a_n934_n386# a_n404_n292#
+X0 a_n508_n200# a_n708_n292# a_n796_n200# a_n934_n386# nfet_03v3 ad=0.52p pd=2.52u as=0.88p ps=4.88u w=2u l=1u
+X1 a_404_n200# a_204_n292# a_100_n200# a_n934_n386# nfet_03v3 ad=0.52p pd=2.52u as=0.52p ps=2.52u w=2u l=1u
+X2 a_100_n200# a_n100_n292# a_n204_n200# a_n934_n386# nfet_03v3 ad=0.52p pd=2.52u as=0.52p ps=2.52u w=2u l=1u
+X3 a_708_n200# a_508_n292# a_404_n200# a_n934_n386# nfet_03v3 ad=0.88p pd=4.88u as=0.52p ps=2.52u w=2u l=1u
+X4 a_n204_n200# a_n404_n292# a_n508_n200# a_n934_n386# nfet_03v3 ad=0.52p pd=2.52u as=0.52p ps=2.52u w=2u l=1u
+.ends
+
+.subckt nfet_03v3_6BEH2F a_860_n150# a_n860_n242# a_n1772_n242# a_n52_n150# a_1772_n150#
++ a_n964_n150# a_n1860_n150# a_356_n242# a_n660_n150# a_n1572_n150# a_52_n242# a_1268_n242#
++ a_964_n242# a_556_n150# a_n556_n242# a_660_n242# a_n1468_n242# a_252_n150# a_n252_n242#
++ a_n1164_n242# a_1468_n150# a_1572_n242# a_1164_n150# a_n356_n150# a_n1268_n150#
++ VSUBS
+X0 a_n356_n150# a_n556_n242# a_n660_n150# VSUBS nfet_03v3 ad=0.39p pd=2.02u as=0.39p ps=2.02u w=1.5u l=1u
+X1 a_n1268_n150# a_n1468_n242# a_n1572_n150# VSUBS nfet_03v3 ad=0.39p pd=2.02u as=0.39p ps=2.02u w=1.5u l=1u
+X2 a_1164_n150# a_964_n242# a_860_n150# VSUBS nfet_03v3 ad=0.39p pd=2.02u as=0.39p ps=2.02u w=1.5u l=1u
+X3 a_n660_n150# a_n860_n242# a_n964_n150# VSUBS nfet_03v3 ad=0.39p pd=2.02u as=0.39p ps=2.02u w=1.5u l=1u
+X4 a_1468_n150# a_1268_n242# a_1164_n150# VSUBS nfet_03v3 ad=0.39p pd=2.02u as=0.39p ps=2.02u w=1.5u l=1u
+X5 a_556_n150# a_356_n242# a_252_n150# VSUBS nfet_03v3 ad=0.39p pd=2.02u as=0.39p ps=2.02u w=1.5u l=1u
+X6 a_n1572_n150# a_n1772_n242# a_n1860_n150# VSUBS nfet_03v3 ad=0.39p pd=2.02u as=0.66p ps=3.88u w=1.5u l=1u
+X7 a_252_n150# a_52_n242# a_n52_n150# VSUBS nfet_03v3 ad=0.39p pd=2.02u as=0.39p ps=2.02u w=1.5u l=1u
+X8 a_n52_n150# a_n252_n242# a_n356_n150# VSUBS nfet_03v3 ad=0.39p pd=2.02u as=0.39p ps=2.02u w=1.5u l=1u
+X9 a_n964_n150# a_n1164_n242# a_n1268_n150# VSUBS nfet_03v3 ad=0.39p pd=2.02u as=0.39p ps=2.02u w=1.5u l=1u
+X10 a_860_n150# a_660_n242# a_556_n150# VSUBS nfet_03v3 ad=0.39p pd=2.02u as=0.39p ps=2.02u w=1.5u l=1u
+X11 a_1772_n150# a_1572_n242# a_1468_n150# VSUBS nfet_03v3 ad=0.66p pd=3.88u as=0.39p ps=2.02u w=1.5u l=1u
+.ends
+
+.subckt pfet_03v3_CRJA84 a_n128_n80# a_40_n80# a_n40_n172# w_n290_n290#
+X0 a_40_n80# a_n40_n172# a_n128_n80# w_n290_n290# pfet_03v3 ad=0.352p pd=2.48u as=0.352p ps=2.48u w=0.8u l=0.4u
+.ends
+
+.subckt nfet_03v3_W5F4U7 a_40_n80# a_n40_n172# a_n224_n172# a_n450_n266# a_144_n172#
++ a_n144_n80#
+X0 a_224_n80# a_144_n172# a_40_n80# a_n450_n266# nfet_03v3 ad=0.352p pd=2.48u as=0.208p ps=1.32u w=0.8u l=0.4u
+X1 a_n144_n80# a_n224_n172# a_n312_n80# a_n450_n266# nfet_03v3 ad=0.208p pd=1.32u as=0.352p ps=2.48u w=0.8u l=0.4u
+X2 a_40_n80# a_n40_n172# a_n144_n80# a_n450_n266# nfet_03v3 ad=0.208p pd=1.32u as=0.208p ps=1.32u w=0.8u l=0.4u
+.ends
+
+.subckt no_offsetLatch Clk Vin1 Vin2 VDD VSS Vout1 Vout2
+XXM1 VDD Vp Clk VDD pfet_03v3_USLA84
+XXM3 Vout2 Vout1 VDD Vout1 VDD Vout1 VDD Vout1 Vout2 Vout1 VDD Vout2 Vout2 Vout2 Vout2
++ VDD Vout1 VDD pfet_03v3_GABL2T
+XXM5 Vout2 VDD Clk VDD pfet_03v3_U2FB84
+XXM6 Vq VDD Clk VDD pfet_03v3_USLA84
+Xnfet_03v3_MJTYYT_0 Vout1 Vq Vout2 Vout2 Vq Vout1 VSS Vout1 nfet_03v3_MJTYYT
+Xnfet_03v3_MJTYYT_1 Vout2 Vout1 Vp Vp Vout1 Vout2 VSS Vout2 nfet_03v3_MJTYYT
+XXM9 Vp Vin2 XM9/a_n1772_n242# a_15720_n2324# XM9/a_1772_n150# Vq XM9/a_n1860_n150#
++ Vin2 a_15720_n2324# Vp Vin2 Vin2 Vin1 a_15720_n2324# Vin1 Vin1 Vin1 Vq Vin1 Vin2
++ Vq XM9/a_1572_n242# a_15720_n2324# Vp a_15720_n2324# VSS nfet_03v3_6BEH2F
+Xpfet_03v3_CRJA84_0 VDD Vout1 Clk VDD pfet_03v3_CRJA84
+Xnfet_03v3_6BEH2F_0 Vq Vin1 a_15216_n2416# a_15720_n2324# a_18760_n2324# Vp a_15128_n2324#
++ Vin1 a_15720_n2324# Vq Vin1 Vin1 Vin2 a_15720_n2324# Vin2 Vin2 Vin2 Vp Vin2 Vin1
++ Vp a_18560_n2416# a_15720_n2324# Vq a_15720_n2324# VSS nfet_03v3_6BEH2F
+XXM11 a_15720_n2324# Clk m1_16766_n3219# VSS m1_17134_n3219# VSS nfet_03v3_W5F4U7
+.ends
+

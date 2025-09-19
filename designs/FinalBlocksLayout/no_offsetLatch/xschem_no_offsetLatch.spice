@@ -1,0 +1,47 @@
+** sch_path: /foss/designs/FinalBlocksLayout/no_offsetLatch/no_offsetLatch.sch
+.subckt no_offsetLatch Clk Vin1 Vin2 VDD VSS Vout1 Vout2
+*.PININFO Clk:I Vin1:I Vin2:I VDD:B VSS:B Vout1:O Vout2:O
+XM1 Vp Clk VDD VDD pfet_03v3 L=0.40u W=0.80u nf=1 m=1
+XM2 Vout1 Clk VDD VDD pfet_03v3 L=0.40u W=0.80u nf=1 m=1
+XM3 Vout1 Vout2 VDD VDD pfet_03v3 L=1u W=1u nf=1 m=4
+XM4 Vout2 Vout1 VDD VDD pfet_03v3 L=1u W=1u nf=1 m=4
+XM5 Vout2 Clk VDD VDD pfet_03v3 L=0.40u W=0.80u nf=1 m=1
+XM6 Vq Clk VDD VDD pfet_03v3 L=0.40u W=0.80u nf=1 m=1
+XM7 Vout1 Vout2 Vp VSS nfet_03v3 L=1u W=2u nf=1 m=3
+XM8 Vout2 Vout1 Vq VSS nfet_03v3 L=1u W=2u nf=1 m=3
+XM9 Vp Vin1 net1 VSS nfet_03v3 L=1u W=1.5u nf=1 m=5
+XM10 Vq Vin2 net1 VSS nfet_03v3 L=1u W=1.5u nf=1 m=5
+XM11 net1 Clk VSS VSS nfet_03v3 L=0.40u W=0.80u nf=1 m=1
+XM20 Vp Vin1 net1 VSS nfet_03v3 L=1u W=1.5u nf=1 m=5
+XM21 Vq Vin2 net1 VSS nfet_03v3 L=1u W=1.5u nf=1 m=5
+XM24 Vp net2 net3 VSS nfet_03v3 L=1u W=1.5u nf=1 m=2
+* noconn #net3
+* noconn #net2
+XM25 Vq net4 net5 VSS nfet_03v3 L=1u W=1.5u nf=1 m=2
+* noconn #net5
+* noconn #net4
+XM26 Vout1 net6 net7 VSS nfet_03v3 L=1u W=2u nf=1 m=1
+* noconn #net7
+* noconn #net6
+XM27 Vout2 net8 net9 VSS nfet_03v3 L=1u W=2u nf=1 m=1
+* noconn #net9
+* noconn #net8
+* noconn #net10
+* noconn #net11
+* noconn #net12
+* noconn #net13
+XM30 net1 net14 net15 VSS nfet_03v3 L=0.40u W=0.80u nf=1 m=1
+XM31 net16 net17 VSS VSS nfet_03v3 L=0.40u W=0.80u nf=1 m=1
+* noconn #net15
+* noconn #net16
+* noconn #net17
+* noconn #net14
+XM32 net18 net19 Vq VSS nfet_03v3 L=1u W=2u nf=1 m=1
+* noconn #net18
+* noconn #net19
+XM33 net20 net21 Vp VSS nfet_03v3 L=1u W=2u nf=1 m=1
+* noconn #net20
+* noconn #net21
+XM28 net10 net11 VDD VDD pfet_03v3 L=1u W=1u nf=1 m=1
+XM29 net12 net13 VDD VDD pfet_03v3 L=1u W=1u nf=1 m=1
+.ends
