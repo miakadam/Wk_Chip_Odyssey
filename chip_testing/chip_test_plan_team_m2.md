@@ -96,7 +96,7 @@ You have four instruments available:
   1. Trigger on Ch 1 rising edge.
   2. Measure the rising slew rate:
      ii. Measure the rising slew rate:
-      $$SR_{\text{rise}} = \frac{V_{80\%} - V_{20\%}}{\Delta t_{\text{rise}}} \quad \left[\frac{\text{V}}{\mu\text{s}}\right]$$
+      SR_rise = (V_80% - V_20%) / Δt_rise   [V/µs]
   3. Trigger on Ch 1 falling edge and measure $SR_{fall}$.
   4. Inspect the step corners for underdamped ringing or oscillation.
 
